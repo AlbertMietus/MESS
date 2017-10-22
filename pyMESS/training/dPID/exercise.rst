@@ -36,7 +36,7 @@ Depending on your knowledge of PID-controllers these test may (functionally) var
 Instructions
 ~~~~~~~~~~~~
 
-* Use the `pytest <https://pytest.readthedocs.io>`__ framework, to shorten tests-code.
+* Use the `pytest <https://pytest.readthedocs.io>`__ framework, to shorten test-code.
 
   - :ref:`pytest_into` is a summary with everything you need for this exercise.
   - You can use :ref:`dPID_test_examples` as *template* for your own files.
@@ -60,11 +60,11 @@ Instructions
 
   - It should run both the existing example, and the new test-file.
   - The test should fail! As the *empty* class always returns ``0``, that is easy.
-  - Watch for *syntax errors*, and errors but AssertionError. Improve your code when needed
+  - Watch for *syntax* and other errors! All, but AssertionError, should be resolved in your code
 
-* Repeat, either by adding test-function to that file, or adding more test-files.
+* Repeat, either by adding a test-function to that file, or adding more test-files.
 
-  - When needed, you can add auxiliary functions; just don’t use the *test*-phrase in there name.
+  - When needed, you can add auxiliary functions; just don’t use the *test*-phrase in its name.
   - Or continue first with the implementation part. And add more test later (for other functions).
   - Each test should be a little more complicated as the existing onces.
   - Or better: start with the trivial once. Then the almost-trivial, etc.
