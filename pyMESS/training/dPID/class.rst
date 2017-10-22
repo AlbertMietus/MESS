@@ -6,10 +6,10 @@ dPID: The dPID class
 ====================
 :status: RC-1.0
 
-This articles shows the :class:`dpid.PID` documentation, as specified in :ref:`the python file
+This article shows the :class:`dpid.PID` documentation, as specified in :ref:`the python file
 <dPID_code>`.
 
-It specifies the *interface* the discrete-PID-controller. Study it to understand how the
+It specifies the *interface* to a discrete-PID-controller. Study it to understand how the
 class should be used. Then start writing python code to test it.
 
 .. attention:: Its’ a **python-coding** exercise
