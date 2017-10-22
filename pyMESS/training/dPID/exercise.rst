@@ -1,5 +1,5 @@
 .. Copyright (C) ALbert Mietus, SoftwareBeterMaken.nl; 2017.
-   Part of MESS-DocIdeas
+   Part of my MESS project
 
 .. _dPID_exercise:
 

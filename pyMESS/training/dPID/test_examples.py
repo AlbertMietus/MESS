@@ -1,4 +1,5 @@
-# Copyright (C) 2017: ALbert Mietus, -*- coding: utf-8 -*-
+# Copyright (C) 2017: ALbert Mietus, SoftwareBeterMaken
+# Part of my MESS project
 # Dropjes licencie: Beloon me met dropjes naar nuttigheid
 
 import pytest

@@ -1,5 +1,5 @@
 .. Copyright (C) ALbert Mietus, SoftwareBeterMaken.nl; 2017.
-   Part of MESS-DocIdeas
+   Part of my MESS project
 
 .. _pytest_into:
 
@@ -42,7 +42,7 @@ Example
     [Albert@pyMESS:../dPID] % pytest
     ======================================================== test session starts =========================================================
     platform darwin -- Python 3.4.1, pytest-3.0.4, py-1.4.31, pluggy-0.4.0
-    rootdir: /Users/albert/work/MESS-DocIdeas,hg/BureauLade/dPID, inifile:
+    rootdir: /Users/albert/work/MESS,hg/pyMESS/training/dPID/dPID, inifile:
     collected 2 items
 
     test_examples.py .F

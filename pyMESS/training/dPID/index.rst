@@ -1,5 +1,5 @@
 .. Copyright (C) ALbert Mietus, SoftwareBeterMaken.nl; 2017.
-   Part of MESS-DocIdeas
+   Part of MESS
 
 **********************************
 dPID: A Python ‘homework’ exercise
