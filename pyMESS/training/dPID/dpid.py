@@ -9,9 +9,9 @@ logger = getLogger(__name__)
 class dPID:
     """A simple discrete-PID controller, as an exercise.
 
-    This PID-controller can be initialised with constantes for P,I and D;
+    This PID-controller can be initialised with constantes for ``P``, ``I`` and ``D``;
     which can't be changed afterwards.  Optional, a minimum and maximum
-    output value can be given; both duration initialisation, and later.
+    output value can be given; both during initialisation, and later.
 
     The controller has two **inputs**: :meth:`.setpoint` and
     :meth:`.measured`, and one **output**: :meth:`.result`. Those inputs can
@@ -23,7 +23,7 @@ class dPID:
 
     The :meth:`.setpoint` is considered as a step-function: between two
     changes, it will remain the last value. The :meth:`.measured` value
-    however should be considered as a continues linear-changing value. So,
+    however should be considered as a continuously linear-changing value. So,
     between two updates of this value, the dPID-controller will interpolate
     linearly.
 
@@ -38,9 +38,8 @@ class dPID:
 
     .. hint:: As this class is part of an exercise; no implementation is given.
 
-       One should (after writing the test-functions; and when addressed by
-       the trainer) will in the implementation, without(!) changing the
-       interface!
+       During the training one should update this file to implement the class
+       **without** changing the interface.
 
        All (numeric) input & output values are either integers or floats.
 
