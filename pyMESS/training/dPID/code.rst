@@ -26,5 +26,13 @@ The class (empty)
    :language: python
    :linenos:
 
+Downloads
+==========
+
+You can download these files directly from 
+`bitbucket <https://bitbucket.org/ALbert_Mietus/mess>`__
+
+* https://bitbucket.org/ALbert_Mietus/mess/raw/default/pyMESS/training/dPID/test_examples.py
+* https://bitbucket.org/ALbert_Mietus/mess/raw/default/pyMESS/training/dPID/dpid.py
 
 
