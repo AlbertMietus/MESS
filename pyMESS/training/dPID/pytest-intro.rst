@@ -9,7 +9,7 @@ Pytest introduction
 :status: Beta
 
 
-By using pytest_, its becomes simple to run one, several or all test-functions. It has many
+By using pytest_, it becomes simple to run one, several or all test-functions. It has many
 advanced features, which are not needed for this exercise; but feel free to visit the website.
 
 Pytest_ uses *autodiscovery* to find all tests. This makes all test-scripts a lot shorter (and easier
@@ -37,7 +37,7 @@ Example
 
     [Albert@pyMESS:] % pip install pytest
 
-* Running all test (in 1 directory) is trivial too::
+* Running all tests (in 1 directory) is trivial too::
 
     [Albert@pyMESS:../dPID] % pytest
     ======================================================== test session starts =========================================================
@@ -94,11 +94,10 @@ To make this (*autodiscovery*) possible, one has to fullfil a few conventions:
 
 #. Test-functions are called without arguments
 
-   * It possible to define ‘parameter’; they are used as `fixtures
+   * We don't use/need `fixtures
      <https://docs.pytest.org/en/latest/fixture.html?highlight=fixture>`__
-
-   * Those aren’t needed for this exercise. So, define all test-functions without parameters!
-
+     here; which look like function-parameters. 
+     So, define all test-functions without parameters!
 
 OK or NOK: Assert on failure
 ============================
@@ -108,9 +107,9 @@ to log (print) intermediate results; that can’t replace the OK/NOK bit however
 
 With pytest_ this is easy: use the ``assert`` *statement*!
 
-Typically a test ends with an assert. However, it perfectly normal to have many asserts in one
+Typically a test ends with an assert. However, it's perfectly normal to have many asserts in one
 test-function; each one acts as a kind of sub-test. When a test succeeds hardly any output is
-generated; preventing cluttering of the tets-reports.
+generated; preventing cluttering of the test-reports.
 
 When the first assert-expression results in ``False`` the test Fails. Then that AssertionError is
 show with some context. Giving the programmer feedback on which test fails and why.
@@ -122,6 +121,7 @@ show with some context. Giving the programmer feedback on which test fails and w
    Don’t use it as a function; which is a common (starters) mistake. Then, it is read as a single
    expression: a tuple with two elements. Which is always ``True``. So the ``assert`` never fails!
 
-   Typically, the second expression is string explaining what the test expected during this test.
+   Typically, the second expression is a string explaining what is expected.
+   And so, documents that part of the test.
 
 .. _pytest: https://pytest.readthedocs.io/
