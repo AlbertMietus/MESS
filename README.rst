@@ -24,12 +24,12 @@ ReadMe
       * Routers, PLCs, EMUs, the TCP/IP-stack, ...
 
       Traditionally, that “small” software was called “RealTime” and/or “Embedded”.  Currently most
-      of that software isn’t *’small’* anymore, nor *‘embedded (in a product)’*. Furthermore, all
+      of that software isn’t *'small'* anymore, nor *‘embedded (in a product)’*. Furthermore, all
       *normal* software appears to be realtime; mostly due hardware-speedup.
 
-      And, there is a lot of software, like (kernel)-drivers, compilers and SW-tools which really
+      And, there is a lot of software, like (kernel)-drivers, compilers and SW-tools which
       isn’t embedded, nor realtime; but should have the quality that is equivalent to that old-
-      school engineering. As everybody depend on it -- directly (sw-engineering) or indirectly (a
+      school engineering. As everybody depends on it -- directly (sw-engineering) or indirectly (a
       bug in a compiler will effect all end-users!).
 
 
@@ -41,8 +41,8 @@ ReadMe
       in a language (both computer and human), that is very contrasting with the technology-talk of
       typical “RealTime/Embedded” engineering. And so, often rejected, or not seen as relevant.
 
-      Although there examples too dissimular in many casses, the concepts can be useful. There is
-      no valid reason not to incorporate there modern approach of software-engineering into *our*
+      Although their examples are too dissimular in many casses, the concepts can be useful. There is
+      no valid reason not to incorporate their modern approach of software-engineering into *our*
       process.
 
 .. MARKER_2
