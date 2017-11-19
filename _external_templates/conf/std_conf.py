@@ -35,23 +35,26 @@ rst_prolog = """
 ### Normal HTML output
 ###
 
-html_theme = 'classic'
-html_style = 'SwBMnl-sphinx.css'
-
-# # HTML-Slides (using Hieroglyph)
-# #-------------------------------
-# extensions.append('hieroglyph')
-#
-# slide_theme = 'slides'
-# slide_levels = 2
-#
-# slide_theme_options = {'custom_css': 'SwBMnl-hieroglyph_slides=article.css'}
-#
-# slide_link_to_html=False
-# slide_link_html_to_slides=False
-
+html_theme = 'sphinx_rtd_theme'
+html_theme_options = {
+    'collapse_navigation': True,
+    'display_version': True,
+}
+html_style = 'SwBMnl+rtfd.css'
 
 # sphinx.ext.todo
 #-----------------
 extensions.append('sphinx.ext.todo')
 todo_include_todos=True
+
+# sphinx.ext.autodoc'
+#--------------------
+extensions.append('sphinx.ext.autodoc')
+autodoc_member_order='bysource'
+
+
+# plantUML
+#---------
+if not on_rtd:
+    extensions.append('sphinxcontrib.plantuml')
+    plantuml = 'java -jar /Users/albert/Apps/PlantUML/libexec/plantuml.jar -nogui'

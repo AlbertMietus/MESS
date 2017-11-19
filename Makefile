@@ -47,3 +47,16 @@ cleanest: cleaner; #nothing extra
 
 run_pytests::
 	-(cd pyMESS/training/dPID/; pytest)
+
+HOGSMEADEd = /Volumes/albert/Sites/MESS/
+
+Hogsmeade_check: # Is `~albert` on Hogsmeade mounted?
+	@echo -n Checking ${HOGSMEADEd} ...
+	@[ -d ${HOGSMEADEd} ]
+	@echo ok
+
+Hogsmeade: Hogsmeade_check
+	${MAKE} OUTd=${HOGSMEADEd} 
+
+Hogsmeade-clean: Hogsmeade_check
+	${MAKE} OUTd=${HOGSMEADEd} cleanest

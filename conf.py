@@ -7,10 +7,8 @@ import sys; sys.path.append('_external_templates/conf')
 from std_conf import *
 
 
-extensions.append('sphinx.ext.autodoc')                                 # Move to std_conf?
-autodoc_member_order='bysource'
-import os.path
-sys.path.append('pyMESS/training/dPID')
+# For sphinx.ext.autodoc':
+import os.path; sys.path.append('pyMESS/training/dPID')
 
 # General information about the project.
 #======================================
@@ -24,14 +22,25 @@ version = release
 # Overrule std_conf, where needed
 #================================
 
-html_title = project + " | " + release # DEFAULT: '<project> v<revision> documentation' -- Strip "documentation"
-
-
-# plantUML
-#---------
-if not on_rtd:
-    extensions.append('sphinxcontrib.plantuml')
-    plantuml = 'java -jar /Users/albert/Apps/PlantUML/libexec/plantuml.jar -nogui'
+#html_title = project + " | " + release # DEFAULT: '<project> v<revision> documentation' -- Strip "documentation"
 
 
 
+
+# ABlog
+#------
+extensions.append('ablog')
+import ablog; templates_path.append(ablog.get_html_templates_path())
+fontawesome_link_cdn = "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+post_date_format = '%Y/%m/%d'
+post_date_format_short = '%Y/%m'
+
+blog_authors = {'GAM' : ('ALbert Mietus', 'http://albert.mietus.nl') }
+blog_default_author = 'GAM'
+blog_languages = {'nl'  : ('Nederlands', None) }
+blog_default_language = 'nl'
+post_always_section = True
+
+blog_baseurl = 'http://mess.softwarebetermaken.nl/'
+disqus_shortname = 'mess-swbmnl'
+disqus_pages = True

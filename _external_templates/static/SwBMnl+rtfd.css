@@ -1,0 +1,19 @@
+/*SwBMnl style on top of 'sphinx_rtd_theme'*/
+
+@import url("css/theme.css");
+
+.wy-nav-top, .wy-nav-side { background-color: #000066;} 
+
+div.wy-side-nav-search {
+    background-color: #000066; color: #808080;
+    border-bottom: 2px solid #c0c0c0;
+}
+
+h1,h2,h3 { background-color: #808080; color: #eeeeff;
+           margin: 1ex -1em 1ex -1em;
+           padding : 0 1em;
+         }
+
+div.wy-nav-content {padding: 1em;
+                    max-width: 100%;
+                   }
