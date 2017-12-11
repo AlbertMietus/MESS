@@ -1,0 +1,23 @@
+{# Edited "copy" of RTfD breadcrumbs -as it has no blocks --GAM #}
+
+{% if page_source_suffix %}
+{% set suffix = page_source_suffix %}
+{% else %}
+{% set suffix = source_suffix %}
+{% endif %}
+
+<div class="breadcrumbs" role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+
+    {% block GAM_prev %}{% endblock %}
+    {% block GAM_next %}{% endblock %}
+
+    {% for doc in parents %}
+      <li><span class="fa fa-level-up"></span><a href="{{ doc.link|e }}">{{ doc.title }}</a></li>
+    {% endfor %}
+    <span class="fa fa-folder-o"></span>
+
+    {% block source %}{% endblock %}
+
+  </ul>
+</div>

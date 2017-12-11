@@ -26,7 +26,6 @@ version = release
 
 
 
-
 # ABlog
 #------
 extensions.append('ablog')

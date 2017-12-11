@@ -42,6 +42,10 @@ html_theme_options = {
 }
 html_style = 'SwBMnl+rtfd.css'
 
+
+#html_logo= ...file...
+#html_theme_options['logo_only']=True # True: only logo, False: Logo & name
+
 # sphinx.ext.todo
 #-----------------
 extensions.append('sphinx.ext.todo')

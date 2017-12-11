@@ -56,7 +56,7 @@ Hogsmeade_check: # Is `~albert` on Hogsmeade mounted?
 	@echo ok
 
 Hogsmeade: Hogsmeade_check
-	${MAKE} OUTd=${HOGSMEADEd} 
+	${MAKE} OUTd=${HOGSMEADEd}
 
 Hogsmeade-clean: Hogsmeade_check
 	${MAKE} OUTd=${HOGSMEADEd} cleanest
