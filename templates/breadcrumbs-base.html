@@ -1,4 +1,5 @@
 {# Edited "copy" of RTfD breadcrumbs -as it has no blocks --GAM #}
+{# See ./ORG/breadcrumbs.html for base-version --BEZIG #}
 
 {% if page_source_suffix %}
 {% set suffix = page_source_suffix %}
@@ -6,18 +7,39 @@
 {% set suffix = source_suffix %}
 {% endif %}
 
-<div class="breadcrumbs" role="navigation" aria-label="breadcrumbs navigation">
+{% if meta is defined and meta is not none %}
+{% set check_meta = True %}
+{% else %}
+{% set check_meta = False %}
+{% endif %}
+
+{% if check_meta and 'github_url' in meta %}
+{% set display_github = True %}
+{% endif %}
+
+{% if check_meta and 'bitbucket_url' in meta %}
+{% set display_bitbucket = True %}
+{% endif %}
+
+{% if check_meta and 'gitlab_url' in meta %}
+{% set display_gitlab = True %}
+{% endif %}
+
+<div role="navigation" aria-label="breadcrumbs navigation" class="breadcrumbs"> {#GAM: added class #}
   <ul class="wy-breadcrumbs">
 
-    {% block GAM_prev %}{% endblock %}
-    {% block GAM_next %}{% endblock %}
+    {% if (theme_prev_next_buttons_location == 'top' or theme_prev_next_buttons_location == 'both')  %}
+      {% block GAM_prev %}{% endblock %}
+      {% block GAM_next %}{% endblock %}
+    {% endif %}
 
     {% for doc in parents %}
       <li><span class="fa fa-level-up"></span><a href="{{ doc.link|e }}">{{ doc.title }}</a></li>
     {% endfor %}
     <span class="fa fa-folder-o"></span>
 
-    {% block source %}{% endblock %}
+    {% block breadcrumbs_aside %}{% endblock %}
 
   </ul>
+  <hr/>
 </div>
