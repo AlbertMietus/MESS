@@ -26,20 +26,21 @@ version = release
 
 
 
-# ABlog
-#------
-extensions.append('ablog')
-import ablog; templates_path.append(ablog.get_html_templates_path())
-fontawesome_link_cdn = "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-post_date_format = '%Y/%m/%d'
-post_date_format_short = '%Y/%m'
+if False:
+    # ABlog
+    #------
+    extensions.append('ablog')
+    import ablog; templates_path.append(ablog.get_html_templates_path())
+    fontawesome_link_cdn = "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    post_date_format = '%Y/%m/%d'
+    post_date_format_short = '%Y/%m'
 
-blog_authors = {'GAM' : ('ALbert Mietus', 'http://albert.mietus.nl') }
-blog_default_author = 'GAM'
-blog_languages = {'nl'  : ('Nederlands', None) }
-blog_default_language = 'nl'
-post_always_section = True
+    blog_authors = {'GAM' : ('ALbert Mietus', 'http://albert.mietus.nl') }
+    blog_default_author = 'GAM'
+    blog_languages = {'nl'  : ('Nederlands', None) }
+    blog_default_language = 'nl'
+    post_always_section = True
 
-blog_baseurl = 'http://mess.softwarebetermaken.nl/'
-disqus_shortname = 'mess-swbmnl'
-disqus_pages = True
+    blog_baseurl = 'http://mess.softwarebetermaken.nl/'
+    disqus_shortname = 'mess-swbmnl'
+    disqus_pages = True
