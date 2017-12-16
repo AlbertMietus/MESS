@@ -25,6 +25,8 @@ version = release
 #html_title = project + " | " + release # DEFAULT: '<project> v<revision> documentation' -- Strip "documentation"
 
 
+def setup(app):
+    app.add_stylesheet('/_static/SwBMnl+rtfd.css')
 
 if False:
     # ABlog
@@ -45,6 +47,3 @@ if False:
     disqus_shortname = 'mess-swbmnl'
     disqus_pages = True
 
-if 'html_theme' in globals():
-    print("html_theme:", html_theme)
-    
