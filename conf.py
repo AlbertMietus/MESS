@@ -26,7 +26,7 @@ version = release
 
 
 def setup(app):
-    app.add_stylesheet('/_static/SwBMnl+rtfd.css')
+    app.add_stylesheet('../_static/SwBMnl+rtfd.css')
 
 if False:
     # ABlog
