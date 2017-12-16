@@ -44,3 +44,7 @@ if False:
     blog_baseurl = 'http://mess.softwarebetermaken.nl/'
     disqus_shortname = 'mess-swbmnl'
     disqus_pages = True
+
+if 'html_theme' in globals():
+    print("html_theme:", html_theme)
+    
