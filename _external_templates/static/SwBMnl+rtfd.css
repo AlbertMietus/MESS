@@ -29,4 +29,7 @@ div.breadcrumbs {
     padding-top: 0.5ex;
 }
 
-
+@media screen and (max-width: 768px) {
+    .wy-nav-content-wrap .wy-nav-content {padding:1.618em; padding-top:0; }
+    div.breadcrumbs { margin: 0 -1.618em 1ex -1.618em;}
+}
