@@ -15,7 +15,7 @@ master_doc = 'index'
 source_suffix = '.rst'
 exclude_patterns = ['**/.#*', '**/_*']
 html_static_path = ['_external_templates/static/']
-templates_path = ['templates']
+templates_path = ['_templates']
 
 ###
 ### Kick off
