@@ -28,7 +28,7 @@ version = release
 def setup(app):
     app.add_stylesheet('../_static/SwBMnl+rtfd.css')
 
-if False:
+if True:
     # ABlog
     #------
     extensions.append('ablog')
@@ -45,5 +45,9 @@ if False:
 
     blog_baseurl = 'http://mess.softwarebetermaken.nl/'
     disqus_shortname = 'mess-swbmnl'
-    disqus_pages = True
+    disqus_pages = True                                                 # All pages have a disqus-section
+    disqus_drafts = False                                               # .. but the draft (blog) pages (.. post:: without date )
 
+    html_sidebars = {
+        '**': [ 'recentposts.html', 'tagcloud.html'],
+    }
