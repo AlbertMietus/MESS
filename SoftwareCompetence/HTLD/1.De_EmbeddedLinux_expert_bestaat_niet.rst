@@ -1,0 +1,40 @@
+.. Copyright (C) ALbert Mietus & Sogeti.HT; 2019
+
+=====================================
+De Embedded Linux expert bestaat niet
+=====================================
+:reading-time: [count-words/300]min
+
+.. 2019/03/07 
+.. post:: 
+   :tags: HTLD
+   :category:
+   :location: Eindhoven
+   :language: nl
+
+   Zo’n 15 jaar geleden was ik één van de mensen die **“Embedded Linux”** in Nederland introduceerden. Dat resulteerden
+   in diverse presentaties en artikelen -- “blogs” zouden we nu zeggen. Maar ook in een product: EQSL; Embedded
+   QuickStart Linux. Voor veel ervaren *realtime/embedded* ontwikkelaars was Linux *toen* heel nieuw, heel groot &
+   complex en vooral verwarrend. Met de EQSL-CD konden ze een embedded Linux systeem bouwen: vanaf boekje lezen, via
+   installeren, bouwen tot installeren en opstarten in minder dan een halve dag! Dat was in 2016 een hele prestatie.
+
+   Embedded Linux wordt nu alom gebruikt en nog steeds “sexy”. Toch is er nog steeds verwarring. Want wanneer ben je expert?
+
+Wederom krijg ik regelmatig “experts” aangeboden. Ook omdat we opnieuw bezig zijn de markt te helpen. Nu met een ander
+4-letter acroniem: **HTLD**; *HighTech Linux Delivery*. Vaak zijn het goede mensen; maar zelden zijn het de juiste
+experts. En toch staat Linux prominent of nu CV. Daarom een snelcursus die juiste expert herkennen ...
+
+Wat is een (Embedded) Linux Expert?
+===================================
+
+Bla
+
+----------
+
+.. rubric:: Footnotes & Links
+
+Een paar eerdere publicaties:
+
+* [13 okt 2005] https://bits-chips.nl/artikel/snelle-linux-overstap-begint-bij-toepassing/
+* [11 mei 2006] https://bits-chips.nl/artikel/pts-bouwt-opstapje-naar-embedded-linux
+* [reprints ‘12] http://albert.mietus.nl/read.IT/Proponotheek/index.html (reeks van 4)

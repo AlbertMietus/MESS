@@ -1,0 +1,45 @@
+.. Copyright (C) ALbert Mietus & Sogeti.HT; 2019
+
+=====================================
+Waarom is een simpele driver zo duur?
+=====================================
+
+:reading-time: [count-words/300]min
+
+.. post::
+   :tags: HTLD
+   :category:
+   :location: Eindhoven
+   :language: nl
+
+   Linux is een veel gebruikt ‘OS’, ook voor **embedded systemen**. Omdat het een standaard product is, is er veel
+   *gratis* beschikbaar. Zoals Linux zelf; maar ook heel veel tools en bibliotheken zijn vrij te gebruiken.  En
+   tegenwoordig zijn ook veel (jonge) ontwikkelaars die “Linux” al leerden op de HTS of de TUs. En toch valt het soms
+   tegen. Waarom eigenlijk?
+
+Wat kan een Linux expert?
+=========================
+
+Er zijn waarschijnlijk meer dan één miljoen experts op gebied van Linux; waarvan duizenden in Nederland. Maar niet al
+die experts hebben expertise in het hetzelfde stukje Linux! De overgrote meerderheid richt zich op “klassieke IT”. Vaak
+zijn het geen *ontwikkelaars* maar *beheerders* Erg handig om “High availability” clusters (of tegenwoordig: cloud
+computers) te configureren; maar niet bedreven in het ontwikkelen van een Linux-**driver**.
+
+Ook is Linux nog steeds sexy; te pas en toe onpas zet met Linux op hun CV. Soms komt ik mensen tegen die zich Linux
+expert noemen, maar niet meer kunnen dat standaard distributie op een standaard PC kunnen installeren; en dat met 2 of
+drie muis-kliks. Goed hoor!
+
+
+Ontwikkelen: Op, Voor of Van?
+-----------------------------
+
+Eigen Hardware?
+===============
+
+Nieuwe drivers!
+---------------
+
+* Inwerken: 3mnd
+* Programmeren: 3mnd
+* Actualiseren: opnieuw
+
