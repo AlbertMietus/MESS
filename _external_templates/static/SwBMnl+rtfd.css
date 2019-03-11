@@ -33,3 +33,10 @@ div.breadcrumbs {
     .wy-nav-content-wrap .wy-nav-content {padding:1.618em; padding-top:0; }
     div.breadcrumbs { margin: 0 -1.618em 1ex -1.618em;}
 }
+
+/* Make the (:reading time:) field-list stand out, a bit */
+.rst-content table.field-list {
+    float: right;
+    background: rgb(165,179,186);
+    border: 1px solid rgb(0,60,88);
+}
