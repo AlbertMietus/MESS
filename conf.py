@@ -1,4 +1,4 @@
-# Copyright (C) ALbert Mietus, SoftwareBeterMaken.nl; 2017. Part of my MESS project
+# Copyright (C) ALbert Mietus, SoftwareBeterMaken.nl; 2017, 2019. Part of my MESS project
 # -*- coding: utf-8 -*-
 
 # read STD config ...
@@ -13,7 +13,7 @@ import os.path; sys.path.append('pyMESS/training/dPID')
 # General information about the project.
 #======================================
 project = 'MESS'
-copyright = "ALbert Mietus, 2017"
+copyright = "ALbert Mietus, 2017, 2019"
 
 from datetime import datetime
 release = datetime.now().strftime("%Y%m%d.%H")
