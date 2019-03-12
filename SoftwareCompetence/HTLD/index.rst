@@ -5,12 +5,6 @@
 HTLD: *HighTech Linux Delivery*
 ===============================
 
-.. post::
-   :tags: HTLD
-   :category:
-   :location: Eindhoven
-   :language: en
-
 Here, you will find some blog-style articles about HTLD; An service Sogeti.HighTech (NL) is going to offer.
 
 

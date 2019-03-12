@@ -1,40 +1,136 @@
 .. Copyright (C) ALbert Mietus & Sogeti.HT; 2019
 
 =====================================
-De Embedded Linux expert bestaat niet
+De Embedded Linux Expert bestaat niet
 =====================================
 :reading-time: [count-words/300]min
 
-.. 2019/03/07 
-.. post:: 
+.. 2019/03/07		
+.. post::		
    :tags: HTLD
    :category:
    :location: Eindhoven
    :language: nl
 
-   Zo’n 15 jaar geleden was ik één van de mensen die **“Embedded Linux”** in Nederland introduceerden. Dat resulteerden
-   in diverse presentaties en artikelen -- “blogs” zouden we nu zeggen. Maar ook in een product: EQSL; Embedded
-   QuickStart Linux. Voor veel ervaren *realtime/embedded* ontwikkelaars was Linux *toen* heel nieuw, heel groot &
-   complex en vooral verwarrend. Met de EQSL-CD konden ze een embedded Linux systeem bouwen: vanaf boekje lezen, via
-   installeren, bouwen tot installeren en opstarten in minder dan een halve dag! Dat was in 2016 een hele prestatie.
+   Regelmatig krijg ik “Embedded Linux Experts” aangeboden; bijvoorbeeld voor het **HTLD**-team (*HighTech Linux
+   Delivery*).  Ze zouden heel goed zijn, ook met Linux zijn.  Toch zijn het zelden de juiste experts.  Daarom een paar
+   hits waarmee je “de” Embedded Linux Expert herkent.  Immers, alleen het woordje ‘Linux’ op een CV is onvoldoende!
 
-   Embedded Linux wordt nu alom gebruikt en nog steeds “sexy”. Toch is er nog steeds verwarring. Want wanneer ben je expert?
+Zo’n 15 jaar geleden was ik één van de mensen die “**Embedded Linux**” in Nederland introduceerden.  Via diverse
+presentaties en artikelen resulteerde dat in “moderne” expertise.  Ook was er een tool: EQSL; Embedded QuickStart Linux.
+Immers, voor veel ervaren *realtime/embedded* ontwikkelaars was Linux *toen* heel nieuw, heel groot & complex en vooral
+*verwarrend*.  Met de EQSL-CD konden ze een toch snel een Embedded Linux systeem bouwen.  Vanaf boekje lezen, via
+installeren, bouwen, installeren tot en met opstarten, in minder dan een halve dag! Dat was in 2016 een hele prestatie;
+er waren immers niet veel *Embedded Linux experts*.
 
-Wederom krijg ik regelmatig “experts” aangeboden. Ook omdat we opnieuw bezig zijn de markt te helpen. Nu met een ander
-4-letter acroniem: **HTLD**; *HighTech Linux Delivery*. Vaak zijn het goede mensen; maar zelden zijn het de juiste
-experts. En toch staat Linux prominent of nu CV. Daarom een snelcursus die juiste expert herkennen ...
+Embedded Linux wordt nu alom gebruikt en is nog steeds “sexy”.  Toch is er nog steeds verwarring.  Want wanneer ben je
+expert? Soms komt ik mensen tegen die zich *Linux “expert”* noemen, omdat ze een standaard distributie op een standaard
+PC kunnen installeren; en dat met 2 of drie muis-kliks.  Goed hoor! Maar niet wat ik zoek ...
 
-Wat is een (Embedded) Linux Expert?
-===================================
+Wederom krijg ik regelmatig “experts” aangeboden.  Ook omdat we opnieuw bezig zijn de markt te helpen.  Nu met een ander
+4-letter acroniem: **HTLD**; *HighTech Linux Delivery*.  Vaak zijn het goede mensen; maar zelden zijn het de juiste
+experts.  En toch staat Linux prominent op hun CV.  Daarom een snelcursus om die juiste expert te herkennen ...
 
-Bla
+
+Wat kan een Linux expert?
+=========================
+
+Er zijn waarschijnlijk meer dan één miljoen experts op gebied van Linux; waarvan duizenden in Nederland.  Maar niet al
+die experts hebben expertise in het hetzelfde stukje Linux! De overgrote meerderheid richt zich op “klassieke IT”.  Vaak
+zijn het geen *ontwikkelaars* maar *beheerders*.  Erg handig om “high availability” clusters (of tegenwoordig: cloud
+computers) te configureren; maar niet bedreven in het ontwikkelen van een Linux-*driver*.
+
+
+   Een Embedded Linux Expert kan veel meer dan “Linux” beheren! Zo moet zij/hij **ook** een ontwikkelaar zijn.  En nog veel meer ...
+
+
+Wat kan een Linux ontwikkelaar?
+===============================
+
+Er zijn heel veel ontwikkelaars, die verstand van Linux hebben.  En opnieuw zijn ze niet gelijk.  Globaal zijn er 3
+soorten linux-ontwikkelaars; afhankelijk van wat ze ontwikkelen.  De vraag is:
+
+1) Maken ze applicaties die (toevallig, ook) op Linux draaien?
+2) Gebruiken ze Linux als ontwikkelomgeving?
+3) Ontwikkelen ze Linux zelf?
+
+..
+
+   Ik ben vooral geïnteresseerd in het laatste type.  Een Embedded Linux expert moet **ook** de code van Linux zelf beheersen.
+
+
+Wat kan Embedded Linux Expert?
+==============================
+
+De Linux Expert die we zoeken heeft dus verstand van Linux; is ontwikkelaar en heeft ervaring met de source-code van
+Linux zelf.  Typisch hebben ze ook veel passie voor Linux: het is meer dan werk of een hobby; het is bijna een
+*life-style*.  Een beetje Linux-ontwikkelaar compileert regelmatig zijn eigen kernel, direct van de kernel-sources;
+en liefst met zelf gebouwde *toolchain*.  Vaak vooral omdat het kan, niet omdat het moet; het is immers leuk!
+
+Is dat complex en ingewikkeld? Ja behoorlijk, voor de meeste mensen Zoals gezegd, 15 jaar geleden was het zelfs (te) complex
+voor veel ervaren embedded ontwikkelaars.  Inmiddels zijn er duizenden (betaalde) “vrijwilligers” die dit met liefde
+doen.  Achter elke ‘distributie’[#Linuxdistributie]_ zijn Linux Expert druk bezig met het beter maken van de code, en
+die te compileren; zodat gebruikers die kunnen installeren op hun PC.
+
+U leest het goed: de “PC”.  De meeste distributies, en de meeste Linux ontwikkelaars, richten zich primair op de PC.
+Dat kan een laptop zijn, of een server; of desnoods een cloud computer.
+
+   Een Embedded Linux Expert kan veel meer ...
+
+Zij/hij heeft **ook** verstand van en ervaring met Embedded Software; dus van “drivers”[#driver]_, “BSPs”[#BSP]_
+(Board Support Packages) en “bootloaders”[#bootloader]_.  En **ook** van “Cross Compileren”[#CrossCompiler]_; van
+“toolchains”[#toolchain]_, zoals “Buildroot” en “Yocto”; maar ook van (gnu) “Makefiles”[#GnuMake]_, want (Embedded)
+Linux kan niet zonder.
+
+
+Zo herken je die expert!
+========================
+
+Ja, dat zijn veel complexe termen bij elkaar.  Behalve voor de expert die we zoeken; het immers een expert!
+
+   Als iemand niet weet wat die termen betekenen, dan is het niet de expert die ik zoek!
+
+Ook verwacht ik van een Embedded Linux Expert, dat zij weet waar de “kernel-sources”[#kernelorg]_ staat, waar hij de
+rest van “Linux-code”[#gnuhome]_ kan vinden en ook de “busybox”[#busybox]_.
+
+Natuurlijk loop ik de kans dat iemand nu die termen in zijn CV gaat zetten.  Maar dan heb ik nog vragen als: heb je
+ervaring met de meest gebruikte Embedded Linux processor? Want zit die in bijna alle smartphones, die op embedded Linux
+draaien, alleen de expert weten dat het de “ARM”[#arm]_ is.
 
 ----------
 
 .. rubric:: Footnotes & Links
 
-Een paar eerdere publicaties:
+
+Een paar (15 jaar) oude publicaties over Embedded Linux; ze zijn verouderd, maar soms nog verbazend actueel.
 
 * [13 okt 2005] https://bits-chips.nl/artikel/snelle-linux-overstap-begint-bij-toepassing/
 * [11 mei 2006] https://bits-chips.nl/artikel/pts-bouwt-opstapje-naar-embedded-linux
 * [reprints ‘12] http://albert.mietus.nl/read.IT/Proponotheek/index.html (reeks van 4)
+
+
+Een echte Embedded Linux Expert kent deze locaties uit zijn hoofd:
+
+.. [#kernelorg]  De source van de Linux kernel: https://www.kernel.org
+.. [#gnuhome] Veel andere Linux source code: https://www.gnu.org
+.. [#busybox] Alle bekende Unix-tools in mini-uitvoering  https://www.busybox.net
+
+Enkele experts-termen volgens wikipedia:
+
+.. [#Linuxdistributie] Er zijn meer dan 500 distributies zoals: Ubuntu, Suse, RedHat, Gentoo, etc! Zie oa https://nl.wikipedia.org/wiki/Linuxdistributie
+.. [#CrossCompiler]  https://en.wikipedia.org/wiki/Cross_compiler Over cross-compileren (*“XCC”*) en *Canadian Cross Compilers* (Engels).
+.. [#driver]         https://nl.wikipedia.org/wiki/Stuurprogramma Over (device) drivers, ook wel stuurprogramma genoemd.
+.. [#BSP]            https://en.wikipedia.org/wiki/Board_support_package Over de generieke “driver” voor een computerbord (Engels).
+.. [#bootloader]     https://nl.wikipedia.org/wiki/Bootloader Over software die alle software opstart
+.. [#toolchain]      https://en.wikipedia.org/wiki/Toolchain Over de software-tools om software te maken en hun
+                     (complexe) relaties.
+.. [#Yocto]          https://www.yoctoproject.org; Yocto, is een toolchain om ‘custom’ Linux te compileren
+.. [#Buildroot]      https://buildroot.org; Buildroot, is een andere toolchain om Embedded Linux te bouwen
+.. [#GnuMake]        Linux gebruikt GnuMake; zie https://nl.wikipedia.org/wiki/Make_(computerprogramma) voor Makefile(s)
+.. [#arm]            De ARM CPU zit niet alleen in (vrijwel) alle smartphones; ook veel andere embedded systemen
+                     gebruiken deze.  Zie  https://nl.wikipedia.org/wiki/ARM-architectuur
+
+
+
+
+
