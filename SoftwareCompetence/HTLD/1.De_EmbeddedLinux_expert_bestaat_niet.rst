@@ -93,9 +93,12 @@ Ja, dat zijn veel complexe termen bij elkaar.  Behalve voor de expert die we zoe
 Ook verwacht ik van een Embedded Linux Expert, dat zij weet waar de “kernel-sources”[#kernelorg]_ staat, waar hij de
 rest van “Linux-code”[#gnuhome]_ kan vinden en ook de “busybox”[#busybox]_.
 
-Natuurlijk loop ik de kans dat iemand nu die termen in zijn CV gaat zetten.  Maar dan heb ik nog vragen als: heb je
-ervaring met de meest gebruikte Embedded Linux processor? Want zit die in bijna alle smartphones, die op embedded Linux
-draaien, alleen de expert weten dat het de “ARM”[#arm]_ is.
+Natuurlijk loop ik nu de kans dat iemand nu die “XXX”-termen in zijn CV gaat zetten.  Maar dan heb ik altijd nog
+strikvragen als: *”Heb je ervaring met de meest gebruikte Embedded Linux processor?”* Want al zit die in bijna alle
+smartphones, alleen de expert weten dat het de “ARM”[#arm]_ is.  Gewone mensen zijn allen gebruiker, sommige mensen
+weten dat Android hebaseerd is op Embedded Linux.
+
+  En experts weten nog veel meer ...
 
 ----------
 
