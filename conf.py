@@ -1,4 +1,4 @@
-# Copyright (C) ALbert Mietus, SoftwareBeterMaken.nl; 2017. Part of my MESS project
+# Copyright (C) ALbert Mietus, SoftwareBeterMaken.nl; 2017, 2019. Part of my MESS project
 # -*- coding: utf-8 -*-
 
 # read STD config ...
@@ -13,7 +13,7 @@ import os.path; sys.path.append('pyMESS/training/dPID')
 # General information about the project.
 #======================================
 project = 'MESS'
-copyright = "ALbert Mietus, 2017"
+copyright = "ALbert Mietus, 2017, 2019"
 
 from datetime import datetime
 release = datetime.now().strftime("%Y%m%d.%H")
@@ -32,6 +32,7 @@ if True:
     # ABlog
     #------
     extensions.append('ablog')
+    extensions.append('sphinx.ext.intersphinx') # GAM: workaround?
     import ablog; templates_path.append(ablog.get_html_templates_path())
     fontawesome_link_cdn = "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
     post_date_format = '%Y/%m/%d'
@@ -49,5 +50,5 @@ if True:
     disqus_drafts = False                                               # .. but the draft (blog) pages (.. post:: without date )
 
     html_sidebars = {
-        '**': [ 'recentposts.html', 'tagcloud.html'],
+        '**': [ 'recentposts.html', 'tagcloud.html', 'postcardHeader.html'],
     }

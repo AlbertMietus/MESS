@@ -1,4 +1,4 @@
-# Copyright (C) ALbert Mietus, SoftwareBeterMaken.nl; 2017. Part of my MESS project
+# Copyright (C) ALbert Mietus, SoftwareBeterMaken.nl; 2017-2019. Part of my MESS project
 default: html
 
 docs_TARGETS =	html

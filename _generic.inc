@@ -8,3 +8,5 @@
    :class: line-remark
 
 
+.. role:: sogeti-email
+   :class: sogeti-email
