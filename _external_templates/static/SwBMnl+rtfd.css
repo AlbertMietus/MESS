@@ -33,3 +33,43 @@ div.breadcrumbs {
     .wy-nav-content-wrap .wy-nav-content {padding:1.618em; padding-top:0; }
     div.breadcrumbs { margin: 0 -1.618em 1ex -1.618em;}
 }
+
+/* Make the (:reading time:) field-list stand out, a bit */
+.rst-content table.field-list {
+    float: right;
+    color: #eeeeff; background: #808080;
+    border: 1px solid #000066;
+    margin-bottom: auto;
+    font-size: 80%;
+}
+
+/* Make a blockquote visual */
+.rst-content blockquote {
+    margin-left: 0; margin-right: 3em;
+    border-left: 5px solid #808080; padding-left: 5px;
+    color: #000066;
+}
+
+.sogeti-email:after {
+content: "\40 Sogeti \2e com";
+}
+
+div.GAM-extra #postcardHeader .blogdate {
+    color: #000066; background: #c0c0c0;
+    text-align: right;
+}
+
+div.GAM-extra #postcardHeader .blogdate published.fa {color: #000066; }
+div.GAM-extra #postcardHeader .draft  {color: #cc3333; }
+div.GAM-extra #postcardHeader { color: #cc3333; } /* The fa logo's */
+div.GAM-extra #postcardHeader li a { display: inline; }
+
+div.GAM-extra ul.ablog-cloud { background-color: #808080;}
+div.GAM-extra li.ablog-cloud {
+    color: #808080;    background-color: #000066;
+    border: 1px solid #c0c0c0;
+    border-radius: 33%;
+}
+
+/* Whitespace between/around footnotes should be small(er) */
+.rst-content div.footnote table.footnote tr td { padding: 1px 2em;}
