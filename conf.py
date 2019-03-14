@@ -32,6 +32,7 @@ if True:
     # ABlog
     #------
     extensions.append('ablog')
+    extensions.append('sphinx.ext.intersphinx') # GAM: workaround?
     import ablog; templates_path.append(ablog.get_html_templates_path())
     fontawesome_link_cdn = "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
     post_date_format = '%Y/%m/%d'
