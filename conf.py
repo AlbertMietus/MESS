@@ -49,5 +49,5 @@ if True:
     disqus_drafts = False                                               # .. but the draft (blog) pages (.. post:: without date )
 
     html_sidebars = {
-        '**': [ 'recentposts.html', 'tagcloud.html'],
+        '**': [ 'recentposts.html', 'tagcloud.html', 'postcardHeader.html'],
     }
