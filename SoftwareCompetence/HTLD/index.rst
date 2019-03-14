@@ -14,9 +14,10 @@ Here, you will find some blog-style articles about HTLD; An service Sogeti.HighT
 
    *
 
-When you are interested; yo can contact me:
 
--- Albert Mietus,  **+31 6 52 65 92 60**; albert *DOT* mietus *AT* sogeti *DOT* com
+When you are interested; you can contact me:
+
+--- :sogeti-email:`Albert.Mietus`; +31 (0)6 526 592 60
 
 
 

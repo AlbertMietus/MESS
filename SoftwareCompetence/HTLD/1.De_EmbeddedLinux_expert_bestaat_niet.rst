@@ -3,45 +3,45 @@
 =====================================
 De Embedded Linux Expert bestaat niet
 =====================================
-:reading-time: [count-words/300]min
+:reading-time: 3 minuten
 
-.. 2019/03/07		
-.. post::		
+.. post:: 2019/03/14
    :tags: HTLD
    :category:
    :location: Eindhoven
    :language: nl
 
-   Regelmatig krijg ik “Embedded Linux Experts” aangeboden; bijvoorbeeld voor het **HTLD**-team (*HighTech Linux
-   Delivery*).  Ze zouden heel goed zijn, ook met Linux zijn.  Toch zijn het zelden de juiste experts.  Daarom een paar
-   hits waarmee je “de” Embedded Linux Expert herkent.  Immers, alleen het woordje ‘Linux’ op een CV is onvoldoende!
+   Regelmatig krijg ik ‘Embedded Linux Experts’ aangeboden; bijvoorbeeld voor het **HTLD**-team (*HighTech Linux
+   Delivery*).  Vaak zijn goede mensen, met Linux ervaring; maar toch niet de mensen die ik zoek.  Het blijkt erg lastig
+   voor niet direct betrokken, om de juiste experts te spotten.  Daarom een paar hints waarmee je “de” Embedded Linux
+   Expert herkent.  Immers, alleen het woordje ‘Linux’ op een CV is onvoldoende!
 
 Zo’n 15 jaar geleden was ik één van de mensen die “**Embedded Linux**” in Nederland introduceerden.  Via diverse
 presentaties en artikelen resulteerde dat in “moderne” expertise.  Ook was er een tool: EQSL; Embedded QuickStart Linux.
 Immers, voor veel ervaren *realtime/embedded* ontwikkelaars was Linux *toen* heel nieuw, heel groot & complex en vooral
-*verwarrend*.  Met de EQSL-CD konden ze een toch snel een Embedded Linux systeem bouwen.  Vanaf boekje lezen, via
-installeren, bouwen, installeren tot en met opstarten, in minder dan een halve dag! Dat was in 2016 een hele prestatie;
-er waren immers niet veel *Embedded Linux experts*.
+*verwarrend*.  Met de EQSL-CD konden ze een toch snel een Embedded Linux systeem bouwen.  Vanaf boekje lezen, tools en
+opties selecteren, Linux bouwen, het image installeren tot en met opstarten van een custom embedded Linux, in minder dan
+een halve dag! Dat was in 2006 een hele prestatie; er waren immers niet veel *Embedded Linux experts*.
 
-Embedded Linux wordt nu alom gebruikt en is nog steeds “sexy”.  Toch is er nog steeds verwarring.  Want wanneer ben je
-expert? Soms komt ik mensen tegen die zich *Linux “expert”* noemen, omdat ze een standaard distributie op een standaard
-PC kunnen installeren; en dat met 2 of drie muis-kliks.  Goed hoor! Maar niet wat ik zoek ...
-
-Wederom krijg ik regelmatig “experts” aangeboden.  Ook omdat we opnieuw bezig zijn de markt te helpen.  Nu met een ander
-4-letter acroniem: **HTLD**; *HighTech Linux Delivery*.  Vaak zijn het goede mensen; maar zelden zijn het de juiste
-experts.  En toch staat Linux prominent op hun CV.  Daarom een snelcursus om die juiste expert te herkennen ...
+Opnieuw ben ik bezig met een Linux service, en dus aan het (uit)bouwen van team van Embedded Linux Experts.  Nu met een
+ander 4-letter acroniem: **HTLD**; *HighTech Linux Delivery*.  Er is veel belangstelling, en ook veel professionals
+willen graag meedoen.
 
 
 Wat kan een Linux expert?
 =========================
+
+Linux wordt nu alom gebruikt en is nog steeds “sexy”.  Toch is er nog steeds verwarring.  Want wanneer ben je expert?
+Iemand die een standaard distributie kan installeren op een standaard PC, met twee of drie muis-kliks is duidelijk nog
+geen expert.  Maar ga je al meetellen na duizend-uur, of pas na tienduizend? En hoe zit het met iemand met en 10-jaar
+ervaring, en Linux ervaring?
 
 Er zijn waarschijnlijk meer dan één miljoen experts op gebied van Linux; waarvan duizenden in Nederland.  Maar niet al
 die experts hebben expertise in het hetzelfde stukje Linux! De overgrote meerderheid richt zich op “klassieke IT”.  Vaak
 zijn het geen *ontwikkelaars* maar *beheerders*.  Erg handig om “high availability” clusters (of tegenwoordig: cloud
 computers) te configureren; maar niet bedreven in het ontwikkelen van een Linux-*driver*.
 
-
-   Een Embedded Linux Expert kan veel meer dan “Linux” beheren! Zo moet zij/hij **ook** een ontwikkelaar zijn.  En nog veel meer ...
+   Een Embedded Linux Expert kan veel meer dan “Linux” gebruiken! Zo moet zij/hij **ook** een ontwikkelaar zijn.  En nog veel meer ...
 
 
 Wat kan een Linux ontwikkelaar?
@@ -58,47 +58,60 @@ soorten linux-ontwikkelaars; afhankelijk van wat ze ontwikkelen.  De vraag is:
 
    Ik ben vooral geïnteresseerd in het laatste type.  Een Embedded Linux expert moet **ook** de code van Linux zelf beheersen.
 
+De Linux Expert die we zoeken heeft dus verstand van Linux; is ontwikkelaar en heeft ervaring met de source-code van
+Linux zelf.  Typisch hebben ze ook veel passie voor Linux: het is meer dan werk of een hobby; het is bijna een
+*life-style*.  Een beetje Linux-ontwikkelaar compileert regelmatig zijn eigen kernel, direct van de kernel-sources; en
+liefst met een zelf gebouwde *toolchain* [#toolchain]_.  Vaak vooral omdat het kan, niet omdat het moet; het is immers leuk!
+
 
 Wat kan Embedded Linux Expert?
 ==============================
 
-De Linux Expert die we zoeken heeft dus verstand van Linux; is ontwikkelaar en heeft ervaring met de source-code van
-Linux zelf.  Typisch hebben ze ook veel passie voor Linux: het is meer dan werk of een hobby; het is bijna een
-*life-style*.  Een beetje Linux-ontwikkelaar compileert regelmatig zijn eigen kernel, direct van de kernel-sources;
-en liefst met zelf gebouwde *toolchain*.  Vaak vooral omdat het kan, niet omdat het moet; het is immers leuk!
-
-Is dat complex en ingewikkeld? Ja behoorlijk, voor de meeste mensen Zoals gezegd, 15 jaar geleden was het zelfs (te) complex
-voor veel ervaren embedded ontwikkelaars.  Inmiddels zijn er duizenden (betaalde) “vrijwilligers” die dit met liefde
-doen.  Achter elke ‘distributie’[#Linuxdistributie]_ zijn Linux Expert druk bezig met het beter maken van de code, en
-die te compileren; zodat gebruikers die kunnen installeren op hun PC.
+Is dat complex en ingewikkeld? Ja behoorlijk, voor de meeste mensen.  Zoals gezegd, 15 jaar geleden was het zelfs (te)
+complex voor veel ervaren embedded ontwikkelaars.  Inmiddels zijn er duizenden (betaalde) “vrijwilligers” die dit met
+liefde doen.  Achter elke ‘distributie’[#Linuxdistributie]_ zijn Linux Experts druk bezig met het beter maken van de
+code, en die te compileren; zodat gebruikers die kunnen installeren op hun PC.
 
 U leest het goed: de “PC”.  De meeste distributies, en de meeste Linux ontwikkelaars, richten zich primair op de PC.
 Dat kan een laptop zijn, of een server; of desnoods een cloud computer.
 
    Een Embedded Linux Expert kan veel meer ...
 
-Zij/hij heeft **ook** verstand van en ervaring met Embedded Software; dus van “drivers”[#driver]_, “BSPs”[#BSP]_
-(Board Support Packages) en “bootloaders”[#bootloader]_.  En **ook** van “Cross Compileren”[#CrossCompiler]_; van
-“toolchains”[#toolchain]_, zoals “Buildroot” en “Yocto”; maar ook van (gnu) “Makefiles”[#GnuMake]_, want (Embedded)
-Linux kan niet zonder.
+Zij/hij heeft **ook** verstand van en ervaring met Embedded Software; dus van “drivers”[#driver]_, “BSPs”[#BSP]_ (Board
+Support Packages) en “bootloaders”[#bootloader]_.  Een Embedded Linux Embedded kan **ook** “Cross
+Compileren”[#CrossCompiler]_, met “toolchains”[#toolchain]_ zoals “Buildroot”[#Buildroot]_ en “Yocto”[#Yocto]_; maar ook
+werken met “GnuMake”[#GnuMake]_, want (Embedded) Linux kan niet zonder “Makefiles”[#GnuMake]_.
 
 
-Zo herken je die expert!
-========================
+Daarmee herken je die expert!
+=============================
 
-Ja, dat zijn veel complexe termen bij elkaar.  Behalve voor de expert die we zoeken; het immers een expert!
+Ja, dat zijn veel complexe termen bij elkaar.  Behalve voor de expert die we zoeken; zijn/hij immers een expert!
 
    Als iemand niet weet wat die termen betekenen, dan is het niet de expert die ik zoek!
 
 Ook verwacht ik van een Embedded Linux Expert, dat zij weet waar de “kernel-sources”[#kernelorg]_ staat, waar hij de
 rest van “Linux-code”[#gnuhome]_ kan vinden en ook de “busybox”[#busybox]_.
 
-Natuurlijk loop ik nu de kans dat iemand nu die “XXX”-termen in zijn CV gaat zetten.  Maar dan heb ik altijd nog
-strikvragen als: *”Heb je ervaring met de meest gebruikte Embedded Linux processor?”* Want al zit die in bijna alle
-smartphones, alleen de expert weten dat het de “ARM”[#arm]_ is.  Gewone mensen zijn allen gebruiker, sommige mensen
-weten dat Android hebaseerd is op Embedded Linux.
+Natuurlijk loop ik nu de kans dat iemand nu die *“aangehaalde termen”* in zijn CV gaat zetten.  Maar dan heb ik altijd
+nog strikvragen als: *”Heb je ervaring met de meest gebruikte Embedded Linux processor?”* Dat is overgens de
+“ARM”[#arm]_-CPU, die in vrijwel elke smartphone zit.  En daarmee heeft bijna iedereen ervaring.
+|br|
+Toch?
 
-  En experts weten nog veel meer ...
+Meer weten?
+===========
+
+Zou je expert willen worden, bestudeer dan  vooral de “aangehaalde termen”; hieronder staan een aantal links naar
+wikipedia; soms is die kennis alleen in het engels beschikbaar.  Ook een paar oude publicaties zijn nog beschikbaar.
+
+  Ook zal ik komende tijd wat meer blogs publiceren over HTLD; zoals een artikel over waarom Linux-drivers vaak duurder
+  worden dan gedacht.  Hou deze plek dus in de gaten.
+
+Natuurlijk mag je ook altijd contact met me opnemen
+
+--- :sogeti-email:`Albert.Mietus`
+
 
 ----------
 
@@ -132,8 +145,3 @@ Enkele experts-termen volgens wikipedia:
 .. [#GnuMake]        Linux gebruikt GnuMake; zie https://nl.wikipedia.org/wiki/Make_(computerprogramma) voor Makefile(s)
 .. [#arm]            De ARM CPU zit niet alleen in (vrijwel) alle smartphones; ook veel andere embedded systemen
                      gebruiken deze.  Zie  https://nl.wikipedia.org/wiki/ARM-architectuur
-
-
-
-
-

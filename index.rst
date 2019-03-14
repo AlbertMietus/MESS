@@ -19,9 +19,9 @@ Table of Content
    :maxdepth: 2
 
    *
-   blog/index
-   SoftwareCompetence/index
    pyMESS/index
+   SoftwareCompetence/index
+   blog/index
 
 
 .. Show the (big) Needle_Tower logo
