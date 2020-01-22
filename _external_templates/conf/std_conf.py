@@ -61,6 +61,23 @@ autodoc_member_order='bysource'
 
 # plantUML
 #---------
-if not on_rtd:
-    extensions.append('sphinxcontrib.plantuml')
-    plantuml = 'java -jar /Users/albert/Apps/PlantUML/libexec/plantuml.jar -nogui'
+extensions.append('sphinxcontrib.plantuml')
+plantuml = 'plantuml'
+
+
+# Needs
+#------
+extensions.append('sphinxcontrib.needs')
+needs_include_needs = True
+needs_id_required = True
+needs_id_regex = r'^[A-Z][A-Za-z-0-9_]{4,}'
+
+needs_types = [
+    dict(directive="demo", title="Demonstrator",   prefix="D_", color="#9DC5BB", style="node"),
+    dict(directive="req",  title="Requirement",    prefix="R_", color="#C5EBC3", style="frame"),
+    dict(directive="spec", title="Specification",  prefix="S_", color="#FEDCD2", style="component"),
+    dict(directive="impl", title="Implementation", prefix="I_", color="#DF744A", style="artifact"),
+    dict(directive="test", title="Test_Case",      prefix="T_", color="#F6E27F", style="folder")
+]
+
+
