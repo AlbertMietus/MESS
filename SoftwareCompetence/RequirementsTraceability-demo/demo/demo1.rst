@@ -12,7 +12,7 @@ The product we need
 
    In this demo, a simple calculator should be designed.
 
-   We use a very simple example, as you probally understand the specifications even with spending a lot of text on it
+   We use a very simple example, as you probably understand the specifications even with spending a lot of text on it.
 
 The requirements, for the simple calculator
 -------------------------------------------
@@ -64,7 +64,7 @@ Add this is how we test it
 
 .. test:: A  Simple Subtract test
    :id: CALC1_TEST_SUB_1
-   :links: CALC1_ADD
+   :links: CALC1_SUB
    :tags: demo1
 
    * Subtract ``5`` from ``7`` and check the result is **2**
