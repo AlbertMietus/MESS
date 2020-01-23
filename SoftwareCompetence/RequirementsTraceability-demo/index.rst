@@ -13,8 +13,8 @@ Requirements Traceability Demo
    :glob:
    :maxdepth: 1
 
-   *
-   */index
+   goal/index
+   demo/index
 
 
 

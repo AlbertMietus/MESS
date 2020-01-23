@@ -3,6 +3,9 @@ Requirements Traceability, for demo1
 
 Given all (kind of) specifications that are defined for :need:`CALC1`, we can generate a overview of *needs*:
 
+Generated overviews
+-------------------
+
 .. needtable::
    :tags: demo1
    :style: table
@@ -11,6 +14,8 @@ Given all (kind of) specifications that are defined for :need:`CALC1`, we can ge
 
 
 Some people prefer to see the same information in a graphical way:
+
+.. _demo1_graph:
 
 .. needflow::
    :tags: demo1
