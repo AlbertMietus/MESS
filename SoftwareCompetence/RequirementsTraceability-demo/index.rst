@@ -16,12 +16,14 @@ Requirements Traceability Demo
      *Some test have to pass and only the essential specifications needs test-cases.*
    * Then ‘requirements traceability’ becomes crucial:
      **It gives insight in which ‘specs’ are required by each product/release and which tests are essential.**
-   * This article (as part of a workshop) shows you a down-to-earth demo how you set-up the ‘requirements traceability’
-     and how to use it.
+   * This article (as part of a workshop) shows a down-to-earth demo how you set-up the ‘requirements traceability’ and
+     how to use it.
+   * We use the ‘tester view’: Be able to demonstrate the *product* **does** what was *aimed for*!
 
 
 .. separate admon from quote
 ..
+
 
    “Requirements traceability is a sub-discipline of requirements management within software development and systems
    engineering ...”
