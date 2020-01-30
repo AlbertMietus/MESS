@@ -39,7 +39,7 @@ html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
     'collapse_navigation': True,
     'display_version': True,
-    #    'style_external_links': False, # available in next release
+        'style_external_links': True, # available in next release
     'prev_next_buttons_location': 'both',
 }
 html_style = 'SwBMnl+rtfd.css'
