@@ -10,9 +10,9 @@ Requirements Traceability Demo
       :width: 33%
       :align: right
 
-   * For a simple development cycle it easy to trace the validation the product:
+   * For a simple development cycle, it easy to trace the validation the product:
      *All features should be covered by a test, and all should pass*.
-   * When multiple products --or multiple releases-- are mandatory this becomes quickly ambiguous:
+   * When multiple products --or multiple releases-- are mandatory, this becomes quickly ambiguous:
      *Some test have to pass and only the essential specifications needs test-cases.*
    * Then ‘requirements traceability’ becomes crucial:
      **It gives insight in which ‘specs’ are required by each product/release and which tests are essential.**
@@ -34,8 +34,8 @@ Requirements Traceability Demo
 
 
 .. rubric:: Content
-.. toctree:: XXX
-   :maxdepth: 1
+.. toctree::
+   :maxdepth: 2
 
    goal/index
    demo/index

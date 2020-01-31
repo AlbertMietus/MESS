@@ -20,6 +20,13 @@ Some people prefer to see the same information in a graphical way:
 .. needflow::
    :tags: demo1
 
+.. attention::
+
+   The graph (as well as the table) clearly shows there is no tests for :need:`CALC1_DIV`. For this demo, it’s
+   intentional. Note, however, that *--as there are 4 tests defined--* one can easily oversee this; even in this simple
+   case! 
+
+
 Summary
 --------
 
