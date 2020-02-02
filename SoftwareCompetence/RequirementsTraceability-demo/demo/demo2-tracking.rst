@@ -7,7 +7,7 @@ Generated overviews
 -------------------
 
 .. needtable::
-   :tags: demo2
+   :tags: demo2,general
    :style: table
    :columns: id;type;title;incoming;outgoing
    :sort: type
@@ -16,7 +16,8 @@ Generated overviews
 .. _demo2_graph:
 
 .. needflow::
-   :tags: demo2
+   :tags: demo2;general
+
 
 Summary
 -------

@@ -1,30 +1,36 @@
 Requirements Traceability, for demo1
 ====================================
 
-Given all (kind of) specifications that are defined for :need:`CALC1`, we can generate a overview of *needs*:
+Given all (kind of) specifications that are defined for :need:`CALC1`, we can generate a overview of *needs*. There are
+several ways to show that information; we use 2
 
-Generated overviews
--------------------
+The Requirements Matrix (table)
+--------------------------------
 
 .. needtable::
-   :tags: demo1
+   :tags: demo1;general
    :style: table
    :columns: id;type;title;incoming;outgoing
    :sort: type
 
+.. note::
 
+   For now, ignore the *links* to CALC2 and CALC2_1000ND. Those will be in explained in :ref:`demo2`
+
+A graphical view (“tree”)
+-------------------------
 Some people prefer to see the same information in a graphical way:
 
 .. _demo1_graph:
 
 .. needflow::
-   :tags: demo1
+   :tags: demo1;general
 
 .. attention::
 
-   The graph (as well as the table) clearly shows there is no tests for :need:`CALC1_DIV`. For this demo, it’s
+   The graph (as well as the table) clearly shows there is no tests for :need:`CALC_DIV`. For this demo, it’s
    intentional. Note, however, that *--as there are 4 tests defined--* one can easily oversee this; even in this simple
-   case! 
+   case!
 
 
 Summary
@@ -36,10 +42,6 @@ product-increments (“new releases”) and no intermediate (or hierarchical) sp
 |BR|
 Everybody can understand the when product-definition --one of the four requirements will change-- the implementation
 will (partially) change. And so that, some tests have to be re-run.
-
-And even in this simple case, the table and/or diagram above will help.
-|BR|
-As we can see there are no test defined for :need:`CALC1_DIV`
 
 Also, a changed requirement(s) and the corresponding test are only one click aways.
 
@@ -53,7 +55,5 @@ be re-run, when a specification changes.
 Unless one uses a (simple) approach as shown above. Then, everbody can just see which *rework* is needed when something
 “upstream” changes. And, by adding a “status” to each spec, we can even make this visual.
 
-See :doc:`demo2-spec` for a bit more complex example: Adding a product-variant and (only) one extra (non-functional)
+See :ref:`demo2` for a bit more complex example: Adding a product-variant and (only) one extra (non-functional)
 requirement.
-
-

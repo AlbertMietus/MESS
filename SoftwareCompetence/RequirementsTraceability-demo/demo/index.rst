@@ -20,3 +20,4 @@ requirement. And we directly see, there are no tests available for one requireme
    demo1-tracking
    demo2
    demo2-tracking
+   TraceAll
