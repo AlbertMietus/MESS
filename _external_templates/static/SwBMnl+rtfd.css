@@ -80,14 +80,30 @@ div.GAM-extra li.ablog-cloud {
 
 /*
  * Needs
+ * Need work!
  */
 
+/* For NEEDS-043
+ ****************/
+
+div.need.need-demonstrator {background-color: #9DC5BB;}
+div.need.need-requirement  {background-color: #C5EBC3}
+div.need.need-test_case    {background-color: #F6E27F;}
 /*Make the box standout (a lttile), style the ID as a links, no margin below last p*/
 div.need {border: 2px solid #000066;}
 div.need span.needs-id a  {color: #000066; text-decoration: underline;}
 div.need p:last-of-type {margin-bottom:0;}
 
+/* For NEEDS-05
+ ***************/
+
+
 /*Set background-color of boxes -- same  as needflow (plantUML comp diagram), as set in conf.py*/
-div.need.need-demonstrator {background-color: #9DC5BB;}
-div.need.need-requirement  {background-color: #C5EBC3}
-div.need.need-test_case    {background-color: #F6E27F;}
+.rst-content div table.docutils.need tbody tr.need.head td { background-color: BLUE;}
+.rst-content div table.docutils.need. tbody tr.meta {background-color: white;}
+
+.rst-content div table.docutils.need.needs_style_demo tbody tr.content td { background-color: #9DC5BB; }
+.rst-content div table.docutils.need.needs_style_req  tbody tr.content td { background-color: #C5EBC3; }
+.rst-content div table.docutils.need.needs_style_spec tbody tr.content td { background-color: #FEDCD2; }
+.rst-content div table.docutils.need.needs_style_imp; tbody tr.content td { background-color: #DF744A; }
+.rst-content div table.docutils.need.needs_style_test tbody tr.content td { background-color: #F6E27F; }

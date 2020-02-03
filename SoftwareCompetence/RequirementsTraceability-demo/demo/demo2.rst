@@ -2,13 +2,13 @@
 
 .. _demo2:
 
-The Exact Calculator (Demo 2)
-******************************
+[Demo 2] The Exact Calculator
+*****************************
 
 This demo is just a bit more complex as :ref:`demo1`; it just add a product-variant with *one* extra requirement.
 
-Specifications
-==============
+A bit more complicated product
+==============================
 
 .. demo:: Exact Calculator
    :ID: CALC2
@@ -24,19 +24,21 @@ Specifications
 
 
 The extra requirement
----------------------
+=====================
 
 .. spec:: Fraction
    :id: CALC2_1000ND
    :links: CALC_ADD;CALC_SUB;CALC_MULT;CALC_DIV
    :tags: demo2
 
-   The :need:`CALC2` should work with fractions; where nominator and denominator can be long: 1000 digits
+   The :need:`CALC2` should work with fractions; where nominator and denominator can be long: 1000 digits.
 
-HotFixing the missing test
+.. _test_hotfix:
+
+Hotfixing the missing test
 --------------------------
 
-We also *repair* the missing test in demo1, but only for demo2 (Because its a demo ....)
+We also *repair* the missing test in demo1, but only for demo2 (Because it is a *demo!**).
 
 .. test:: DIV test (demo2 only)
    :id: CALC2_TEST_DIV_1
@@ -45,10 +47,10 @@ We also *repair* the missing test in demo1, but only for demo2 (Because its a de
 
     .. note::
 
-       Intentional added only for demo2 :ref:`CALC2`
+       Documentation Hotfix! Therefore intentional added only for demo2 :ref:`CALC2`
 
 Demo Notes
-==========
+===========
 
 In this demo some *tricks* are used; like the fixing a missing test :need:`CALC2_TEST_DIV_1`, and combining some
 requirements for demo1 (:need:`CALC1`) and demo2 (:need:`CALC2`).

@@ -28,9 +28,11 @@ Some people prefer to see the same information in a graphical way:
 
 .. attention::
 
+   .. _forgotten_test:
+
    The graph (as well as the table) clearly shows there is no tests for :need:`CALC_DIV`. For this demo, it’s
-   intentional. Note, however, that *--as there are 4 tests defined--* one can easily oversee this; even in this simple
-   case!
+   intentional. Note, however, that --as there are :need_count:`type=='test' and 'general' in tags` tests defined-- one
+   can easily oversee this; even in this simple case!
 
 
 Summary

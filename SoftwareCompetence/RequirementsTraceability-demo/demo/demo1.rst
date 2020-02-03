@@ -2,16 +2,14 @@
 
 .. _demo1:
 
-The Simple Calculator (Demo 1)
+[Demo 1] The Simple Calculator
 ******************************
 
-Specifications
-==============
+The specifications are quite trivial ...
 
-This is the basic idea ...
 
 The product we need
--------------------
+===================
 
 .. demo:: Simple Calculator
    :ID: CALC1
@@ -22,7 +20,7 @@ The product we need
    We use a very simple example, as you probably understand the specifications even with spending a lot of text on it.
 
 Some general requirements, for all  calculators
------------------------------------------------
+===============================================
 
 .. req:: Simple Add
    :ID: CALC_ADD
@@ -53,7 +51,7 @@ Some general requirements, for all  calculators
    All calculators should be able to divide two numbers.
 
 Add this is how we test it
---------------------------
+==========================
 
 As we have defined only general requirements, we only need some generic tests.
 
@@ -73,7 +71,7 @@ As we have defined only general requirements, we only need some generic tests.
 
 .. test:: A  Simple Subtract test
    :id: CALC_TEST_SUB_1
-   :links: CALC_SUBl;CALC2_1000ND
+   :links: CALC_SUB;CALC2_1000ND
    :tags: general
 
    * Subtract ``5`` from ``7`` and check the result is **2**
@@ -81,7 +79,7 @@ As we have defined only general requirements, we only need some generic tests.
 
    Here we specify two test in one test-requirement; just to show another style
 
-.. test::  Simple Multiplication tes
+.. test::  Simple Multiplication test
    :id: CALC_TEST_MULT_1
    :links: CALC_MULT;CALC2_1000ND
    :tags: general

@@ -39,6 +39,7 @@ Requirements Traceability Demo
 
    goal/index
    demo/index
+   notes/index
 
 
-More info? Contact :sogeti-email:`Albert.Mietus`; +31 (0)6 526 592 60. Or use the Comment section below.
+More info? Contact Albert: :sogeti-email:`Albert.Mietus`; +31 (0)6 526 592 60. Or use the comment section below.

@@ -47,6 +47,7 @@ cleanest: cleaner; #nothing extra
 
 run_pytests::
 	-(cd pyMESS/training/dPID/; pytest)
+	@echo "NOTE: One Assert is to be expected (AssertionError in test_clip) -- ignoring"
 
 HOGSMEADEd = /Volumes/albert/Sites/MESS/
 

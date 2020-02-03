@@ -1,4 +1,4 @@
-# Copyright (C) ALbert Mietus, SoftwareBeterMaken.nl; 2017, 2019. Part of my MESS project
+# Copyright (C) ALbert Mietus, SoftwareBeterMaken.nl; 2017, 2019, 2020 Part of my MESS project
 # -*- coding: utf-8 -*-
 
 # read STD config ...
@@ -13,7 +13,7 @@ import os.path; sys.path.append('pyMESS/training/dPID')
 # General information about the project.
 #======================================
 project = 'MESS'
-copyright = "ALbert Mietus, 2017, 2019"
+copyright = "ALbert Mietus, 2017- 2020"
 
 from datetime import datetime
 release = datetime.now().strftime("%Y%m%d.%H")
@@ -52,3 +52,4 @@ if True:
     html_sidebars = {
         '**': [ 'recentposts.html', 'tagcloud.html', 'postcardHeader.html'],
     }
+
