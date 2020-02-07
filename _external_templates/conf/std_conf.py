@@ -80,5 +80,6 @@ needs_types = [
     dict(directive="test", title="Test_Case",      prefix="T_", color="#F6E27F", style="folder")
 ]
 
-needs_global_options = {'style': [("[[copy('type')]]", 'True')]}
-needs_default_layout = 'complete'
+### For needs-0.5+; which we don't use
+#needs_global_options = {'style': [("[[copy('type')]]", 'True')]}
+#needs_default_layout = 'complete'

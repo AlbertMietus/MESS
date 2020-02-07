@@ -1,10 +1,25 @@
-Requirements Traceability, for demo2
-====================================
+Requirements Traceability [Demo2]
+*********************************
 
 As in :doc:`demo1`, we can automatically generate the an overview of the requirements.
 
-Generated overviews
--------------------
+The tree view
+=============
+
+.. _demo2_graph:
+
+.. needflow::
+   :tags: demo2;general
+
+Lessons learned
+---------------
+
+.. todo::
+
+   XXX
+
+The table view
+==============
 
 .. needtable::
    :tags: demo2,general
@@ -13,11 +28,11 @@ Generated overviews
    :sort: type
 
 
-.. _demo2_graph:
+Lessons learned
+---------------
 
-.. needflow::
-   :tags: demo2;general
+.. todo::
+
+   XXX
 
 
-Summary
--------

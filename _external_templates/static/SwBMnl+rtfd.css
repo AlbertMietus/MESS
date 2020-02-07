@@ -75,8 +75,9 @@ div.GAM-extra li.ablog-cloud {
     border-radius: 33%;
 }
 
-/* Whitespace between/around footnotes should be small(er) */
-.rst-content div.footnote table.footnote tr td { padding: 1px 2em;}
+div.disqus h2 {background-color: #000066;}
+
+
 
 /*
  * Needs
@@ -86,9 +87,12 @@ div.GAM-extra li.ablog-cloud {
 /* For NEEDS-043
  ****************/
 
-div.need.need-demonstrator {background-color: #9DC5BB;}
-div.need.need-requirement  {background-color: #C5EBC3}
-div.need.need-test_case    {background-color: #F6E27F;}
+div.need.need-demonstrator   {background-color: #9DC5BB;}
+div.need.need-requirement    {background-color: #C5EBC3}
+div.need.need-specification  {background-color: #FEDCD2;}
+div.need.need-implementation {background-color: #DF744A;}
+div.need.need-test_case      {background-color: #F6E27F;}
+
 /*Make the box standout (a lttile), style the ID as a links, no margin below last p*/
 div.need {border: 2px solid #000066;}
 div.need span.needs-id a  {color: #000066; text-decoration: underline;}

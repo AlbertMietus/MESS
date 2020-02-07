@@ -10,3 +10,5 @@
 
 .. role:: sogeti-email
    :class: sogeti-email
+
+.. EOF

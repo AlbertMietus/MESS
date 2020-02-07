@@ -4,6 +4,23 @@
 Requirements Traceability Demo
 ==============================
 
+.. post:: 2020/02/02
+   :tags:
+   :category:
+   :location: Eindhoven
+   :language: en
+
+   Requirement-Management, and especially *“Tracking Requirements”* isn’t that complicated; but it needs some discipline.
+   Often that discipline is “replaced” by a tool, which is encouraged by tool-vendors. That hardly ever works.
+
+   This chapter introduces requirements traceability in a conceptual, but pragmatic way. Its shows what a team has to do
+   (defining requirements and describing the relations) and what the benefit is. It assume a (more of less) agile
+   way-of-work, and shows how ti can becomes lean. A small investment in good requirements definitions make validations
+   a lot easier.
+
+   And yes, it used a tool: a free one: A simple way to write maintainable documentation, including all
+   requirements. With a plugin that can visualize all specifications and their relations.
+
 .. admonition:: Summary (testers view)
 
    .. image:: ./V-IdeaWorkProduct-alfa.png
