@@ -1,4 +1,4 @@
 ablog==0.9.2
 sphinxcontrib-plantuml
-sphinxcontrib-needs==0.4.3
+sphinxcontrib-needs==0.5.2
 sphinx_rtd_theme

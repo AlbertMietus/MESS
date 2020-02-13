@@ -39,7 +39,7 @@ html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
     'collapse_navigation': True,
     'display_version': True,
-        'style_external_links': True, # available in next release
+        'style_external_links': False,
     'prev_next_buttons_location': 'both',
 }
 html_style = 'SwBMnl+rtfd.css'
@@ -80,6 +80,15 @@ needs_types = [
     dict(directive="test", title="Test_Case",      prefix="T_", color="#F6E27F", style="folder")
 ]
 
-### For needs-0.5+; which we don't use
-#needs_global_options = {'style': [("[[copy('type')]]", 'True')]}
-#needs_default_layout = 'complete'
+needs_layouts = {
+    'clean_collapsed': {'grid': 'simple',
+                 'layout': {
+                     'head': [
+                         '<<meta("type_name")>>: **<<meta("title")>>** <<meta_id()>>  <<collapse_button("meta", '
+                         'collapsed="icon:arrow-down-circle", visible="icon:arrow-right-circle", initial=True)>> '],
+                     'meta': [
+                         '<<meta_all(no_links=True)>>',
+                         '<<meta_links_all()>>'],
+                 }}}
+needs_default_layout = 'clean_collapsed'
+

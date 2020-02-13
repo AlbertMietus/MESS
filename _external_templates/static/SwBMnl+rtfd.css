@@ -81,10 +81,9 @@ div.disqus h2 {background-color: #000066;}
 
 /*
  * Needs
- * Need work!
  */
 
-/* For NEEDS-043
+/* For NEEDS-043 (OLD)
  ****************/
 
 div.need.need-demonstrator   {background-color: #9DC5BB;}
@@ -98,16 +97,20 @@ div.need {border: 2px solid #000066;}
 div.need span.needs-id a  {color: #000066; text-decoration: underline;}
 div.need p:last-of-type {margin-bottom:0;}
 
-/* For NEEDS-05
+
+/* For NEEDS-052+
  ***************/
+.rst-content  table.need tr  {border: 2px solid #000066;}
 
+.rst-content table.need.needs_type_demo:not(.field-list) tbody tr:not(.meta) td {background-color: #9DC5BB;}
+.rst-content  table.need.needs_type_req:not(.field-list) tbody tr:not(.meta) td {background-color: #C5EBC3;}
+.rst-content table.need.needs_type_spec:not(.field-list) tbody tr:not(.meta) td {background-color: #FEDCD2;}
+.rst-content  table.need.needs_type_imp:not(.field-list) tbody tr:not(.meta) td {background-color: #DF744A;}
+.rst-content table.need.needs_type_test:not(.field-list) tbody tr:not(.meta) td {background-color: #F6E27F;}
 
-/*Set background-color of boxes -- same  as needflow (plantUML comp diagram), as set in conf.py*/
-.rst-content div table.docutils.need tbody tr.need.head td { background-color: BLUE;}
-.rst-content div table.docutils.need. tbody tr.meta {background-color: white;}
-
-.rst-content div table.docutils.need.needs_style_demo tbody tr.content td { background-color: #9DC5BB; }
-.rst-content div table.docutils.need.needs_style_req  tbody tr.content td { background-color: #C5EBC3; }
-.rst-content div table.docutils.need.needs_style_spec tbody tr.content td { background-color: #FEDCD2; }
-.rst-content div table.docutils.need.needs_style_imp; tbody tr.content td { background-color: #DF744A; }
-.rst-content div table.docutils.need.needs_style_test tbody tr.content td { background-color: #F6E27F; }
+table.need tr.head td .needs_type_name  {
+    color: #000066;
+    text-decoration: underline overline;
+    -webkit-text-decoration-color: #000066;
+    text-decoration-color: #000066;
+}
