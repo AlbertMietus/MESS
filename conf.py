@@ -3,7 +3,7 @@
 
 # read STD config ...
 #==========================================
-import sys; sys.path.append('_external_templates/conf')
+import sys; sys.path.append('_std_settings/conf')
 from std_conf import *
 
 

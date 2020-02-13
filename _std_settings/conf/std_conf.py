@@ -14,7 +14,7 @@ print("Using std_conf [%s-version]" % ('RTfD' if on_rtd else 'local'))
 master_doc = 'index'
 source_suffix = '.rst'
 exclude_patterns = ['**/.#*', '**/_*', 'VENV']
-html_static_path = ['_external_templates/static/']
+html_static_path = ['_std_settings/static/']
 templates_path = ['_templates']
 
 ###
