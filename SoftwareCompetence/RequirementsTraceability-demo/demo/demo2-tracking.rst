@@ -1,4 +1,4 @@
-Requirements Traceability [Demo2]
+Requirements Traceability [CALC2]
 *********************************
 
 As in :doc:`demo1`, we can automatically generate the an overview of the requirements.

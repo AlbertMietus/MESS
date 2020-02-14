@@ -1,2 +1,0 @@
-What will you learn
--------------------

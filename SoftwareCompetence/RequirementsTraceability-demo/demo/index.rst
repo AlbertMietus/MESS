@@ -1,5 +1,7 @@
 .. Copyright (C) ALbert Mietus & Sogeti.HT; 2020
 
+.. _RT_demo:
+
 **********************
 Demo: Some calculators
 **********************
@@ -14,8 +16,9 @@ requirements-traceability; but it gives a nice introduction to the concept.
 
 Then, a new product the :need:`CALC2` is defined, in the same way.
 |BR|
-It has only one (tricky) additional requirement; which makes both implementation and validation (testing) more
-defiant. Again, a nice :ref:`graph <demo2_graph>` is shown.
+Even it has only one (*puzzling*) additional requirement; that one makes both the implementation and the validation
+burdensome. And changes the test-cases completely; as shown in :ref:`its requirement-traceability graph <demo2_graph>`.
+
 
 Likewise, we could add more demo’s with more and more specifications, tests and *need* at multiple-levels; but you will
 get the idea: By simple ‘defining’ the needs, it becomes possible to get insight; independent of the size of the products
@@ -24,7 +27,7 @@ or the numbers of specifications.
 Finally, an :ref:`overall graph <all_graph>` is shown, with all the products, all the tests, and all the connecting
 *needs*. Just because it is easy to include it; it takes a handful of lines, only
 
-
+.. rubric:: Content
 .. toctree::
    :glob:
    :maxdepth: 3

@@ -1,5 +1,7 @@
 .. Copyright (C) ALbert Mietus & Sogeti.HT; 2020
 
+.. _RT_notes:
+
 ***********************
 Some notes on this demo
 ***********************
@@ -9,6 +11,7 @@ Some notes on this demo
 To be able to make a compact demo, some “tricks” are used; like the “forgotten test”. Those tricks are documented here.
 
 .. _about_forgotten_test:
+
 The forgotten_test
 ==================
 

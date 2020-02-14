@@ -2,8 +2,8 @@
 
 .. _demo2:
 
-[Demo 2] The exact calculator
-*****************************
+[CALC2] The exact calculator
+****************************
 
 This demo is just a bit more complicated then :ref:`demo1`: this product-variant has *one* extra requirement.
 
