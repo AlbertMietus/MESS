@@ -92,3 +92,47 @@ details), by adding some (outgoing) links to the existing tests.
 .. note::
 
    The incoming links are added automatically
+
+
+Experience practice
+===================
+
+#. It is possible to have multiply “toplevel” ‘need’. Here, that are ``Demonstrators``, but it possible to use
+   `Products`, `Variants`, and/or `Releases` etc, as well.
+#. Here, a new kind of ‘need’ is introduced: ``Specification``. As you will see on the next page, it influences not only
+   the implementation, but also the test.
+#. In the ‘details-row’, you can see it had (outgoing) links to many (all) earlier specifications.
+
+
+Particulars
+-----------
+
+describing requirements
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The describing text of a (any) requirement (in ‘needs’) is standard **rst** (reStructuredText). So it can use links,
+forward-references to other needs and even warning-admonitions.
+|BR|
+The full textual definition of :need:`CALC2` is:
+
+.. code-block:: rst
+
+   .. demo:: Exact Calculator
+      :ID: CALC2
+      :tags: demo2
+      :links: CALC1
+
+      This calculator should work with `Fractional Numbers <https://en.wikipedia.org/wiki/Fraction_(mathematics)>`_, and be
+      exact for very big numbers; as defined in :need:`CALC2_1000ND`
+
+      .. warning::
+
+         This implies ``floats`` are not possible in the implementation
+
+linking needs
+~~~~~~~~~~~~~
+
+Currently, there is no *inherit option*; one can’t specify that requirements for `CALC1` are also valid for `CALC2. But
+by linking the two ``Demonstrators``, we get (almost the same option). Possible, a next release will suport that (And,
+as it is actively maintained open-source, anyone might implement it:-)
+
