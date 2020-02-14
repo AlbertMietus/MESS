@@ -11,7 +11,7 @@ Goals
 
    --- https://en.wikipedia.org/wiki/Requirements_traceability
 
-There are many reasons to enroll requirement-management and tracking them.
+There are many reasons to enroll requirement-management and -traceability.
 
 * First of all, it’s a good habit: without an objective it hard to succeed.
   *How can a system pass an acceptance-test when it is not clear what the (current) requirements are?*
