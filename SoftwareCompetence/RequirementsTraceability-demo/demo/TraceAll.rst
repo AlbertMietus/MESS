@@ -1,11 +1,11 @@
 .. Copyright (C) ALbert Mietus & Sogeti.HT; 2020
 
+.. _all_graph:
+
 All needs [BigTree]
 ===================
 
 We can also show the relations between all product (cq releases) and it *needs* in one big tree [#forrest]_.
-
-.. _all_graph:
 
 .. needflow::
 

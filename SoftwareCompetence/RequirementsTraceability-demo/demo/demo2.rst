@@ -82,17 +82,6 @@ When using an agile test-automation framework this implies
 * The ATS (Automated Test Script) isn’t altered.
 * Some “Test-Vectors” (or test-data) is added: the big-fractions.
 
-Specification Traceability
---------------------------
-
-To be able to trace some test need to be adapted, we only have to add some “links” between the relevant test and the
-additional (test) specification. That is done in :need:`CALC2_1000ND` (possible you have to click/open the see the
-details), by adding some (outgoing) links to the existing tests.
-
-.. note::
-
-   The incoming links are added automatically
-
 
 Experience practice
 ===================
@@ -100,17 +89,22 @@ Experience practice
 #. It is possible to have multiply “toplevel” ‘need’. Here, that are ``Demonstrators``, but it possible to use
    `Products`, `Variants`, and/or `Releases` etc, as well.
 #. Here, a new kind of ‘need’ is introduced: ``Specification``. As you will see on the next page, it influences not only
-   the implementation, but also the test.
-#. In the ‘details-row’, you can see it had (outgoing) links to many (all) earlier specifications.
+   the implementation, but also testing.
+#. In the ‘details-row’, you can see it has (outgoing) links to many (all) earlier requirements.
 
 
 Particulars
 -----------
 
+.. hint::
+
+   Again, you can skip the **particulars** passage when you have no curiosity in the technicalities of ‘needs’ itself.
+
+
 describing requirements
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The describing text of a (any) requirement (in ‘needs’) is standard **rst** (reStructuredText). So it can use links,
+The describing text of any requirement (in ‘needs’) is standard **rst** *(reStructuredText)*. So it can use hyperlinks,
 forward-references to other needs and even warning-admonitions.
 |BR|
 The full textual definition of :need:`CALC2` is:
@@ -129,10 +123,68 @@ The full textual definition of :need:`CALC2` is:
 
          This implies ``floats`` are not possible in the implementation
 
-linking needs
-~~~~~~~~~~~~~
 
-Currently, there is no *inherit option*; one can’t specify that requirements for `CALC1` are also valid for `CALC2. But
-by linking the two ``Demonstrators``, we get (almost the same option). Possible, a next release will suport that (And,
-as it is actively maintained open-source, anyone might implement it:-)
+adding a specification
+~~~~~~~~~~~~~~~~~~~~~~
+
+Like all other ‘needs’, the specification for :need:`CALC2_1000ND` is straightforward. It links to “earlier”
+requirements.
+
+.. code-block:: rst
+
+   .. spec:: Big fractional numbers
+      :id: CALC2_1000ND
+      :links: CALC_ADD;CALC_SUB;CALC_MULT;CALC_DIV
+      :tags: demo2
+
+      The :need:`CALC2` ...
+
+.. tip::
+
+   * There is no *prescribed* order how the individual ‘needs’ can be linked. It kind of feels more natural to link to
+     “higher level” (in the V-model) ‘needs’, and to one that are described “earlier” (in project-time). But when you
+     can link them in any order.
+
+   * Similar, a ‘need’ can link to any other ‘need’, independent of its type.
+     |BR|
+     Above we have used a `spec`, to add this requirement; but a normal `req` (requirement) is possible too. You can
+     configure any kind of ‘needs’, as you like.
+
+   * You can even *export* ‘needs’ in one document and *import* them in another. For big projects with many levels of
+     modules, and so, specification-documents, this is typical behaviour. In this small calculator example tha is not
+     used.
+
+more links
+~~~~~~~~~~
+
+To be able to trace some test need to be adapted, we only have to add some “links” between the relevant test and the
+additional (test) specification. That is done in :need:`CALC2_1000ND` (possible you have to click/open the see the
+details), by adding some (outgoing) links to the existing tests.
+
+.. note::
+
+   The incoming links are added automatically.
+
+inheriting links
+~~~~~~~~~~~~~~~~
+
+Currently, there is no *inherit option*; one can’t specify that the requirements for `CALC1` are also valid for
+`CALC2`.
+
+* By linking the two ``Demonstrators`` we get (almost) the same.
+* Alternatively, you can just add the links manually.
+* *(or you can use the export/import option and a simple script to modify the json file)*
+
+.. tip::
+
+   As ‘needs’ is an actively maintained open-source project, ‘inheriting’ may be added in a next release.
+   |BR|
+   Even by you:-)
+
+hotfixing
+~~~~~~~~~
+
+See :ref:`the notes about the forgotten test<about_forgotten_test>` for the particulars on how to :ref:`forget
+<forgotten_test>` and ref:`add <test_hotfix>` a test in one document.
+
 

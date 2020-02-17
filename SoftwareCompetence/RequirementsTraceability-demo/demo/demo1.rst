@@ -115,12 +115,12 @@ Experience practice
 Particulars
 -----------
 
-.. tip::
+.. hint::
 
    This article uses ‘sphinx-doc’ with the ‘needs’ plugin to define requirement. This is a text-based (and so
    version-controllable) tool; therefore it is painless to show the details of how it works; as we do below.
 
-   You can skip the “particulars” sub-sections, when you not interested in the technical details of this particular
+   You can skip the **particulars**  passages, when you not interested in the technical details of this particular
    tool.
 
 product (start of the V)

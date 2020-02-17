@@ -114,3 +114,11 @@ table.need tr.head td .needs_type_name  {
     -webkit-text-decoration-color: #000066;
     text-decoration-color: #000066;
 }
+
+/*HACK*/
+table.rtm-rotated-head th {height: 20em;} /*Magic Number*/
+table.rtm-rotated-head th:not(:first-child)>p {
+    transform: translate(0px, 30px) /* Magic Numbers */
+                        rotate(-90deg);
+    width: 20px;
+}

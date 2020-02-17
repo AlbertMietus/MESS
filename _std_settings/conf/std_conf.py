@@ -41,7 +41,7 @@ html_theme_options = {
     'display_version': True,
     'style_external_links': False,
     'prev_next_buttons_location': 'both',
-    'vcs_pageview_mode': 'view',
+    # 'vcs_pageview_mode': 'view',
 }
 html_style = 'SwBMnl+rtfd.css'
 
