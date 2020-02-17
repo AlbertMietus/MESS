@@ -28,7 +28,7 @@ The extra requirement
 
 .. spec:: Big fractional numbers
    :id: CALC2_1000ND
-   :links: CALC_ADD;CALC_SUB;CALC_MULT;CALC_DIV
+   :links: CALC_ADD;CALC_SUB;CALC_MULT;CALC_DIV; CALC2
    :tags: demo2
 
    The :need:`CALC2` should work with fractions; where nominator and denominator can be very long: up to **1000
@@ -86,7 +86,7 @@ When using an agile test-automation framework this implies
 Experience practice
 ===================
 
-#. It is possible to have multiply “toplevel” ‘need’. Here, that are ``Demonstrators``, but it possible to use
+#. It is possible to have multiply “toplevel” ‘needs’. Here, that are ``Demonstrators``, but it possible to use
    `Products`, `Variants`, and/or `Releases` etc, as well.
 #. Here, a new kind of ‘need’ is introduced: ``Specification``. As you will see on the next page, it influences not only
    the implementation, but also testing.
@@ -185,6 +185,6 @@ hotfixing
 ~~~~~~~~~
 
 See :ref:`the notes about the forgotten test<about_forgotten_test>` for the particulars on how to :ref:`forget
-<forgotten_test>` and ref:`add <test_hotfix>` a test in one document.
+<forgotten_test>` and :ref:`add <test_hotfix>` a test in one document.
 
 

@@ -38,14 +38,19 @@ div.breadcrumbs a:visited { color: #808080;}
     div.breadcrumbs { margin: 0 -1.618em 1ex -1.618em;}
 }
 
+/* Footnotes "online"*/
+dl.footnote dt.label {float: left}
+
 /* Make the (:reading time:) field-list stand out, a bit */
-.rst-content table.field-list {
+.rst-content dl.field-list {
     float: right;
-    color: #eeeeff; background: #808080;
-    border: 1px solid #000066;
-    margin-bottom: auto;
-    font-size: 80%;
+    color: #2980B9; background:#e7f2fa;
+    margin-bottom: 0;
+    margin-top: 10px;
 }
+.rst-content dl.field-list dt { display: inline; }
+.rst-content dl.field-list dd { display: inline; }
+.rst-content dl.field-list p  { display: inherit;}
 
 /* Make a blockquote visual */
 .rst-content blockquote {
@@ -122,3 +127,4 @@ table.rtm-rotated-head th:not(:first-child)>p {
                         rotate(-90deg);
     width: 20px;
 }
+

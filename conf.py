@@ -25,8 +25,6 @@ version = release
 #html_title = project + " | " + release # DEFAULT: '<project> v<revision> documentation' -- Strip "documentation"
 
 
-def setup(app):
-    app.add_stylesheet('../_static/SwBMnl+rtfd.css')
 
 if True:
     # ABlog

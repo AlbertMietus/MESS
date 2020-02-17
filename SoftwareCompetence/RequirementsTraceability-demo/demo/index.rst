@@ -25,7 +25,7 @@ get the idea: By simple ‘defining’ the needs, it becomes possible to get ins
 or the numbers of specifications.
 
 Finally, an :ref:`overall graph <all_graph>` is shown, with all the products, all the tests, and all the connecting
-*needs*. Just because it is easy to include it; it takes a handful of lines, only
+*needs*.
 
 .. rubric:: Content
 .. toctree::

@@ -54,7 +54,7 @@ With this overview one get insight about which test are needed to verify one req
 
 .. rubric:: Footnotes & Links
 
-.. [#RTM] Often shorthanded to RTM, or simle “Traceability Matrix”, as `wikipedia does
+.. [#RTM] Often shorthanded to RTM, or simle “Traceability Matrix”, as wikipedia does.
 
 Wikipedia on RTM:
    https://en.wikipedia.org/wiki/Traceability_matrix
