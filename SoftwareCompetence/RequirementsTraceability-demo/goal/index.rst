@@ -11,7 +11,7 @@ Goals
 
    --- https://en.wikipedia.org/wiki/Requirements_traceability
 
-There are many reasons to enroll requirement-management and tracking them.
+There are many reasons to enroll requirement-management and -traceability.
 
 * First of all, it’s a good habit: without an objective it hard to succeed.
   *How can a system pass an acceptance-test when it is not clear what the (current) requirements are?*
@@ -19,11 +19,11 @@ There are many reasons to enroll requirement-management and tracking them.
   aerospace “safety” is mandatory. Standard like IEC61508, and (A)SIL more or less demand a process with proper
   requirement traceability.
 
-With the uprise of lean, agile and scrum, there is a tendency to skip less popular steps (and expensive roles); and
-trust on craftsmanship. This implies the traditional "requirement management" approach has to change. And also that more
-people are involved.
+With the uprise of lean, agile and scrum, there is a tendency to skip less popular steps (and expensive roles) and to
+trust on craftsmanship. This implies the traditional 'requirement management' approach has to change. And also, that more
+people should be involved.
 
-This chapter gives you an introduction into “tracking requirements”, in a lean, agile fashion.
+This chapter gives you an introduction into 'tracking requirements', in a lean, agile fashion.
 |BR|
 After this *lecture*, you should understand how to annex (written) requirements and other specifications, to be able to
 link them with test-cases. You should be able to visualize those relations, to get insight into which tests are needed
