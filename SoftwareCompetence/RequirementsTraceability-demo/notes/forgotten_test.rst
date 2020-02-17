@@ -7,18 +7,18 @@
 The forgotten test
 ==================
 
-Intentionally, one test is :ref:`“forgotten” <forgotten_test>` for the first demo. It is needed for the second one; as explained in :ref:`test_hotfix`.
+Intentionally, one test is :ref:`“forgotten” <forgotten_test>` for the first demo. However it is needed and “hot-fixed” for :ref:`the second one <test_hotfix>`.
 |BR|
-Surely this is not typical in one documentation-release. Some *tricks* are used to show this in one go. Those tricks are documented here.
+Surely this is not typical in one documentation-release.
 
-This is done by adding some ‘tags’ to the various requirements, and filtering on those tags to show only the intend ones. For normal use, you can ignore those tags.
+Therefor some *tricks* are used to show this in one go. Those tricks are documented here.
+
+By adding some ‘tags’ to the various requirements one can filter on those when generating an overview. And only show the intend ones. This can be useful by-example to labels ‘needs’ for a specific release or product-variant. Here, used a bit more extensive.
 
 Particulars
 -----------
 
-As typical, each product has it “own” tag: ``demo1`` or ``demo2``. Such a tag can be added to each need, and be used to filter when generating overviews.
-
-As we have some tests that should be selected on one page, but not on another we use an extra tag: ``general``.
+As typical each product has it “own” tag: ``demo1`` or ``demo2``. As we have some tests that should be selected on one page, but not on another we use an extra tag: ``general``.
 |BR|
 Most test-cases are labeled with ``general``, as are the generic requirements. Whereas the “forgotten” test :need:`CALC2_TEST_DIV_1` is labeled ``demo2``
 

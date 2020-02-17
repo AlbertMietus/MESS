@@ -1,6 +1,6 @@
 .. _RT_RTM_CALC2:
 
-A manually made Requirements Traceability Matrix
+The classical Requirements Traceability Matrix
 ================================================
 
 Most literature about requirements-traceability focus on the Requirements Traceability Matrix [#RTM]_. This table gives the relation between the (high level) requirements versus all test. As ‘needs’ can’t generate this table (yet), I have created one as example.
@@ -8,7 +8,7 @@ Most literature about requirements-traceability focus on the Requirements Tracea
 With this overview one get insight about which test are needed to verify one requirement. Sometimes it explicitly counts the number of available tests pro requirement too. Albeit that is a nice result, the ATM isn’t that useful in an agile environment. When a requirement is added, ore one changes, the RTM itself gives little help to update the table.
 
 
-.. list-table:: RTM for :need:`CALC2`
+.. list-table:: RTM for the :need:`CALC2`
    :class: RTM-rotated-head
    :header-rows: 1
    :widths: 25 15 15 15 15 15

@@ -31,6 +31,11 @@ for a specific product-release. (And the other way around.) Besides, you should 
 moderately simple products. For big, complicated products, you probably need a bit more experience and the assistance of
 a standardized process and mayhap a tool, to make it lean.
 
+.. toctree::
+   :hidden:
+   :glob:
+
+   *
 
 
 

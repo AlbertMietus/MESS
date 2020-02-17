@@ -50,8 +50,8 @@ requirements and all the tests.
 
 .. note::
 
-   As ‘needs’ currently does not support classical *RTM*\s, I can’t generate/show it here.  See :ref:`RT_RTM_CALC2` to
-   get the idea. As you will see: it’s easy to read.
+   As ‘needs’ currently does not support classical *RTM*\s, I can’t generate/show it here.  See :ref:`a manually made
+   TRM <RT_RTM_CALC2>` to get the idea. As you will see: it’s easy to read.
    |BR|
    However, its quite hard to grasp deep relations; then the tree above is more helpfull.
 

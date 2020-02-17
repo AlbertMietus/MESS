@@ -18,13 +18,18 @@ is can be done.
 And despite this blog is not about (learning) a tool, this section will go a step deeper: It will show you how it is
 done; without becoming a tutorial on ‘sphinx’ or ‘needs’.
 |BR|
-Possible, you like it and would love to play with the demo. Or, you are inquisitive whether this is really
-not-only-text.
+Possible, you like it and would love to play with the demo. Or, you are inquisitive whether this is truly
+*not text-only*.
 
-Feel free to study the ‘sources’ and learn from it. I will even document the tricks needed for :ref:`about_forgotten_test`.
+The following pages show some excerpts of the *“RST-code”*, that is used to defined all ‘needs’.  Feel free to
+study the ‘sources’ and learn from it.
+|BR|
+I will even document the tricks needed for “:ref:`about_forgotten_test`”.
 
 .. toctree::
-   :glob:
 
-   *
+   particulars-demo1
+   particulars-demo2
+   forgotten_test
+
 
