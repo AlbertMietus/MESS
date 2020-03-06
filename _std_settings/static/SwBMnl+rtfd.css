@@ -38,6 +38,10 @@ div.breadcrumbs a:visited { color: #808080;}
     div.breadcrumbs { margin: 0 -1.618em 1ex -1.618em;}
 }
 
+/* No space before footnoot */
+a.footnote-reference { margin-left: -0.4em;}
+
+
 /* Footnotes "online"*/
 dl.footnote dt.label {float: left}
 
