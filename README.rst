@@ -63,7 +63,7 @@ Please use the *disqus* sections (below) to give your feedback and opinions.
 
 Tensegrity, as inspiration
 **************************
-.. image:: /_external_templates/static/Needle_Tower_doorzichtig.png
+.. image:: /_std_settings/static/Needle_Tower_doorzichtig.png
 
 `Tensegrity <https://en.wikipedia.org/wiki/Tensegrity>`__ is a synthesis of the names ‘tensional’
 and ‘integrity’. It is based on *“teamwork”* of tension and compression forces. Although the image
