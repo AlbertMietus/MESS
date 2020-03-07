@@ -49,3 +49,50 @@ Some exercises will have a possible elaboration; often that isn’t only good on
    intro/index
 
    */index
+
+
+------------------------
+
+.. seealso::
+
+   ThreadPoolExecutor (python)
+      De referentie voor deze opdracht.
+      https://docs.python.org/3/library/concurrent.futures.html#threadpoolexecutor
+
+   Future-Objects (python)
+      Meer over (python) future-objects is te vinden op:
+      https://docs.python.org/3/library/concurrent.futures.html#future-objects
+
+   ProcessPoolExecutor (python)
+      De proces variant heeft (vrijwel) dezelfde interface (en gezamelijke code). Voor liefhebbers is de
+      documentatie te vinden op:
+      https://docs.python.org/3/library/concurrent.futures.html#processpoolexecutor
+
+   Java
+      * Ook Java heeft een ThreadPoolExecutor; zie:
+        https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ThreadPoolExecutor.html
+      * En kent kent het Future-object, (o.a.) als interface. Zie:
+        https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Future.html
+
+   C#
+      * In C# bestaan wel Thread-Pools:
+        https://docs.microsoft.com/en-gb/dotnet/articles/csharp/programming-guide/concepts/threading/thread-pooling
+      * Maar lijken Future-object niet te bestaan. Zie in bovenstaande de opmerkingen over `.. and
+        return values <https://docs.microsoft.com/en-gb/dotnet/articles/csharp/programming-guide/concepts/threading/thread-pooling#thread-pool-parameters-and-return-values>`__
+
+   C++
+      * Er lijkt weinig ondersteuning in C++ voor worker-pools en futures.
+      * *Boost* (http://www.boost.org) levert wel een aantal oplossingen (als library-code). Onderstaande
+        links verwijzen naar de documentatie daarvan.
+
+        - `basic_thread_pool <http://www.boost.org/doc/libs/1_63_0/doc/html/thread/synchronization.html#thread.synchronization.executors.ref.basic_thread_pool>`__
+        - `futures <http://www.boost.org/doc/libs/1_63_0/doc/html/thread/synchronization.html#thread.synchronization.futures>`__
+
+   `Blocks in C`
+       Met deze C-extensie zijn functie inlines te definiëren. Het zijn een soort van
+       *lambda*\-expressies, die gebruikt worden als argument in :c:func:`GCD.dispatch` functies.
+       O.a de `CLang <https://en.wikipedia.org/wiki/Clang>`__ ondersteund dit.
+
+       Zie https://en.wikipedia.org/wiki/Blocks_(C_language_extension)
+
+       .. hint:: This extension does need a *runtime* (library) too.
