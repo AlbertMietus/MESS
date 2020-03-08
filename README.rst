@@ -5,13 +5,15 @@
 ReadMe
 ******
 
+.. MARKER_sidebar_start
+
 .. sidebar:: Engels & Dutch
 
    * This side is partly in Dutch.
    * En gedeeltelijk in het Engels
 
-.. MARKER_1
-
+.. MARKER_sidebar_end
+   
 .. glossary::
 
    Modern Engineering
@@ -44,7 +46,8 @@ ReadMe
       bug in a compiler will effect all end-users!).
 
 
-.. MARKER_2
+
+.. _Copyright:
 
 Copyright
 =========

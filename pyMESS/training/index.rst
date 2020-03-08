@@ -7,8 +7,7 @@ Training snippets
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
-   *
-   */index
+
+   dPID/index
 

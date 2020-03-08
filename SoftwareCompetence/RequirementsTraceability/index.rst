@@ -6,9 +6,11 @@ Requirements Traceability
 
 .. post:: 2020/02/15
    :tags: SysEng
-   :category:
-   :location: Eindhoven
+   :category: lecture
+   :location: Vianen
    :language: en
+
+   :study-time: 1 hour
 
    Requirement-Management, and especially *“Tracking Requirements”* isn’t that complicated, but it needs some
    discipline.  Often that discipline is *replaced* by a tool, which is encouraged by tool-vendors. That hardly ever

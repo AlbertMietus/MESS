@@ -13,12 +13,16 @@ div.wy-side-nav-search {
     border-bottom: 2px solid #c0c0c0;
 }
 
-h1,h2,h3 {
+h1,h3 {
     background-color: #808080; color: #eeeeff;
     margin: 1ex -1em 1ex -1em;
     padding : 0 1em;
 }
-
+h2 {
+    background-color: #808080; color: #000066;
+    margin: 1ex -1em 1ex -1em;
+    padding : 0 1em;
+}
 div.wy-nav-content {
     padding: 1em;
     padding-top: 0;

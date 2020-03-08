@@ -1,7 +1,9 @@
 .. Copyright (C) 2017-2019: ALbert Mietus.
 
-The API
-========
+.. _TPE_API:
+
+The TPE API
+===========
 
 Conceptually, a TPE is very easy to use. There are two main classes; the :class:`TPE` itself, and some :class:`FutureObject`\s.
 

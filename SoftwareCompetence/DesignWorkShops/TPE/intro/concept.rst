@@ -1,4 +1,5 @@
 .. Copyright (C) 2017-2019: ALbert Mietus.
+
 Concept
 =======
 
@@ -8,7 +9,7 @@ uitsluitend (en typisch zonder onderbreking) aan die taak en maakt het resultaat
 beschikbaar. Daarna wacht hij op een nieuwe taak. Het aantal worker is typisch instelbaar; waarbij
 het de kunst is om altijd minimaal één worker vrij te hebben.
 
-.. figure:: https://upload.wikimedia.org/wikipedia/commons/0/0c/Thread_pool.svg
+.. figure:: ./WikiMedia/Thread_pool.svg
    :align: right
    :scale: 50%
    :target: https://commons.wikimedia.org/wiki/File%3AThread_pool.svg

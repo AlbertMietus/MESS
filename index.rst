@@ -5,22 +5,23 @@
 Modern Engineering of Sovereign Software
 ****************************************
 
-.. About MESS
-.. include:: README.rst
-   :start-after: MARKER_1
-   :end-before:  MARKER_2
-
+See the :doc:`README` on :term:`Modern Engineering` of :term:`Sovereign Software`, and the :ref`copyright`
 
 Table of Content
 ****************
+
+.. Show the sideBar: Engels & Dutch
+.. include:: README.rst
+   :start-after: MARKER_sidebar_start
+   :end-before:  MARKER_sidebar_end
 
 .. toctree::
    :glob:
    :maxdepth: 2
 
    *
-   pyMESS/index
    SoftwareCompetence/index
+   pyMESS/index
    blog/index
 
 

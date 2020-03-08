@@ -29,6 +29,8 @@ documentation for details
 
 Python
 ------
+.. _TPE_Python:
+
 
 .. literalinclude:: examples/TPE_demo_1.py
    :language: python3

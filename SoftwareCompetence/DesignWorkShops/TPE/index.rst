@@ -1,4 +1,4 @@
-.. Copyright (C) 2017-2019: ALbert Mietus.
+.. Copyright (C) 2017-2020: ALbert Mietus.
 
 .. _TPE:
 
@@ -13,12 +13,15 @@ ThreadPoolExecutor
    Deze workshop is gebaseerd op bestaande, Nederlandse teksten. Voorlopig zijn allen de nieuwe delen in het Engels.
 
 
+
+
 .. post:: 2020/03/06
    :tags: DesignWorkShops
-   :category:
+   :category: practice
    :location: Eindhoven
-   :language: en nl
+   :language: nl,en
 
+   :practice-time: 2 * 1 hour
 
    This workshop is about the *ThreadPoolExecutor* (‘TPE’ for friends): a pool of workers implemented with
    Threads. This is a modern, advanced **design-pattern** available in many languages.
@@ -48,11 +51,13 @@ Some exercises will have a possible elaboration; often that isn’t only good on
 
    intro/index
    DesignAnalyse/index
-
-   */index
+   elaboration/index
 
 
 ------------------------
+
+
+.. _TPE_links:
 
 .. seealso::
 
