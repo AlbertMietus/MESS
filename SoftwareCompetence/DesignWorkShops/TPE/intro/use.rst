@@ -6,7 +6,7 @@ Use (Examples)
 This entry gives a very simple example, in various languages.
 
 The key methods are :meth:`TPE.submit()` and :meth:`FutureObject.result()` [``.get()`` in some languages]. Also
-:meth:`FutureObject.done()` [or ``.isDone()] is a important method.
+:meth:`FutureObject.done()` [or ``.isDone``] is a important method.
 |BR|
 There are many more methods, depending on the implementation. Bit without using the above ones, you not using it properly.
 

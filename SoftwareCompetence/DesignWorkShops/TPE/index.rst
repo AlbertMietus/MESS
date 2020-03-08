@@ -47,6 +47,7 @@ Some exercises will have a possible elaboration; often that isn’t only good on
    :maxdepth: 2
 
    intro/index
+   DesignAnalyse/index
 
    */index
 

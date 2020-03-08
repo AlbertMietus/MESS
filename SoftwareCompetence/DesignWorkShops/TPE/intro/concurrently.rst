@@ -1,6 +1,6 @@
 .. Copyright (C) 2017-2019: ALbert Mietus.
 
-
+=================
 Why concurrently?
 =================
 
@@ -16,7 +16,11 @@ veel tijd voor de kleinste, repeterende taken. Het :dfn:`WorkersPool` patroon is
 generieke aanpak, die de minste overhead kent. Zeker als deze geïmplementeerd word met threads. Dan
 mag de taak zo klein zijn als *één functie*!
 
+WorkersPools
+============
+
 Al zijn er ook vele andere redenen om een ‘WorkersPool’ te gebruiken. Zoals:
+
 
 Robuustheid
 -----------
@@ -39,3 +43,9 @@ Hoewel de (thread) WorkersPool complex is om te implementeren, maakt een goede r
 `Swift-Libraries  <https://apple.github.io/swift-corelibs-libdispatch/>`__.
 
 
+Questionnaire
+=============
+
+#. When is the overhead of staring a thread to high?
+#. Why does a worker-pool (with threads) improve this?
+#. Can you imagen other kind of worker-pools (So not with threads, but with ...). Give at least 2 others
