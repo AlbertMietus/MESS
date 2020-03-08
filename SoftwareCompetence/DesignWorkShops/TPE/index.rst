@@ -10,9 +10,9 @@ ThreadPoolExecutor
    This workshop is mostly in Dutch and partly in English; as it is based on an existing Dutch documentation. Only the new
    parts are in English. Hopefully, more and more part will be translated.
 
-   Deze workshop is gebaseerd op bestaande, Nederlandse teksten. Voorlopig zijn allen de nieuwe delen in het Engels.
+   Deze workshop is gebaseerd op bestaande, Nederlandse teksten. Voorlopig zijn alleen de nieuwe delen in het Engels.
 
-
+   * You can use google-translate for now: `Translate <https://translate.google.com/translate?sl=nl&tl=en&u=http://mess.softwarebetermaken.nl/en/dev-designworkshop/SoftwareCompetence/DesignWorkShops/TPE/index.html>`_
 
 
 .. post:: 2020/03/06
