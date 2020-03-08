@@ -6,10 +6,18 @@ dPID: A Python ‘homework’ exercise
 **********************************
 :status: Alfa
 
-This is an optional exercise for the python-3 workshops: program a **d**\iscrete **PID**-controller.
+.. post:: 2017/10/22
+   :tags: Python, TDD
+   :category: practice,home-work
+   :location:
+   :language: en
 
-A basic :class:`class definition <dpid.dPID>` is given; which has to be tested and implemented. By starting
-with the *test-part*, which is advisable anyhow (the TDD approach), the exercise starts simple.
+   :practice-time: 1 hour
+
+   This is an optional exercise for the python-3 workshops: program a **d**\iscrete **PID**-controller.
+
+   A basic :class:`class definition <dpid.dPID>` is given; which has to be tested and implemented. By starting
+   with the *test-part*, which is advisable anyhow (the TDD approach), the exercise starts simple.
 
 A few :ref:`test-examples <dPID_test_examples>` are also given. This file can be used as *'template'* to
 write your own tests.

@@ -4,8 +4,8 @@ Software competency
 -------------------
 
 .. toctree::
-   :glob:
-   :maxdepth: 1
+   :maxdepth: 2
 
-   *
-   */index
+   DesignWorkShops/index
+   RequirementsTraceability/index
+   HTLD/index

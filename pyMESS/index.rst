@@ -9,6 +9,6 @@ PyMESS: MESS with python
    :maxdepth: 1
    :glob:
 
-   *
+
    */index
 

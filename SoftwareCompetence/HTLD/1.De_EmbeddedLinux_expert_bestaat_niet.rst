@@ -3,13 +3,14 @@
 =====================================
 De Embedded Linux Expert bestaat niet
 =====================================
-:reading-time: 3 minuten
 
 .. post:: 2019/03/14
    :tags: HTLD
-   :category:
+   :category: opinion 
    :location: Eindhoven
    :language: nl
+
+   :reading-time: 4 minuten
 
    Regelmatig krijg ik ‘Embedded Linux Experts’ aangeboden; bijvoorbeeld voor het **HTLD**-team (*HighTech Linux
    Delivery*).  Vaak zijn goede mensen, met Linux ervaring; maar toch niet de mensen die ik zoek.  Het blijkt erg lastig
