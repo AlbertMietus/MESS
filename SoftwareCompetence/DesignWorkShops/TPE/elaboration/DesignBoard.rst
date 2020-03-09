@@ -22,3 +22,7 @@ See my analyse in this picture below
 Next, this “curly flow” can be converted to a sequence-diagram. Preferable on a 2nd whiteboard. As shown below.
 
 .. figure:: DesignBoardFotos/TPE_sequence.jpg
+
+Last, and optional, we can convert it to (plant)UML
+
+.. uml:: TPE_sequence.puml
