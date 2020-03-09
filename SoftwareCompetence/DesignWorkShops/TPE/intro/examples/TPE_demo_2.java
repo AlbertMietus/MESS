@@ -1,4 +1,3 @@
-
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -23,14 +22,14 @@ public class TPE_demo_2 {
 
         //* (2) Sumbit all task, with a random input
         for (int i = 1; i <= TRIES; i++) {
-            Future<Long> future = workers.submit(new aTask((long) (Math.random() * 10)));
+            Future<Long> future = workers.submit(new DemoTask((long) (Math.random() * 10)));
             resultList.add(future); // And save future result
         }
 
         //* (3) Now print all results; wait on the when needed [.get() does]
         for(Future<Long> f : resultList) {
             try {
-                System.out.println("Future done (Y/N)? :" +f.isDone() + ".\tResult is: " + f.get());
+                System.out.println("Future done (Y/N)? :" + f.isDone() + ".\tResult is: " + f.get());
             } catch (InterruptedException | ExecutionException e) {
                 e.printStackTrace();
             }
@@ -42,21 +41,21 @@ public class TPE_demo_2 {
 }
 
 
-class aTask implements Callable {
+class DemoTask implements Callable {
     Long number;
 
-    public aTask(Long number) {
+    public DemoTask(Long number) {
         this.number = number;                      // JAVA: save the input of this "function
     }
 
 
     public Long call() {
         try {
-            TimeUnit.SECONDS.sleep(this.number/4);  // Simulate a complicated calculations ...
+            TimeUnit.SECONDS.sleep(number/4);  // Simulate a complicated calculations ...
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        return this.number * this.number;           //  ... returning the square
+        return number * number;           //  ... returning the square
     }
 }
 

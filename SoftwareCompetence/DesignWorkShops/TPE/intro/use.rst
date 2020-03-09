@@ -56,7 +56,7 @@ To compile this example, compile it first (int the examples dir)
 .. code-block:: shell-session
 
    [albert@MESS:2]% javac TPE_demo.java
-   [albert@MESS:3]% java TPE_demo_2 Task
+   [albert@MESS:3]% java TPE_demo_2 DemoTask
    Future done (Y/N)? :true.	Result is: 1
    Future done (Y/N)? :false.	Result is: 49
    Future done (Y/N)? :false.	Result is: 64
