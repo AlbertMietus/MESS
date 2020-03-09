@@ -1,0 +1,105 @@
+@startuml
+
+   hide footbox
+   !pragma teoz true
+
+   participant TPE
+   participant  "Future(s)"         as Future <<data>>
+   participant  "WorkItem(s)"       as WorkItem <<data>>
+   participant  "WorkQueue"         as Queue
+   control      "WorkersPool" 	    as Workers <<Threads>>
+   note right of Workers: max ""max_workers"" independent worker threads
+
+   == Initialisation ==
+
+        [->    TPE:                     ThreadPoolExecutor(max_workers)
+   TPE  ->     Queue:                   self._work_queue = Queue()
+
+   == Once ==
+
+        [->     TPE:                    **submit**(__func__, args, kwargs)
+   TPE  ->o     Future:                 f=Future()
+   TPE  ->o     WorkItem:               w=WorkItem(f, func, args,kwargs)
+   TPE  ->      Queue:                  put(w)
+
+   par
+      group if less as max_workers
+         note right of Workers: in  _adjust_thread_count()
+         TPE -> Workers:                Threads(target=Workers, self._work_queue), start
+         activate Workers
+      end
+     [/--              TPE:             //future//
+     [-\               Future:          future.result(~~timeout=None~~)
+      activate Future
+
+   else
+
+      Workers    -\    Queue:           get(~~block=True~~)
+      Queue      -->   Workers:         WorkItem
+      Workers    ->    WorkItem:        run
+      activate WorkItem
+      WorkItem   ->    WorkItem:        result=__func__(args,kwargs)
+      WorkItem   ->    Future:          set(result)
+      deactivate WorkItem
+   end
+
+   [<--                Future: value
+   deactivate Future
+
+   == Many ==
+   note over TPE, WorkItem: Details for TPE as above
+   note over Future, Workers: ThreadPool: assume three independent workers  (""max_workers == 3"")\nFor details, see above. get ... set in a forever-loop
+
+   par
+      note right of Workers: worker-1
+      Workers    -\    Queue:           get(~~block=True~~)
+   else
+      [->              TPE:             2) **submit**
+      TPE  ->          Queue:           put(w)
+      TPE  ->          Workers:         Threads(target=Workers, self._work_queue), start
+      activate Workers
+      [/--             TPE:             //future_2//
+
+      [->              TPE:             3) **submit**
+      TPE  ->          Queue:           put(w)
+      TPE  ->          Workers:         Threads(target=Workers, self._work_queue), start
+      activate Workers
+      [/--             TPE:             //future_3//
+
+      [->              TPE:             4) **submit**
+      TPE  ->          Queue:           put(w)
+      [/--             TPE:             //future_4//
+   else
+      note right of Workers: worker-1\n(~~unblock~~)
+      Queue      -->   Workers:         WorkItem
+      Workers    ->    WorkItem:        run
+      activate WorkItem
+      WorkItem   ->    Future:          set(result)
+      deactivate WorkItem
+   else
+      note right of Workers: worker-2
+      Workers    -\    Queue:           WorkItem = get(~~block=True~~)
+      Workers    ->    WorkItem:        run
+      activate WorkItem
+      WorkItem   ->    Future:          set(result)
+      deactivate WorkItem
+   else
+      note right of Workers: worker-3
+      Workers    -\    Queue:           WorkItem = get(~~block=True~~)
+      Workers    ->    WorkItem:        run
+      activate WorkItem
+      WorkItem   ->    Future:          set(result)
+      deactivate WorkItem
+   end
+
+   note right of Workers: a worker\n(as soon as one is available)
+   Workers       -\    Queue:           WorkItem = get(~~block=True~~)
+   Workers       ->    WorkItem:        run
+   activate WorkItem
+   WorkItem      ->    Future:          set(result)
+   deactivate WorkItem
+   |||
+
+@enduml
+
+
