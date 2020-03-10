@@ -6,9 +6,9 @@
 Pyreversed class diagrams
 =========================
 
-Extracting class diagrams from code is easy; there exist many tools. For python ``pyreversed`` is the most used one.
+Extracting class diagrams from code is easy; there exist many tools. For python, ``pyreversed`` is the most used one.
 
-The readability of the diagram is strongly depended on the tool, the selected options, and mostly: the **quality** of
+The readability of the diagram is strongly dependents on the tool, the selected options, and mostly: the **quality** of
 the design/code. Do not expect nice diagrams, when somebody created the code without a proper design!
 
 concurrent.futures.thread.ThreadPoolExecutor
@@ -33,9 +33,8 @@ Questionnaire
 =============
 
 #. Which of the two diagrams are the most useful?
-#. How *bad* (iff at all) are “to many details”?
-#. Which details should not be inclused? (when you do the analyse manually)
-
+#. How *bad* (if at all) is it to have “too many” details”?
+#. Which details should not be included? (When you do the analyse manually)
 
 
 ----------
