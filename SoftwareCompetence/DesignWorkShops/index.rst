@@ -9,4 +9,5 @@ DesignWorkShops
    :glob:
    :maxdepth: 2
 
-   */index
+   TPE/index
+   PubSub/index
