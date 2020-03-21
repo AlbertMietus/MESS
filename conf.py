@@ -54,4 +54,3 @@ if True:
         '**': [ 'recentposts.html', 'tagcloud.html', 'postcardHeader.html'],
     }
 
-html_static_path.append('_static')

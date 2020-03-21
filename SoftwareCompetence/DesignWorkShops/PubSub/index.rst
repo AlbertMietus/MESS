@@ -8,12 +8,12 @@
 
 .. sidebar:: **HighTech** vs *Gooogling*
 
-   When you search for `Pub/Sub`, you will find over 312M hits! Mostly about cloud-computing, and on how servers exchange
-   messages via a *‘broker’*.
+   When you search for `Pub/Sub`, you will find over 312M hits! Most are about cloud-computing and on how to exchange messages
+   between servers via a *‘broker’*.
    |BR|
-   Often it is infrastructure engenering based.
+   Often it is infrastructure engineering based.
 
-   This workshop isn’t about that. We focus on *Modern, Embedded Software Systems*: How can an (HighTech) Software Engineer use
+   This workshop isn’t about that. We focus on *Modern, Embedded Software Systems*: How can a (HighTech) Software Engineer use
    this pattern to create better software.
 
 
@@ -59,4 +59,4 @@
 
 .. seealso::
 
-   * ...
+   * https://mybinder.org/v2/gh/AlbertMietus/PyMess.ipython-notebools/master?filepath=%2FSoftwareCompetence%2FDesignWorkShops%2FPubSub%2FPubSub-demo.ipynb

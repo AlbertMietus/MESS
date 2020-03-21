@@ -1,0 +1,33 @@
+/* SwBMnl-slides style for Juyiter/IPython "download as slides" ...
+   The custom.css file should import it as:
+   @import url("/_static/SwBMnl-slides.css");
+*/
+
+/* Gray slides on gray background with blue border*/
+.reveal .slide-background { background: #808080;}
+.reveal div.slides {
+    background: #c0c0c0;
+    border: 2px solid #000066;
+}
+
+/* Also gray slides in overview-mode. Highligh the current slide a bit */
+.reveal.overview .slides section { background: #808080;}
+.reveal.overview .slides section.present { background: #c0c0c0;     border: 2px solid #000066;}
+
+/* H1, H2 headers in blue; top aligned. H1 in gray backgroud. In contact with (gray, see bellow side)*/
+.reveal .slides h1 {
+    color: #000066; background: #808080;
+    margin-left: -0.5em; padding-left: 1em;
+    margin-top: -0.5em; padding-top: 0.5em; padding-bottom: 0.5em;
+}
+.reveal .slides h2 {
+    color: #000066;
+    margin-top: -0.5em; padding-top: 0.5em;
+}
+
+/* Slighly style the input "sidebar". Make the "Header" text-cell-promt gray; as sidebar, in contact with H1 (see above) */
+.reveal .prompt.input_prompt { border: 1px solid #808080; }
+.reveal div.text_cell .prompt.input_prompt { border: 1px solid #808080; background:#808080;}
+
+/* code section ...*/
+.reveal .slides section code {background: #808080; color: #000066;}

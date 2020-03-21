@@ -1,0 +1,42 @@
+@startuml
+hide footbox
+participant Publisher         as P
+participant You               as S1
+participant "Somebody"        as S2
+participant "Else"  as S3
+
+== Get your subscription ==
+
+P //-- S1    : Subscribe to newspaper
+...
+[--\ P : //news//
+activate P
+P -> S1     : Get your copy
+deactivate P
+
+== Everybody got its own **copy** of the //same// newspaper ==
+
+
+P //-- S2    : Another subscription
+P //-- S3    : Another subscription
+
+...
+[--\ P : //news//
+activate P
+P -> S1
+P -> S2
+P -> S3
+deactivate P
+
+== Until it is canceled ==
+
+P //-- S2    : unsubscribe
+...
+[--\ P : //news//
+activate P
+P -> S1
+P -> S3
+deactivate P
+
+
+@enduml
