@@ -59,4 +59,4 @@
 
 .. seealso::
 
-   * https://mybinder.org/v2/gh/AlbertMietus/PyMess.ipython-notebools/master?filepath=%2FSoftwareCompetence%2FDesignWorkShops%2FPubSub%2FPubSub-demo.ipynb
+   * ...
