@@ -1,6 +1,6 @@
 /* SwBMnl-slides style for Juyiter/IPython "download as slides" ...
-   The custom.css file should import it as:
-   @import url("/_static/SwBMnl-slides.css");
+   The custom.css file should import it as: (Assuming this file is in the ../_static/ dir too)
+   @import url("./SwBMnl-slides.css");
 */
 
 /* Gray slides on gray background with blue border*/
