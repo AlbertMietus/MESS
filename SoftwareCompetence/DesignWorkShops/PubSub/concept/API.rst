@@ -6,9 +6,7 @@
 The Pub/Sub API
 ===============
 
-As typical with *Design Patterns* there are many ways to implement it. Here we focus on the “Topic” approach. It
-decouples modules by defining a generic interface, and act as a kind of “man-in-the-middle”.
-
+This is the API (and implementation) of a simple :class:`~pubsub.Topic` class; as used in :ref:`PubSub_Use`.
 Topic
 =====
 
