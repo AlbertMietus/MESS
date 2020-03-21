@@ -43,12 +43,12 @@
    But, by knowing how to implement it and are able to design it, will help you to use it for the better
 
 
-
 .. toctree::
    :glob:
 
-   *
-   */index
+
+   concept/index
+   demo/index
 
 
 
