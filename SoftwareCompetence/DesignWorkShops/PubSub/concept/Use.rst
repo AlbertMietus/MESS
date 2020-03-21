@@ -33,7 +33,8 @@ Each subscriber should register a ``callback``, which will be called “automagi
 Where ``t`` is topic (an instance of :class:`pubsub.Topic`) and ``demo_cb`` is the *callback*. This can a function or other
 kind of callable. Multiple subscriptions are possible, by registering another::
 
-  t.subscribe(demo_oo_cb)
+  oo = Demo()
+  t.subscribe(oo.demo_oo_cb)
 
 .. _PubSub_callback_demo:
 
