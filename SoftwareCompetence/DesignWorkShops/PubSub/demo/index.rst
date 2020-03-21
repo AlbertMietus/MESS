@@ -10,7 +10,9 @@ forms:
 #. An interactive notebook. This is the same notebook, which you can edit an run on public `“binder”
    <https://mybinder.org>`_
 
-You can also `download <PubSub-demo-github>`_ the notebook, it is available on github.
+You can also `download the notebook
+<https://github.com/AlbertMietus/PyMess.ipython-notebools/tree/master/SoftwareCompetence/DesignWorkShops/PubSub/PubSub-demo.ipynb>`_,
+it is available on github.
 
 .. note:: Same source
 
@@ -45,4 +47,10 @@ Run on binder: `try it yourself <https://mybinder.org/v2/gh/AlbertMietus/PyMess.
    `Anaconda <https://www.anaconda.com/distribution/>`_. For Window-64 see:
    `here <https://repo.anaconda.com/archive/Anaconda3-2020.02-Windows-x86_64.exe>`_.
 
-And play with in on your own PC using this `notebook <PubSub-demo-github>`_. Then you can save your attempts too.
+And play with in on your own PC using this `notebook
+<https://github.com/AlbertMietus/PyMess.ipython-notebools/tree/master/SoftwareCompetence/DesignWorkShops/PubSub/PubSub-demo.ipynb>`_
+Then you can save your attempts too.
+
+
+
+
