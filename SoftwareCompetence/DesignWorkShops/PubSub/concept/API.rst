@@ -7,6 +7,7 @@ The Pub/Sub API
 ===============
 
 This is the API (and implementation) of a simple :class:`~pubsub.Topic` class; as used in :ref:`PubSub_Use`.
+
 Topic
 =====
 
