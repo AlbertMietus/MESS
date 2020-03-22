@@ -26,7 +26,7 @@ But how about two modules, that are under construction?
 Then, both are not “stable” (as they might develop) and being depended on unstable modules is bad. You can’t test
 independently, you may need to revise when the other is updated, etc. Well you know the troubles ...
 
-To overcome this, the modules should be *uncoupled* or *lousily coupled*: Both modules are not allowed to call a
+To overcome this, the modules should be *uncoupled* or *loosely coupled*: Both modules are not allowed to call a
 function/method of the other one. (Which is easy:-). But still pass information; which might seen impossible at first.
 
 This is possible, as the modules do not dependent on each other; instead they both depend on the generic
