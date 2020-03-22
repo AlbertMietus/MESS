@@ -13188,6 +13188,7 @@ a.anchor-link {
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
+<link rel="stylesheet" href="SwBMnl-slides.css">
 <link rel="stylesheet" href="custom.css">
 
 </head>
@@ -13202,10 +13203,30 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Pub/Sub--workshop----Part-I"><strong>Pub</strong>/<em>Sub</em>  workshop -- Part I<a class="anchor-link" href="#Pub/Sub--workshop----Part-I">&#182;</a></h1><p>Some demos in python</p>
+<h1 id="Pub/Sub--workshop-Demo"><strong>Pub</strong>/<em>Sub</em>  workshop Demo<a class="anchor-link" href="#Pub/Sub--workshop-Demo">&#182;</a></h1><p><em>This notebook is part of my 
+<a href="http://mess.softwarebetermaken.nl">MESS</a>
+<a href="http://mess.softwarebetermaken.nl/en/latest/SoftwareCompetence/DesignWorkShops/">Design Workshop</a>
+<a href="http://mess.softwarebetermaken.nl/en/latest/SoftwareCompetence/DesignWorkShops/PubSub/">PubSub</a></em>
+{<a href="http://mess.softwarebetermaken.nl/en/dev-designworkshop/SoftwareCompetence/DesignWorkShops/PubSub/index.html">DRAFT</a>}</p>
+<h2 id="A-complete-PubSub-demo-in-python">A complete PubSub demo in python<a class="anchor-link" href="#A-complete-PubSub-demo-in-python">&#182;</a></h2><p>For instruction to run, or see it as a slideshow, see: <a href="http://mess.softwarebetermaken.nl/en/latest/SoftwareCompetence/DesignWorkShops/PubSub/demo/index.html">http://mess.softwarebetermaken.nl/en/latest/SoftwareCompetence/DesignWorkShops/PubSub/demo/index.html</a>
+{<a href="http://mess.softwarebetermaken.nl/en/dev-designworkshop/SoftwareCompetence/DesignWorkShops/PubSub/demo/index.html">Draft</a>}</p>
+<hr>
+<p><strong>Notes</strong> <em>(in slides-mode):</em></p>
+<ul>
+<li>Use the <strong>spacebar</strong> to forward to the next slide <em>after</em> selecting (clicking) in this frame. </li>
+<li>Or, click the <strong>outer-edge</strong> to open in a new window/tab. And use <strong>'F'</strong> for full-window mode</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="The-Demo">The Demo<a class="anchor-link" href="#The-Demo">&#182;</a></h2><p>Some demos in python</p>
 <ol>
 <li>A complete implementation<ol>
-<li>A <strong>Topic</strong>-based, OO-style class</li>
+<li>A <strong>Topic</strong> class</li>
 <li>With a subscribe and a publish method</li>
 </ol>
 </li>
@@ -13215,25 +13236,19 @@ a.anchor-link {
 </ul>
 </li>
 <li>Both in function-style and in OO-style<ul>
-<li>And, with a mixture </li>
+<li>And, in the mixture </li>
 </ul>
 </li>
 </ol>
 </li>
-<li>And using it, by publishing <em>to all</em> <ol>
+<li><p>Use it, by publishing <em>to all</em></p>
+<ol>
 <li>Life, interactive; in IPython (&amp; Jupyter) notebook</li>
 <li><em>Revealjs</em> slides, generated from above</li>
-<li>Both the notebook &amp; slides are downloadable</li>
 </ol>
+<p>Both, the notebook &amp; slides are downloadable</p>
 </li>
 </ol>
-<hr>
-<p>Note: to <em>run</em> this yourself, Install:</p>
-<ul>
-<li>Jupiter (<a href="https://jupyter.readthedocs.io/en/latest/install.html#install">https://jupyter.readthedocs.io/en/latest/install.html#install</a>), via</li>
-<li>Anaconda (<a href="https://www.anaconda.com/distribution/">https://www.anaconda.com/distribution/</a>) </li>
-<li><strong>Here</strong> <a href="https://repo.anaconda.com/archive/Anaconda3-2020.02-Windows-x86_64.exe">Window 64</a></li>
-</ul>
 
 </div>
 </div>
@@ -13243,7 +13258,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="The-basics:-A-Topic-class">The basics: A Topic class<a class="anchor-link" href="#The-basics:-A-Topic-class">&#182;</a></h2><ul>
 <li>A simple <code>Topic</code> class</li>
-<li>And a trivial function which is subscribed</li>
+<li>And a trivial function that is use to subscribe</li>
 </ul>
 
 </div>
@@ -13296,11 +13311,19 @@ a.anchor-link {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notes: You can ignore <code>Topic.__init__()</code> and <code>Topic.__str__()</code> for now</p>
+
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Demo-1">Demo 1<a class="anchor-link" href="#Demo-1">&#182;</a></h1><ul>
+<h1 id="Demo-1:-Simple-use">Demo 1: Simple use<a class="anchor-link" href="#Demo-1:-Simple-use">&#182;</a></h1><ul>
 <li>Create a topic</li>
 <li>Subscribe <code>demo</code></li>
 <li>Publish a value</li>
@@ -13357,7 +13380,7 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X7f85ccbcc150&gt;&gt; has new value: HOI
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new value: HOI
 </pre>
 </div>
 </div>
@@ -13365,11 +13388,20 @@ a.anchor-link {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Using</strong> a Topic is trivial:</p>
+<p>Once a topic is created and a <em>callback</em> is registerd, that function is called whenever a new value is pubished.</p>
+
+</div>
+</div>
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="This-pub/sub-is-smart">This pub/sub is <em>smart</em><a class="anchor-link" href="#This-pub/sub-is-smart">&#182;</a></h2><ul>
+<h2 id="1a:-This-pub/sub-is-smart">1a: This pub/sub is <em>smart</em><a class="anchor-link" href="#1a:-This-pub/sub-is-smart">&#182;</a></h2><ul>
 <li>It will <em>not</em> distribute the same value twice. </li>
 <li>Unless it is asked to do so (<code>force</code>)</li>
 </ul>
@@ -13401,7 +13433,7 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X7f85ccbcc150&gt;&gt; has new value: AGAIN
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new value: AGAIN
 </pre>
 </div>
 </div>
@@ -13434,8 +13466,8 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X7f85ccbcc150&gt;&gt; has new value: FORCE
-Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X7f85ccbcc150&gt;&gt; has new value: FORCE
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new value: FORCE
+Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new value: FORCE
 </pre>
 </div>
 </div>
@@ -13468,8 +13500,80 @@ Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X7f85ccbcc150&gt;&gt; has new 
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X7f85ccbcc150&gt;&gt; has new value: SMART
-Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X7f85ccbcc150&gt;&gt; has new value: SMART
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new value: SMART
+Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new value: SMART
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1b:-Even-more-smartness">1b: Even more smartness<a class="anchor-link" href="#1b:-Even-more-smartness">&#182;</a></h2><p>This <code>Topic</code> will not subscribe the same function again</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t1</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s2">&quot;I&#39;m so smart&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new value: I&#39;m so smart
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># `demo` is already registered above</span>
+<span class="n">t1</span><span class="o">.</span><span class="n">subscribe</span><span class="p">(</span><span class="n">demo</span><span class="p">)</span>   <span class="c1"># will silently be ingnored</span>
+<span class="n">t1</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s2">&quot;As I call demo only once&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new value: As I call demo only once
 </pre>
 </div>
 </div>
@@ -13481,14 +13585,22 @@ Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X7f85ccbcc150&gt;&gt; has new 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Demo-2">Demo 2<a class="anchor-link" href="#Demo-2">&#182;</a></h1><p>Now with multiple (4) subscribers (on another topic)</p>
+<h1 id="Demo-2:-Multi-use">Demo 2: Multi-use<a class="anchor-link" href="#Demo-2:-Multi-use">&#182;</a></h1><p>Now with multiple subscribers</p>
+<ul>
+<li>We create (another) Topic: <code>t2</code></li>
+<li>And a handfull of (<em>again, trivial</em>) demo-callbacs</li>
+</ul>
+<p>And subscribe all <em>callbacks</em> to the same <code>t2</code> Topic ...</p>
+<p>Then, all are executed as when <code>publish()</code> is called (once).</p>
+<hr>
+<p><em>It is so easy :-)</em></p>
 
 </div>
 </div>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t2</span><span class="o">=</span> <span class="n">Topic</span><span class="p">(</span><span class="s2">&quot;demo2&quot;</span><span class="p">)</span>
@@ -13501,7 +13613,7 @@ Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X7f85ccbcc150&gt;&gt; has new 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">demo_2</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">topic</span><span class="p">):</span>
@@ -13519,7 +13631,7 @@ Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X7f85ccbcc150&gt;&gt; has new 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t2</span><span class="o">.</span><span class="n">subscribe</span><span class="p">(</span><span class="n">demo</span><span class="p">)</span>
@@ -13535,7 +13647,7 @@ Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X7f85ccbcc150&gt;&gt; has new 
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t2</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s2">&quot;ALL&quot;</span><span class="p">)</span>
@@ -13555,10 +13667,10 @@ Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X7f85ccbcc150&gt;&gt; has new 
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X7f85ccbcc350&gt;&gt; has new value: ALL
-Demo 2:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X7f85ccbcc350&gt;&gt; has new value: ALL
-Demo 3:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X7f85ccbcc350&gt;&gt; has new value: ALL
-Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X7f85ccbcc350&gt;&gt; has new value: ALL
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new value: ALL
+Demo 2:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new value: ALL
+Demo 3:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new value: ALL
+Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new value: ALL
 </pre>
 </div>
 </div>
@@ -13566,15 +13678,69 @@ Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X7f85ccbcc350&gt;&gt; has new
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t2</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s2">&quot;again&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new value: again
+Demo 2:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new value: again
+Demo 3:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new value: again
+Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new value: again
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Surely, we can add more <em>subscribers</em>, and <em>publish</em> more often ...</p>
+
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Demo-3:-OO-subscribers">Demo 3: OO subscribers<a class="anchor-link" href="#Demo-3:-OO-subscribers">&#182;</a></h1><ul>
-<li>We can also subscribe a method of a class-instance<ul>
-<li>Python will automatically remember the object (self)</li>
+<h1 id="Demo-3:-OO-subscribers">Demo 3: OO subscribers<a class="anchor-link" href="#Demo-3:-OO-subscribers">&#182;</a></h1><p>You can also subscribe <em>methods</em>, when you prefer an OO style. 
+This works the same as with functions: just register the method.</p>
+<ul>
+<li>We will define a class with a demo-callback</li>
+<li>And register it to a new Topic: <code>t3</code></li>
 </ul>
-</li>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<p>Notes:</p>
+<ul>
+<li>Python will automatically remember the object (<code>self</code>)</li>
 <li>Here, we use a <em>trick</em> (<code>self._no</code>) to show the different instances</li>
 </ul>
 
@@ -13583,7 +13749,7 @@ Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X7f85ccbcc350&gt;&gt; has new
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Demo</span><span class="p">:</span>
@@ -13608,7 +13774,7 @@ Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X7f85ccbcc350&gt;&gt; has new
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">o</span> <span class="o">=</span> <span class="n">Demo</span><span class="p">()</span>
@@ -13621,7 +13787,7 @@ Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X7f85ccbcc350&gt;&gt; has new
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t3</span> <span class="o">=</span> <span class="n">Topic</span><span class="p">(</span><span class="s2">&quot;OO Demo&quot;</span><span class="p">)</span>
@@ -13634,7 +13800,7 @@ Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X7f85ccbcc350&gt;&gt; has new
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t3</span><span class="o">.</span><span class="n">subscribe</span><span class="p">(</span><span class="n">o</span><span class="o">.</span><span class="n">demo</span><span class="p">)</span>
@@ -13647,7 +13813,7 @@ Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X7f85ccbcc350&gt;&gt; has new
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t3</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">)</span>
@@ -13667,7 +13833,7 @@ Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X7f85ccbcc350&gt;&gt; has new
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;&lt;Demo: ._no=0 at 0X7f85ccc22d10&gt;&gt; got &#39;class&#39; from topic &lt;&lt;Topic: &#39;OO Demo&#39; at 0X7f85d06d6390&gt;&gt;
+<pre>&lt;&lt;Demo: ._no=0 at 0X192e8e2b588&gt;&gt; got &#39;class&#39; from topic &lt;&lt;Topic: &#39;OO Demo&#39; at 0X192e8e39d88&gt;&gt;
 </pre>
 </div>
 </div>
@@ -13679,17 +13845,29 @@ Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X7f85ccbcc350&gt;&gt; has new
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Mix-and-Match">Mix and Match<a class="anchor-link" href="#Mix-and-Match">&#182;</a></h2><ul>
-<li>As shown, it possible to mix classic functions and <em>objects</em></li>
-<li>Again we can subscribe multiple instances</li>
+<h1 id="Demo4:--Mix-and-Match">Demo4:  Mix and Match<a class="anchor-link" href="#Demo4:--Mix-and-Match">&#182;</a></h1><p>You can mix-&amp;-match all the several uses:</p>
+<ul>
+<li>Classic functions and <em>objects</em></li>
+<li>Register many callbacks<ul>
+<li>In this demo, we use a loop to quckly define many callback.</li>
+</ul>
+</li>
+<li>Subscribe after a publication  </li>
 </ul>
 
 </div>
 </div>
 </div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="4.1-many-subscribers">4.1 many subscribers<a class="anchor-link" href="#4.1-many-subscribers">&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t4</span> <span class="o">=</span> <span class="n">Topic</span><span class="p">(</span><span class="s2">&quot;four-10-plys&quot;</span><span class="p">)</span>
@@ -13708,7 +13886,7 @@ Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X7f85ccbcc350&gt;&gt; has new
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t4</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s1">&#39;Yes&#39;</span><span class="p">)</span>
@@ -13728,20 +13906,106 @@ Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X7f85ccbcc350&gt;&gt; has new
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X7f85ccbe6290&gt;&gt; has new value: Yes
-&lt;&lt;Demo: ._no=1 at 0X7f85ccbe62d0&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X7f85ccbe6290&gt;&gt;
-&lt;&lt;Demo: ._no=2 at 0X7f85ccbe6310&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X7f85ccbe6290&gt;&gt;
-&lt;&lt;Demo: ._no=3 at 0X7f85ccbe6350&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X7f85ccbe6290&gt;&gt;
-&lt;&lt;Demo: ._no=4 at 0X7f85ccbe6390&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X7f85ccbe6290&gt;&gt;
-&lt;&lt;Demo: ._no=5 at 0X7f85ccbe6410&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X7f85ccbe6290&gt;&gt;
-&lt;&lt;Demo: ._no=6 at 0X7f85ccbe6450&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X7f85ccbe6290&gt;&gt;
-&lt;&lt;Demo: ._no=7 at 0X7f85ccbe6490&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X7f85ccbe6290&gt;&gt;
-&lt;&lt;Demo: ._no=8 at 0X7f85ccbe64d0&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X7f85ccbe6290&gt;&gt;
-&lt;&lt;Demo: ._no=9 at 0X7f85ccbe63d0&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X7f85ccbe6290&gt;&gt;
-&lt;&lt;Demo: ._no=10 at 0X7f85ccbe6510&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X7f85ccbe6290&gt;&gt;
-Demo 4:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X7f85ccbe6290&gt;&gt; has new value: Yes
-Demo 3:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X7f85ccbe6290&gt;&gt; has new value: Yes
-Demo 2:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X7f85ccbe6290&gt;&gt; has new value: Yes
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt; has new value: Yes
+&lt;&lt;Demo: ._no=1 at 0X192e8f67348&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
+&lt;&lt;Demo: ._no=2 at 0X192e8f67388&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
+&lt;&lt;Demo: ._no=3 at 0X192e8f673c8&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
+&lt;&lt;Demo: ._no=4 at 0X192e8f67408&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
+&lt;&lt;Demo: ._no=5 at 0X192e8f67488&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
+&lt;&lt;Demo: ._no=6 at 0X192e8f674c8&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
+&lt;&lt;Demo: ._no=7 at 0X192e8f67508&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
+&lt;&lt;Demo: ._no=8 at 0X192e8f67548&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
+&lt;&lt;Demo: ._no=9 at 0X192e8f67448&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
+&lt;&lt;Demo: ._no=10 at 0X192e8f675c8&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
+Demo 4:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt; has new value: Yes
+Demo 3:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt; has new value: Yes
+Demo 2:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt; has new value: Yes
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="4.2-:-Subscribe-after-1st-publish">4.2 : Subscribe after 1st publish<a class="anchor-link" href="#4.2-:-Subscribe-after-1st-publish">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t42</span> <span class="o">=</span> <span class="n">Topic</span><span class="p">()</span>
+<span class="n">t42</span><span class="o">.</span><span class="n">subscribe</span><span class="p">(</span><span class="n">demo</span><span class="p">)</span>
+<span class="n">t42</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s2">&quot;fist&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;&#39; at 0X192e8f5e248&gt;&gt; has new value: fist
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now add subscribe another callback</span>
+<span class="n">t42</span><span class="o">.</span> <span class="n">subscribe</span><span class="p">(</span><span class="n">demo_2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t42</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s2">&quot;more and more&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;&#39; at 0X192e8f5e248&gt;&gt; has new value: more and more
+Demo 2:: Topic: &lt;&lt;Topic: &#39;&#39; at 0X192e8f5e248&gt;&gt; has new value: more and more
 </pre>
 </div>
 </div>
@@ -13753,18 +14017,20 @@ Demo 2:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X7f85ccbe6290&gt;&gt; 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="That's-all-folks!">That's all folks!<a class="anchor-link" href="#That's-all-folks!">&#182;</a></h1><p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Thats_all_folks.svg" alt="From WikiMedia"></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Thats_all_folks.svg" alt="From WikiMedia"></p>
+<p>Back to the 
+<a href="http://mess.softwarebetermaken.nl/en/latest/SoftwareCompetence/DesignWorkShops/PubSub/index.html">main presentation</a></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Done at:&quot;</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span><span class="o">,</span> <span class="nn">pytz</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;These slides are generated at:&quot;</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">pytz</span><span class="o">.</span><span class="n">timezone</span><span class="p">(</span><span class="s1">&#39;Europe/Amsterdam&#39;</span><span class="p">)))</span>
 <span class="c1">#EoF</span>
 </pre></div>
 
@@ -13782,7 +14048,7 @@ Demo 2:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X7f85ccbe6290&gt;&gt; 
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Done at: 2020-03-21 20:28:52.647403
+<pre>These slides are generated at: 2020-03-22 14:15:38.809070+01:00
 </pre>
 </div>
 </div>
