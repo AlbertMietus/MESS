@@ -60,6 +60,10 @@ dl.footnote dt.label {float: left}
 .rst-content dl.field-list dd { display: inline; }
 .rst-content dl.field-list p  { display: inherit;}
 
+/* Style (nested) list: no space in between, a bit after the last 'li'*/
+.rst-content .section ol li p {margin-bottom: 0;}
+.rst-content .section ol li:last-child p {margin-bottom: 0.5em}
+
 /* Make a blockquote visual */
 .rst-content blockquote {
     margin-left: 0; margin-right: 3em;
