@@ -13315,7 +13315,8 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Notes: You can ignore <code>Topic.__init__()</code> and <code>Topic.__str__()</code> for now</p>
+<hr>
+<p>Note: You can ignore the dunder methods, <code>Topic.__init__()</code> and <code>Topic.__str__()</code> for now</p>
 
 </div>
 </div>
@@ -13380,7 +13381,7 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new value: HOI
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X1941ca82e88&gt;&gt; has new value: HOI
 </pre>
 </div>
 </div>
@@ -13394,6 +13395,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Using</strong> a Topic is trivial:</p>
 <p>Once a topic is created and a <em>callback</em> is registerd, that function is called whenever a new value is pubished.</p>
+<p><code>topic.publish(data)</code>  <strong><em>kind</em></strong> of act as <code>callback(data, topic)</code>, for all callbacks in a loop</p>
 
 </div>
 </div>
@@ -13433,7 +13435,7 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new value: AGAIN
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X1941ca82e88&gt;&gt; has new value: AGAIN
 </pre>
 </div>
 </div>
@@ -13466,8 +13468,8 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new value: FORCE
-Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new value: FORCE
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X1941ca82e88&gt;&gt; has new value: FORCE
+Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X1941ca82e88&gt;&gt; has new value: FORCE
 </pre>
 </div>
 </div>
@@ -13500,8 +13502,8 @@ Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new v
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new value: SMART
-Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new value: SMART
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X1941ca82e88&gt;&gt; has new value: SMART
+Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X1941ca82e88&gt;&gt; has new value: SMART
 </pre>
 </div>
 </div>
@@ -13509,7 +13511,7 @@ Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new v
 </div>
 </div>
 
-</div>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13540,7 +13542,7 @@ Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new v
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new value: I&#39;m so smart
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X1941ca82e88&gt;&gt; has new value: I&#39;m so smart
 </pre>
 </div>
 </div>
@@ -13573,7 +13575,7 @@ Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new v
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new value: As I call demo only once
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X1941ca82e88&gt;&gt; has new value: As I call demo only once
 </pre>
 </div>
 </div>
@@ -13667,10 +13669,10 @@ Demo:: Topic: &lt;&lt;Topic: &#39;demo 1&#39; at 0X192e8f50888&gt;&gt; has new v
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new value: ALL
-Demo 2:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new value: ALL
-Demo 3:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new value: ALL
-Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new value: ALL
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X1941ca89848&gt;&gt; has new value: ALL
+Demo 2:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X1941ca89848&gt;&gt; has new value: ALL
+Demo 3:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X1941ca89848&gt;&gt; has new value: ALL
+Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X1941ca89848&gt;&gt; has new value: ALL
 </pre>
 </div>
 </div>
@@ -13701,10 +13703,10 @@ Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new 
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new value: again
-Demo 2:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new value: again
-Demo 3:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new value: again
-Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X192e8f50508&gt;&gt; has new value: again
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X1941ca89848&gt;&gt; has new value: again
+Demo 2:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X1941ca89848&gt;&gt; has new value: again
+Demo 3:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X1941ca89848&gt;&gt; has new value: again
+Demo 4:: Topic: &lt;&lt;Topic: &#39;demo2&#39; at 0X1941ca89848&gt;&gt; has new value: again
 </pre>
 </div>
 </div>
@@ -13740,8 +13742,8 @@ This works the same as with functions: just register the method.</p>
 <hr>
 <p>Notes:</p>
 <ul>
-<li>Python will automatically remember the object (<code>self</code>)</li>
-<li>Here, we use a <em>trick</em> (<code>self._no</code>) to show the different instances</li>
+<li>Python will automatically remember the object (<code>self</code>).</li>
+<li>Here, we use a <em>trick</em> (<code>self._no</code>) to show (which of the) many instances are used.</li>
 </ul>
 
 </div>
@@ -13771,6 +13773,15 @@ This works the same as with functions: just register the method.</p>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<p>Note: Again, you may ignore the dunder methods, <code>Demo.__init__()</code> and <code>``Demo.__str__()</code></p>
+
+</div>
+</div>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13810,7 +13821,7 @@ This works the same as with functions: just register the method.</p>
 </div>
 </div>
 
-</div></section><section>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
@@ -13833,7 +13844,7 @@ This works the same as with functions: just register the method.</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;&lt;Demo: ._no=0 at 0X192e8e2b588&gt;&gt; got &#39;class&#39; from topic &lt;&lt;Topic: &#39;OO Demo&#39; at 0X192e8e39d88&gt;&gt;
+<pre>&lt;&lt;Demo: ._no=0 at 0X1941cadb588&gt;&gt; got &#39;class&#39; from topic &lt;&lt;Topic: &#39;OO Demo&#39; at 0X1941cad8348&gt;&gt;
 </pre>
 </div>
 </div>
@@ -13906,20 +13917,20 @@ This works the same as with functions: just register the method.</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt; has new value: Yes
-&lt;&lt;Demo: ._no=1 at 0X192e8f67348&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
-&lt;&lt;Demo: ._no=2 at 0X192e8f67388&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
-&lt;&lt;Demo: ._no=3 at 0X192e8f673c8&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
-&lt;&lt;Demo: ._no=4 at 0X192e8f67408&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
-&lt;&lt;Demo: ._no=5 at 0X192e8f67488&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
-&lt;&lt;Demo: ._no=6 at 0X192e8f674c8&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
-&lt;&lt;Demo: ._no=7 at 0X192e8f67508&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
-&lt;&lt;Demo: ._no=8 at 0X192e8f67548&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
-&lt;&lt;Demo: ._no=9 at 0X192e8f67448&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
-&lt;&lt;Demo: ._no=10 at 0X192e8f675c8&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt;
-Demo 4:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt; has new value: Yes
-Demo 3:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt; has new value: Yes
-Demo 2:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt; has new value: Yes
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X1941ca98e48&gt;&gt; has new value: Yes
+&lt;&lt;Demo: ._no=1 at 0X1941ca71e08&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X1941ca98e48&gt;&gt;
+&lt;&lt;Demo: ._no=2 at 0X1941ca71dc8&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X1941ca98e48&gt;&gt;
+&lt;&lt;Demo: ._no=3 at 0X1941ca82488&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X1941ca98e48&gt;&gt;
+&lt;&lt;Demo: ._no=4 at 0X1941ca82988&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X1941ca98e48&gt;&gt;
+&lt;&lt;Demo: ._no=5 at 0X1941ca82288&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X1941ca98e48&gt;&gt;
+&lt;&lt;Demo: ._no=6 at 0X1941cabf748&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X1941ca98e48&gt;&gt;
+&lt;&lt;Demo: ._no=7 at 0X1941cabf608&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X1941ca98e48&gt;&gt;
+&lt;&lt;Demo: ._no=8 at 0X1941cabf388&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X1941ca98e48&gt;&gt;
+&lt;&lt;Demo: ._no=9 at 0X1941ca82108&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X1941ca98e48&gt;&gt;
+&lt;&lt;Demo: ._no=10 at 0X1941cabf048&gt;&gt; got &#39;Yes&#39; from topic &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X1941ca98e48&gt;&gt;
+Demo 4:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X1941ca98e48&gt;&gt; has new value: Yes
+Demo 3:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X1941ca98e48&gt;&gt; has new value: Yes
+Demo 2:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X1941ca98e48&gt;&gt; has new value: Yes
 </pre>
 </div>
 </div>
@@ -13959,7 +13970,7 @@ Demo 2:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt; h
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;&#39; at 0X192e8f5e248&gt;&gt; has new value: fist
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;&#39; at 0X1941cabf4c8&gt;&gt; has new value: fist
 </pre>
 </div>
 </div>
@@ -14004,8 +14015,8 @@ Demo 2:: Topic: &lt;&lt;Topic: &#39;four-10-plys&#39; at 0X192e8f67308&gt;&gt; h
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Demo:: Topic: &lt;&lt;Topic: &#39;&#39; at 0X192e8f5e248&gt;&gt; has new value: more and more
-Demo 2:: Topic: &lt;&lt;Topic: &#39;&#39; at 0X192e8f5e248&gt;&gt; has new value: more and more
+<pre>Demo:: Topic: &lt;&lt;Topic: &#39;&#39; at 0X1941cabf4c8&gt;&gt; has new value: more and more
+Demo 2:: Topic: &lt;&lt;Topic: &#39;&#39; at 0X1941cabf4c8&gt;&gt; has new value: more and more
 </pre>
 </div>
 </div>
@@ -14017,13 +14028,13 @@ Demo 2:: Topic: &lt;&lt;Topic: &#39;&#39; at 0X192e8f5e248&gt;&gt; has new value
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Thats_all_folks.svg" alt="From WikiMedia"></p>
 <p>Back to the 
 <a href="http://mess.softwarebetermaken.nl/en/latest/SoftwareCompetence/DesignWorkShops/PubSub/index.html">main presentation</a></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Thats_all_folks.svg" alt="From WikiMedia"></p>
 
 </div>
 </div>
-</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[26]:</div>
@@ -14048,7 +14059,7 @@ Demo 2:: Topic: &lt;&lt;Topic: &#39;&#39; at 0X192e8f5e248&gt;&gt; has new value
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>These slides are generated at: 2020-03-22 14:15:38.809070+01:00
+<pre>These slides are generated at: 2020-03-24 10:24:17.362544+01:00
 </pre>
 </div>
 </div>
