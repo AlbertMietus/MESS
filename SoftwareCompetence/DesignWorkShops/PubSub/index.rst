@@ -44,19 +44,7 @@
 
 
 .. toctree::
-   :glob:
-
 
    concept/index
    demo/index
-
-
-
-------------------------
-
-
-.. _PubSub_links:
-
-.. seealso::
-
-   * ...
+   practice/index
