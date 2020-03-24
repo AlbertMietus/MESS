@@ -19,6 +19,7 @@ In software-engineering we call that **uncoupled** or *loosely coupled*; and tha
 .. uml:: PubSub-newspaper.puml
 
 .. toctree::
+   :maxdepth: 2
 
    advantages
    Use

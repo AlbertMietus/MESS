@@ -79,7 +79,7 @@ Notwithstanding, it might be beneficial to include a :ref:`TPE` (or any other co
 implementation of ``Topic``. Then, the runtime of ``t.publish()`` can controlled; even become *RealTime*.
 
 Questionnaire
--------------
+=============
 
 #. Why can the runtime of ``t.publish`` be unbound?
    |BR|

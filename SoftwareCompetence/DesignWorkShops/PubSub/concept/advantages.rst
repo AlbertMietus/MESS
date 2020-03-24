@@ -48,4 +48,10 @@ With Pub/Sub, it is easy to distribute  data to more and more modules. Even to m
 write that sensor-routine! Your current module only has use :meth:`pubsub.Topic.publish`, and that future module can
 get that data using :meth:`pubsub.Topic.subscribe`; easy!
 
+Questionnaire
+-------------
 
+We have shortly introduced two advantages, now you have to *think*
+
+#. Are there **disadvantages** to this *design-pattern*?
+#. Can you mention some other **advantages**?
