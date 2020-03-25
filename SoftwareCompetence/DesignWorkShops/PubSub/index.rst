@@ -17,17 +17,17 @@
    this pattern to create better software.
 
 
-.. post:: 		
+.. post:: 2020/03/25
    :tags: DesignWorkShops
    :category: practice
-   :location: ehv
+   :location: Eindhoven
    :language: en
 
    :practice-time: 2 * 1 hour
 
    The publish-subscribe *architecture*-**pattern** is very popular to route messages, according to `WikiPedia
    <https://en.wikipedia.org/wiki/Publish–subscribe_pattern>`_.  It is used much more generic, however. This workshop shows how
-   to use it in an embedded application; or another single process application.
+   to use it in an embedded application, or another single process application.
    |BR|
    Then it becomes a HighTech (embedded) software **design pattern**.
 

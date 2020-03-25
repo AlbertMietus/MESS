@@ -21,22 +21,22 @@ Topic
    both directions).
 
    * On one side is a ``Publisher`` that provides ‘data’ (**value**’s, *events*, ...).
-   * The other side has ``Subscribers`` which subscribe to the topic (with **callbacks**).
-   * Both ``Publisher`` and ``Subscriber`` are abstract types; there is no contrete class (needed).
-   * Any module that calls :meth:`publish` is called a ``Publisher``; likewise a ``Subscriber`` is anyone calling
+   * The other side has ``Subscribers`` who subscribe to the topic (with **callbacks**).
+   * Both ``Publisher`` and ``Subscriber`` are abstract types; there is no concrete class (needed).
+   * Any module that calls :meth:`publish` is called a ``Publisher``; likewise, a ``Subscriber`` is anyone calling
      :meth:`subscribe`.
-   * Commonly there is only one ``Publisher`` (for a given Topic); that is not mandatory however.
+   * Commonly there is only one ``Publisher`` (for a given Topic); that is not mandatory, however.
 
 
 .. method:: Topic.publish(value, force=False):
 
-   This method is called by the ``Publisher``, whenever new **value** is to be shared. When **force** is `False`
-   (default), the ``value`` wil only be distributed when it differs from the previous value. To force distribution, set
+   This method is called by the ``Publisher``, whenever a new **value** is to be shared. When **force** is `False`
+   (default), the ``value`` will only be distributed when it differs from the previous value. To force distribution, set
    **force** to `True`.
 
 .. method:: Topic.subscribe(callback):
 
-   This method is called by all ``Subscribers`` to *register* a **callback**, that is called on new ‘data’.
+   This method is called by all ``Subscribers`` to *register* a **callback**, which is called on new ‘data’.
 
    .. _PubSub_callback_signature:
 
@@ -46,11 +46,11 @@ Topic
 
      def callback([self,] value, topic):
 
-   Where **value** is the ‘data’ passed to :meth:`publish` and **topic** is the :class:`~pubsub.Topic`
-   instance itself.
+   Where **value** is the ‘data’ passed to :meth:`publish` and  ‘**topic**’ is the :class:`~pubsub.Topic`
+   instance, use to route it.
 
-   When the callback is a method the `self` parameter is automagical remembered by python. For function-callbacks, leave
-   it out.
+   When the callback is a method, the `self` parameter is automagically remembered by Python. For function-callbacks,
+   leave it out.
 
 Supporting types
 ================
@@ -68,7 +68,7 @@ Both the ``Publisher`` and the ``Subscribers`` are *Abstract Types*.
    Everybody calling :meth:`pubsub.Topic.subscribe`. Typically, the :class:`Subscriber` has a **callback**
    function/method too. See :ref:`PubSub_callback_demo` for an example.
 
-   Often, it has a method that act als callback.
+   Often, it has a method that acts as the callback.
 
 
 callbacks
