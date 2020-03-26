@@ -9,11 +9,11 @@ ReadMe
 
 .. sidebar:: Engels & Dutch
 
-   * This side is partly in Dutch.
+   * This site is partly in Dutch.
    * En gedeeltelijk in het Engels
 
 .. MARKER_sidebar_end
-   
+
 .. glossary::
 
    Modern Engineering
@@ -68,15 +68,15 @@ Tensegrity, as inspiration
 **************************
 .. image:: /_std_settings/static/Needle_Tower_doorzichtig.png
 
-`Tensegrity <https://en.wikipedia.org/wiki/Tensegrity>`__ is a synthesis of the names ‘tensional’
-and ‘integrity’. It is based on *“teamwork”* of tension and compression forces. Although the image
-may look confusing, these structures are really very simple. All you need are some poles, some
-cable and good engineering. This can result is a beautiful ‘tensegrity-tower’ where the poles
-almost float in air; as shown `above <https://commons.wikimedia.org/wiki/File:Kenneth_Snelson_Needle_Tower.JPG>`__
+`Tensegrity <https://en.wikipedia.org/wiki/Tensegrity>`__ is a synthesis of the names ‘tensional’ and ‘integrity’. It is
+based on *“teamwork”* of tension and compression forces. Although the image may look confusing, these structures are
+very simple. All you need are some poles, some cable, and good engineering. This results in a beautiful
+‘tensegrity-tower’ where the poles almost float in the air; as shown `above
+<https://commons.wikimedia.org/wiki/File:Kenneth_Snelson_Needle_Tower.JPG>`__
 
 It is also a well-known architectural principle for skyscrapers!
 
-For me, it is also a inspiration for Software-Engineering: It should be based of teamwork: a synthesis
+For me, it is also an inspiration for Software-Engineering: It should be based on teamwork: a synthesis
 of creative and verifying people. Together with a methodical way-of-working the amplify each
 other. Then, the sky becomes a limit, which is easy!
 

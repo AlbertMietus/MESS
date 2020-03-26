@@ -5,7 +5,9 @@
 Modern Engineering of Sovereign Software
 ****************************************
 
-See the :doc:`README` on :term:`Modern Engineering` of :term:`Sovereign Software`, and the :ref`copyright`
+Also knows as: “**Modern Embedded Software Systems**”
+
+.. note:: See the :doc:`README` on what I mean with ‘:term:`Modern Engineering`’ and ‘:term:`Sovereign Software`’. And for the :ref:`copyright`
 
 Table of Content
 ****************
@@ -20,6 +22,7 @@ Table of Content
    :maxdepth: 2
 
    *
+   SystemEngineering/index
    SoftwareCompetence/index
    pyMESS/index
    blog/index
