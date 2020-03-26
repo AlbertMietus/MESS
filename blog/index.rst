@@ -11,10 +11,10 @@ BLOG indexes
 
 Also see the `Draft <./drafts.html>`_ ones (when available)
 
-----------
 
-Major :ref:`blog-categories`
-============================
+Major categories
+================
+
 
 Opinion
 -------
@@ -47,9 +47,11 @@ Practice
 More indexes
 ============
 
+* :ref:`blog-categories`
 * :ref:`blog-tags`
 * :ref:`blog-authors`
 * :ref:`blog-languages`
 * :ref:`blog-locations`
 * (Yearly) :ref:`blog-archives`
 * :ref:`blog-drafts`
+

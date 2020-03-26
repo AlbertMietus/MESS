@@ -5,8 +5,9 @@
 HTLD: *HighTech Linux Delivery*
 ===============================
 
-Here, you will find some blog-style articles about HTLD; An service Sogeti.HighTech (NL) is going to offer.
+Here you will find some blog-style articles about *HTLD*.
 
+.. warning:: This section is a bit delayed.
 
 .. toctree::
    :glob:
