@@ -5,10 +5,10 @@ Practice
 ========
 
 
-Design Analyse
+Design Analye
 ==============
 
-Given the python implementation, including the shown “use-case”: Analyse the design in detail
+Given the python implementation, including the shown “Use-Cases”: Analyse the design in detail
 
 1. Make a (quick) static design-analyse.
 
@@ -23,7 +23,7 @@ Port to C/C++
 
 3. Can you port (or re-implement) the python examples to C/C++?
 
-   Surely, you have to change some details; as  a generic data-type (“value”) is not available.
+   Surely, you have to change some details; as a generic data-type (“value”) is not available.
 
    It is fine, to use a *string-type*. And just “print” it in the demo-callbacks (like we do)
 
