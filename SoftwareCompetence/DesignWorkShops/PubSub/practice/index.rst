@@ -44,26 +44,28 @@ imply many fancy options should be left-out:-)
 4. Extent the current interface to allow pub/sub between multiple processes; optionally running on multiple computers
    (on the same network).
 
-   * The current API (:class:`~pubsub.Topic`, :meth:`~pubsub.Topic.publish` & :meth:`~pubsub.Topic.subscribe`) are not
-     allowed to change. Adding parameters to the class initiation (“the constructor” in C++) is allowed. Adding extra
-     methods is also allowed (but see below!).
+   a. The current API (:class:`~pubsub.Topic`, :meth:`~pubsub.Topic.publish` & :meth:`~pubsub.Topic.subscribe`) is not
+      allowed to change. Adding parameters to the class initiation (“the constructor” in C++) is allowed. Adding extra
+      methods is also allowed (but see below!).
 
-   * All existing Use-Cases **should** keep working (both the shown one, as many others).
+   #. All existing Use-Cases **should** keep working (both the shown one, as many others).
 
-     * The main methods (:meth:`~pubsub.Topic.publish` & :meth:`~pubsub.Topic.subscribe`) should remain exactly the
-       same. No more parameters!
+      i. The main methods (:meth:`~pubsub.Topic.publish` & :meth:`~pubsub.Topic.subscribe`) **should** remain *exactly*
+         the same.
+         |BR|
+         No more parameters!
 
-     * The default behavior should be “local” (not distributed).
+      #. The default behavior **should** be “local” (not distributed).
 
-   * There is no requirement for performance. But it is expected that a second “network-get” will be resolved
-     locally. So, use a cache to minimize networking
+   #. There is no requirement for performance. But it is expected that a second “network-get” **will** be resolved
+      locally. So, use a cache to minimize networking
 
-   * The networking should use standard TCP/IP networking (“sockets”). No other network libraries/frameworks are
-     allowed.
+   #. The networking **should** use standard TCP/IP networking (“sockets”). No other network libraries/frameworks are
+      allowed.
 
-     * A simple “serialise” will do. Assume, all computers/processes use the same endianness and other encodings.
-       |BR|
-       Again, use “strings” (only); then this part is easy.
+      * A simple “serialise” **will** do. Assume, all computers/processes use the same endianness and other encodings.
+
+      * Again, use “strings” (only); then this part is easy.
 
 .. hint:: `Deamon <https://en.wikipedia.org/wiki/Daemon_(computing)>`_ &  `lib <https://en.wikipedia.org/wiki/Library_(computing)>`_
 
@@ -85,3 +87,10 @@ Implement it
 
 Remember, a design is a communication-tool: A great design contains exactly those details that your coworker needs to
 implement is as it is meant to be, but no more. (S)He should have some freedom to optimize implementation-details.
+
+
+.. rubric:: Internal notes
+
+.. todo::
+
+   * Use ‘needs’ to specify the requirements
