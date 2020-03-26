@@ -62,7 +62,7 @@ dl.footnote dt.label {float: left}
 
 /* Style (nested) list: no space in between, a bit after the last 'li'*/
 .rst-content .section ol li p {margin-bottom: 0;}
-.rst-content .section ol li:last-child p {margin-bottom: 0.5em}
+.rst-content .section ol li:last-child p:last-child {margin-bottom: 0.5em}
 
 /* Make a blockquote visual */
 .rst-content blockquote {
