@@ -4,11 +4,10 @@
 **********************************
 dPID: A Python ‘homework’ exercise
 **********************************
-:status: Alfa
 
 .. post:: 2017/10/22
    :tags: Python, TDD
-   :category: practice,home-work
+   :category: practice
    :location:
    :language: en
 
