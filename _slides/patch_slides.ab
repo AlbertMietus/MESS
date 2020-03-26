@@ -1,0 +1,10 @@
+--- PubSub-demo.slides2.html	2020-03-22 14:18:43.000000000 +0100
++++ PubSub-demo.slides.html	2020-03-22 14:20:10.000000000 +0100
+@@ -13188,6 +13188,7 @@
+ </style>
+ 
+ <!-- Custom stylesheet, it must be in the same directory as the html file -->
++<link rel="stylesheet" href="SwBMnl-slides.css">
+ <link rel="stylesheet" href="custom.css">
+ 
+ </head>

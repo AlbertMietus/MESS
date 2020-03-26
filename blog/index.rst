@@ -9,7 +9,7 @@ BLOG indexes
    :date: %Y/%m
    :format: {title} ({date})
 
-Also see the :ref:`blog-drafts` one (when available)
+Also see the `Draft <./drafts.html>`_ ones (when available)
 
 ----------
 
@@ -52,4 +52,4 @@ More indexes
 * :ref:`blog-languages`
 * :ref:`blog-locations`
 * (Yearly) :ref:`blog-archives`
-
+* :ref:`blog-drafts`

@@ -54,3 +54,12 @@ if True:
         '**': [ 'recentposts.html', 'tagcloud.html', 'postcardHeader.html'],
     }
 
+html_static_path.append('_slides')
+
+if False: 
+    print("Debug: show all packages:")
+    import os
+    os.system("pip list")
+    print("Debug: Outdates packages:")
+    os.system("pip list --outdated")
+    print("Done =====")
