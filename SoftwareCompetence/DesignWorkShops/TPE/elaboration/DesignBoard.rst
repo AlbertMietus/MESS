@@ -23,6 +23,8 @@ Next, this “curly flow” can be converted to a sequence-diagram. Preferable o
 
 .. figure:: DesignBoardFotos/TPE_sequence.jpg
 
-Last, and optional, we can convert it to (plant)UML.
+Last, and optional, we can convert it to (plant)UML:
 
 .. uml:: TPE_sequence.puml
+
+:ref:`TPE-sequence-backup`
