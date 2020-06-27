@@ -12,7 +12,9 @@ ThreadPoolExecutor
 
    Deze workshop is gebaseerd op bestaande, Nederlandse teksten. Voorlopig zijn alleen de nieuwe delen in het Engels.
 
-   * You can use google-translate for now: `Translate <https://translate.google.com/translate?sl=nl&tl=en&u=http://mess.softwarebetermaken.nl/en/dev-designworkshop/SoftwareCompetence/DesignWorkShops/TPE/index.html>`_
+   * You can use google-translate for now: `Translate
+     <https://translate.google.com/translate?sl=nl&tl=en&u=http://mess.softwarebetermaken.nl/en/latest/SoftwareCompetence/DesignWorkShops/TPE/index.html>`_
+     (STAGING branch).
 
 
 .. post:: 2020/03/06
