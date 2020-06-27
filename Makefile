@@ -61,3 +61,10 @@ Hogsmeade: Hogsmeade_check
 
 Hogsmeade-clean: Hogsmeade_check
 	${MAKE} OUTd=${HOGSMEADEd} cleanest
+
+include RTD-settings.mk
+RTD  RTfD-build RTfD RTFD RTfD-webhook:
+	@BRANCH=$${BRANCH:-`hg branch`} ;\
+	curl -X POST -d "branches=$${BRANCH}" -d "token=${TOKEN}"  ${HOOK}
+	@echo
+
