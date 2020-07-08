@@ -1,0 +1,50 @@
+/' (C) ALbert Mietus, 2020; dropjes licencie: Use at will, and give me liquorice to say thanks.
+'/
+
+@startuml
+
+partition "BDD & TDD" #EEEEFF/DDDDFF {
+(*)             --> [e,g. //UserStories//] "Specifications"         as SPECS
+
+SPECS           --> [BDD] ===BDD===
+===BDD===       --> "SystemTest\nDesign"                            as STD
+===BDD===       --> "Architecture &\n Design"                       as AenD
+STD             ..> AenD
+
+STD             -[#000066]-> [auto] "Exec SysTests\n (all, continuesly)"     as STE
+If "OK" then
+                --> [DONE] (*)
+Else
+                -up[#808080,dashed]-> [repeat] SPECS
+
+partition Design #DDDDFF-CCCCFF {
+
+AenD            --> [TDD.m] ===TDDm===
+===TDDm===      --> "ModuleTests\nDesign"                           as MTD
+===TDDm===      --> "Module & Unit\nDesign"                         as MUD
+MTD             ..> MUD
+
+MTD             -[#000066]-> [auto] "Exec Module Tests\n (all, continuesly)"  as MTE
+If "OK" then
+                --> STE
+else
+                -up[#808080,dashed]-> [repeat] MTD
+
+partition Coding #CCCCFF|BBBBFF {
+
+MUD             --> [TDD.u] ===TDDu===
+===TDDu===      --> "UnitTest\nDesign"                              as UTD
+===TDDu===      --> "Coding"                                        as CODE
+UTD             ..> CODE
+
+UTD             -[#000066]--> [auto] "Exec UnitTests\n(all, continuesly)"     as UTE
+If "OK" then
+                --> MTE
+Else
+                -up[#808080,dashed]-> [repeat] UTD
+
+CODE -> UTE
+}
+}
+}
+@enduml
