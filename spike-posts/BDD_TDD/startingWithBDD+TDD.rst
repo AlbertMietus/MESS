@@ -18,7 +18,7 @@ Starting with BDD & TDD
    there are fascinating common grounds that I can share.
 
    Ideally, each team should understand the concept of this *development process* **first**, then **exercise** it,
-   before practicing it in a **project**. In my humble opinion, that is hardly possible.  One can learn it “by doing”
+   before practicing it in a **project**. In my humble opinion, that is hardly possible.  One can learn it ‘by doing’
    when being trained and coached.
 
 Instructions too often focus is on using the tools. And automatically the goal becomes to blend those new tools into
@@ -63,7 +63,7 @@ BDD (`Behavior-driven development <https://en.wikipedia.org/wiki/Behavior-driven
 ================================================================================================
 
 BDD is a variant of TDD focusing on the system (or business) level. Still, tests are written **first** and executed
-*constantly*; when all tests are OK, the product-development is *"done"*.
+*constantly*; when all tests are OK, the product-development is *done*.
 
 Here, the testing focuses on the (top-level) requirements, the system, and/or business-features. Typically, they are
 designed by test-professionals, system-architects or business-experts, and less technical. To be practical those tests
@@ -72,7 +72,7 @@ are written in a tool. They have to be executed frequently too.
 Intermediates levels
 ====================
 
-One can (should) practice this process for each “level in the V”.  Each classical *“test & integration” step* can be
+One can (should) practice this process for each ‘level in the V’.  Each classical *’test & integration’ step* can be
 split into a test-preparation and a test-execution activity.  The *preparation phase* becomes the **test-design**
 activity, executed early and resulting in an ATS (Automated Test Script).  That ATS is executed frequently (at least
 nightly) as soon as it is available. Continuously all ATSes are run on all levels, for all units, modules, services, and
@@ -81,10 +81,10 @@ systems; whether they are new, changed, or exiting. As is this automated, each r
 This is valid for all levels: repeat running those ATSes.
 |BR|
 The practice implementation to create ATS for the various levels may depart. This will depends on the size of the
-product, so on “the depth of the V”; on the background & environment of the teams; on there (technical) capability; etc.
+product, so on ‘the depth of the V’; on the background & environment of the teams; on there (technical) capability; etc.
 One may see other tools, other skills, and often other people that become responsible.
 
-Some like to introduce new, or more terms for each level or implementation-detail. I prefer to use the term ‘TDD’
+Some like to introduce new, or more terms for each level or implementation-detail. I prefer to use the term TDD
 generically, as the process is equivalent.
 |BR|
 Remember: changing it in name only, does not improve the process. As long as you reach your goals, I can live with
@@ -98,17 +98,52 @@ There are a few, generic, main goals:
 
 1. Product-quality improvement: in short: better code and better products
 
-   - TDD focuses more on the *‘bilitys’* of code: readability, testability, maintainability, ...
+   - TDD focuses more on the *abilities* of code: readability, testability, maintainability, ...
    - BDD is more product-level: “Does it do what is specified?”, and “Are  the specification correct?”
 
 2. Process optimisation: reduce the cost of the development cycle.
 
    - The faster a bug is signaled, the cheaper is to repair.
-   - Also see “exit strategy”, which is often forgotten.
+   - Also see ‘exit strategy’, which is often forgotten.
+
+Exit strategy (lean summary)
+============================
+
+One often overseen goal is the implicit *exit strategy*, that comes for free with (all variants of) TDD. A :ref:`blog
+<TDD_exitStrategy>` on that will be posted later; but let’s give a summary already.
+
+Engineers have the tendency to overshoot the requirements. Especially when there is some ‘time left’, there are always
+ways to improve and extend the code. Good programmers always have the ambition to improve on readability,
+maintainability, etc. This sound positive (and it is), but has a indirect negative effect on cost.
+|BR|
+As (scrum-poker) estimations are based on averages, probably half of the task are a bit less work as judged, and the
+other fifty percent are a bit more. However, when the ‘left time’ is used for improvements, there is no spare to make up
+the overrun tasks. And oddly enough, they are always at the end.
+|BR|
+So, the questions becomes: *“How can we be lean on the first 50%, to use the ‘spare time’ for the remaining 50%?”*
+
+With TDD, a task is done when the test(s) pass!
+|BR|
+That means, a developer (and the team/manager) got a clear indication (s)he is done. As soon, the light are green, it is
+time to move on! Probably a few ticks of labor is left; like tidy-up the code, review it and commit it into
+version-control. That is part of the task anyhow.
+|BR|
+By having a objective signal to expire an assignment, even when there is ‘time left’, and assuming the (average)
+estimations are correct, all task will be on time (on average). And although this sounds as normal, the experience of
+many teams differ.
+
 
 =============
 How to start?
 =============
+
+Back to the main question: how to start?
+|BR|
+Whenever the goal is: *use new tools*, it is simple: purchase them, shop for some hand-on training and you are done.
+
+With a goal as described above: one has to train the team with those modern insights. And **unlearn** old habits as
+filling-up the ‘left time’. That is a lot harder; as nobody is waisting time! (Remember: improving ‘abilities’ is
+worthwhile and a TDD goal.)
 
 As BDD is a variant of TDD, and has a bigger (organisational) scope, it is often easier to start with TDD. This can be
 done (on code/unit and/or module level) by an individual software-developer, or a (scrum) team.
