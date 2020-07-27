@@ -1,4 +1,3 @@
-:orphan:
 .. Copyright (C) ALbert Mietus; 2020
 .. _startingWithBDD+TDD:
 
@@ -17,7 +16,7 @@ Starting with BDD & TDD
    Frequently I get questions on BDD and TDD by example on how to start. And although there are no standard solutions,
    there are fascinating common grounds that I can share.
 
-   Ideally, each team should understand the concept of this *development process* **first** then **exercise** it
+   Ideally, each team should understand the concept of this *development process* **first**, and  then **exercise** it,
    before practicing it in a **project**. However, it is also possible to learn it ‘by doing’ when being trained and
    coached; in my humble opinion.
 
