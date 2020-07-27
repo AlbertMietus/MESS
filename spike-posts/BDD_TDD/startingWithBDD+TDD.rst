@@ -14,18 +14,17 @@ Starting with BDD & TDD
 
    :reading-time: XXX
 
-   Frequently I get questions on BDD or TDD especially on how to start.  And although there are no standard solutions,
+   Frequently I get questions on BDD and TDD by example on how to start. And although there are no standard solutions,
    there are fascinating common grounds that I can share.
 
-   Ideally, each team should understand the concept of this *development process* **first**, then **exercise** it,
-   before practicing it in a **project**. In my humble opinion, that is hardly possible.  One can learn it ‘by doing’
-   when being trained and coached.
+   Ideally, each team should understand the concept of this *development process* **first** then **exercise** it
+   before practicing it in a **project**. However, it is also possible to learn it ‘by doing’ when being trained and
+   coached; in my humble opinion.
 
-Instructions too often focus is on using the tools. And automatically the goal becomes to blend those new tools into
-the existing Way-of-Work (WoW). Eventually however, somebody will get disappointed; as the is no quality improvement, no
-speed-up, nor any other improvement.
+Instructions too often focus on using the tools. And almost automatically, the goal becomes to blend those new tools into
+the existing Way-of-Work (WoW). Eventually, however, somebody will get disappointed; as there is no quality improvement,
+no speed-up, nor any other improvement.
 |BR|
-
 But when no true goals are set, one shouldn’t complain when the expectations are not met!
 
 So, what are the goals one can aim for?
@@ -40,17 +39,17 @@ So, what are the goals one can aim for?
 What is What (Introduction)
 ===========================
 
-
-A lot of opinions on BDD & TDD available; which can be confusing. Like with many modern-improvements, the words become a
-hype to justify change without a proper need. That is not my goal. So let’s start with a summary, backed by the
+There are a lot of opinions on BDD and TDD, which can be confusing. Like with many modern-improvements, words often
+become a hype to justify change without a proper need. That is not my goal. So let’s start with a summary, backed by the
 definitions on Wikipedia.
+
 
 TDD (`Test-driven development <https://en.wikipedia.org/wiki/Test-driven_development>`_)
 ========================================================================================
 
-TDD is a *process*; where the tests are created **first** and the code second. One keeps executing all tests until the
-code works. This is also a nice exit strategy.  Often, it is followed by one (short) refactor cycle: to tidy up the code
-(and still passing the tests).
+TDD is a *process*; where the tests are described **first** and the code second. One keeps executing all tests until the
+code works. This encourages also good habits as *refactoring*: the risk on inserting a big is minimal. TDD also provides
+a nice exit strategy.
 
 In practice, TDD is often/mostly used *Unit level* (one file, class, or function), by a programmer. But the concept
 isn't restricted to that.

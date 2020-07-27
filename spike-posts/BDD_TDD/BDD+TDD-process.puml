@@ -1,7 +1,8 @@
 /' (C) ALbert Mietus, 2020; dropjes licencie: Use at will, and give me liquorice to say thanks.
-'/
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''/
 
 @startuml
+!include SwBMnl-skin.iuml
 
 partition "BDD & TDD" #EEEEFF/DDDDFF {
 (*)             --> [e,g. //UserStories//] "Specifications"         as SPECS
@@ -11,11 +12,11 @@ SPECS           --> [BDD] ===BDD===
 ===BDD===       --> "Architecture &\n Design"                       as AenD
 STD             ..> AenD
 
-STD             -[#000066]-> [auto] "Exec SysTests\n (all, continuesly)"     as STE
+STD             -[#808080,dotted]-> [<color:white><back:#808080>auto] "Exec SysTests\n (all, continuesly)"     as STE
 If "OK" then
                 --> [DONE] (*)
 Else
-                -up[#808080,dashed]-> [repeat] SPECS
+                -up[#ForestGreen,dashed]-> [<color:ForestGreen><b>repeat] SPECS
 
 partition Design #DDDDFF-CCCCFF {
 
@@ -24,11 +25,11 @@ AenD            --> [TDD.m] ===TDDm===
 ===TDDm===      --> "Module & Unit\nDesign"                         as MUD
 MTD             ..> MUD
 
-MTD             -[#000066]-> [auto] "Exec Module Tests\n (all, continuesly)"  as MTE
+MTD             -[#808080,dotted]-> [<color:white><back:#808080>auto]  "Exec Module Tests\n (all, continuesly)"  as MTE
 If "OK" then
                 --> STE
 else
-                -up[#808080,dashed]-> [repeat] MTD
+                -up[#ForestGreen,dashed]-> [<color:ForestGreen><b>repeat] MTD
 
 partition Coding #CCCCFF|BBBBFF {
 
@@ -37,11 +38,14 @@ MUD             --> [TDD.u] ===TDDu===
 ===TDDu===      --> "Coding"                                        as CODE
 UTD             ..> CODE
 
-UTD             -[#000066]--> [auto] "Exec UnitTests\n(all, continuesly)"     as UTE
+UTD             -[#808080,dotted]--> [<color:white><back:#808080>auto] "Exec UnitTests\n(all, continuesly)"     as UTE
 If "OK" then
                 --> MTE
+
 Else
-                -up[#808080,dashed]-> [repeat] UTD
+                -up[#ForestGreen]->		[<color:ForestGreen><b>improve] CODE
+                -up[#ForestGreen,dashed]-> 	[<color:ForestGreen><b>tweek] UTD
+
 
 CODE -> UTE
 }
