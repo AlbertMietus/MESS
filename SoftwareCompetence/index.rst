@@ -1,12 +1,12 @@
 .. Copyright (C) ALbert Mietus; 2019, 2020
 
 -------------------
-Software competency
+Software Competency
 -------------------
 
 .. toctree::
    :maxdepth: 2
 
-   HTLD/index
    DesignWorkShops/index
-
+   LeanEngineering/index
+   HTLD/index

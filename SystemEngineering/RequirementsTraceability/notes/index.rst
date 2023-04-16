@@ -24,7 +24,7 @@ Possible, you like it and would love to play with the demo. Or, you are inquisit
 The following pages show some excerpts of the *“RST-code”*, that is used to defined all ‘needs’.  Feel free to
 study the ‘sources’ and learn from it.
 |BR|
-I will even document the tricks needed for “:ref:`about_forgotten_test`”.
+I will even document the tricks needed for “:ref:`forgotten_test`”.
 
 .. toctree::
 

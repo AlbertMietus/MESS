@@ -1,0 +1,14 @@
+skinparam BackgroundColor		#C0C0C0
+
+skinparam ArrowColor			#000066
+skinparam ArrowThickness		2
+skinparam ArrowFontSize			18
+
+skinparam ActivityFontColor		#000066
+skinparam ActivityFontSize		20
+skinparam ActivityBackgroundColor	#e7f2fa
+skinparam ActivityBorderColor		#000066
+skinparam ActivityBarColor		#000066
+skinparam ActivityStartColor		#cc3333
+skinparam ActivityEndColor		#cc3333
+

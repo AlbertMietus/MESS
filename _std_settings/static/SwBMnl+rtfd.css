@@ -1,6 +1,7 @@
 /*SwBMnl style on top of 'sphinx_rtd_theme'*/
 
 @import url("css/theme.css"); /* The sphinx_rtd_theme */
+@import url("emails.css");    /* Several email suffixes */
 
 [itemprop~=articleBody] a:visited { color: #000066;}
 
@@ -62,7 +63,7 @@ dl.footnote dt.label {float: left}
 
 /* Style (nested) list: no space in between, a bit after the last 'li'*/
 .rst-content .section ol li p {margin-bottom: 0;}
-.rst-content .section ol li:last-child p:last-child {margin-bottom: 0.5em}
+.rst-content .section ol li:last-child > p:last-child {margin-bottom: 0.5em}
 
 /* Make a blockquote visual */
 .rst-content blockquote {
@@ -71,9 +72,6 @@ dl.footnote dt.label {float: left}
     color: #000066;
 }
 
-.sogeti-email:after {
-content: "\40 Sogeti \2e com";
-}
 
 div.GAM-extra #postcardHeader .blogdate {
     color: #000066; background: #c0c0c0;

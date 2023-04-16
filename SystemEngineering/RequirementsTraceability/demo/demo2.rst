@@ -52,8 +52,9 @@ We also *repair* the missing test in demo1, but only for demo2 (Because it is st
 
       This test is was intentionally “forgotten” as explained in the :ref:`forgotten test <forgotten_test>`.
 
-      Therefore it is only added for the :need:`CALC2`. See :ref:`the notes about the forgotten
-      test<about_forgotten_test>` for more info.
+      Therefore it is only added for the :need:`CALC2`.
+
+      .. seealso:: see :ref:`the notes about the forgotten test<forgotten_test>` for more info.
 
 How to test?
 ============

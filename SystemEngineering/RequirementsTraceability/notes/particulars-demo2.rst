@@ -97,6 +97,6 @@ Currently, there is no *inherit option*, One can’t specify that the requiremen
 The hotfix
 ==========
 
-See :ref:`the notes about the forgotten test<about_forgotten_test>` for the particulars on how to :ref:`forget
-<forgotten_test>` and :ref:`add <test_hotfix>` a test in one document.
+.. seealso:: :ref:`The notes about the forgotten test <forgotten_test>` for the particulars on how
+             to forget and hotfix a test in one document.
 
