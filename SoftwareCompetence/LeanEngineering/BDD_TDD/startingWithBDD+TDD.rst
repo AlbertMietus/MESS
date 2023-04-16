@@ -5,13 +5,13 @@
 Starting with BDD & TDD
 ***********************
 
-.. post:: 2020/07/01
+.. post:: 2020/07/15
    :tags: BDD, TDD
    :category: opinion
    :location: Eindhoven
    :language: en
 
-   :reading-time: XXX
+   :reading-time: 5m30
 
    Frequently I get questions on BDD and TDD by example on how to start. And although there are no standard solutions,
    there are fascinating common grounds that I can share.
@@ -47,14 +47,14 @@ TDD (`Test-driven development <https://en.wikipedia.org/wiki/Test-driven_develop
 ========================================================================================
 
 TDD is a *process*; where the tests are described **first** and the code second. One keeps executing all tests until the
-code works. This encourages also good habits as *refactoring*: the risk on inserting a big is minimal. TDD also provides
-a nice exit strategy.
+code works. This encourages also good habits as *refactoring*: the risk to inserti a bug is minimal. TDD also provides
+a nice *exit strategy* (see below).
 
 In practice, TDD is often/mostly used *Unit level* (one file, class, or function), by a programmer. But the concept
 isn't restricted to that.
 
 The are many variants, like **STDD** (system-level TDD), **ATDD** (Acceptance TDD), and **BDD**; the later is well known
-popular.
+and popular.
 
 
 BDD (`Behavior-driven development <https://en.wikipedia.org/wiki/Behavior-driven_development>`_)
@@ -78,7 +78,7 @@ systems; whether they are new, changed, or exiting. As is this automated, each r
 
 This is valid for all levels: repeat running those ATSes.
 |BR|
-The practice implementation to create ATS for the various levels may depart. This will depends on the size of the
+The practice implementation to create ATS for the various levels may depart. This will depend on the size of the
 product, so on ‘the depth of the V’; on the background & environment of the teams; on there (technical) capability; etc.
 One may see other tools, other skills, and often other people that become responsible.
 
@@ -97,39 +97,37 @@ There are a few, generic, main goals:
 1. Product-quality improvement: in short: better code and better products
 
    - TDD focuses more on the *abilities* of code: readability, testability, maintainability, ...
-   - BDD is more product-level: “Does it do what is specified?”, and “Are  the specification correct?”
+   - BDD is more product-level: “Does it do what is specified?”, and “Are the specification correct?”
 
 2. Process optimisation: reduce the cost of the development cycle.
 
    - The faster a bug is signaled, the cheaper is to repair.
-   - Also see ‘exit strategy’, which is often forgotten.
+   - TDD also provides an *‘exit strategy’*; an often forgotten “side-effect” increasing velocity.
 
 Exit strategy (lean summary)
 ============================
 
 One often overseen goal is the implicit *exit strategy*, that comes for free with (all variants of) TDD. A :ref:`blog
-<TDD_exitStrategy>` on that will be posted later; but let’s give a summary already.
+<TDD_exitStrategy>` on that will be posted later, but let’s give a summary already.
 
-Engineers have the tendency to overshoot the requirements. Especially when there is some ‘time left’, there are always
+Engineers tend to overreach their obligations, especially when there is some planned time left. Then, there are always
 ways to improve and extend the code. Good programmers always have the ambition to improve on readability,
-maintainability, etc. This sound positive (and it is), but has a indirect negative effect on cost.
+maintainability, etc. This sounds positive (and it is), but has an indirect negative effect on cost.
 |BR|
-As (scrum-poker) estimations are based on averages, probably half of the task are a bit less work as judged, and the
-other fifty percent are a bit more. However, when the ‘left time’ is used for improvements, there is no spare to make up
-the overrun tasks. And oddly enough, they are always at the end.
-|BR|
-So, the questions becomes: *“How can we be lean on the first 50%, to use the ‘spare time’ for the remaining 50%?”*
+As (scrum-poker) estimations are based on averages, probably half of the tasks are a bit less work as assumed, and the
+other fifty percent takes a bit more. However, when the ‘left time’ is used for improvements, there is no spare to make
+up the overrun tasks. And oddly enough, they are always at the end.
 
-With TDD, a task is done when the test(s) pass!
+So, the question become: *“How can we be lean on the first 50%, to use the ‘spare time’ for the remaining 50%?”*
 |BR|
-That means, a developer (and the team/manager) got a clear indication (s)he is done. As soon, the light are green, it is
-time to move on! Probably a few ticks of labor is left; like tidy-up the code, review it and commit it into
-version-control. That is part of the task anyhow.
+With TDD, a task is done when the tests pass!
+
+That means a developer got a clear indication (s)he is done. As soon the lights are green, it is time to move on!
+Probably a few ticks of labor are left: like tidy-up, review, and a pull-request the new feature.
 |BR|
-By having a objective signal to expire an assignment, even when there is ‘time left’, and assuming the (average)
-estimations are correct, all task will be on time (on average). And although this sounds as normal, the experience of
+By having an objective signal to expire an assignment, even when there is ‘time left’, and assuming the (average)
+estimations are correct, all tasks will be on time (on average). And although this sounds as normal, the experience of
 many teams differ.
-
 
 =============
 How to start?
@@ -137,32 +135,83 @@ How to start?
 
 Back to the main question: how to start?
 |BR|
-Whenever the goal is: *use new tools*, it is simple: purchase them, shop for some hand-on training and you are done.
+Whenever the goal is: *use new tools*, it is simple: purchase them, shop for some hands-on training, and you are done.
 
-With a goal as described above: one has to train the team with those modern insights. And **unlearn** old habits as
-filling-up the ‘left time’. That is a lot harder; as nobody is waisting time! (Remember: improving ‘abilities’ is
-worthwhile and a TDD goal.)
+With a goal as described above: one has to discipline the team. And **unlearn** old habits as spend-up the ‘left
+time’. That is a lot harder, as nobody is wasting time! (Remember: *improving ‘abilities’ is worthwhile*, and a TDD
+goal!)
 
-As BDD is a variant of TDD, and has a bigger (organisational) scope, it is often easier to start with TDD. This can be
-done (on code/unit and/or module level) by an individual software-developer, or a (scrum) team.
+As BDD is a variant of TDD and has a bigger (organisational) scope, it is often easier to start with TDD. This can be
+done on unit/file, and/or module level, by one individual software-developer, or by a single (scrum) team.
+
+TDD on TDD
+==========
+
+
+Let’s start with a test, as TDD describes. But now on the process-improvement itself.  Now we have set the goals, its
+easy to transform them into tests. Or, possibly a timeline of intermediates goals. Each goal needs some tests. Probably
+not as exact as we like with typical *ATSes*, but ar least clear and “SMART”.
+
+As you have your own goals, you need your distinct test-set. But assume you would like to improve both on quality and
+productivity. Then a simple testable goal is the number of issues found “after” the sprint ends.  When this becomes zero
+your quality-goal is met.
+|BR|
+And the velocity-increment is a great measure for productivity growth.
+
+I would introduce some simple transitional goals too. Like, the number of flaws the QA-department finds should go down
+*every* iteration. And *each* sprint the number of unfinished features should lower first, and the number of fully
+correct features should fo up, secondly.
+
+This sounds simple. And it is, except for the first time!
+|BR|
+Having a (quite) objective test does help, but the hard work is to improve yourself. To get comfortable with the new,
+initially counter-intuitive routines will take practice and time.
+
+But at least you have a great start!
 
 Training & Mentoring
 ====================
 
-Uncle Bob has several video's on TDD & BDD. See :ref:`UncleBobList_TTD+BDD` for an overview.
+Engineers are awesome in problem-solving. And although a quest like “start with TDD” is nebulous, when transformed into a
+problem they like to fix it.  Especially when you give them some assistance and a sound target like passing a test.
+|BR|
+With the ‘TDD on TDD’ trick, you are ready to finish.
+
+There are many books & and videos on TTD. They can help to start. As a downer, they focus often on classical ICT, not
+high-tech, embedded product development. And so, they often don’t inspire.
+|BR|
+Also, many books are on ‘*How’* to do TDD, on using a tool.
+
+Engineers like to understand ‘**WHY**’. Then, the can deal with the issue.
+
+Uncle Bob
+---------
+Uncle Bob has several videos on TDD and BDD. See :ref:`UncleBobList_TTD+BDD` for an overview. Start with the basic TDD (6.*)
+ones! They explain the ‘Why’.
+
+.. hint::
+
+   Most examples are in Java, and not very technical. This is fine for a start. Still, I would love an ‘add-on’ on the
+   typical high-tech, embedded, product-development aspects; but that is not available.
 
 
-=============
+Intervision & coaching
+----------------------
 
-As one can see,
-   the order of the steps are changed: Testing (at all levels) is split into:
+A very effective, lean, and iterative concept I practice is *Video-of the week*.
+|BR|
 
-    - “TestDesign” (*prepare* & **automate**), and
-    - “TestExecution” (no manual work; part of build-process)
+A group of people watches that selected video and at the end of the week, we speak about it for an hour and a half;
+shared in the pre-corona era. Now it’s on-line, both work fine.
 
-    And one stats with the TestDesign (before and concurrent with the typical left side of the V). This make integration
-    with SCRUM easy.
+By having a group of mixed experiences, backgrounds, and ages, that *debriefing* becomes very encouraging and brings a huge
+value.
 
-By storing the ATSes in version-controll maintenance of the tests is easy. When specifications change, some ATSes will
-change. And
+.. tip::
+
+   When you like to start with TDD or BDD or when you think about it, but don’t know ‘why’, or ‘how to start’: Give me a
+   call. I will gladly boost your product and team.
+
+
+--- :sogeti-email:`Albert.Mietus`
 
