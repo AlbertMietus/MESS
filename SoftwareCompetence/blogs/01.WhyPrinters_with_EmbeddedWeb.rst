@@ -93,3 +93,8 @@ But it also demands more: the expected quality of embedded software is high. As 
 detail, and all embedded software is expected to be flawless.  How we do that, is the topic of a next blog
 
 Enjoy --:sysBMnl-email:`albert`
+
+.. seealso::
+
+   This article on LinkedIn:
+   https://www.linkedin.com/pulse/why-modern-embedded-software-systems-nowadays-embrace-albert-mietus
