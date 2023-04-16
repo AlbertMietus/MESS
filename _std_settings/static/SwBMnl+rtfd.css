@@ -1,6 +1,7 @@
 /*SwBMnl style on top of 'sphinx_rtd_theme'*/
 
 @import url("css/theme.css"); /* The sphinx_rtd_theme */
+@import("emails.css");        /* Several email suffixes */
 
 [itemprop~=articleBody] a:visited { color: #000066;}
 
@@ -71,9 +72,6 @@ dl.footnote dt.label {float: left}
     color: #000066;
 }
 
-.sogeti-email:after {
-content: "\40 Sogeti \2e com";
-}
 
 div.GAM-extra #postcardHeader .blogdate {
     color: #000066; background: #c0c0c0;

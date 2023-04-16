@@ -32,13 +32,13 @@ Still, its easy to forget a test; as I did. Did you noticed it?
 
 .. attention::
 
-   .. _forgotten_test:
 
    The “forgotten test” is intentional in this first demo.  It will be hot-fixed in the :ref:`next
    chapter<test_hotfix>`, and you will see it in the other graphs.
 
-   Therefore I had to use some “trick” in needs; see :ref:`the notes about the forgotten test<about_forgotten_test>` for
-   more info.
+   Therefore I had to use some “trick” in needs;
+
+   .. seealso:: :ref:`the notes about the forgotten test <forgotten_test>` for more info.
 
 
 The Requirements Matrix (table)

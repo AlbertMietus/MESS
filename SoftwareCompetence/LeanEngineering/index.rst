@@ -3,7 +3,7 @@
 .. _LeanEngineering:
 
 Lean Engineering
-=================
+================
 
 .. toctree::
    :glob:

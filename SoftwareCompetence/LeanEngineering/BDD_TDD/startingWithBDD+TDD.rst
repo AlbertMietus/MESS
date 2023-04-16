@@ -213,5 +213,5 @@ value.
    call. I will gladly boost your product and team.
 
 
---- :sogeti-email:`Albert.Mietus`
+--- :CGE-email:`Albert.Mietus`
 

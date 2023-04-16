@@ -1,6 +1,6 @@
 .. Copyright (C) ALbert Mietus 2020
 
-.. _about_forgotten_test:
+.. _forgotten_test:
 
 
 
