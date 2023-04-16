@@ -1,12 +1,14 @@
+/*Remember: the (generated) html uses lowercase spans */
+
 .sogeti-email:after {
 content: "\40 Sogeti \2e com";
 }
-.CGE-email:after {
+.CGE-email:after, .cge-email:after {
 content: "\40 Capgemini \2e com";
 }
-.SwBMnl-email:after {
+.SwBMnl-email:after, .swbmnl-email:after {
 content: "\40 SoftBeterMaken \2e nl";
 }
-.SyBMnl-email:after {
+.SysBMnl-email:after, .sysbmnl-email:after {
 content: "\40 SystemenBeterMaken \2e nl";
 }

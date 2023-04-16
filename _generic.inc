@@ -14,7 +14,7 @@
    :class: CGE-email
 .. role:: SwBMnl-email
    :class: SwBMnl-email
-.. role:: SyBMnl-email
-   :class: SyBMnl-email
+.. role:: SysBMnl-email
+   :class: SysBMnl-email
 
 .. EOF

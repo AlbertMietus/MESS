@@ -15,3 +15,5 @@ ready: when all test pass.  Many developers assume the can use all time as set i
 wrong!
 
 The Time to Complete (T2C) of a task is an average. So, halve takes (a bit) longer, and halve can be done quicker --see the bell curve.
+
+--
