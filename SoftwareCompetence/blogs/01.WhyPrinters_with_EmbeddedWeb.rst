@@ -1,0 +1,95 @@
+.. Copyright (C) ALbert Mietus; 2023
+
+.. _WhyPrinters_with_EmbeddedWeb:
+
+**************************************************************************
+Why Modern Embedded Software Systems nowadays embrace webserver-technology
+**************************************************************************
+
+.. post:: 2023/04/16
+   :category: opinion
+   :tags: MESS
+   :location: Geldrop
+   :language: en
+
+
+   Whether it's your office printer, your internet router at home, or your future top-notch embedded system, they all
+   use technologies that, only a decade ago, nobody imagined using in an embedded system! How did this happen?
+   |BR|
+   **And why?**
+
+Let's start with the printer. Its essential feature is still printing; it learned a few more features, like scanning &
+copying. And it can print better: in color and with a higher resolution. That needs more embedded software, but that is
+not changing the game.
+
+
+What happend?
+=============
+
+Or, maybe, the question is : *” What changed?”*
+|BR|
+There are two big drivers, aside from the ever-present pressure to increase margin. The user and the available
+technology.  That entangled combination made the change
+
+In the old days, we had a tick, clumsy cable to connect a PC to a printer -- there was no other way. Although that is
+(technical) still possible, it's too expensive and removed as an option. Also, the user doesn't like it.  Nowadays,
+everybody like to print from a mobile phone.
+
+wireless printing
+-----------------
+That feature "wireless printing" asks for extra embedded technology, like Bluetooth & WiFI, but also needs a TCP/IP
+stack. Luckily, that became available and was almost for free: with embedded Linux, for example. It required a bit more
+hardware, but due to the law of Moore, that class of electronics has become inexpensive -- as the Raspberry Pi's in many
+households show. A printer has a comparable embedded computer, costing only a few euros.
+
+In this line of thought, we got to a printer with the computer power to print wireless, but with a bit increased
+price. How can we cut down that price and make it more attractive? Rember, we --as a business-- prefer more margin.
+
+no buttons
+----------
+Look at that old printer again, and compare it with a modern (low-cost) one: What changed? The buttons, they are gone!
+A manufacturer doesn't like buttons, lights, and such; they are expensive: making holes in the casing, and mounting and
+soldering parts, that all cost money. Besides, keeping those cheap buttons in stock, ensuring there is one for the last
+printer, is often more expensive than the buttons itself I know: those kinds of costs are usually hidden for an average
+software engineer.  A senior embedded system architect should be able to reason like this, however.
+
+Removing buttons, lights, and other "UI" elements saves money. Still, we should facilitate the users to operate the
+printer; without adding cost, so without more electromechanical parts! This demands an embedded web server!  This
+embedded web server comes almost for free, as most is already foreseen: the computer power, the TCP/IP stack, and with
+some luck: embedded Linux.  Especially in that case, it's more like "configuring" one of the standard, free servers than
+writing code. Even without that advantage, writing code (once) is economical; as the cost is spread over millions of
+devices -- the economic key behind most embedded software
+
+The change
+==========
+
+Let us compile that: due to user feature as "wireless printing" and a technology push can have a cost-effective
+raspberry-Pi class computer inside. This enables us to "configure" a web server to operate the system, and so we reduce
+costs by removing buttons and such. There are only one, or two, extra steps we have to take: convince the user.  That
+part is easy: sell the cost-saving as a feature. Printers are sold and promoted with:
+
+  "Now with embedded web server"
+
+more changes
+------------
+I expect we see the next step soon. Nowadays the promise is "a web server", and that is all you get. But, when all
+printers have it, it hardly distinguishes, nor does it persuades the user to buy. So, we can expect a new feature:
+
+   "Now with a  modern, **beautiful** embedded web server"!
+
+The printer shouldn't print better, but sell better. By only upgrading the UI-software, and spend time on UI and UX
+(User Interface & User *Experience*). And use more standard, modern web-technology.
+
+
+What does it mean for our embedded software community?
+======================================================
+
+Embedded Systems will contain more and more modern software, software that used to be known only in the web world; like
+Progressive Web, Angular, React, NodeJS, and more.
+
+Quality
+-------
+But it also demands more: the expected quality of embedded software is high. As there is no helpdesk, no admin to fix a
+detail, and all embedded software is expected to be flawless.  How we do that, is the topic of a next blog
+
+Enjoy --:sysBMl-email`albert`
