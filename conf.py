@@ -26,37 +26,39 @@ version = release
 
 
 
-if True:
-    # ABlog
-    #------
-    extensions.append('ablog')
-    extensions.append('sphinx.ext.intersphinx') # GAM: workaround?
-    import ablog; templates_path.append(ablog.get_html_templates_path())
-    fontawesome_link_cdn = "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-    post_date_format = '%Y/%m/%d'
-    post_date_format_short = '%Y/%m'
+# ABlog
+#------
+extensions.append('ablog')
+extensions.append('sphinx.ext.intersphinx') # GAM: workaround?
+import ablog; templates_path.append(ablog.get_html_templates_path())
+fontawesome_link_cdn = "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+post_date_format = '%Y/%m/%d'
+post_date_format_short = '%Y/%m'
 
-    blog_authors = {'GAM' : ('ALbert Mietus', 'http://albert.mietus.nl') }
-    blog_default_author = 'GAM'
-    blog_languages = {
-        'nl'  : ('Nederlands', None),
-        'en'  : ('English', None),
-    }
-    blog_default_language = 'nl'
-    post_always_section = True
+blog_authors = {'GAM' : ('ALbert Mietus', 'http://albert.mietus.nl') }
+blog_default_author = 'GAM'
+blog_languages = {
+    'nl'  : ('Nederlands', None),
+    'en'  : ('English', None),
+}
+language='en' # As workaround for ABlog.post.generate_atom_feeds -- see: https://github.com/sunpy/ablog/issues/137
+blog_default_language = 'nl'
+post_always_section = True
 
-    blog_baseurl = 'http://mess.softwarebetermaken.nl/'
-    disqus_shortname = 'mess-swbmnl'
-    disqus_pages = True                                                 # All pages have a disqus-section
-    disqus_drafts = False                                               # .. but the draft (blog) pages (.. post:: without date )
+blog_baseurl = 'http://mess.softwarebetermaken.nl/'
+disqus_shortname = 'mess-swbmnl'
+disqus_pages = True                                                 # All pages have a disqus-section
+disqus_drafts = False                                               # .. but the draft (blog) pages (.. post:: without date )
 
-    html_sidebars = {
-        '**': [ 'recentposts.html', 'tagcloud.html', 'postcardHeader.html'],
-    }
+html_sidebars = {
+    '**': [ 'recentposts.html', 'tagcloud.html', 'postcardHeader.html'],
+}
+
+
 
 html_static_path.append('_slides')
 
-if False: 
+if False:
     print("Debug: show all packages:")
     import os
     os.system("pip list")
