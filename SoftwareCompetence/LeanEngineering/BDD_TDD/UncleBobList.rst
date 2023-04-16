@@ -43,4 +43,4 @@ More info
 =========
 * See https://cleancoders.com/series/clean-code for more in this (and other) series.
 
---- :SwBMnl-email:`Albert.Mietus`
+--- :SwBMnl-email:`Albert`

@@ -66,6 +66,6 @@ exercise.
 As a bonus, we will show you one more generated graph: :ref:`all_graph`, combining the :need:`CALC1` and :need:`CALC2`
 requirements.
 
-Whenever you have more quistions, you can email me :sogeti-email:`Albert.Mietus`.
+Whenever you have more quistions, you can email me :SysBMnl-email:`Albert`.
 
 

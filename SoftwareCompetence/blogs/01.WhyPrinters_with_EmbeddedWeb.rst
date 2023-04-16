@@ -92,4 +92,4 @@ Quality
 But it also demands more: the expected quality of embedded software is high. As there is no helpdesk, no admin to fix a
 detail, and all embedded software is expected to be flawless.  How we do that, is the topic of a next blog
 
-Enjoy --:sysBMl-email`albert`
+Enjoy --:sysBMnl-email:`albert`
