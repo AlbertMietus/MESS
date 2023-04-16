@@ -213,6 +213,6 @@ value.
    call. I will gladly boost your product and team.
 
 
---- :SwBMnl-email:`Albert.Mietus` (SwBMnl)
+--- :SwBMnl-email:`Albert.Mietus`
 
 
