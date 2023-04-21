@@ -1,0 +1,58 @@
+.. Copyright (C) ALbert Mietus; 2023
+
+.. _Neverending_Struggle_CodeQuality:
+
+*************************************************************************
+The Never-ending Struggle on CodeQuality,as teams and codebases will grow
+*************************************************************************
+
+.. important::  alternative titles
+
+   * Growing Your Embedded Software Team and Codebase: How to Maintain Quality and Efficiency
+   * Growing your embedded software team and codebase without sacrificing quality
+
+
+   LEAD:
+
+   As your embedded software codebase grows, the risk of introducing errors and bugs increases exponentially. Doubling
+   the number of developers will roughly double the risk on mistakes. And so we need to introduce new *“tricks”* to
+   strive for the demanded high quality.
+   |BR|
+   This is a constant battle. Embracing a tool, a process or discipline typically helps for only once.
+
+   Partly this is due to the mathematical relationship between the number of developers, the lines of code and the
+   likelihood of introducing errors. Some even estimate the risk on mistakes grows even faster; for simplicity we use
+   the factor 2, and ignore the overhead in communication and added complexity; as that is what we will lower.
+
+   There is no single solution. No *trick*, as I like to call them, will not remove all errors.  All will only lower
+   the risk. That part of the equation should also be (at least) 50%, although I demand 60%. 
+   |BR|
+ ---
+
+   However, there is no single solution to this challenge. Instead, teams must
+   constantly adapt and employ new techniques to ensure that quality remains a top priority as their systems evolve.
+
+   .. important::  alternative LEADs
+
+   As your embedded software team and codebase grow, the risk of introducing errors and bugs increases
+   exponentially. Doubling the number of developers working on a project will also double the number of mistakes that
+   are made. But fear not, there are steps you can take to mitigate this risk and ensure that the growth of your team
+   and codebase does not come at the expense of quality.
+
+   As your software team and codebase grow, so too does the risk of introducing mistakes that can impact the quality and
+   reliability of your embedded systems. This is due in part to a mathematical relationship between the number of
+   developers and lines of code and the likelihood of introducing errors. However, there is no single solution to this
+   challenge. Instead, teams must constantly adapt and employ new techniques to ensure that quality remains a top
+   priority as their systems evolve. 
+
+
+   
+   
+.. post:: 2023/04/23
+   :category: opinion
+   :tags: MESS
+   :location: Geldrop
+   :language: en
+
+
+
