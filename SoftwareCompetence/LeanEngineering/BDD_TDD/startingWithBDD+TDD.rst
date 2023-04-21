@@ -1,4 +1,4 @@
-.. Copyright (C) ALbert Mietus; 2020
+.. Copyright (C) ALbert Mietus; 2020, 2023
 .. _startingWithBDD+TDD:
 
 ***********************
@@ -13,20 +13,36 @@ Starting with BDD & TDD
 
    :reading-time: 5m30
 
-   Frequently I get questions on BDD and TDD by example on how to start. And although there are no standard solutions,
-   there are fascinating common grounds that I can share.
+   Frequently I get questions on BDD and TDD, like how to start. Although there are no standard solutions, there are
+   fascinating common grounds that I can share.
+   |BR|
+   The key is simple: understand the goals -- Typically engineers are cleaver; when the understand the objectives, they
+   will find a solution; that is there job!
 
-   Ideally, each team should understand the concept of this *development process* **first**, and  then **exercise** it,
-   before practicing it in a **project**. However, it is also possible to learn it ‘by doing’ when being trained and
-   coached; in my humble opinion.
+
+   .. update:: 2023/04/30
+
+      As it is still actual, and fits in my new :ref:`MESS_blogs`, I made a few update and reposted.
+
+Ideally, each team should understand the concept of this *development process* **first**, and then **exercise** it,
+before practicing it in a **project**. However, it is also possible to learn it ‘by doing’ when being trained and
+coached; in my humble opinion.
+|BR|
+An pitfall is to focus on the tools, and learn new tricks. That hardly ever make a process lean.
+
 
 Instructions too often focus on using the tools. And almost automatically, the goal becomes to blend those new tools into
 the existing Way-of-Work (WoW). Eventually, however, somebody will get disappointed; as there is no quality improvement,
 no speed-up, nor any other improvement.
-|BR|
-But when no true goals are set, one shouldn’t complain when the expectations are not met!
+
+.. warning:: When no goals are set one shouldn't complain when the expectations are not met!
 
 So, what are the goals one can aim for?
+|BR|
+Simple: a more Lean & Agile approach.
+
+Or even more bold: Design (aka: write) an (embedded software) product that fits the needs of the end-users beter, with
+no flaws, in less time and with less effort (cost).
 
 .. sidebar:: WoW
 
@@ -38,7 +54,7 @@ So, what are the goals one can aim for?
 What is What (Introduction)
 ===========================
 
-There are a lot of opinions on BDD and TDD, which can be confusing. Like with many modern-improvements, words often
+There are a lot of opinions on BDD and TDD, which can be confusing. Like with many modern improvements, words often
 become a hype to justify change without a proper need. That is not my goal. So let’s start with a summary, backed by the
 definitions on Wikipedia.
 
@@ -47,39 +63,79 @@ TDD (`Test-driven development <https://en.wikipedia.org/wiki/Test-driven_develop
 ========================================================================================
 
 TDD is a *process*; where the tests are described **first** and the code second. One keeps executing all tests until the
-code works. This encourages also good habits as *refactoring*: the risk to inserti a bug is minimal. TDD also provides
-a nice *exit strategy* (see below).
+code works. This encourages also good habits such as *refactoring*: the risk to insert a bug is minimal. TDD also
+provides a nice *exit strategy* (see below).
 
 In practice, TDD is often/mostly used *Unit level* (one file, class, or function), by a programmer. But the concept
 isn't restricted to that.
 
-The are many variants, like **STDD** (system-level TDD), **ATDD** (Acceptance TDD), and **BDD**; the later is well known
-and popular.
+The are many variants, like **STDD** (system-level TDD), **ATDD** (Acceptance TDD), and **BDD**; the latter is
+well-known and popular.
 
 
 BDD (`Behavior-driven development <https://en.wikipedia.org/wiki/Behavior-driven_development>`_)
 ================================================================================================
 
 BDD is a variant of TDD focusing on the system (or business) level. Still, tests are written **first** and executed
-*constantly*; when all tests are OK, the product-development is *done*.
+*constantly*; when all tests are OK, the product development is *done*.
 
-Here, the testing focuses on the (top-level) requirements, the system, and/or business-features. Typically, they are
-designed by test-professionals, system-architects or business-experts, and less technical. To be practical those tests
-are written in a tool. They have to be executed frequently too.
+Here, the testing focuses on the (top-level) requirements, the system, and/or business features. Typically, they are
+designed by test professionals, system architects, or business experts. They are less technical compared with
+TDD tests. And, to be practical those tests are written in a tool; using a high-level *“almost English” language*
+
+|BR|
+Like with TTD, BDD tests are executed frequently.
+
 
 Intermediates levels
 ====================
 
 One can (should) practice this process for each ‘level in the V’.  Each classical *’test & integration’ step* can be
-split into a test-preparation and a test-execution activity.  The *preparation phase* becomes the **test-design**
+split into a test-preparation and an -execution activity.  The *preparation phase* becomes the **test-design**
 activity, executed early and resulting in an ATS (Automated Test Script).  That ATS is executed frequently (at least
 nightly) as soon as it is available. Continuously all ATSes are run on all levels, for all units, modules, services, and
-systems; whether they are new, changed, or exiting. As is this automated, each run is for free.
+systems; whether they are new, changed, or existing.
+
+ Remember: those tests run fully automatically.
+ |BR|
+ So, the cost of all those executions add-up to almost nothing.
+
+====================================
+Why not just write and run the test?
+====================================
+
+TTD and Unit Test are related, but not the same!
+|BR|
+When practicing TDD, the focus is on preventing flaws, not to find them afterwards. TDD is a process that dictates when
+to write test (first), when to write production-code (second) and when to execute the tests (constantly and
+automatically).
+
+The same applies to BDD, even tought the frequently is a bit slower.
+
+Developer versus Team
+=====================
+
+TDD and BDD act on a different level. TDD is typically at the bottom of the *’V’*; BDD is more at system level.
+|BR|
+However, that is often confusing for new adopters.
+
+Therefor I often use a more pragmatic distinguis: Individual Developer versus (scrum)Team.
+|BR|
+A single developer can act accordance to TDD. (S)he write code; test code and production code and switching between them
+every minute or so. As TDD is more productive, hardly anyone will notice it when somebody “secretly” adopts TDD. No
+extra tools, or frameworks are essential.
+
+That is hardly possible with BDD, as this is a team-level. Despite, a single team can embrace BDD -- even when others do
+not.
+|BR|
+
+
+
 
 This is valid for all levels: repeat running those ATSes.
 |BR|
 The practice implementation to create ATS for the various levels may depart. This will depend on the size of the
-product, so on ‘the depth of the V’; on the background & environment of the teams; on there (technical) capability; etc.
+product, so on ‘the depth of the V’; on the background & environment of the teams; on their (technical) capability; etc.
 One may see other tools, other skills, and often other people that become responsible.
 
 Some like to introduce new, or more terms for each level or implementation-detail. I prefer to use the term TDD
@@ -96,8 +152,8 @@ There are a few, generic, main goals:
 
 1. Product-quality improvement: in short: better code and better products
 
-   - TDD focuses more on the *abilities* of code: readability, testability, maintainability, ...
-   - BDD is more product-level: “Does it do what is specified?”, and “Are the specification correct?”
+   - TDD focuses more on the *abilities* of code: readability, testability, **maintainability**, etc.
+   - BDD is more product-level: **“Does it do what is specified?”**, and “Are the specification correct?”
 
 2. Process optimisation: reduce the cost of the development cycle.
 
@@ -107,7 +163,7 @@ There are a few, generic, main goals:
 Exit strategy (lean summary)
 ============================
 
-One often overseen goal is the implicit *exit strategy*, that comes for free with (all variants of) TDD. A :ref:`blog
+One often overseen goal is the implicit *exit strategy*, which comes for free with (all variants of) TDD. A :ref:`blog
 <TDD_exitStrategy>` on that will be posted later, but let’s give a summary already.
 
 Engineers tend to overreach their obligations, especially when there is some planned time left. Then, there are always
@@ -148,7 +204,7 @@ TDD on TDD
 ==========
 
 
-Let’s start with a test, as TDD describes. But now on the process-improvement itself.  Now we have set the goals, its
+Let’s start with a test, as TDD describes. But now on the process improvement itself.  Now we have set the goals, its
 easy to transform them into tests. Or, possibly a timeline of intermediates goals. Each goal needs some tests. Probably
 not as exact as we like with typical *ATSes*, but ar least clear and “SMART”.
 
