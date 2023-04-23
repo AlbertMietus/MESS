@@ -2,14 +2,9 @@
 
 .. _Neverending_Struggle_CodeQuality:
 
-********************************************************************************
-The Never-ending Struggle on CodeQuality, due to the grow of teams and codebases
-********************************************************************************
-
-.. important::  alternative titles
-
-   * Growing Your Embedded Software Team and Codebase: How to Maintain Quality and Efficiency
-   * Growing your embedded software team and codebase without sacrificing quality
+*********************************************************************************
+The Never-ending Struggle on CodeQuality due to the growth of teams and codebases
+*********************************************************************************
 
 .. post:: 2023/04/23
    :category: opinion
@@ -18,26 +13,138 @@ The Never-ending Struggle on CodeQuality, due to the grow of teams and codebases
    :language: en
 
    As your embedded software codebase grows, the risk of introducing errors and bugs increases exponentially. Doubling
-   the number of developers will roughly double the risk on mistakes. And so we need to introduce new *“tricks”* to
-   strive for the demanded high quality.
+   the number of developers will roughly double the risk of mistakes.  We need to learn new *“tricks”* to strive for the
+   demanded high quality.
+   |BR|
+   This is a constant battle. Embracing tools, processes or disciplines helps only once.
 
-   This is a constant battle. As Embracing a tool, a process or discipline typically helps for only once.
+Partly this is due to the mathematical relationship between the number of developers, the lines of code, and the
+likelihood of introducing errors. Some even estimate the risk of mistakes grows even faster; for simplicity, we use
+a factor of two and ignore the overhead in communication and added complexity, as  we will lower that.
 
-
-Partly this is due to the mathematical relationship between the number of developers, the lines of code and the
-likelihood of introducing errors. Some even estimate the risk on mistakes grows even faster; for simplicity we use
-the factor 2, and ignore the overhead in communication and added complexity; as that is what we will lower.
-
-There is no single solution. No *trick*, as I like to call them, will not remove all errors.  All will only lower
-the risk. That part of the equation should also be (at least) 50%, although I demand 60%. 
-
-
-
-However, there is no single solution to this challenge. Instead, teams must
-constantly adapt and employ new techniques to ensure that quality remains a top priority as their systems evolve.
+Also the ever increasing demand for non primary features and new technology make (modern) embedded systems a lot more
+complex then some time ago. See e.g. :ref:`WhyPrinters_with_EmbeddedWeb`. Also “external” code increases the risk on
+errors.
 
 
+Lowering the risks
+==================
 
-   
-   
+There is no single, ultimate solution. No *trick* --as I like to call them-- will remove all errors. We need to think
+in terms of *“risks on mistakes”* and constantly lower that risk. When we can lower the risk of errors by 60% (or at
+least 50%) by introducing a new “trick” that will compensate for the raise due to doubling.
+
+There is no single solution to this challenge. Instead, teams must constantly adapt and employ new techniques to ensure
+that quality is stable (or raise) as team and code size constantly doubles.
+
+Remember: code quality is related to functional quality, but not the same -- high-quality code can contain (functional)
+bugs, and we can have unreadable, bug-free code. However, unreadable code will probably lead to bugs in the next
+release.
+|BR|
+Therefore, a professional SW-Engineer should also lower the risk of mistakes in upcoming versions.
+
+classical approaches
+--------------------
+Over the years, various techniques have been developed to help manage software quality and reduce the risk of
+introducing errors.  Some of these tricks have been around for a long, such as the `Fagan inspection
+<https://en.wikipedia.org/wiki/Fagan_inspection>`__, `code reviews <https://en.wikipedia.org/wiki/Code_review>`__, and
+testing. A drawback of many of them is that they do not scale when the code base grows.
+|BR|
+For example: When I adopted *Fagan*, we planned about 100 man-hours for a couple of hundred lines. That works for a
+small codebase, but a Fagan inspection of the Linux kernel or the FreeBSD code (15-40Mloc) would take forever!
+
+The `agile manifesto <https://agilemanifesto.org>`__ in 2001 led to some new tricks and enforced others. For example,
+Agile implies short cycles, which results in frequent execution of (the same) test(s). And so, automated tests became the
+norm. But as new features are added every sprint, the code is updated almost daily.
+|BR|
+For many people, that is a motivation to write clean code --as it is called nowadays.
+
+new techniques
+--------------
+Slowly, some of those tricks are replaced by other more time-efficient and/or better ones.
+|BR|
+For example, static code-analysis tools replaced *Fagan* and to some extent (code) reviews. Often the older *tricks*
+are still used, now focusing on other aspects -- like readability, where we like the human touch.
+
+Other technologies facilitate clean, readable & testable code also. For example, OO brought the option to replace local
+variables in huge functions -- which didn't allow us to split those functions-- with instance variables in a local (sub)
+class. And split those functions into nice, short ones.
+
+
+discipline
+----------
+Present-day tricks often focus on discipline. `Test <https://en.wikipedia.org/wiki/Test-driven_development>`__ &
+`Behavior <https://en.wikipedia.org/wiki/Behavior-driven_development>`__ Driven Development are examples of
+discipline-based improvements.
+
+Therefore, it is not easy to start with them. Using the tools is easy; adding process is a bit harder. But mastering
+the art, gaining speed, and getting clean code is hard --as old habits should be removed too.
+
+
+A constant battle
+=================
+
+Older and recent innovations, such as TDD and BDD, have proven effective. But they are not foolproof. As long as teams and
+code bases grow, each team must constantly explore new approaches to meet the demands for a (very) low bug rate and a high
+code quality.
+
+Looking ahead, we can expect to see continued growth in contemporary practices. But we need fundamental new tricks
+also.
+
+Beter tricks
+------------
+Some old tricks constantly come back with new names. Is *CI/CD* really different from the old *nightly build*?
+|BR|
+Even though they are conceptually the same, IMHO, they come with innovations too. Flexible pipelines, more computer
+power, and new technology enable this. A big screen with “the *build*” status is a great trick. Especially when it shows
+all revisions in priority order. It constantly reminds the team of what is important; a red tile on a dev branch can be
+ignored for a while. An orange one on an integration branch needs attention.
+
+Any not-green tile on the top line should result in immediate action -- drop everything. Even when that is just the
+line-count script! When we agreed that functions should be shorter as -let’s say-- 7 lines without an explicit waiver,
+we should stick to it.
+
+Here, the *trick* is not to change those seven lines. No, a perfect clean-coders team should wonder how that mistake did
+propagate to the top-priority pipeline. It should have been found long before; apparently, there is a breach in
+the WoW. That one should be fixed now!
+|BR|
+Will we ever have such a highly disciplined team? Probably not, but it is nice to have ambition and some room to
+improve...
+
+Upcoming tricks
+---------------
+
+Some technology innovations are already lurking to be incorporated. They are available, but hardly used -- and can help
+to lower the risk of errors.
+
+For example, are you already using `mutation testing <https://en.wikipedia.org/wiki/Mutation_testing>`__? It is
+discovered in 1971, and the first tool became available in 1980. The idea is simple: test the quality (coverage) of your
+test set by making small changes to the code. Then, at least one test should fail -- else you need to improve (extend)
+your tests.
+|BR|
+This really works but needs a lot of computertime. As we run all tests a zillion times. Slowly, this becomes feasible.
+
+Another drawback: it doesn't add anything when you don’t practice UnitTesting (or better: TDD) already.
+|BR|
+This applies to many more tricks: there is a kind of natural order!
+
+
+How to Maintain Quality?
+========================
+
+This blog shows a few tricks to lower the risk of undetected mistakes. And argued that you constantly need more
+*“tricks”* as your team and/or codebase will grow.
+|BR|
+Others, like `Uncle Bob <https://en.wikipedia.org/wiki/Robert_C._Martin>`__, already showed that this is happing in
+the general IT world. My experience is that it also applies to :ref:`Modern Embedded Software Systems <tag-MESS>`; I
+hope to write an article on that soon.
+
+Enjoy --:sysBMnl-email:`albert`
+
+
+
+By embracing these and other techniques, software teams can manage the growing pains of expanding codebases and teams
+while maintaining high standards for quality and reliability in their embedded systems.
+
+
 

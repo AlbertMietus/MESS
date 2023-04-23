@@ -12,7 +12,6 @@ Why Modern Embedded Software Systems nowadays embrace webserver-technology
    :location: Geldrop
    :language: en
 
-
    Whether it's your office printer, your internet router at home, or your future top-notch embedded system, they all
    use technologies that, only a decade ago, nobody imagined using in an embedded system! How did this happen?
    |BR|
