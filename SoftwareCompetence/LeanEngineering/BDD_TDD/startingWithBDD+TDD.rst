@@ -55,44 +55,51 @@ no flaws, in less time and with less effort (cost).
 What is What (Introduction)
 ===========================
 
-There are a lot of opinions on BDD and TDD, which can be confusing. Like with many modern improvements, words often
-become a hype to justify change without a proper need. That is not my goal. So let’s start with a summary, backed by the
-definitions on Wikipedia.
+There are a lot of opinions on BDD and TDD, which can be confusing. As in many modern improvements, words often become
+hyped to justify any change. That is not my goal. So let’s start with a summary backed by the definitions on Wikipedia.
 
 
 TDD (`Test-driven development <https://en.wikipedia.org/wiki/Test-driven_development>`_)
 ========================================================================================
 
 TDD is a *process*; where the tests are described **first** and the code second. One keeps executing all tests until the
-code works. This encourages also good habits such as *refactoring*: the risk to insert a bug is minimal. TDD also
-provides a nice *exit strategy* (see below).
+code works. This encourages good habits such as *refactoring* also.
+|BR|
+Change code is constantly tested, so the risk of inserting a bug is minimal.
 
-In practice, TDD is often/mostly used *Unit level* (one file, class, or function), by a programmer. But the concept
-isn't restricted to that.
-
+TDD is typically practiced at the unit level (one file, class, or function), where the programmer writes test and
+production code in a short loop (a minute)
+|BR|
 The are many variants, like **STDD** (system-level TDD), **ATDD** (Acceptance TDD), and **BDD**; the latter is
 well-known and popular.
 
+TDD also provides a nice *exit strategy* (see below).
 
 BDD (`Behavior-driven development <https://en.wikipedia.org/wiki/Behavior-driven_development>`_)
 ================================================================================================
 
-BDD is a variant of TDD focusing on the system (or business) level. Still, tests are written **first** and executed
-*constantly*; when all tests are OK, the product development is *done*.
+BDD is a variant of TDD focusing on the system (or business) level. Again, tests are written **first** and
+executed *constantly*; when all tests are OK, the product development is *done*.
 
-Here, the testing focuses on the (top-level) requirements, the system, and/or business features. Typically, they are
+Here the testing focuses on the (top-level) requirements, the system, and/or business features. Typically, they are
 designed by test professionals, system architects, or business experts. They are less technical compared with
-TDD tests. And, to be practical those tests are written in a tool; using a high-level *“almost English” language*
+TDD tests. And, to be practical, those tests are written in a dedicated tool; using a high-level *“almost English”
+language*.
 
-|BR|
+As the size of the change is bigger -- like a feature or user story-- the cycle is (also) longer. Typically a few days.
+
 Like with TTD, BDD tests are executed frequently.
+|BR|
+Some prefer to “enable” new tests only when the feature is coded -- this prevents a failing test (as the production code
+isn’t done). IMHO, one should avoid this. One should run the tests but in a lower urgency branch. And promote both to a
+higher level when integrating (see an upcoming blog on this).
 
 
 Intermediates levels
 ====================
 
 One can (should) practice this process for each ‘level in the V’.  Each classical *’test & integration’ step* can be
-split into a test-preparation and an -execution activity.  The *preparation phase* becomes the **test-design**
+split into a test preparation and an execution activity.  The *preparation phase* becomes the **test-design**
 activity, executed early and resulting in an ATS (Automated Test Script).  That ATS is executed frequently (at least
 nightly) as soon as it is available. Continuously all ATSes are run on all levels, for all units, modules, services, and
 systems; whether they are new, changed, or existing.
