@@ -78,7 +78,7 @@ TDD also provides a nice *exit strategy* (see below).
 BDD (`Behavior-driven development <https://en.wikipedia.org/wiki/Behavior-driven_development>`_)
 ================================================================================================
 
-BDD is a variant of TDD focusing on the system (or business) level. Again, tests are written **first** and
+BDD is a variant of TDD focusing on the system (or acceptance) level. Again, tests are written **first** and
 executed *constantly*; when all tests are OK, the product development is *done*.
 
 Here the testing focuses on the (top-level) requirements, the system, and/or business features. Typically, they are
@@ -95,18 +95,22 @@ isn’t done). IMHO, one should avoid this. One should run the tests but in a lo
 higher level when integrating (see an upcoming blog on this).
 
 
-Intermediates levels
-====================
+All levels
+==========
 
-One can (should) practice this process for each ‘level in the V’.  Each classical *’test & integration’ step* can be
-split into a test preparation and an execution activity.  The *preparation phase* becomes the **test-design**
-activity, executed early and resulting in an ATS (Automated Test Script).  That ATS is executed frequently (at least
-nightly) as soon as it is available. Continuously all ATSes are run on all levels, for all units, modules, services, and
-systems; whether they are new, changed, or existing.
+One can (should) practice this process for all *levels in the V*.
 
-Remember: those tests run fully automatically.
+Each classical *’test & integration’ step* can be split into a test preparation and an execution activity.  The
+*preparation phase* becomes the **test-design** activity, executed early and resulting in an ATS (Automated Test
+Script).
 |BR|
-So, the cost of all those executions add-up to almost nothing.
+That ATS is executed frequently (at least nightly) as soon as it is available.
+
+Executing all tests at all levels for all units and modules and for every story and feature verifies everything. This
+covers pure integration errors.  This covers pure integration errors but is also a safety net when mistakes are not
+found at a lower level.
+
+Remember: those ATSes run fully automatically. So, the cost of all those executions add-up to almost nothing.
 
 ====================================
 Why not just write and run the test?
