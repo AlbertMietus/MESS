@@ -12,6 +12,8 @@ The Never-ending Struggle on CodeQuality due to the growth of teams and codebase
    :location: Geldrop
    :language: en
 
+   :reading-time: 6m
+
    As your embedded software codebase grows, the risk of introducing errors and bugs increases exponentially. Doubling
    the number of developers will roughly double the risk of mistakes.  We need new *“tricks”* to strive for the
    ever-demanded high quality.
