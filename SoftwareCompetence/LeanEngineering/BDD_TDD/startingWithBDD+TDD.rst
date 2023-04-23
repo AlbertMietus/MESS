@@ -47,7 +47,7 @@ no flaws, in less time and with less effort (cost).
 
 .. sidebar:: WoW
 
-   BDD and TDD should be *interwoven* with the typical steps in a development process, and will **change the order**!
+   BDD and TDD should be *interwoven* with the typical steps in a development process and will **change the order**!
 
    .. uml:: BDD+TDD-process.puml
 
