@@ -23,19 +23,19 @@ likelihood of introducing errors. Some even estimate the risk of mistakes grows 
 a factor of two and ignore the overhead in communication and added complexity, as  we will lower that.
 
 Also, the ever-increasing demand for non-primary features and new technology make (modern) embedded systems a lot more
-complex than some time ago. See (e.g.) :ref:`WhyPrinters_with_EmbeddedWeb`. Also “external” code increases the risk of
-errors.
+complex than some time ago. See (e.g.) :ref:`WhyPrinters_with_EmbeddedWeb`. Also, that “external” code increases the
+risk of errors.
 
 
 Lowering the risks
 ==================
 
 There is no single, ultimate solution. No *trick* --as I like to call them-- will remove all errors. We need to think
-in terms of *“risks of mistakes”* and constantly lower that risk. When we can lower the risk of errors by 60% (or at
-least 50%) by introducing a new “trick” that will compensate for the raise due to doubling.
+in terms of *“risks of mistakes”* and constantly lower that risk. When we can decrease the risk of errors by 60% (or at
+least 50%) by introducing a new “trick” it will compensate for the hike due to doubling.
 
 There is no single solution to this challenge. Instead, teams must constantly adapt and employ new techniques to ensure
-that quality is stable (or raise) as team and code size constantly doubles.
+that quality is stable (or improve) as team and code size constantly doubles.
 
 Remember: code quality is related to functional quality, but not the same -- high-quality code can contain (functional)
 bugs, and we can have unreadable, bug-free code. However, unreadable code will probably lead to bugs in the next
