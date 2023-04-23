@@ -1,9 +1,9 @@
 .. Copyright (C) ALbert Mietus; 2020, 2023
 .. _startingWithBDD+TDD:
 
-***********************
-Starting with BDD & TDD
-***********************
+********************
+Start with BDD & TDD
+********************
 
 .. post:: 2020/07/15
    :tags: BDD, TDD
@@ -16,32 +16,33 @@ Starting with BDD & TDD
    Frequently I get questions on BDD and TDD, like how to start. Although there are no standard solutions, there are
    fascinating common grounds that I can share.
    |BR|
-   The key is simple: understand the goals -- Typically engineers are cleaver; when the understand the objectives, they
-   will find a solution; that is there job!
+   The key is simple: understand the goals.
+
+   Typically engineers are clever: When they understand the objectives, they will find a solution; that is their job!
 
 
    .. update:: 2023/04/30
 
-      As it is still actual, and fits in my new :ref:`MESS_blogs`, I made a few update and reposted.
+      As it is still actual and fits in my new :ref:`MESS_blogs`, I made a few updates and reposted it.
 
-Ideally, each team should understand the concept of this *development process* **first**, and then **exercise** it,
-before practicing it in a **project**. However, it is also possible to learn it ‘by doing’ when being trained and
-coached; in my humble opinion.
+Ideally, each team should understand the concept of this *development process* **first** and then **exercise** it before
+practicing it in a **project**.  However, IMHO, it is possible to learn it on the job. As long as one is carefully
+trained & couched while practicing.
 |BR|
-An pitfall is to focus on the tools, and learn new tricks. That hardly ever make a process lean.
+A pitfall is to focus on the tools and learn new tricks. That hardly ever makes a process lean.
 
 
 Instructions too often focus on using the tools. And almost automatically, the goal becomes to blend those new tools into
-the existing Way-of-Work (WoW). Eventually, however, somebody will get disappointed; as there is no quality improvement,
-no speed-up, nor any other improvement.
+the existing Way-of-Work (WoW). Eventually, however, somebody will get disappointed. There will be no quality improvement,
+no speed-up, or any effect.
 
-.. warning:: When no goals are set one shouldn't complain when the expectations are not met!
+.. tip:: Without set goals, one shouldn't complain when expectations are not met!
 
 So, what are the goals one can aim for?
 |BR|
 Simple: a more Lean & Agile approach.
 
-Or even more bold: Design (aka: write) an (embedded software) product that fits the needs of the end-users beter, with
+Or even bolder: Design (aka write) an (embedded software) product that fits the needs of the end-users better, with
 no flaws, in less time and with less effort (cost).
 
 .. sidebar:: WoW
@@ -96,9 +97,9 @@ activity, executed early and resulting in an ATS (Automated Test Script).  That 
 nightly) as soon as it is available. Continuously all ATSes are run on all levels, for all units, modules, services, and
 systems; whether they are new, changed, or existing.
 
- Remember: those tests run fully automatically.
- |BR|
- So, the cost of all those executions add-up to almost nothing.
+Remember: those tests run fully automatically.
+|BR|
+So, the cost of all those executions add-up to almost nothing.
 
 ====================================
 Why not just write and run the test?
