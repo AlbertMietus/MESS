@@ -13,17 +13,17 @@ The Never-ending Struggle on CodeQuality due to the growth of teams and codebase
    :language: en
 
    As your embedded software codebase grows, the risk of introducing errors and bugs increases exponentially. Doubling
-   the number of developers will roughly double the risk of mistakes.  We need to learn new *“tricks”* to strive for the
-   demanded high quality.
+   the number of developers will roughly double the risk of mistakes.  We need new *“tricks”* to strive for the
+   ever-demanded high quality.
    |BR|
-   This is a constant battle. Embracing tools, processes or disciplines helps only once.
+   This is a constant battle. As embracing tools, processes, or disciplines helps only once.
 
 Partly this is due to the mathematical relationship between the number of developers, the lines of code, and the
 likelihood of introducing errors. Some even estimate the risk of mistakes grows even faster; for simplicity, we use
 a factor of two and ignore the overhead in communication and added complexity, as  we will lower that.
 
-Also the ever increasing demand for non primary features and new technology make (modern) embedded systems a lot more
-complex then some time ago. See e.g. :ref:`WhyPrinters_with_EmbeddedWeb`. Also “external” code increases the risk on
+Also, the ever-increasing demand for non-primary features and new technology make (modern) embedded systems a lot more
+complex than some time ago. See (e.g.) :ref:`WhyPrinters_with_EmbeddedWeb`. Also “external” code increases the risk of
 errors.
 
 
@@ -31,7 +31,7 @@ Lowering the risks
 ==================
 
 There is no single, ultimate solution. No *trick* --as I like to call them-- will remove all errors. We need to think
-in terms of *“risks on mistakes”* and constantly lower that risk. When we can lower the risk of errors by 60% (or at
+in terms of *“risks of mistakes”* and constantly lower that risk. When we can lower the risk of errors by 60% (or at
 least 50%) by introducing a new “trick” that will compensate for the raise due to doubling.
 
 There is no single solution to this challenge. Instead, teams must constantly adapt and employ new techniques to ensure
@@ -122,7 +122,7 @@ discovered in 1971, and the first tool became available in 1980. The idea is sim
 test set by making small changes to the code. Then, at least one test should fail -- else you need to improve (extend)
 your tests.
 |BR|
-This really works but needs a lot of computertime. As we run all tests a zillion times. Slowly, this becomes feasible.
+This really works but needs a lot of computer time. As we run all tests a zillion times. Slowly, this becomes feasible.
 
 Another drawback: it doesn't add anything when you don’t practice UnitTesting (or better: TDD) already.
 |BR|
@@ -139,12 +139,27 @@ Others, like `Uncle Bob <https://en.wikipedia.org/wiki/Robert_C._Martin>`__, alr
 the general IT world. My experience is that it also applies to :ref:`Modern Embedded Software Systems <tag-MESS>`; I
 hope to write an article on that soon.
 
-Enjoy --:sysBMnl-email:`albert`
+Ask for it!
+-----------
+
+Lastly, let me reveal the most simple “trick” to win this struggle -- one that lasts. Just ask for it:
+
+ What do you bring to help to raise code quality constantly?
+
+When I build a team, I need clever engineers. People that can solve problems. I regularly ask the above question when
+mature designers apply. I’m not that interested in the answer; the line of thought gives me more info – like, is (s)he
+driven by code quality.
+|BR|
+Most programmers love a puzzle: tell them the problem, and they deal with it.
 
 
+More important: When the teams grow, it has more people. More people to find new tricks. I consider that *meta-trick*
+better and more effective than finding the answer yourself.
 
-By embracing these and other techniques, software teams can manage the growing pains of expanding codebases and teams
-while maintaining high standards for quality and reliability in their embedded systems.
+
+Try it. It is fun!--:sysBMnl-email:`albert`
+
+
 
 
 
