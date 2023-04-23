@@ -35,7 +35,7 @@ in terms of *“risks of mistakes”* and constantly lower that risk. When we ca
 least 50%) by introducing a new “trick” it will compensate for the hike due to doubling.
 
 There is no single solution to this challenge. Instead, teams must constantly adapt and employ new techniques to ensure
-that quality is stable (or improve) as team and code size constantly doubles.
+that quality is stable (improve) when teams or code size doubles.
 
 Remember: code quality is related to functional quality, but not the same -- high-quality code can contain (functional)
 bugs, and we can have unreadable, bug-free code. However, unreadable code will probably lead to bugs in the next
@@ -50,7 +50,7 @@ introducing errors.  Some of these tricks have been around for a long, such as t
 <https://en.wikipedia.org/wiki/Fagan_inspection>`__, `code reviews <https://en.wikipedia.org/wiki/Code_review>`__, and
 testing. A drawback of many of them is that they do not scale when the code base grows.
 |BR|
-For example: When I adopted *Fagan*, we planned about 100 man-hours for a couple of hundred lines. That works for a
+For example: When I adopted *Fagan*, we planned for 100 hours for just a few hundred lines. That works for a
 small codebase, but a Fagan inspection of the Linux kernel or the FreeBSD code (15-40Mloc) would take forever!
 
 The `agile manifesto <https://agilemanifesto.org>`__ in 2001 led to some new tricks and enforced others. For example,
@@ -114,7 +114,7 @@ improve...
 Upcoming tricks
 ---------------
 
-Some technology innovations are already lurking to be incorporated. They are available, but hardly used -- and can help
+Some technology innovations are already lurking to be incorporated. They are available, but hardly used. And can help
 to lower the risk of errors.
 
 For example, are you already using `mutation testing <https://en.wikipedia.org/wiki/Mutation_testing>`__? It is
