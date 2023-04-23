@@ -63,7 +63,7 @@ new techniques
 --------------
 Slowly, some of those tricks are replaced by other more time-efficient and/or better ones.
 |BR|
-For example, static code-analysis tools replaced *Fagan* and to some extent (code) reviews. Often the older *tricks*
+For example, static code-analysis tools replaced *Fagan*, and to some extent (code) reviews. Often the older *tricks*
 are still used, now focusing on other aspects -- like readability, where we like the human touch.
 
 Other technologies facilitate clean, readable & testable code also. For example, OO brought the option to replace local
