@@ -131,11 +131,11 @@ This applies to many more tricks: there is a kind of natural order!
 How to Maintain Quality?
 ========================
 
-This blog shows a few tricks to lower the risk of undetected mistakes. And argued that you constantly need more
+This blog shows a few tricks to lower the risk of undetected mistakes. And argue that you constantly need more
 *“tricks”* as your team and/or codebase will grow.
 |BR|
 Others, like `Uncle Bob <https://en.wikipedia.org/wiki/Robert_C._Martin>`__, already showed that this is happing in
-the general IT world. My experience is that it also applies to :ref:`Modern Embedded Software Systems <tag-MESS>`; I
+the general IT world. My experience is that it also applies to :ref:`Modern Embedded Software Systems <tag-MESS>`. I
 hope to write an article on that soon.
 
 Ask for it!
