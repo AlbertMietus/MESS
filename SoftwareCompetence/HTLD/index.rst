@@ -5,9 +5,10 @@
 HTLD: *HighTech Linux Delivery*
 ===============================
 
-Here you will find some blog-style articles about *HTLD*.
+Here you will find some blog-style articles about *HTLD*. However, the service never started, due lack of skilled people
+and focus.
 
-.. warning:: This section is a bit delayed.
+.. warning:: This series is discontinued.
 
 .. toctree::
    :glob:
@@ -18,7 +19,9 @@ Here you will find some blog-style articles about *HTLD*.
 
 When you are interested; you can contact me:
 
---- :sogeti-email:`Albert.Mietus`; +31 (0)6 526 592 60
+--- :sogeti-email:`Albert.Mietus` (outdated)
+|BR|
+--- :SwBMnl-email:`ALbert`; +31 (0)6 526 592 60 (private)
 
 
 
