@@ -114,13 +114,12 @@ improve...
 Upcoming tricks
 ---------------
 
-Some technology innovations are already lurking to be incorporated. They are available, but hardly used. And can help
+Some technology innovations are already lurking to be incorporated. They are available but hardly used. And can help
 to lower the risk of errors.
 
-For example, are you already using `mutation testing <https://en.wikipedia.org/wiki/Mutation_testing>`__? It is
-discovered in 1971, and the first tool became available in 1980. The idea is simple: test the quality (coverage) of your
-test set by making small changes to the code. Then, at least one test should fail -- else you need to improve (extend)
-your tests.
+For example, are you already using `mutation testing <https://en.wikipedia.org/wiki/Mutation_testing>`__? Discovered in
+1971 already, and the first tool became available in the 80j. The idea is simple: test the coverage of your
+test set by making small changes to the code. Then, at least one test should fail; or you need more, better tests.
 |BR|
 This really works but needs a lot of computer time. As we run all tests a zillion times. Slowly, this becomes feasible.
 
