@@ -1,9 +1,9 @@
 .. Copyright (C) ALbert Mietus; 2020, 2023
 .. _startingWithBDD+TDD:
 
-********************
-Start with BDD & TDD
-********************
+*******************************
+Starting with BDD & TDD (DRAFT)
+*******************************
 
 .. post:: 2020/07/15
    :tags: BDD, TDD
@@ -20,7 +20,6 @@ Start with BDD & TDD
 
    Typically engineers are clever: When they understand the objectives, they will find a solution; that is their job!
 
-
    .. update:: 2023/04/30
 
       As it is still actual and fits in my new :ref:`MESS_blogs`, I made a few updates and reposted it.
@@ -30,7 +29,6 @@ practicing it in a **project**.  However, IMHO, it is possible to learn it on th
 trained & couched while practicing.
 |BR|
 A pitfall is to focus on the tools and learn new tricks. That hardly ever makes a process lean.
-
 
 Instructions too often focus on using the tools. And almost automatically, the goal becomes to blend those new tools into
 the existing Way-of-Work (WoW). Eventually, however, somebody will get disappointed. There will be no quality improvement,
@@ -50,6 +48,7 @@ no flaws, in less time and with less effort (cost).
    BDD and TDD should be *interwoven* with the typical steps in a development process and will **change the order**!
 
    .. uml:: BDD+TDD-process.puml
+
 
 ===========================
 What is What (Introduction)
@@ -116,48 +115,60 @@ Remember: those ATSes run fully automatically. So, the cost of all those executi
 Why not just write and run the test?
 ====================================
 
-TTD and Unit Test are related, but not the same!
+TTD and Unit Tests are related, but not the same!
 |BR|
-When practicing TDD, the focus is on preventing flaws, not to find them afterwards. TDD is a process that dictates when
-to write test (first), when to write production-code (second) and when to execute the tests (constantly and
+When practicing TDD, the focus is on preventing flaws, not finding them.TDD is a process that dictates when
+to write a test (first), when to write production code (second), and when to execute the tests (constantly and
 automatically).
 
-The same applies to BDD, even tought the frequently is a bit slower.
+The same applies to BDD, even though the frequency is a bit slower.
 
 Developer versus Team
 =====================
 
-TDD and BDD act on a different level. TDD is typically at the bottom of the *’V’*; BDD is more at system level.
+TDD and BDD act on different levels. TDD is typically at the bottom of the *’V’*; BDD is more at the system (or
+acceptance) level.
 |BR|
 However, that is often confusing for new adopters.
 
-Therefor I often use a more pragmatic distinguis: Individual Developer versus (scrum)Team.
+Therefore I often use a more pragmatic distinguishment: Individual Developer versus (scrum)Team.
 |BR|
-A single developer can act accordance to TDD. (S)he write code; test code and production code and switching between them
-every minute or so. As TDD is more productive, hardly anyone will notice it when somebody “secretly” adopts TDD. No
-extra tools, or frameworks are essential.
+A single developer can act following  TDD. (S)he writes code, tests and production code and switches between them
+every minute. As TDD is more productive, hardly anyone will notice it when somebody “secretly” adopts TDD. No
+extra tools or frameworks are essential.
 
-That is hardly possible with BDD, as this is a team-level. Despite, a single team can embrace BDD -- even when others do
-not.
+That is hardly possible with BDD, as this is at the team level. A developer can’t run an acceptance test without the
+assistance of a tester designer.
 |BR|
+Despite this, a single team can embrace BDD -- even when others don’t
 
+This is valid for all levels: the larger the part that is worked on, the more commitment needs to be able to run those
+ATSes.
 
+Testability
+===========
 
-
-This is valid for all levels: repeat running those ATSes.
+Everbody knows some code that is hard to test. I have seen functions without input or output -- the purely act on
+global state (global variables). We know that is bad, but is also untestable.
 |BR|
-The practice implementation to create ATS for the various levels may depart. This will depend on the size of the
-product, so on ‘the depth of the V’; on the background & environment of the teams; on their (technical) capability; etc.
-One may see other tools, other skills, and often other people that become responsible.
+We should avoid that.
 
-Some like to introduce new, or more terms for each level or implementation-detail. I prefer to use the term TDD
-generically, as the process is equivalent.
+By writing test first, we enforce an implicit requirement: code should be testable.
+
+=============
+How to start?
+=============
+
+Back to the main question: how to start?
 |BR|
-Remember: changing it in name only, does not improve the process. As long as you reach your goals, I can live with
-any name.
+Whenever the goal is: *use new tools*, it is simple: purchase them, shop for some hands-on training, and you are done.
 
+In real life, you need to set goals first, and constantly measure whether your reached them.
+|BR|
+Sound familiar? That is essentially TDD!
 
-=====
+  Every body has it own gaols 
+
 Goals
 =====
 There are a few, generic, main goals:
@@ -197,13 +208,7 @@ By having an objective signal to expire an assignment, even when there is ‘tim
 estimations are correct, all tasks will be on time (on average). And although this sounds as normal, the experience of
 many teams differ.
 
-=============
-How to start?
-=============
-
-Back to the main question: how to start?
-|BR|
-Whenever the goal is: *use new tools*, it is simple: purchase them, shop for some hands-on training, and you are done.
+------------
 
 With a goal as described above: one has to discipline the team. And **unlearn** old habits as spend-up the ‘left
 time’. That is a lot harder, as nobody is wasting time! (Remember: *improving ‘abilities’ is worthwhile*, and a TDD
@@ -284,3 +289,17 @@ value.
 --- :SwBMnl-email:`Albert.Mietus`
 
 
+
+..  LocalWords:  distinguishment
+
+----
+
+The practice implementation to create ATS for the various levels may depart. This will depend on the size of the
+product, so on ‘the depth of the V’; on the background & environment of the teams; on their (technical) capability; etc.
+One may see other tools, other skills, and often other people that become responsible.
+
+Some like to introduce new, or more terms for each level or implementation detail. I prefer to use the term TDD
+generically, as the process is equivalent.
+|BR|
+Remember: changing it in name only, does not improve the process. As long as you reach your goals, I can live with
+any name.
