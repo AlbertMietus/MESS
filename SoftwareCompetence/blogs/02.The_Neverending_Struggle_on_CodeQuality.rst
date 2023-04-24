@@ -160,7 +160,7 @@ better and more effective than finding the answer yourself.
 
 Try it. It is fun!--:sysBMnl-email:`albert`
 
+.. seealso::
 
-
-
-
+   This article on LinkedIn:
+   https://www.linkedin.com/pulse/never-ending-struggle-codequality-due-growth-teams-codebases-mietus
