@@ -22,7 +22,9 @@ Starting with BDD & TDD (DRAFT)
 
    .. update:: 2023/04/30
 
-      As it is still actual and fits in my new :ref:`MESS_blogs`, I made a few updates and reposted it.
+      .. As it is still actual and fits in my new :ref:`MESS_blogs`, I made a few updates and reposted it.
+
+      As it is still actual and fits in my new :ref:`MESS_blogs`, I’m making a few updates and **repost next week**
 
 Ideally, each team should understand the concept of this *development process* **first** and then **exercise** it before
 practicing it in a **project**.  However, IMHO, it is possible to learn it on the job. As long as one is carefully
