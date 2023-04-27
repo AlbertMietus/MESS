@@ -125,6 +125,32 @@ the tests (constantly and automatically).
 |BR|
 The same applies to BDD, even though the frequency is slower.
 
+Testability
+===========
+
+Everybody knows some code that is hard to test. I have seen functions without input or output -- acting purely on
+global variables. We know globals are bad! And it is also untestable.
+|BR|
+We should avoid that.
+
+By writing tests first, we enforce an implicit requirement: code should be testable. Besides:
+
+ It’s quite hard to write untestable code, when your write your test first!
+
+=============
+How to start?
+=============
+
+Back to the main question: how to start?
+|BR|
+Whenever the goal is to use new tools, it is simple: purchase them, shop for some hands-on training, and you are done.
+
+In real life, you should set goals first. And constantly measure whether you have reached them.
+|BR|
+Sound familiar? That is essentially TDD!
+
+
+--------- 
 
 Developer versus Team
 =====================
@@ -147,29 +173,6 @@ Despite this, a single team can embrace BDD -- even when others don’t
 
 This is valid for all levels: the larger the part that is worked on, the more commitment needs to be able to run those
 ATSes.
-
-Testability
-===========
-
-Everybody knows some code that is hard to test. I have seen functions without input or output -- acting purely on
-global variables. We know globals are bad! And it is also untestable.
-|BR|
-We should avoid that.
-
-By writing tests first, we enforce an implicit requirement: code should be testable.
-
-=============
-How to start?
-=============
-
-Back to the main question: how to start?
-|BR|
-Whenever the goal is to use new tools, it is simple: purchase them, shop for some hands-on training, and you are done.
-
-In real life, you should set goals first. And constantly measure whether you have reached them.
-
-|BR|
-Sound familiar? That is essentially TDD!
 
 --------
 
