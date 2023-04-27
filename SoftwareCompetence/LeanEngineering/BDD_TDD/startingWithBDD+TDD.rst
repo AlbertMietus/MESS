@@ -24,7 +24,7 @@ Starting with BDD & TDD (DRAFT)
 
       .. As it is still actual and fits in my new :ref:`MESS_blogs`, I made a few updates and reposted it.
 
-      As it is still actual and fits in my new :ref:`MESS_blogs`, I’m making a few updates and **repost next week**
+      As it is still actual and fits in my new :ref:`MESS_blogs`, I’m making a few updates and **repost it next week**
 
 Ideally, each team should understand the concept of this *development process* **first** and then **exercise** it before
 practicing it in a **project**.  However, IMHO, it is possible to learn it on the job. As long as one is carefully
@@ -74,7 +74,7 @@ production code in a short loop (a minute)
 The are many variants, like **STDD** (system-level TDD), **ATDD** (Acceptance TDD), and **BDD**; the latter is
 well-known and popular.
 
-TDD also provides a nice *exit strategy* (see below).
+TDD also provides an *”exit” strategy* (see below).
 
 BDD (`Behavior-driven development <https://en.wikipedia.org/wiki/Behavior-driven_development>`_)
 ================================================================================================
@@ -117,13 +117,14 @@ Remember: those ATSes run fully automatically. So, the cost of all those executi
 Why not just write and run the test?
 ====================================
 
-TTD and Unit Tests are related, but not the same!
-|BR|
-When practicing TDD, the focus is on preventing flaws, not finding them.TDD is a process that dictates when
-to write a test (first), when to write production code (second), and when to execute the tests (constantly and
-automatically).
+TTD and Unit Tests are related but not the same!  When practicing TDD, the focus should be on preventing flaws instead
+of finding them.
 
-The same applies to BDD, even though the frequency is a bit slower.
+TDD is a process that dictates when to write a test (first); when to write production code (second); and when to execute
+the tests (constantly and automatically).
+|BR|
+The same applies to BDD, even though the frequency is slower.
+
 
 Developer versus Team
 =====================
@@ -135,7 +136,7 @@ However, that is often confusing for new adopters.
 
 Therefore I often use a more pragmatic distinguishment: Individual Developer versus (scrum)Team.
 |BR|
-A single developer can act following  TDD. (S)he writes code, tests and production code and switches between them
+A single developer can act following  TDD. (S)he writes code, tests, and production code and switches between them
 every minute. As TDD is more productive, hardly anyone will notice it when somebody “secretly” adopts TDD. No
 extra tools or frameworks are essential.
 
@@ -150,12 +151,12 @@ ATSes.
 Testability
 ===========
 
-Everbody knows some code that is hard to test. I have seen functions without input or output -- the purely act on
-global state (global variables). We know that is bad, but is also untestable.
+Everybody knows some code that is hard to test. I have seen functions without input or output -- acting purely on
+global variables. We know globals are bad! And it is also untestable.
 |BR|
 We should avoid that.
 
-By writing test first, we enforce an implicit requirement: code should be testable.
+By writing tests first, we enforce an implicit requirement: code should be testable.
 
 =============
 How to start?
@@ -163,13 +164,16 @@ How to start?
 
 Back to the main question: how to start?
 |BR|
-Whenever the goal is: *use new tools*, it is simple: purchase them, shop for some hands-on training, and you are done.
+Whenever the goal is to use new tools, it is simple: purchase them, shop for some hands-on training, and you are done.
 
-In real life, you need to set goals first, and constantly measure whether your reached them.
+In real life, you should set goals first. And constantly measure whether you have reached them.
+
 |BR|
 Sound familiar? That is essentially TDD!
 
-  Every body has it own gaols 
+--------
+
+  Everybody has there own goals
 
 Goals
 =====
