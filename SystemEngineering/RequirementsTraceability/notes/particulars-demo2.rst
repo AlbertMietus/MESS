@@ -48,6 +48,7 @@ requirements.
       :id: CALC2_1000ND
       :links: CALC_ADD;CALC_SUB;CALC_MULT;CALC_DIV
       :tags: demo2
+      :project: RequirementsTraceability
 
       The :need:`CALC2` ...
 

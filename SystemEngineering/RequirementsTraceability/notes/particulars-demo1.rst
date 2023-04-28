@@ -8,8 +8,25 @@ Particulars for CALC1
 
 .. hint::
 
-   You should skip the particulars passages, when you not interested in the technical details of this particular tool.
+   You can skip the particulars parts, when you not interested in the technical details of this particular tool.
 
+   .. caution::
+
+      I configured the extra-option ``:project:`` to needs (which is set to `RequirementsTraceability`) for all needs in this
+      article, and uses it in filter for all overviews. As I use needs in multiple *parts* (“projects”) on this site,
+      and they shouldn't be mixed-up.
+
+      Probably, you don’t need this when your documentation is only. Than you should ignore the lines:
+
+      * ``:project: RequirementsTraceability``
+      * ``:filter: 'RequirementsTraceability' in project``
+
+      Else, if you do use multiple sets of needs in one document, see this  as extra lesson :-)
+
+   .. seealso::
+
+     *  https://sphinx-needs.readthedocs.io/en/latest/configuration.html#needs-extra-options
+     *  https://sphinx-needs.readthedocs.io/en/latest/filter.html
 
 A product (start of the V)
 ==========================
@@ -20,6 +37,7 @@ To define the :need:`CALC1` product the following is described:
 
    .. demo:: Simple Calculator
       :ID: CALC1
+      :project: RequirementsTraceability
 
       For this demo ...
 
@@ -38,6 +56,7 @@ The requirement :need:`CALC_ADD` has an ID too, and a link to the products it is
    .. req:: Generic Add
       :ID: CALC_ADD
       :links: CALC1;CALC2
+      :project: RequirementsTraceability
 
       All calculators ... able to sum ...
 
@@ -58,6 +77,7 @@ are tested by this one. Here, that is only `CALC_ADD`.
    .. test:: Basic addition test
       :id: CALC_TEST_ADD_1
       :links: CALC_ADD
+      :project: RequirementsTraceability
 
       Sum two numbers and verify ...
 
@@ -74,6 +94,8 @@ Generaring the “requirements tree” as displayed :ref:`here <demo1_graph>` is
 
    .. needflow::
       :tags: demo1;general
+      :filter: 'RequirementsTraceability' in project 
+             
 
 Likewise is showing the table overview:
 

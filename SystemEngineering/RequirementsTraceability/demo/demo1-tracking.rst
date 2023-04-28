@@ -14,6 +14,7 @@ updated when the specifications change.
 
 .. needflow::
    :tags: demo1;general
+   :filter: 'RequirementsTraceability' in project 
 
 
 Lessons learned
@@ -51,6 +52,7 @@ Some people prefer to see the same information in a table; again this one is aut
    :style: table
    :columns: id;type;title;incoming;outgoing
    :sort: type
+   :filter: 'RequirementsTraceability' in project
 
 .. hint::
 

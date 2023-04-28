@@ -29,6 +29,7 @@ Most test-cases are labeled with ``general``, as are the generic requirements. W
       :id: CALC_TEST_ADD_1
       :links: CALC_ADD;CALC2_1000ND
       :tags: general
+      :project: RequirementsTraceability
 
       Sum two numbers ....
 
@@ -36,6 +37,7 @@ Most test-cases are labeled with ``general``, as are the generic requirements. W
       :id: CALC2_TEST_DIV_1
       :links: CALC_DIV; CALC2_1000ND
       :tags: demo2
+      :project: RequirementsTraceability
 
       Subtract ...
 

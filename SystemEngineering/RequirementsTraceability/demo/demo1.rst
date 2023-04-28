@@ -14,6 +14,7 @@ The product we need
 .. demo:: Simple Calculator
    :ID: CALC1
    :tags: demo1
+   :project: RequirementsTraceability
 
    For this demo, a simple calculator is used. It should work with integers; and has only a few requirements. See below.
 
@@ -27,6 +28,7 @@ Some general requirements, for all  calculators
    :ID: CALC_ADD
    :links: CALC1;CALC2
    :tags: general
+   :project: RequirementsTraceability
 
    All calculators should be able to sum two numbers and show the result.
 
@@ -34,6 +36,7 @@ Some general requirements, for all  calculators
    :ID: CALC_SUB
    :links: CALC1;CALC2
    :tags: general
+   :project: RequirementsTraceability
 
    All calculators should be able to subtract a number form another number.
 
@@ -41,6 +44,7 @@ Some general requirements, for all  calculators
    :ID: CALC_MULT
    :links: CALC1;CALC2
    :tags: general
+   :project: RequirementsTraceability
 
    All calculators should be able to multiply two numbers.
 
@@ -48,6 +52,7 @@ Some general requirements, for all  calculators
    :ID: CALC_DIV
    :links: CALC1;CALC2
    :tags: general
+   :project: RequirementsTraceability
 
    All calculators should be able to divide two numbers.
 
@@ -61,7 +66,8 @@ As we have defined only general requirements, we only need some generic tests.
    :id: CALC_TEST_ADD_1
    :links: CALC_ADD;CALC2_1000ND
    :tags: general
-
+   :project: RequirementsTraceability
+             
    Sum two numbers and verify the result is correct.
 
    By example: Add  ``2`` and ``5`` and check the result is **7**
@@ -70,6 +76,7 @@ As we have defined only general requirements, we only need some generic tests.
    :id: CALC_TEST_ADD_2
    :links: CALC_ADD;CALC2_1000ND
    :tags: general
+   :project: RequirementsTraceability
 
    Add the numbers ``2222`` and ``5555`` and check the result is **7777**
 
@@ -77,6 +84,7 @@ As we have defined only general requirements, we only need some generic tests.
    :id: CALC_TEST_SUB_1
    :links: CALC_SUB;CALC2_1000ND
    :tags: general
+   :project: RequirementsTraceability
 
    Feed two numbers to the calculators, in the right order and verify the result.
    |BR|
@@ -93,6 +101,7 @@ As we have defined only general requirements, we only need some generic tests.
    :id: CALC_TEST_MULT_1
    :links: CALC_MULT;CALC2_1000ND
    :tags: general
+   :project: RequirementsTraceability 
 
    You get the idea ...
 

@@ -10,6 +10,7 @@ The tree view
 
 .. needflow::
    :tags: demo2;general
+   :filter: 'RequirementsTraceability' in project
 
 Lessons learned
 ---------------
@@ -34,6 +35,7 @@ The table view
    :style: table
    :columns: id;type;title;incoming;outgoing
    :sort: type
+   :filter: 'RequirementsTraceability' in project
 
 
 Lessons learned

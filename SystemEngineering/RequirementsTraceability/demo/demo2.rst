@@ -14,6 +14,7 @@ A bit more complicated product
    :ID: CALC2
    :tags: demo2
    :links: CALC1
+   :project: RequirementsTraceability
 
    This calculator should work with `Fractional Numbers <https://en.wikipedia.org/wiki/Fraction_(mathematics)>`_, and be
    exact for very big numbers; as defined in :need:`CALC2_1000ND`
@@ -30,6 +31,7 @@ The extra requirement
    :id: CALC2_1000ND
    :links: CALC_ADD;CALC_SUB;CALC_MULT;CALC_DIV; CALC2
    :tags: demo2
+   :project: RequirementsTraceability
 
    The :need:`CALC2` should work with fractions; where nominator and denominator can be very long: up to **1000
    digits**.
@@ -45,6 +47,7 @@ We also *repair* the missing test in demo1, but only for demo2 (Because it is st
    :id: CALC2_TEST_DIV_1
    :links: CALC_DIV; CALC2_1000ND
    :tags: demo2
+   :project: RequirementsTraceability
 
    Subtract ``1/3`` from ``1/2`` and check the result is **1/6**.
 

@@ -8,6 +8,10 @@ All needs [BigTree]
 We can also show the relations between all product (cq releases) and it *needs* in one big tree [#forrest]_.
 
 .. needflow::
+   :filter: 'RequirementsTraceability' in project
+
+
+
 
 Lessons learned
 ---------------
