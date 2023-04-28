@@ -1,6 +1,14 @@
 .. Copyright (C) ALbert Mietus; 2020, 2023
 .. _startingWithBDD+TDD:
 
+.. sidebar:: On this page
+   :class: localtoc
+
+   .. contents::
+      :depth: 3
+      :local:
+      :backlinks: none
+
 *******************************
 Starting with BDD & TDD (DRAFT)
 *******************************

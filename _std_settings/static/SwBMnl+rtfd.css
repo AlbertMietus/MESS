@@ -138,3 +138,17 @@ table.rtm-rotated-head th:not(:first-child)>p {
     width: 20px;
 }
 
+/* Sidebar-toc:
+  - small
+  - "unclear" admonition
+*/
+.rst-content .localtoc.sidebar {
+    max-width:40%; width: auto;
+}
+.rst-content .localtoc.sidebar  p {
+    margin: 0;
+    border-bottom: 1px solid #808080;
+}
+.rst-content div.admonition {clear: left;}
+
+
