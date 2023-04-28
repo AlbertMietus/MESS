@@ -1,5 +1,4 @@
 .. Copyright (C) ALbert Mietus; 2020, 2023
-.. _startingWithBDD+TDD:
 
 .. sidebar:: On this page
    :class: localtoc
@@ -8,6 +7,8 @@
       :depth: 3
       :local:
       :backlinks: none
+
+.. _startingWithBDD+TDD:
 
 *******************************
 Starting with BDD & TDD (DRAFT)
@@ -34,6 +35,16 @@ Starting with BDD & TDD (DRAFT)
 
       As it is still actual and fits in my new :ref:`MESS_blogs`, I’m making a few updates and **repost it next week**
 
+.. danger::  This post is becoming long; to long
+
+   .. todo:: Idea
+
+      * Rename it, and use upto ‘How to start’ as fist part (7m reading)
+      * Second article (from ‘How to start’) --later-- can reuse the ‘Starting with ...’ name
+      * Option: 3de part with needs
+
+      This (to long) post is now the only one in BDD+TDD/-map (aside of the UncleBobList orphan)
+
 Ideally, each team should understand the concept of this *development process* **first** and then **exercise** it before
 practicing it in a **project**.  However, IMHO, it is possible to learn it on the job. As long as one is carefully
 trained & couched while practicing.
@@ -46,12 +57,12 @@ no speed-up, or any effect.
 
 .. tip:: Without set goals, one shouldn't complain when expectations are not met!
 
-So, what are the goals one can aim for?
+So, what are the goals one can aim for? That can be formulated as simple as: a more Lean & Agile approach.
 |BR|
-Simple: a more Lean & Agile approach.
+Or even bolder:
 
-Or even bolder: Design (aka write) an (embedded software) product that fits the needs of the end-users better, with
-no flaws, in less time and with less effort (cost).
+  Design a (Modern) Embedded Software System that fits the needs of the end-users better, with no flaws, in less
+  time and with less effort (cost) than traditionally.
 
 .. sidebar:: WoW
 
@@ -153,11 +164,58 @@ Back to the main question: how to start?
 |BR|
 Whenever the goal is to use new tools, it is simple: purchase them, shop for some hands-on training, and you are done.
 
-In real life, you should set goals first. And constantly measure whether you have reached them.
+In real life, you should set goals first. And constantly measure whether you have reached them.  Sound familiar? That is
+essentially TDD!
 |BR|
-Sound familiar? That is essentially TDD!
+Let’s start by setting an generic demo goals, as point on the horizon.
+
+.. note::
+
+   For fun, I use a quite formal notation here, as introduced by :ref:`RequirementsTraceability`.
+
+   This shows, we can see “Starting with BDD & TDD” as a project with clear needs and stap. Be that as it may, I would
+   do it less formal, to motivate the team, and use the formalisms in the background.
+
+.. demo:: Development a MESS product that end-user like, with a 30% less flaws, in 70% of the normale Time-2-Market.
+   :ID: GOAL_70_30
+   :project: startingWithBDD+TDD
+   :tags: TDD, BDD
+
+   *This is basically the bold-statement above, reworded, so it becomes measurable*
+
+Then, we can derive some smaller requirements, and define how to test them.
+
+.. req:: First Introduce TDD
+   :ID: TDD_First
+   :project: startingWithBDD+TDD
+   :links: GOAL_70_30
+   :tags: TDD
+
+   TDD is a discipline that each individual developer can do. And one can make a start of new code at ant time.
+
+   No fancy tools are essential. One can start with the discipline, that all new code should be testable and tests
+   should be written first.
+
+Introducing TDD in an existing project is never perfect. Temporally, one should accept that existing/old code will have
+no of very limited test-coverage. Some ancient-styled, never-updated code will effectively never becomes beter -- on
+the other hand, when there is no need to update it, and it is *field proven correct*, there is no business value in
+making it beter.
+
+.. test:: Measure TDD, by counting & tracking the part of the code that has coverage
+   :ID: TDD_Measure-coverage
+   :project: startingWithBDD+TDD
+   :links: TDD_First
+   :tags: TDD
+          
 
 
+.. req:: Introduce BDD quickly
+   :ID: BDD_quickly
+   :project: startingWithBDD+TDD
+   :links: GOAL_70_30
+   :tags: BDD
+
+        
 --------- 
 
 Developer versus Team
@@ -182,13 +240,6 @@ Despite this, a single team can embrace BDD -- even when others don’t
 This is valid for all levels: the larger the part that is worked on, the more commitment needs to be able to run those
 ATSes.
 
---------
-
-  Everybody has there own goals
-
-Goals
-=====
-There are a few, generic, main goals:
 
 1. Product-quality improvement: in short: better code and better products
 
