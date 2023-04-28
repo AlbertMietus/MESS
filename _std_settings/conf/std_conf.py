@@ -72,6 +72,7 @@ extensions.append('sphinxcontrib.needs')
 needs_include_needs = True
 needs_id_required = True
 needs_id_regex = r'^[A-Z][A-Za-z-0-9_]{4,}'
+needs_extra_options = ['project', 'category']
 
 needs_types = [
     dict(directive="demo", title="Demonstrator",   prefix="D_", color="#9DC5BB", style="node"),
