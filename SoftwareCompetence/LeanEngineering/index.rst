@@ -1,6 +1,5 @@
-.. Copyright (C) 2020: ALbert Mietus.
+.. Copyright (C) 2020, 2023: ALbert Mietus.
 
-.. _LeanEngineering:
 
 Lean Engineering
 ================
@@ -9,6 +8,5 @@ Lean Engineering
    :glob:
    :maxdepth: 2
 
-
-   BDD_TDD/startingWithBDD+TDD
+   */index
 
