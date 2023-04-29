@@ -8,32 +8,31 @@
       :local:
       :backlinks: none
 
-.. _startingWithBDD+TDD:
+.. _startingBTDD:
 
-*******************************
-Starting with BDD & TDD (DRAFT)
-*******************************
+********************************
+Starting  with BDD & TDD (DRAFT)
+********************************
 
 .. post:: 2020/07/15
    :tags: BDD, TDD
    :category: opinion
-   :location: Eindhoven
+   :location: Geldrop
    :language: en
 
-   :reading-time: 5m30
+   :reading-time: XXX
 
    Frequently I get questions on BDD and TDD, like how to start. Although there are no standard solutions, there are
-   fascinating common grounds that I can share.
+   fascinating common grounds that I can share. When one understand the goals, as I described last week
+   (:ref:`introducingBTDD`), it becomes simple.
    |BR|
    The key is simple: understand the goals.
+   ---
 
-   Typically engineers are clever: When they understand the objectives, they will find a solution; that is their job!
 
-   .. update:: 2023/04/30
+   .. update:: 2020/04/30
 
-      .. As it is still actual and fits in my new :ref:`MESS_blogs`, I made a few updates and reposted it.
-
-      As it is still actual and fits in my new :ref:`MESS_blogs`, I’m making a few updates and **repost it next week**
+      This old article was never really posted. And as it fits my new :ref:`MESS_blogs`, I worked it a repost (part II)
 
 .. danger::  This post is becoming long; to long
 
@@ -45,116 +44,12 @@ Starting with BDD & TDD (DRAFT)
 
       This (to long) post is now the only one in BDD+TDD/-map (aside of the UncleBobList orphan)
 
-Ideally, each team should understand the concept of this *development process* **first** and then **exercise** it before
-practicing it in a **project**.  However, IMHO, it is possible to learn it on the job. As long as one is carefully
-trained & couched while practicing.
-|BR|
-A pitfall is to focus on the tools and learn new tricks. That hardly ever makes a process lean.
-
-Instructions too often focus on using the tools. And almost automatically, the goal becomes to blend those new tools into
-the existing Way-of-Work (WoW). Eventually, however, somebody will get disappointed. There will be no quality improvement,
-no speed-up, or any effect.
-
-.. tip:: Without set goals, one shouldn't complain when expectations are not met!
-
-So, what are the goals one can aim for? That can be formulated as simple as: a more Lean & Agile approach.
-|BR|
-Or even bolder:
-
-  Design a (Modern) Embedded Software System that fits the needs of the end-users better, with no flaws, in less
-  time and with less effort (cost) than traditionally.
 
 .. sidebar:: WoW
 
    BDD and TDD should be *interwoven* with the typical steps in a development process and will **change the order**!
 
    .. uml:: BDD+TDD-process.puml
-
-
-===========================
-What is What (Introduction)
-===========================
-
-There are a lot of opinions on BDD and TDD, which can be confusing. As in many modern improvements, words often become
-hyped to justify any change. That is not my goal. So let’s start with a summary backed by the definitions on Wikipedia.
-
-
-TDD (`Test-driven development <https://en.wikipedia.org/wiki/Test-driven_development>`_)
-========================================================================================
-
-TDD is a *process*; where the tests are described **first** and the code second. One keeps executing all tests until the
-code works. This encourages good habits such as *refactoring* also.
-|BR|
-Change code is constantly tested, so the risk of inserting a bug is minimal.
-
-TDD is typically practiced at the unit level (one file, class, or function), where the programmer writes test and
-production code in a short loop (a minute)
-|BR|
-The are many variants, like **STDD** (system-level TDD), **ATDD** (Acceptance TDD), and **BDD**; the latter is
-well-known and popular.
-
-TDD also provides an *”exit” strategy* (see below).
-
-BDD (`Behavior-driven development <https://en.wikipedia.org/wiki/Behavior-driven_development>`_)
-================================================================================================
-
-BDD is a variant of TDD focusing on the system (or acceptance) level. Again, tests are written **first** and
-executed *constantly*; when all tests are OK, the product development is *done*.
-
-Here the testing focuses on the (top-level) requirements, the system, and/or business features. Typically, they are
-designed by test professionals, system architects, or business experts. They are less technical compared with
-TDD tests. And, to be practical, those tests are written in a dedicated tool; using a high-level *“almost English”
-language*.
-
-As the size of the change is bigger -- like a feature or user story-- the cycle is (also) longer. Typically a few days.
-
-Like with TTD, BDD tests are executed frequently.
-|BR|
-Some prefer to “enable” new tests only when the feature is coded -- this prevents a failing test (as the production code
-isn’t done). IMHO, one should avoid this. One should run the tests but in a lower urgency branch. And promote both to a
-higher level when integrating (see an upcoming blog on this).
-
-
-All levels
-==========
-
-One can (should) practice this process for all *levels in the V*.
-
-Each classical *’test & integration’ step* can be split into a test preparation and an execution activity.  The
-*preparation phase* becomes the **test-design** activity, executed early and resulting in an ATS (Automated Test
-Script).
-|BR|
-That ATS is executed frequently (at least nightly) as soon as it is available.
-
-Executing all tests at all levels for all units and modules and for every story and feature verifies everything. This
-covers pure integration errors.  This covers pure integration errors but is also a safety net when mistakes are not
-found at a lower level.
-
-Remember: those ATSes run fully automatically. So, the cost of all those executions add-up to almost nothing.
-
-====================================
-Why not just write and run the test?
-====================================
-
-TTD and Unit Tests are related but not the same!  When practicing TDD, the focus should be on preventing flaws instead
-of finding them.
-
-TDD is a process that dictates when to write a test (first); when to write production code (second); and when to execute
-the tests (constantly and automatically).
-|BR|
-The same applies to BDD, even though the frequency is slower.
-
-Testability
-===========
-
-Everybody knows some code that is hard to test. I have seen functions without input or output -- acting purely on
-global variables. We know globals are bad! And it is also untestable.
-|BR|
-We should avoid that.
-
-By writing tests first, we enforce an implicit requirement: code should be testable. Besides:
-
- It’s quite hard to write untestable code, when your write your test first!
 
 =============
 How to start?
@@ -327,7 +222,7 @@ Engineers like to understand ‘**WHY**’. Then, the can deal with the issue.
 
 Uncle Bob
 ---------
-Uncle Bob has several videos on TDD and BDD. See :ref:`UncleBobList_TTD+BDD` for an overview. Start with the basic TDD (6.*)
+Uncle Bob has several videos on TDD and BDD. See :ref:`BTDD_UncleBobList` for an overview. Start with the basic TDD (6.*)
 ones! They explain the ‘Why’.
 
 .. hint::

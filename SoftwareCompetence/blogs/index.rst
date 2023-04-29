@@ -14,4 +14,4 @@ A blog on SoftwareCompetence
 
 .. seealso::
 
-   * :ref:`startingWithBDD+TDD`
+   * :ref:`Lean_BTDD`

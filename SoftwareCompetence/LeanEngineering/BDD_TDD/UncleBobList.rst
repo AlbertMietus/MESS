@@ -1,6 +1,6 @@
 :orphan:
 .. Copyright (C) ALbert Mietus; 2020,2023
-.. _UncleBobList_TTD+BDD:
+.. _BTDD_UncleBobList:
 
 ===================================
 Uncle Bob video's on TDD/BDD (list)
@@ -8,7 +8,7 @@ Uncle Bob video's on TDD/BDD (list)
 
 Uncle Bob has several video's on TDD & BDD. There are **11** video's on TDD and **3** on BDD.
 
-This list is part of the blog on :ref:`startingWithBDD+TDD`
+This list is part of the blog on :ref:`startingBTDD`
 
 TDD
 ===
