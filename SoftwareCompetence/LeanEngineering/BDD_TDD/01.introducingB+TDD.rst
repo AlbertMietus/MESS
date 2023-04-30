@@ -176,7 +176,7 @@ soon as a draft is available.
 In a future blog, I will dive into the details. For now: remember: the test is needed to prevent errors, not to find
 them: My motto is:
 
-  When a tester can design the test, the coder can’t program it!
+  When a tester can’t design the test, the coder can’t program it!
 
 So, make sure all omissions are removed before the SW engineers write the code. Else, they write the wrong code!
 
