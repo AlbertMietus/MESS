@@ -155,22 +155,21 @@ By writing tests first, we enforce an implicit requirement: code should be testa
 Legacy code
 ===========
 
-Using TDD with legacy code --code that does have a lot of (unit) tests, and that was never designed for testability--
-is harder the starting TDD in a green field. Still, there are options: at least make all new code testable and use the
+Using TDD with legacy code --code that does have a lot of (unit) tests and that was never designed for testability--
+is more arduous than starting TDD in a green field. Still, there are options: at least make all new code testable and use the
 concepts of TDD where possible.
 |BR|
-In one of the upcoming blogs, I will give some tricks on that.
+In an upcoming blog, I will give some tricks on that.
 
-
-Typically, people advise to start with TDD, before applying BDD. For legacy, the opposite is often true. As BDD depends
-less on the style of coding, legacy (style) code isn’t a game-changer.
+Typically, people advise starting with TDD before applying for BDD. For legacy, the opposite is often true. As BDD
+depends less on the coding style, legacy isn’t a game-changer.
 |BR|
-As long as one has a sound set of acceptance-test, preferably ones that can be automated, that is s great start-point:
-just run those tests (automatically) every few days, of every pull request, or so.
+A reasonable set of acceptance tests, preferably ones that can be automated, is already a start-point: just run those
+tests (automatically) every few days or every pull request or so.
 
-And, design more ATSes. Add a set for all new features, user story, or whatever you call your requirements.
+Next, design more ATSes. Add a set for all new features, user-stories, etc. And(!) Run them
 |BR|
-Again, the ideas are starting soon. Don’t wait on the code. You don’t even have to wait on the final story. Start as
+Again, the ideas are starting soon. Don’t wait on the code. You don’t even have to wait for the final story. Start as
 soon as a draft is available.
 
 
@@ -179,7 +178,7 @@ them: My motto is:
 
   When a tester can design the test, the coder can’t program it!
 
-So, make sure all omissions are removed before the SW-engineers write the code – else they writes te wrong code!
+So, make sure all omissions are removed before the SW engineers write the code. Else, they write the wrong code!
 
 --- :SwBMnl-email:`Albert.Mietus`
 
