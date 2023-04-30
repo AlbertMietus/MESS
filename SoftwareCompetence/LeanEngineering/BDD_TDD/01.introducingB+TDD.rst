@@ -14,7 +14,7 @@
 Introducing BDD & TDD
 *********************
 
-.. post:: 2020/07/15
+.. post:: 2023/04/30 
    :tags: BDD, TDD
    :category: opinion
    :location: Eindhoven
@@ -34,7 +34,7 @@ Introducing BDD & TDD
    And we have an advantage, our Typically engineers are clever: When they understand the objectives, they will find a
    solution; that is their job!
 
-   .. update:: 2023/04/30
+   .. update:: 2020/07/15
 
       This old article was never really published. As it fits my new :ref:`MESS blogs <MESS_blogs>`, I reworked and posted
       it again. This is part-I; I expect other parts coming weeks.
