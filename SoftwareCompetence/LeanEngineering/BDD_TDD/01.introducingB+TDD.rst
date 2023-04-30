@@ -53,7 +53,7 @@ no speed-up, or any effect.
 
 .. tip:: Without set goals, one shouldn't complain when expectations are not met!
 
-So, what are the goals one can aim for? That can be formulated as simple as: a more Lean & Agile approach.
+So, what are the goals one can aim for? That can be formulated as simply: a more Lean & Agile approach.
 |BR|
 Or even bolder:
 
@@ -150,7 +150,7 @@ We should avoid that.
 
 By writing tests first, we enforce an implicit requirement: code should be testable. Besides:
 
- It’s quite hard to write untestable code, when your write your test first!
+ It’s hard to write untestable code when your write your test first!
 
 
 --- :SwBMnl-email:`Albert.Mietus`
