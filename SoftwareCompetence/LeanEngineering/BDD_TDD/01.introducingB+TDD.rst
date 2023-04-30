@@ -20,7 +20,7 @@ Introducing BDD & TDD
    :location: Eindhoven
    :language: en
 
-   :reading-time: 4m30
+   :reading-time: 5m30
 
    Is Behavior & Test Driven Development an essential aspect of professional software engineering? Leaders such as
    UncleBob compare it to ‘double entry bookkeeping’: a crucial discipline.  He claims that when our industry doesn’t
@@ -155,7 +155,7 @@ By writing tests first, we enforce an implicit requirement: code should be testa
 Legacy code
 ===========
 
-Using TDD with legacy code --code that does have a lot of (unit) tests and that was never designed for testability--
+Using TDD with legacy code --code that does not have a lot of (unit) tests and that was never designed for testability--
 is more arduous than starting TDD in a green field. Still, there are options: at least make all new code testable and use the
 concepts of TDD where possible.
 |BR|
@@ -169,7 +169,7 @@ tests (automatically) every few days or every pull request or so.
 
 Next, design more ATSes. Add a set for all new features, user-stories, etc. And(!) Run them
 |BR|
-Again, the ideas are starting soon. Don’t wait on the code. You don’t even have to wait for the final story. Start as
+Again, the ideas is: *start soon*. **Don’t wait** on the code. You don’t even have to wait for the final story. Start as
 soon as a draft is available.
 
 
