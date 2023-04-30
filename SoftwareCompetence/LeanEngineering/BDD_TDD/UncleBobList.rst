@@ -2,9 +2,9 @@
 .. Copyright (C) ALbert Mietus; 2020,2023
 .. _BTDD_UncleBobList:
 
-===================================
-Uncle Bob video's on TDD/BDD (list)
-===================================
+=================================
+TIP: Uncle Bob video's on TDD/BDD
+=================================
 
 Uncle Bob has several video's on TDD & BDD. There are **11** video's on TDD and **3** on BDD.
 
