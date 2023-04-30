@@ -20,14 +20,13 @@ Introducing BDD & TDD
    :location: Eindhoven
    :language: en
 
-   :reading-time: XXX
+   :reading-time: 4m30
 
-
-   Behavior & Test Driven Development can be seen as essential aspects of professional software engineering. Leaders
-   such as UncleBob compare it to ‘double entry bookkeeping’: it’s crucial for accountants. He claims that when our
-   industry doesn’t professionalize quickly, we have the risk that B&TDD will be enforced by law (too).
+   Is Behavior & Test Driven Development an essential aspect of professional software engineering? Leaders such as
+   UncleBob compare it to ‘double entry bookkeeping’: a crucial discipline.  He claims that when our industry doesn’t
+   professionalize quickly, we have the risk that B&TDD will be enforced by law (too).
    |BR|
-   So, it can be wise to learn to practice it, quickly.
+   So, it can be wise to learn to practice it quickly.
 
    It is not easy to start when writing (long-lasting) embedded systems. We have other demands, codebases with a
    lot of history. Still, we can (& should).
@@ -35,10 +34,10 @@ Introducing BDD & TDD
    And we have an advantage, our Typically engineers are clever: When they understand the objectives, they will find a
    solution; that is their job!
 
-   .. update:: 2020/04/28
+   .. update:: 2020/04/30
 
       This old article was never really published. As it fits my new :ref:`MESS blogs <MESS_blogs>`, I reworked and posted
-      it again. This is part I expect other parts coming weeks.
+      it again. This is part-I; I expect other parts coming weeks.
 
 
 Ideally, each team should understand the concept of this *development process* **first** and then **exercise** it before
@@ -89,7 +88,7 @@ production code in a short loop (a minute)
 The are many variants, like **STDD** (system-level TDD), **ATDD** (Acceptance TDD), and **BDD**; the latter is
 well-known and popular.
 
-TDD also provides an *”exit” strategy* (see below).
+TDD also provides an *”exit” strategy* (see :ref:`tdd_exitstrategy`).
 
 BDD (`Behavior-driven development <https://en.wikipedia.org/wiki/Behavior-driven_development>`_)
 ================================================================================================
@@ -150,7 +149,7 @@ We should avoid that.
 
 By writing tests first, we enforce an implicit requirement: code should be testable. Besides:
 
- It’s hard to write untestable code when your write your test first!
+ It’s hard to write untestable code when you write the test first!
 
 
 --- :SwBMnl-email:`Albert.Mietus`
