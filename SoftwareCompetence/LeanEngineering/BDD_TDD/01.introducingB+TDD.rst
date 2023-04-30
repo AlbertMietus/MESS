@@ -169,7 +169,7 @@ tests (automatically) every few days or every pull request or so.
 
 Next, design more ATSes. Add a set for all new features, user-stories, etc. And(!) Run them
 |BR|
-Again, the ideas is: *start soon*. **Don’t wait** on the code. You don’t even have to wait for the final story. Start as
+Again, the idea is: *start soon*. **Don’t wait** on the code. You don’t even have to wait for the final story. Start as
 soon as a draft is available.
 
 
