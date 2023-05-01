@@ -182,6 +182,10 @@ So, make sure all omissions are removed before the SW engineers write the code. 
 
 --- :SwBMnl-email:`Albert.Mietus`
 
+.. seealso::
+
+   This article on LinkedIn:
+   https://www.linkedin.com/pulse/introducing-bdd-tdd-albert-mietus/
 
 ..  LocalWords:  distinguishment
 
