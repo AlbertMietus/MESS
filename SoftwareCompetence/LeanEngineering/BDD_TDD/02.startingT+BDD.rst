@@ -23,7 +23,7 @@ Starting with BDD & TDD (DRAFT)
    :reading-time: XXX
 
    As I described last week (in :ref:`introducingBTDD`), understanding the common goals of Behavior & Test Driven
-   Development **and** defining your specific needs is the first and most improvement step to start using this essential
+   Development **and** defining your specific needs is the first and most critical step to start using this essential
    discipline.
    |BR|
    B&TDD in greenfield development is relatively simple: start writing your tests and code!
@@ -51,7 +51,7 @@ Let’s start by setting some generic demo goals as the point on the horizon.
 
 .. include:: ./sidebar-needs.irst
 
-.. demo:: Develop a *MESS product( that end-users like, with 30% fewer flaws, in 70% of the normal Time-2-Market.
+.. demo:: Develop a ‘MESS product’ that end-users like, with 30% fewer flaws, in 70% of the normal Time-2-Market.
    :ID: GOAL_70_30
    :project: startingWithBDD+TDD
    :tags: TDD, BDD
@@ -72,7 +72,7 @@ Then, we can derive some requirements closer by and on our path to the end goal.
    should be written first.
 
 Introducing TDD in an existing project is never perfect. Temporally, one should accept that existing/old code will have
-no or very limited test coverage. Some ancient-styled, never-updated code will effectively never becomes better -- on
+no or very-limited test coverage. Some ancient-styled, never-updated code will effectively never becomes better -- on
 the other hand, when there is no need to update it, and it is *field proven correct*, there is no business value in
 making it better.
 
