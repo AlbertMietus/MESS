@@ -26,10 +26,11 @@ Starting with BDD & TDD (DRAFT)
    Development **and** defining your specific needs is the first and most improvement step to start using this essential
    discipline.
    |BR|
-   Using B&TDD in greenfield development is relatively easy: just do it.
+   B&TDD in greenfield development is relatively simple: start writing your tests and code!
 
-   Yet, in our (Modern) Embedded Software Systems, it is often a lot harder to start --typically, there is already  a
-   huge codebase that is developed long before B&DD was invented!
+
+   However, starting with B&DD in *Modern Embedded Software Systems* can be more challenging due to the existing and often
+   extensive codebase that was developed before the emergence of B&DD.
 
    So, “How to start?” is more like *“How to get out of the waterfall?”*
 
@@ -45,14 +46,16 @@ Whenever the goal is to use new tools, it is simple: purchase them, shop for som
 In real life, you should set goals first. And constantly measure whether you have reached them.  Sound familiar? That is
 essentially TDD!
 |BR|
-Let’s start by setting an generic demo goals, as point on the horizon.
+Let’s start by setting some generic demo goals as the point on the horizon.
 
-.. note::
+.. sidebar::
 
-   For fun, I use a quite formal notation here, as introduced by :ref:`RequirementsTraceability`.
+   .. note::
 
-   This shows, we can see “Starting with BDD & TDD” as a project with clear needs and stap. Be that as it may, I would
-   do it less formal, to motivate the team, and use the formalisms in the background.
+      For fun, I use a formal notation here, as introduced by :ref:`RequirementsTraceability`.
+
+      This shows we can see “implementing BDD & TDD” as a project with clean needs and steps. Be that as it may, I would
+      do it less formally to motivate the team and use the formalisms in the background.
 
 .. demo:: Development a MESS product that end-user like, with a 30% less flaws, in 70% of the normale Time-2-Market.
    :ID: GOAL_70_30
