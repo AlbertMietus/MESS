@@ -11,10 +11,10 @@
 .. _startingBTDD:
 
 ********************************
-Starting  with BDD & TDD (DRAFT)
+Starting with BDD & TDD (DRAFT)
 ********************************
 
-.. post:: 2020/07/15
+.. post:: 2023/05/07
    :tags: BDD, TDD
    :category: opinion
    :location: Geldrop
@@ -22,34 +22,17 @@ Starting  with BDD & TDD (DRAFT)
 
    :reading-time: XXX
 
-   Frequently I get questions on BDD and TDD, like how to start. Although there are no standard solutions, there are
-   fascinating common grounds that I can share. When one understand the goals, as I described last week
-   (:ref:`introducingBTDD`), it becomes simple.
+   As I described last week (in :ref:`introducingBTDD`), understanding the common goals of Behavior & Test Driven
+   Development **and** defining your specific needs is the first and most improvement step to start using this essential
+   discipline.
    |BR|
-   The key is simple: understand the goals.
-   ---
+   Using B&TDD in greenfield development is relatively easy: just do it.
 
+   Yet, in our (Modern) Embedded Software Systems, it is often a lot harder to start --typically, there is already  a
+   huge codebase that is developed long before B&DD was invented!
 
-   .. update:: 2023/07/7
+   So, “How to start?” is more like *“How to get out of the waterfall?”*
 
-      This old article was never really posted. And as it fits my new :ref:`MESS_blogs`, I worked it a repost (part II)
-
-.. danger::  This post is becoming long; to long
-
-   .. todo:: Idea
-
-      * Rename it, and use upto ‘How to start’ as fist part (7m reading)
-      * Second article (from ‘How to start’) --later-- can reuse the ‘Starting with ...’ name
-      * Option: 3de part with needs
-
-      This (to long) post is now the only one in BDD+TDD/-map (aside of the UncleBobList orphan)
-
-
-.. sidebar:: WoW
-
-   BDD and TDD should be *interwoven* with the typical steps in a development process and will **change the order**!
-
-   .. uml:: BDD+TDD-process.puml
 
 =============
 How to start?
