@@ -48,41 +48,35 @@ essentially TDD!
 |BR|
 Let’s start by setting some generic demo goals as the point on the horizon.
 
-.. sidebar::
 
-   .. note::
+.. include:: ./sidebar-needs.irst
 
-      For fun, I use a formal notation here, as introduced by :ref:`RequirementsTraceability`.
-
-      This shows we can see “implementing BDD & TDD” as a project with clean needs and steps. Be that as it may, I would
-      do it less formally to motivate the team and use the formalisms in the background.
-
-.. demo:: Development a MESS product that end-user like, with a 30% less flaws, in 70% of the normale Time-2-Market.
+.. demo:: Develop a *MESS product( that end-users like, with 30% fewer flaws, in 70% of the normal Time-2-Market.
    :ID: GOAL_70_30
    :project: startingWithBDD+TDD
    :tags: TDD, BDD
 
-   *This is basically the bold-statement above, reworded, so it becomes measurable*
+   This is basically the bold statement above reworded, so it becomes measurable.
 
-Then, we can derive some smaller requirements, and define how to test them.
+Then, we can derive some requirements closer by and on our path to the end goal. And define how to test them.
 
-.. req:: First Introduce TDD
+.. req:: Introduce TDD first
    :ID: TDD_First
    :project: startingWithBDD+TDD
    :links: GOAL_70_30
    :tags: TDD
 
-   TDD is a discipline that each individual developer can do. And one can make a start of new code at ant time.
+   TDD is a discipline that each individual developer can do. And one can make a start of new code at any time.
 
-   No fancy tools are essential. One can start with the discipline, that all new code should be testable and tests
+   No fancy tools are essential. One can start with the discipline that all new code should be testable, and tests
    should be written first.
 
 Introducing TDD in an existing project is never perfect. Temporally, one should accept that existing/old code will have
-no of very limited test-coverage. Some ancient-styled, never-updated code will effectively never becomes beter -- on
+no or very limited test coverage. Some ancient-styled, never-updated code will effectively never becomes better -- on
 the other hand, when there is no need to update it, and it is *field proven correct*, there is no business value in
-making it beter.
+making it better.
 
-.. test:: Measure TDD, by counting & tracking the part of the code that has coverage
+.. test:: Measure TDD by counting & tracking the part of the code that has coverage
    :ID: TDD_Measure-coverage
    :project: startingWithBDD+TDD
    :links: TDD_First

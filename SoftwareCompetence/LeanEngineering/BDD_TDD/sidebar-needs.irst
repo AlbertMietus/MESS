@@ -1,0 +1,11 @@
+.. -*- rst -*-
+   included in  `02.startingT+BDD.rst`
+
+.. sidebar::
+
+   .. note::
+
+      For fun, I use a formal notation here, as introduced by :ref:`RequirementsTraceability`.
+
+      This shows we can see “implementing BDD & TDD” as a project with clean needs and steps. Be that as it may, I would
+      do it less formally to motivate the team and use the formalisms in the background.
