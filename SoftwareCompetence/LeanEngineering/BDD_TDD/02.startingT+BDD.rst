@@ -10,9 +10,9 @@
 
 .. _startingBTDD:
 
-**************************
-Applying BDD & TDD (DRAFT)
-**************************
+****************************
+Applying BDD & TDD in legacy
+****************************
 
 .. post:: 2023/05/07
    :tags: BDD, TDD, Modernize
@@ -34,8 +34,8 @@ Applying BDD & TDD (DRAFT)
    Then, it depends on the starting point too. B&TDD in greenfield development is relatively simple: start writing your
    tests and code!
 
-   However, starting with B&DD in (Modern) Embedded Software can be more challenging due to the existing and often
-   extensive codebase that was developed before the emergence of B&DD.
+   However, starting with B&TDD in (Modern) Embedded Software can be more challenging due to the existing and often
+   extensive codebase that was developed before the emergence of B&TDD.
    |BR|
    Then, the question ‘How to start?’ is more like *’How to get out of the waterfall?’*
 
@@ -45,15 +45,15 @@ How to start?
 =============
 
 With millions of lines of existing code, a requirement such as ‘*Apply TDD (or/or BDD) everywhere*’ isn’t realistic.
-One needs realistic goals, both as points on the horizon and for the short term.  And one should constantly measure
-whether you have reached them.
+One needs realistic goals as a point on the horizon and some derived ones for the short term. And one should
+constantly measure whether you have reached them, and update the short-term goals.
 |BR|
 Sound familiar? That is essentially TDD!
 
-A requirement like: ‘*For every iteration (sprint, release, ...), the test coverage should grow*’ is more realistic. And is
+A requirement like: ‘*For every iteration (sprint, release, ...), the test coverage should* **grow**’ is more realistic. And is
 relatively easy to measure.
 |BR|
-I like to extend that requirement, in two ways:
+I like to extend that requirement in two ways:
 
 #. Such that is valid for all levels in the ‘V’, so for all units (unit tests), modules, and the system (acceptance
    tests)
@@ -61,57 +61,60 @@ I like to extend that requirement, in two ways:
 
 .. hint::
 
-   I deliberately demand *more* coverage only, not that *new code* is developed with Behavior or Test Driven
+   I deliberately demand **more coverage** only, not that *new code* is developed with Behavior or Test Driven
    Development.
    |BR|
-   That is the easiest implementation, and so I expect that. But when *old code* is improved that is acceptable too --even
-   when that comes with new “untested” code.
+   As B&TDD is a simple implementation to grow the coverage, I expect that will happen. But when (in corner cases,
+   somebody improves *old code*, that is acceptable too --even when that comes with new “not TDD” code.
 
-   It’s unlikely that somebody, or a team does so,  --and stupid. But by defining the requirement in this way, it’s a
+   It’s unlikely that somebody, or a team, does --and stupid. But by defining the requirement in this way, it’s a
    lot easier to count.
    |BR|
-   And measuring is even more important.
+   I value measuring progress over a strict definition.
 
-Add the measurements
-====================
+Measure & show
+==============
 
 Just measuring does not promote improvement; Is ‘42’ good?
 |BR|
 It’s only usable measurement when it was ‘41’ last week, and we are on an upward path.
 
-We need to show improvement. And so, we need to measure, store all values and show them in a graph. How? That isn’t
+We need to show improvement. And so, we need to measure, store all values and display them in a graph. How? That isn’t
 important. Possibly you can reuse the tools to show the sprint-burndown or the :ref:`BAV_graph`.
 |BR|
-I usually start with a big sheet of flip-over paper; it cost nothing and only 5 minutes each sprint to update
-it. Remember: be lean in our chapter.
+I usually start with a big sheet of flip-over paper; it costs nothing and only 5 minutes each sprint to update
+it. Remember: be lean is our chapter.
 
 
-Count, count & graph
---------------------
+Count, count & graph!
+---------------------
 
-Many definitions  (and tools) exist on “how to count coverage”.  For a start, the exact measurement is not that
+Many definitions  (and tools) exist to count coverage.  For a start, the exact measurement is not that
 important. For now, a simple, quick (and simple) visualisation is more important than anything else.
-
+|BR|
 With a good toolsmith in the team, I would go for something simple as ‘grep & count’ functions in test and
 production code and show the quotient (over time). Someday, that number should be (far) above 1.0. Probably, you will
 start close to 0.0.
-|BR|
-That number should be calculated per file (roughly unit-level), per directory (module level), and aggregated to system
-level. For that level, you probably like to count acceptance, not technical tests. When available, you can also display
-the ratio number-of-acceptance-tests to the number-of-requirements.
 
-Because it is simple, developers can influence it and are motivated to add more tests.
+That number should be calculated per file (roughly unit-level), per directory (module level), and aggregated to system
+level. Where one preferable should use requirement coverage, not code coverage. But again, keep it simple, give insight,
+and don’t fall into the pitfall of theoretical wisdom.
 |BR|
-That is the goal, so even when the counting tool is only an approximation, it will do.
+When available, simply add a graph showing the ratio number-of-acceptance-tests to the number-of-requirements,
+again over time. Add it, don’t replace it --trust your developers. And coach them to use the right graph.
+
+Because it is simple, developers can influence it and are motivated to add more tests. And write testable code.
+|BR|
+That is the goal, so even when the counting tool is only an approximation, it will do!
 
 Clean Code is short-code
 ------------------------
 
-New functions should be implemented in a “clean style” so testable code. Which suggests small functions.
+New functions should be implemented in a “clean, testable & maintainable” style code. Which suggests small functions.
 
-Therefore I would also like to add a simple measurement as the “line-count pro function”. And visualize that in buckets: the
-percentage of functions that are less (or equal to) 5 lines, 10, 24, 63 lines, etc. Over time the smaller buckets should
-be dominant.
+Therefore I would also like to add a simple measurement as the “line-count pro function”, visualised in buckets. For
+example, the percentage of functions that are less (or equal to) 5 lines, 10, 24, 63 lines, etc. Over time the smaller
+buckets should be dominant.
 
 Focus on new & updated functions
 --------------------------------
@@ -136,7 +139,7 @@ apply TTD (and BDD) to that part. Temporally, one can focus the test on new requ
    existing function. Instead write some (small, clean, testable) new functions (with TDD), and add only a few lines to
    call them in the existing code.
 
-   That also prevents combining code styles in one file
+   That also prevents combining code styles in one file.
 
 ===============
 Where to start?
