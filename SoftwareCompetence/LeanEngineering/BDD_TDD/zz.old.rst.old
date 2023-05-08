@@ -1,0 +1,145 @@
+.. -*- rst -*-
+   old parts, (need/gaols) from `02.startingT+BDD.rst`
+
+.. include:: ./sidebar-needs.irst
+
+.. demo:: Develop a ‘MESS product’ that end-users like, with 30% fewer flaws, in 70% of the normal Time-2-Market.
+   :ID: GOAL_70_30
+   :project: startingWithBDD+TDD
+   :tags: TDD, BDD
+
+   This is basically the bold statement above reworded, so it becomes measurable.
+
+Then, we can derive some requirements closer by and on our path to the end goal. And define how to test them.
+
+.. req:: Introduce TDD first
+   :ID: TDD_First
+   :project: startingWithBDD+TDD
+   :links: GOAL_70_30
+   :tags: TDD
+
+   TDD is a discipline that each individual developer can do. And one can make a start of new code at any time.
+
+   No fancy tools are essential. One can start with the discipline that all new code should be testable, and tests
+   should be written first.
+
+Introducing TDD in an existing project is never perfect. Temporally, one should accept that existing/old code will have
+no or very-limited test coverage. Some ancient-styled, never-updated code will effectively never becomes better -- on
+the other hand, when there is no need to update it, and it is *field proven correct*, there is no business value in
+making it better.
+
+.. test:: Measure TDD by counting & tracking the part of the code that has coverage
+   :ID: TDD_Measure-coverage
+   :project: startingWithBDD+TDD
+   :links: TDD_First
+   :tags: TDD
+          
+
+---
+
+* TDD is a discipline that each individual developer can do. And one can make a start of new code at any time.
+
+* No fancy tools are essential. One can start with the discipline that all new code should be testable, and tests should
+  be written first.
+
+
+
+*   Measure TDD by counting & tracking the part of the code that has coverage
+        
+
+
+
+
+With a goal as described above: one has to discipline the team. And **unlearn** old habits as spend-up the ‘left
+time’. That is a lot harder, as nobody is wasting time! (Remember: *improving ‘abilities’ is worthwhile*, and a TDD
+goal!)
+
+As BDD is a variant of TDD and has a bigger (organisational) scope, it is often easier to start with TDD. This can be
+done on unit/file, and/or module level, by one individual software-developer, or by a single (scrum) team.
+
+TDD on TDD
+==========
+
+
+Let’s start with a test, as TDD describes. But now on the process improvement itself.  Now we have set the goals, its
+easy to transform them into tests. Or, possibly a timeline of intermediates goals. Each goal needs some tests. Probably
+not as exact as we like with typical *ATSes*, but ar least clear and “SMART”.
+
+As you have your own goals, you need your distinct test-set. But assume you would like to improve both on quality and
+productivity. Then a simple testable goal is the number of issues found “after” the sprint ends.  When this becomes zero
+your quality-goal is met.
+|BR|
+And the velocity-increment is a great measure for productivity growth.
+
+I would introduce some simple transitional goals too. Like, the number of flaws the QA-department finds should go down
+*every* iteration. And *each* sprint the number of unfinished features should lower first, and the number of fully
+correct features should fo up, secondly.
+
+This sounds simple. And it is, except for the first time!
+|BR|
+Having a (quite) objective test does help, but the hard work is to improve yourself. To get comfortable with the new,
+initially counter-intuitive routines will take practice and time.
+
+But at least you have a great start!
+
+Training & Mentoring
+====================
+
+Engineers are awesome in problem-solving. And although a quest like “start with TDD” is nebulous, when transformed into a
+problem they like to fix it.  Especially when you give them some assistance and a sound target like passing a test.
+|BR|
+With the ‘TDD on TDD’ trick, you are ready to finish.
+
+There are many books & and videos on TTD. They can help to start. As a downer, they focus often on classical ICT, not
+high-tech, embedded product development. And so, they often don’t inspire.
+|BR|
+Also, many books are on ‘*How’* to do TDD, on using a tool.
+
+Engineers like to understand ‘**WHY**’. Then, the can deal with the issue.
+
+Uncle Bob
+---------
+Uncle Bob has several videos on TDD and BDD. See :ref:`BTDD_UncleBobList` for an overview. Start with the basic TDD (6.*)
+ones! They explain the ‘Why’.
+
+.. hint::
+
+   Most examples are in Java, and not very technical. This is fine for a start. Still, I would love an ‘add-on’ on the
+   typical high-tech, embedded, product-development aspects; but that is not available.
+
+
+Intervision & coaching
+----------------------
+
+A very effective, lean, and iterative concept I practice is *Video-of the week*.
+|BR|
+
+A group of people watches that selected video and at the end of the week, we speak about it for an hour and a half;
+shared in the pre-corona era. Now it’s on-line, both work fine.
+
+By having a group of mixed experiences, backgrounds, and ages, that *debriefing* becomes very encouraging and brings a huge
+value.
+
+.. tip::
+
+   When you like to start with TDD or BDD or when you think about it, but don’t know ‘why’, or ‘how to start’: Give me a
+   call. I will gladly boost your product and team.
+
+
+--- :SwBMnl-email:`Albert.Mietus`
+
+
+
+..  LocalWords:  distinguishment
+
+----
+
+The practice implementation to create ATS for the various levels may depart. This will depend on the size of the
+product, so on ‘the depth of the V’; on the background & environment of the teams; on their (technical) capability; etc.
+One may see other tools, other skills, and often other people that become responsible.
+
+Some like to introduce new, or more terms for each level or implementation detail. I prefer to use the term TDD
+generically, as the process is equivalent.
+|BR|
+Remember: changing it in name only, does not improve the process. As long as you reach your goals, I can live with
+any name.

@@ -69,3 +69,7 @@ RTD  RTfD-build RTfD RTFD RTfD-webhook:
 	curl -X POST -d "branches=$${BRANCH}" -d "token=${TOKEN}"  ${HOOK}
 	@echo
 
+wc:
+	@echo "lines	words	file"
+	@wc -lw `find . -iname \*rst`|sort -r | grep -v /index.rst | grep -v /zz.todo.rst
+
