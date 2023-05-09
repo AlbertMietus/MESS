@@ -140,6 +140,21 @@ One may see other tools, other skills, and often other people that become respon
 
 Some like to introduce new, or more terms for each level or implementation detail. I prefer to use the term TDD
 generically, as the process is equivalent.
+
 |BR|
 Remember: changing it in name only, does not improve the process. As long as you reach your goals, I can live with
 any name.
+This is valid for all levels: the larger the part that is worked on, the more commitment needs to be able to run those
+ATSes.
+
+
+1. Product-quality improvement: in short: better code and better products
+
+   - TDD focuses more on the *abilities* of code: readability, testability, **maintainability**, etc.
+   - BDD is more product-level: **“Does it do what is specified?”**, and “Are the specification correct?”
+
+2. Process optimisation: reduce the cost of the development cycle.
+
+   - The faster a bug is signaled, the cheaper is to repair.
+   - TDD also provides an *‘exit strategy’*; an often forgotten “side-effect” increasing velocity.
+

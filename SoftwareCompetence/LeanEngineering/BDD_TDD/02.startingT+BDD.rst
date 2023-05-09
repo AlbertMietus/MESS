@@ -61,7 +61,7 @@ I like to extend that requirement in two ways:
 
 .. hint::
 
-   I deliberately demand **more coverage** only, not that *new code* is developed with Behavior or Test Driven
+   I deliberately demand **more coverage** only, not that (all) *new code* is developed with Behavior or Test Driven 
    Development.
    |BR|
    As B&TDD is a simple implementation to grow the coverage, I expect that will happen. But when (in corner cases,
@@ -80,10 +80,10 @@ Just measuring does not promote improvement; Is ‘42’ good?
 It’s only usable measurement when it was ‘41’ last week, and we are on an upward path.
 
 We need to show improvement. And so, we need to measure, store all values and display them in a graph. How? That isn’t
-important. Possibly you can reuse the tools to show the sprint-burndown or the :ref:`BAV_graph`.
+important. Possibly you can reuse the tools to show the sprint-burndown.
 |BR|
 I usually start with a big sheet of flip-over paper; it costs nothing and only 5 minutes each sprint to update
-it. Remember: be lean is our chapter.
+it. Remember: *be(come) lean* is our chapter.
 
 
 Count, count & graph!
@@ -103,7 +103,8 @@ and don’t fall into the pitfall of theoretical wisdom.
 When available, simply add a graph showing the ratio number-of-acceptance-tests to the number-of-requirements,
 again over time. Add it, don’t replace it --trust your developers. And coach them to use the right graph.
 
-Because it is simple, developers can influence it and are motivated to add more tests. And write testable code.
+Because it is simple, developers can influence it and are motivated to add more tests. And to write testable,
+maintainable code. 
 |BR|
 That is the goal, so even when the counting tool is only an approximation, it will do!
 
@@ -145,22 +146,31 @@ apply TTD (and BDD) to that part. Temporally, one can focus the test on new requ
 Where to start?
 ===============
 
-In many organisations, starting with B&TDD is mostly waiting on others.
-|BR|
+Many traditional embedded system organizations are a bit conservative to take advantage of modern software engineering
+principles. This is valid for Behavior & Test Driven Development too.  It sometimes appears that “starting with” results
+in “waiting on”. Waiting on approval, waiting on tools, or maybe just waiting on a bit of help on where to start.
 
+B&TDD is **not** a *big bang*!
+|BR|
+There is no need to stop using the existing, good practices and replace them with revolutionary  new, better ways. There are
+always places that are (too) hard to start and places that welcome the evolution of B&TDD.
+
+Let me unveil some of those places. Places, as in location in the codebase, people in the organisation, or ...
+|BR|
+Or better, let me show you how to spot them yourself.
 
 
 Developer versus Team
 =====================
 
-TDD and BDD act on different levels. TDD is typically at the bottom of the *’V’*; BDD is more at the system (or
-acceptance) level.
+Although strongly related, BDD and TDD act on different levels. TDD is typically at the bottom of the *’V’*; BDD is more
+at the system (or acceptance) level.
 |BR|
 However, that is often confusing for new adopters.
 
 Therefore I often use a more pragmatic distinguishment: Individual Developer versus (scrum)Team.
 |BR|
-A single developer can act following  TDD. (S)he writes code, tests, and production code and switches between them
+A single developer can act following TDD. (S)he writes code, tests, and production code and switches between them
 every minute. As TDD is more productive, hardly anyone will notice it when somebody “secretly” adopts TDD. No
 extra tools or frameworks are essential.
 
@@ -169,18 +179,41 @@ assistance of a tester designer.
 |BR|
 Despite this, a single team can embrace BDD -- even when others don’t
 
-This is valid for all levels: the larger the part that is worked on, the more commitment needs to be able to run those
-ATSes.
+
+Starting
+========
+
+As described above, new code (modules, classes, file) are to preferred above the existing ones. And in general, young
+“modern” engineers are more likely to accept new ways than experienced “old” developers.
+|BR|
+Try to combine that: Shepard fresh engineers to write small, relatively easy, and isolated pieces of new code and
+*allow* them to use TDD. Facilitate in a pragmatic undertaken -- no fancy tools, just a few extra “test functions in
+the same language” using the same compiler, build files, etc.
+
+In this way, one --almost secretly-- make a start. Should it fail, bury it. When it works, keep it. One day, you can
+claim:
+
+  “TDD? Yeah, we do that for some time”!
+
+The same aplies to BDD: Only a single team is needed!
+|BR|
+Again, I would vote for a new, (almost) independent module to be developed by a team of fresh, modern engineers.
+
+Sometimes, the tradition of quality (assurance) can assist us to introduce BDD. When (automated) acceptance test are
+available, there is a great starting point. We only have to incorporate them in the ‘nightly build’ (aka the CI/CD
+pipeline) -- sometimes I use the excuse of “a baseline of regression test”.
+|BR|
+Then, extent that set with new tests. And “grant” the team to run those test before the developers start implementing
+the code.
+
+Again, sometimes it fails. But that is part of developing, isn’t it? We are used to fix that. But sometimes it
+works. One day everbody is busy, the next day all test pass. Then you report:
+
+ Yeah, we are done. Really! We use BDD and all our test pass.
 
 
-1. Product-quality improvement: in short: better code and better products
+===============
+Should I start?
+===============
 
-   - TDD focuses more on the *abilities* of code: readability, testability, **maintainability**, etc.
-   - BDD is more product-level: **“Does it do what is specified?”**, and “Are the specification correct?”
-
-2. Process optimisation: reduce the cost of the development cycle.
-
-   - The faster a bug is signaled, the cheaper is to repair.
-   - TDD also provides an *‘exit strategy’*; an often forgotten “side-effect” increasing velocity.
-
-
+The last question of today is 
