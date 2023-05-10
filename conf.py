@@ -58,7 +58,7 @@ html_sidebars = {
 
 html_static_path.append('_slides')
 
-if False:
+if not False:
     print("Debug: show all packages:")
     import os
     os.system("pip list")
