@@ -20,7 +20,7 @@ Applying BDD & TDD in legacy
    :location: Geldrop
    :language: en
 
-   :reading-time: XXX
+   :reading-time: 8min
 
    As I described last week (in :ref:`introducingBTDD`), understanding the common goals of Behavior & Test Driven
    Development **and** defining your specific needs is the first and most critical step to start using this essential
@@ -222,10 +222,35 @@ works. One day everybody is busy, and the next day all tests pass. Then you repo
 Should I start?
 ===============
 
-The last question of today is should I start? Today, that is still an option.
-|BR|
-But will it be in the future? How long do you have the option to choose?
+The last question of today is more fundamental: *‘Should I start’*? Today that is still an option. But will it be in
+the future? How long do you have the freedom to choose?
 
-Albeit applying B&TDD in Modern Embedded System Software especially with huge, aged codebases is not trivial, using Test
-Driven Development speeds up your team -- some claim 30%. And it results in beter code, with lower maintenance
-costs. Likewise, Behavior Driven Development
+Albeit applying B&TDD in Modern Embedded System Software --especially with huge, aged codebases-- is not trivial, using
+Test Driven Development speeds up your team -- some claim even 30%. And it results in better code with lower maintenance
+costs. Likewise, Behavior Driven Development drives your team to focus on the right features, cutting costs by never
+writing code based on the wrong requirements. And again, the system becomes better: less bugs.
+|BR|
+When that is valid, it’s also compelling for your rivals.  When they become 50% cheaper and 50% better, you don’t have
+many alternatives, then to follow.
+
+IMHO, B&TDD is comparable with, for example, Object Oriented. Once, OO didn't exist.  Then, “desktop software” used it,
+but we, the real-time-embedded community, continued to live in an assembly and C environment for some time.
+|BR|
+Nowadays, even for embedded software, assembly writing projects are gone, nobody knows the Ada language anymore, and C
+is almost history. C++ is the norm in traditional embedded software, and some modern embedded systems are already
+switching languages, such as Python. Remember, even the Linux kernel is embracing Rust!
+
+Our (modern) embedded software systems are changing the world. Probably it’s time that we change too. We have a
+tradition of high quality, and we have demands to shorten the Time-2-Market.
+|BR|
+When B&TDD can provide that, we should leave the famous waterfall behind!
+
+
+--- :SwBMnl-email:`Albert.Mietus`
+
+.. seealso::
+
+   This article on LinkedIn: XXX
+
+
+
