@@ -8,7 +8,7 @@ TIP: Uncle Bob video's on TDD/BDD
 
 Uncle Bob has several video's on TDD & BDD. There are **11** video's on TDD and **3** on BDD.
 
-This list is part of the blog on :ref:`startingBTDD`
+This list is part of the blog on :ref:`LEAN_BTDD`
 
 TDD
 ===

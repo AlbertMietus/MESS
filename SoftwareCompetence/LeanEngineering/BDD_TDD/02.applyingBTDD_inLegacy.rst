@@ -8,7 +8,7 @@
       :local:
       :backlinks: none
 
-.. _startingBTDD:
+.. _applyingBTDD_inLegacy:
 
 ****************************
 Applying BDD & TDD in legacy
