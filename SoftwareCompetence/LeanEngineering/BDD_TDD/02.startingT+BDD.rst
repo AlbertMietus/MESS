@@ -39,6 +39,11 @@ Applying BDD & TDD in legacy
    |BR|
    Then, the question ‘How to start?’ is more like *’How to get out of the waterfall?’*
 
+Introducing TDD in an existing project is never perfect. Temporally, one should accept that existing/old code will have
+no or limited test coverage. Some ancient-styled, never-updated code will effectively never becomes better -- on the
+other hand, when there is no need to update it, and it is *field proven correct*, there is no business value in making
+it better.
+
 
 =============
 How to start?
@@ -46,7 +51,7 @@ How to start?
 
 With millions of lines of existing code, a requirement such as ‘*Apply TDD (or/or BDD) everywhere*’ isn’t realistic.
 One needs realistic goals as a point on the horizon and some derived ones for the short term. And one should
-constantly measure whether you have reached them, and update the short-term goals.
+constantly measure whether you have reached them and update the short-term goals.
 |BR|
 Sound familiar? That is essentially TDD!
 
@@ -55,8 +60,7 @@ relatively easy to measure.
 |BR|
 I like to extend that requirement in two ways:
 
-#. Such that is valid for all levels in the ‘V’, so for all units (unit tests), modules, and the system (acceptance
-   tests)
+#. Such that is valid for all levels in the ‘V’: for units (unit tests), modules, and the system (acceptance tests)
 #. That only automated tests count.
 
 .. hint::
@@ -77,13 +81,13 @@ Measure & show
 
 Just measuring does not promote improvement; Is ‘42’ good?
 |BR|
-It’s only usable measurement when it was ‘41’ last week, and we are on an upward path.
+It’s only a usable measurement when it was ‘41’ last week, and we strive to 43 next week.
 
-We need to show improvement. And so, we need to measure, store all values and display them in a graph. How? That isn’t
-important. Possibly you can reuse the tools to show the sprint-burndown.
+Thus We need to show improvement. And so, we need to measure, store all values and display them in a graph. How? That
+isn’t important. Possibly you can reuse the tools to show the sprint-burndown.
 |BR|
 I usually start with a big sheet of flip-over paper; it costs nothing and only 5 minutes each sprint to update
-it. Remember: *be(come) lean* is our chapter.
+it. Remember: *be(coming) lean* is our chapter.
 
 
 Count, count & graph!
@@ -108,7 +112,7 @@ maintainable code.
 |BR|
 That is the goal, so even when the counting tool is only an approximation, it will do!
 
-Clean Code is short-code
+Clean code is short-code
 ------------------------
 
 New functions should be implemented in a “clean, testable & maintainable” style code. Which suggests small functions.
@@ -195,25 +199,33 @@ claim:
 
   “TDD? Yeah, we do that for some time”!
 
-The same aplies to BDD: Only a single team is needed!
+The same applies to BDD: Only a single team is needed!
 |BR|
 Again, I would vote for a new, (almost) independent module to be developed by a team of fresh, modern engineers.
 
-Sometimes, the tradition of quality (assurance) can assist us to introduce BDD. When (automated) acceptance test are
+Sometimes, the tradition of quality (assurance) can assist us to introduce BDD. When (automated) acceptance testa are
 available, there is a great starting point. We only have to incorporate them in the ‘nightly build’ (aka the CI/CD
 pipeline) -- sometimes I use the excuse of “a baseline of regression test”.
 |BR|
-Then, extent that set with new tests. And “grant” the team to run those test before the developers start implementing
+Then, extend that set with new tests. And “grant” the team to run those tests before the developers start implementing
 the code.
 
-Again, sometimes it fails. But that is part of developing, isn’t it? We are used to fix that. But sometimes it
-works. One day everbody is busy, the next day all test pass. Then you report:
+Again, sometimes it fails. But that is part of developing, isn’t it? We are used to fixing that. But sometimes it
+works. One day everybody is busy, and the next day all tests pass. Then you report:
 
- Yeah, we are done. Really! We use BDD and all our test pass.
+ Yeah, we are done; we use BDD and all our test pass.
+ |BR|
+ Really, we can ship!
 
 
 ===============
 Should I start?
 ===============
 
-The last question of today is 
+The last question of today is should I start? Today, that is still an option.
+|BR|
+But will it be in the future? How long do you have the option to choose?
+
+Albeit applying B&TDD in Modern Embedded System Software especially with huge, aged codebases is not trivial, using Test
+Driven Development speeds up your team -- some claim 30%. And it results in beter code, with lower maintenance
+costs. Likewise, Behavior Driven Development
