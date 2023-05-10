@@ -20,7 +20,7 @@ Applying BDD & TDD in legacy
    :location: Geldrop
    :language: en
 
-   :reading-time: 8min
+   :reading-time: 8m45
 
    As I described last week (in :ref:`introducingBTDD`), understanding the common goals of Behavior & Test Driven
    Development **and** defining your specific needs is the first and most critical step to start using this essential
@@ -203,17 +203,16 @@ The same applies to BDD: Only a single team is needed!
 |BR|
 Again, I would vote for a new, (almost) independent module to be developed by a team of fresh, modern engineers.
 
-Sometimes, the tradition of quality (assurance) can assist us to introduce BDD. When (automated) acceptance testa are
+Sometimes, the tradition of quality (assurance) can assist us to introduce BDD. When (automated) acceptance tests are
 available, there is a great starting point. We only have to incorporate them in the ‘nightly build’ (aka the CI/CD
 pipeline) -- sometimes I use the excuse of “a baseline of regression test”.
 |BR|
-Then, extend that set with new tests. And “grant” the team to run those tests before the developers start implementing
-the code.
+Then, extend that set with new tests. And “grant” the team to run those tests before the developers with the code.
 
-Again, sometimes it fails. But that is part of developing, isn’t it? We are used to fixing that. But sometimes it
+Again, sometimes it fails. But that is part of developing, isn’t it? We are used to fixing that. But sometimes, it
 works. One day everybody is busy, and the next day all tests pass. Then you report:
 
- Yeah, we are done; we use BDD and all our test pass.
+ Yeah, we are done; we use BDD, and all our tests pass.
  |BR|
  Really, we can ship!
 
