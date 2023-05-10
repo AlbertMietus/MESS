@@ -38,11 +38,6 @@ Applying BDD & TDD in legacy
    |BR|
    Then, the question ‘How to start?’ is more like *’How to get out of the waterfall?’*
 
-Introducing TDD in an existing project is never perfect. Temporally, one should accept that existing/old code will have
-no or limited test coverage. Some ancient-styled, never-updated code will effectively never becomes better -- on the
-other hand, when there is no need to update it, and it is *field proven correct*, there is no business value in making
-it better.
-
 
 =============
 How to start?
@@ -248,7 +243,7 @@ When B&TDD can provide that, we should leave the famous waterfall behind!
 
 .. seealso::
 
-   This article on LinkedIn: XXX
-
+   This article on LinkedIn:
+   https://www.linkedin.com/pulse/applying-bdd-tdd-legacy-albert-mietus
 
 
