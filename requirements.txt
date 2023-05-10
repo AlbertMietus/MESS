@@ -3,3 +3,4 @@ sphinxcontrib-plantuml==0.23
 sphinxcontrib-needs==0.7.9
 sphinx_rtd_theme
 sphinx==4.5.0
+urllib3==1.26.4
