@@ -14,7 +14,7 @@
 Applying BDD & TDD in legacy
 ****************************
 
-.. post:: 2023/05/07
+.. post:: 2023/05/10
    :tags: BDD, TDD, Modernize
    :category: opinion
    :location: Geldrop
