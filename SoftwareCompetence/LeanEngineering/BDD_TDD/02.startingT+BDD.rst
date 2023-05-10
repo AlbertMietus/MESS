@@ -22,9 +22,8 @@ Applying BDD & TDD in legacy
 
    :reading-time: 8m45
 
-   As I described last week (in :ref:`introducingBTDD`), understanding the common goals of Behavior & Test Driven
-   Development **and** defining your specific needs is the first and most critical step to start using this essential
-   discipline.
+   As I described in :ref:`introducingBTDD`, understanding the common goals of Behavior & Test Driven Development
+   **and** defining your specific needs is the first and most critical step to start using this essential discipline.
    |BR|
    Whenever the goal is to use new tools, it is simple: purchase them, shop for some hands-on training, and you are
    done.
@@ -68,7 +67,7 @@ I like to extend that requirement in two ways:
    I deliberately demand **more coverage** only, not that (all) *new code* is developed with Behavior or Test Driven 
    Development.
    |BR|
-   As B&TDD is a simple implementation to grow the coverage, I expect that will happen. But when (in corner cases,
+   As B&TDD is a simple implementation to grow the coverage, I expect that will happen. But when (in corner cases)
    somebody improves *old code*, that is acceptable too --even when that comes with new “not TDD” code.
 
    It’s unlikely that somebody, or a team, does --and stupid. But by defining the requirement in this way, it’s a
@@ -104,7 +103,7 @@ That number should be calculated per file (roughly unit-level), per directory (m
 level. Where one preferable should use requirement coverage, not code coverage. But again, keep it simple, give insight,
 and don’t fall into the pitfall of theoretical wisdom.
 |BR|
-When available, simply add a graph showing the ratio number-of-acceptance-tests to the number-of-requirements,
+When available, add a graph showing the ratio number-of-acceptance-tests to the number-of-requirements,
 again over time. Add it, don’t replace it --trust your developers. And coach them to use the right graph.
 
 Because it is simple, developers can influence it and are motivated to add more tests. And to write testable,
@@ -117,7 +116,7 @@ Clean code is short-code
 
 New functions should be implemented in a “clean, testable & maintainable” style code. Which suggests small functions.
 
-Therefore I would also like to add a simple measurement as the “line-count pro function”, visualised in buckets. For
+Therefore I would also like to add a simple measurement as the “line-count pro function” visualised in buckets. For
 example, the percentage of functions that are less (or equal to) 5 lines, 10, 24, 63 lines, etc. Over time the smaller
 buckets should be dominant.
 
@@ -125,23 +124,23 @@ Focus on new & updated functions
 --------------------------------
 
 Introducing TDD in an existing project is never perfect. Temporally, one should accept that existing/old code will have
-no or very limited test coverage. Some ancient-styled, never-updated code will effectively never becomes better -- on
+no or limited test coverage. Some ancient-styled, never-updated code will effectively never becomes better -- on
 the other hand, when there is no need to update it, and it is *field proven correct*, there is no business value in
 making it better.
 
 That does not apply to new units, they do not have a track record of correctness, and there is no reason to not write
 that code in a clean, testable way. And so, the team should be motivated to embrace TDD there.
 
-This also applies to existing code, that needs to be updated.
+This also applies to existing code that needs to be updated.
 |BR|
-As it is changing the old code, the  rule “don’t fix when it ain’t broken” is invalid; there is a risk of mistakes. The cost
-of testing (and fixing bugs) have to be taken -- even when that involves (manual) testing at the system level. So:
-apply TTD (and BDD) to that part. Temporally, one can focus the test on new requirements and the “high-risk” changes.
+As it is changing the old code, the rule “don’t fix when it ain’t broken” is invalid; there is a risk of
+mistakes. Testing (and fixing bugs) is essential anyhow -- even when that involves (manual) testing at the system level. So:
+apply TTD (and BDD) to that part, as it will be tested touchily it doesn't add risk.
 
 .. tip::
 
    A pragmatic approach is to minimise the interface between the *old* and *new* code: don’t add many lines to an
-   existing function. Instead write some (small, clean, testable) new functions (with TDD), and add only a few lines to
+   existing function. Instead, write some (small, clean, testable) new functions (with TDD), and add only a few lines to
    call them in the existing code.
 
    That also prevents combining code styles in one file.

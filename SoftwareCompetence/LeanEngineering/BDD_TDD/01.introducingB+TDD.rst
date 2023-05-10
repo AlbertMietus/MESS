@@ -23,7 +23,7 @@ Introducing BDD & TDD
    :reading-time: 5m30
 
    Is Behavior & Test Driven Development an essential aspect of professional software engineering? Leaders such as
-   UncleBob compare it to ‘double entry bookkeeping’: a crucial discipline.  He claims that when our industry doesn’t
+   #UncleBob compare it to ‘double entry bookkeeping’: a crucial discipline.  He claims that when our industry doesn’t
    professionalize quickly, we have the risk that B&TDD will be enforced by law (too).
    |BR|
    So, it can be wise to learn to practice it quickly.
