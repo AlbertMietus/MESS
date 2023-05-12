@@ -5,9 +5,9 @@ Agile System Architecting
 -------------------------
 
 .. post:: 2023/05/12
-   :tags: intro
+   :tags: Intro
    :category: opinion
-   :language: en 
+   :language: en
 
    There always has been some anarchy about the `architect`’s role --and even more distraction when we combine it with
    `software` and/or `system`. I'm not going to solve that. Not today ...

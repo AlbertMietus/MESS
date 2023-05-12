@@ -1,0 +1,32 @@
+.. Copyright (C) ALbert Mietus; 2020, 2023
+
+.. _AgileProjectInitiation:
+
+********************************
+Agile Project Initiation (DRAFT)
+********************************
+
+.. post:: 
+   :tags: SysEng
+   :category: DRAFT
+   :language: en
+
+   :reading-time: XXX
+
+   An agile (system) architect should also think as projectmanager. (S)He should be able to make a global projectplan,
+   talk to the stakeholders, and lead a team. This is essential, especially at the start of the project -- often a
+   fulltime projectmanager/leader (or the PM/SM duo in agile terms) will take that responsibility when the project is
+   initiated.
+   |BR|
+   But in the beginning, there is nothing. Just an idea that will in a project.
+
+   In that twilight, when there is nobody but the architect, who will draft the (project)plan?
+   |BR|
+   Besides, how can a project/process oriented manager build a team, select the right developers or ensure the budget,
+   when the project isn’t started? He can’t ask his team, as the is nobody ...
+
+   This is the classical dilemma:
+
+     Starting a project is a  project itself
+
+When the architect can’t act --at least temporally-- as projectmanager, 
