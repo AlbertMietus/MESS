@@ -13,6 +13,8 @@ Agile Project Initiation (DRAFT)
 
    :reading-time: XXX
 
+   .. todo:: Rewrite lead/intro: Ask questions, don’t push solutions (here)
+
    An agile (system) architect should also think as projectmanager. (S)He should be able to make a global projectplan,
    talk to the stakeholders, and lead a team. This is essential, especially at the start of the project -- often a
    fulltime projectmanager/leader (or the PM/SM duo in agile terms) will take that responsibility when the project is
@@ -30,3 +32,22 @@ Agile Project Initiation (DRAFT)
      Starting a project is a  project itself
 
 When the architect can’t act --at least temporally-- as projectmanager, 
+
+.. todo::
+
+   * Wat is het belangrijkste?
+
+     - T2M, kosten, quality, flexibiliteit
+     - Kies een (technische) oplossing die vooral daarom past
+
+       | Techniek volgt business-needs
+
+   * Gebruik de onzekerheden!
+
+     - Weet je niet belangrijke (technische) details nog niet?
+       |BR|
+       Zoals: programmeertaal, platform/OS, frameworks, ...
+     - Bouw een team dat breed is.
+
+       
+     
