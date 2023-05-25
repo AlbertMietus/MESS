@@ -3,10 +3,10 @@
 .. _AgileProjectInitiation:
 
 ********************************
-Agile Project Initiation (DRAFT)
+Agile Project Initiation (START)
 ********************************
 
-.. post:: 
+.. post::
    :tags: SysEng
    :category: DRAFT
    :language: en
@@ -31,7 +31,7 @@ Agile Project Initiation (DRAFT)
 
      Starting a project is a  project itself
 
-When the architect can’t act --at least temporally-- as projectmanager, 
+When the architect can’t act --at least temporally-- as projectmanager,
 
 .. todo::
 
@@ -48,6 +48,3 @@ When the architect can’t act --at least temporally-- as projectmanager,
        |BR|
        Zoals: programmeertaal, platform/OS, frameworks, ...
      - Bouw een team dat breed is.
-
-       
-     
