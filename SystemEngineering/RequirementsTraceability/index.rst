@@ -8,9 +8,9 @@ Requirements Traceability
 
 .. post:: 2020/02/15
    :tags: SysEng
-   :category: lecture
-   :location: Vianen
-   :language: en
+   :category: lecture 
+   :location: Vianen 
+   :language: en 
 
    :study-time: 1 hour
 
