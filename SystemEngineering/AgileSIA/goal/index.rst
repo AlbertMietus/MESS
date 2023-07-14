@@ -126,12 +126,6 @@ An SIA has typically (only) 5 chapters
      (especially as we have the risk that two teams run out of work).”
 
 
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-   :glob:
-
-   *
 
 -----
 
