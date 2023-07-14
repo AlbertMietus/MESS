@@ -15,22 +15,35 @@ An Agile SIA
 
    The **SIA** -- an acronym for *System* (or Software) *Impact Analyse* -- is an often used approach to get insight into
    the costs, risks, and possibilities of implementing a feature. It should result in a readable document to
-   decide whether it adds value to implement that feature and how.
+   decide whether it adds value to implement that feature and offer options on how
    |BR|
-   But is also a document that is repeatedly used incorrectly.
+   But is also a document that is repeatedly incorrectly used.
 
-   Sometimes it becomes more like a design document, with too many detailed technicalities. As a consequence, the
-   SIA phase is expensive, and deciding not to go forward becomes impractical. At the same time, it’s often “too much
-   work” to suggest more as one solution; another limitation of the goal: select the one with the most value.
+   The classical SIA isn't very Lean nor Agile; certainly not when it became an (upfront) design document, as
+   often ...
 
-   Especially in this lean/agile era, this *expensive* up-front design is (considered) wrong. We prefer to make
-   design choices late *in the sprint*.
-
-   On second thought, a good SIA is lean and agile. Having a light, up-front “think ahead” document makes it possible
-   to postpone details to later sprints and assist the Product-Owner (*PO*) in picking the right solution without adding
+   On second thought, a good SIA is lean and agile. A short, up-front *“think ahead”* document makes it possible
+   to postpone details to future sprints and assist the Product-Owner in picking the right solution without adding
    costs.
    |BR|
-   Let’s study how we can write such an Agile SIA, one with business value.
+   Let’s study how we can write an Agile SIA. One with business value.
+
+
+.. admonition:: *“a Bumper”* is **not any** Bumper (demo)
+
+   .. image:: ./aBumper.jpg
+      :width: 33%
+      :align: right
+
+   * In this workshop, we design ‘a bumper’. Or actually: we write the SIA for it.
+   * By using a not-software example, it is easier to *not focus* on the technicalities that shouldn't be in the SIA
+     anyhow
+   * For mechanical engineers: I’m probably oversimplifying and missing relevant details. Sorry for that.
+     |BR|
+     I welcome feedback to improve!
+   * The “bumper image” is from a `1967 Citroen 2CV
+     <https://commons.wikimedia.org/wiki/File:1967_Citroen_2CV_-_front_bumper_detail_-_16000647651_(cropped).jpg>`__
+     double `reused <https://www.flickr.com/photos/7467877@N07/16000647651/>`__ as permitted. Thanks!
 
 .. rubric:: Content
 .. toctree::
