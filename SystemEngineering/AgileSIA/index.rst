@@ -6,7 +6,7 @@
 An Agile SIA
 ============
 
-.. post:: 2023/07/13
+.. post:: 
    :tags: SysEng, Modernize
    :category: lecture
    :language: en
