@@ -1,8 +1,8 @@
 .. Copyright (C) ALbert Mietus; 2023
 
-****
-Goal
-****
+**********
+Objectives
+**********
 
 The goal of an SIA is to *analyse* the impact of a feature (or change) and *apprise the PO* of the options he has to
 achieve it.  It typically results in a document --but the document is *not* the goal (and shouldn't be)!
@@ -61,8 +61,10 @@ Common mistakes
      In a typical lean, agile approach, those provisional designs are stored as a photo in a wiki, along with the
      notes.
 
-Common SIA template
-===================
+.. _AgileSIA-5chapters:
+
+The 5 chapter template
+======================
 
 It might help to use the following template to understand the goals of the SIA. And assist to write a sound one.
 

@@ -6,3 +6,8 @@
 Notes
 *******************
 
+.. toctree::
+   :glob:
+   :maxdepth: 2
+
+   *

@@ -11,7 +11,7 @@ An Agile SIA
    :category: lecture
    :language: en
 
-   :study-time: 1 hour XXX
+   :study-time: XXX hour(s)
 
    The **SIA** -- an acronym for *System* (or Software) *Impact Analyse* -- is an often used approach to get insight into
    the costs, risks, and possibilities of implementing a feature. It should result in a readable document to
@@ -42,8 +42,9 @@ An Agile SIA
      |BR|
      I welcome feedback to improve!
    * The “bumper image” is from a `1967 Citroen 2CV
-     <https://commons.wikimedia.org/wiki/File:1967_Citroen_2CV_-_front_bumper_detail_-_16000647651_(cropped).jpg>`__
-     double `reused <https://www.flickr.com/photos/7467877@N07/16000647651/>`__ as permitted. Thanks!
+     <https://commons.wikimedia.org/wiki/File:1967_Citroen_2CV_-_front_bumper_detail_-_16000647651_(cropped).jpg>`__,
+     which is cropped and `reused <https://www.flickr.com/photos/7467877@N07/16000647651/>`__ as permitted. Thanks!
+
 
 .. rubric:: Content
 .. toctree::
