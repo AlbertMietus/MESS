@@ -1,11 +1,12 @@
 # Copyright (C) ALbert Mietus, SoftwareBeterMaken.nl; 2017- 2023 Part of my MESS project
 # -*- coding: utf-8 -*-
 
+DEBUG=False
+
 # read STD config ...
 #==========================================
 import sys; sys.path.append('_std_settings/conf')
 from std_conf import *
-
 
 # For sphinx.ext.autodoc':
 import os.path; sys.path.append('pyMESS/training/dPID')
@@ -22,16 +23,19 @@ version = release
 # Overrule std_conf, where needed
 #================================
 
-#html_title = project + " | " + release # DEFAULT: '<project> v<revision> documentation' -- Strip "documentation"
+html_title = project + " | " + release # DEFAULT: '<project> v<revision> documentation' -- Strip "documentation"
 
+html_sidebars = {
+    '**': [ 'recentposts.html', 'tagcloud.html', 'postcardHeader.html'],
+}
 
 
 # ABlog
 #------
 extensions.append('ablog')
 extensions.append('sphinx.ext.intersphinx') # GAM: workaround?
-import ablog; templates_path.append(ablog.get_html_templates_path())
-fontawesome_link_cdn = "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+
+fontawesome_link_cdn = "https://use.fontawesome.com/releases/v5.0.10/css/all.css"
 post_date_format = '%Y/%m/%d'
 post_date_format_short = '%Y/%m'
 
@@ -50,15 +54,12 @@ disqus_shortname = 'mess-swbmnl'
 disqus_pages = True                                                 # All pages have a disqus-section
 disqus_drafts = False                                               # .. but the draft (blog) pages (.. post:: without date )
 
-html_sidebars = {
-    '**': [ 'recentposts.html', 'tagcloud.html', 'postcardHeader.html'],
-}
 
 
 
 html_static_path.append('_slides')
 
-if False:
+if DEBUG:
     print("Debug: show all packages:")
     import os
     os.system("pip list")
