@@ -6,14 +6,18 @@
 Demo: Make a bumper
 *******************
 
-This demo is (far) outside the software sphere to help you to focus on the Agile SIA. And aren't derived from the SIA by
-typical software-engineering fixations.  I assume you are familiar with this common car background but not addicted to it.
+This demo is (far) outside the typical software sphere to help you focus on the Agile SIA itself. With no typical
+software-engineering fixations, you shouldn't be distracted by with SW-details.
 
-We use the :ref:`AgileSIA-5chapters`. However, every chapter is extra short. Your SIA should be short, but some body
-text to make it readable is appreciated.
+At the same time, it is a technical challenge.
+|BR|
+I assume you are familiar with this common car background.
 
-Before you write your 1st genuine Agile SIA, I advise you to practice on a software-engineering topic. My training has
-one, but it isn’t published (yet).
+We use ':ref:`AgileSIA-5chapters`, but each chapter is extremely short. Please make your next SIA short too, but with
+some body text to make it more readable. 
+
+Before you write your 1st genuine Agile SIA, I advise you to practice on a software engineering topic. My training has
+one, but it isn’t published.
 
 
 .. hint:: Background
