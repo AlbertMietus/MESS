@@ -37,6 +37,7 @@ Pros & Cons
 * Roughly, we need 13 steps, with (on average) a week between
   |BR|
   Note: this is not applicable for :math:`{\alpha}`- and :math:`{\beta}`-versions; they are faster.
+
   * This option is scalable: more bumpers for many cars are possible.
 
 

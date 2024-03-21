@@ -55,6 +55,7 @@ An Agile SIA
    :maxdepth: 2
 
    goal/index
+   goal/5chapters
    demo/index
    notes/index
 
