@@ -27,8 +27,8 @@ Generally, there are multiple (technical) means to accomplish the same innovatio
 offer a few (typically: 3 main) solutions, possibly with variants. They all fulfil the demands but differ in
 quality, luxury, and more relevant for the PO: primary value and investments.
 
-Common mistakes
-===============
+Avoid common mistakes
+=====================
 
 * A SIA can get too technical and appear more like a design document, which makes it difficult for people to understand
   the impact. And to expenses to write.
@@ -64,8 +64,8 @@ Common mistakes
      In a typical lean, agile approach, those provisional designs are stored as a photo in a wiki, along with the
      notes.
 
-A SIA has 5 chapters
-====================
+Use the 5 chapters template
+===========================
 
 As we present in :ref:`AgileSIA-5chapters`, an (agile, lean) SIA has five chapters, only 5!
 |BR|
