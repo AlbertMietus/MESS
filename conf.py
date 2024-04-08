@@ -66,3 +66,5 @@ if DEBUG:
     print("Debug: Outdates packages:")
     os.system("pip list --outdated")
     print("Done =====")
+
+html_context={} # No 'edit on github'??
