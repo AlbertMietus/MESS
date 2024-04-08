@@ -67,4 +67,4 @@ if DEBUG:
     os.system("pip list --outdated")
     print("Done =====")
 
-html_context={'display_github':False} # No 'edit on github'??
+
