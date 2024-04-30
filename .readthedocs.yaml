@@ -10,7 +10,16 @@ build:
   tools:
     python: "3.11"
   apt_packages:
+  # python3-sphinxcontrib.plantuml installs an old version of plantuml ...
+  # But is needed, to install dependencies ..
+  # Below, an other plantUML jar is installed
+  # (Both are needed ... it also in the requerments-file, but needed here)
     - python3-sphinxcontrib.plantuml
+  jobs:
+    post_install:
+      # Install a  newer version op plantuml -- keep in sync witch 'conf.py'!
+      - mkdir -p ${READTHEDOCS_VIRTUALENV_PATH}/libexec
+      - curl  -o ${READTHEDOCS_VIRTUALENV_PATH}/libexec/plantuml.jar  -L https://github.com/plantuml/plantuml/releases/download/v1.2024.4/plantuml-1.2024.4.jar
 
 # Build documentation in the docs/ directory with Sphinx
 sphinx:
