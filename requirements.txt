@@ -1,8 +1,7 @@
 sphinx==6.2.1
 ablog
-#sphinxcontrib-plantuml==0.23
 sphinxcontrib-plantuml
 sphinxcontrib-needs==0.7.9
 sphinxcontrib-needs
 sphinx_rtd_theme
-#urllib3==1.26.4
+

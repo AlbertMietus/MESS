@@ -41,6 +41,7 @@ clean:
 
 cleaner veryclean: clean
 	rm -rf ${OUTd}*
+	rm -rf `find . -type d -name __pycache__`
 
 cleanest: cleaner; #nothing extra
 
