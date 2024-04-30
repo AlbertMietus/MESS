@@ -1,4 +1,4 @@
-# Copyright (C) ALbert Mietus, SoftwareBeterMaken.nl; 2011-2019
+# Copyright (C) ALbert Mietus, SoftwareBeterMaken.nl; 2011-2024
 #  STANDARD CONFiguration for Sphinx-doc
 # -*- coding: utf-8 -*-
 
