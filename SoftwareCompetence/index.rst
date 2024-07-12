@@ -8,8 +8,9 @@ Software Competency
    :maxdepth: 2
    :glob:
 
-   DesignWorkShops/index
+   3Amigos/index
    LeanEngineering/index
+   DesignWorkShops/index
    HTLD/index
 
    blogs/index

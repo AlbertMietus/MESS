@@ -1,0 +1,214 @@
+.. Copyright (C) ALbert Mietus; 2024
+
+.. _3Amigos_P1:
+
+===============================================================
+Leading Technical Software Development is Hard! We Must Improve
+===============================================================
+
+.. post:: 2024/07/12
+   :tags: 3Amigos
+   :category: opinion
+   :language: en
+
+   .. image:: images/P1.DarkPositive_BigTeam_Zandloper.jpeg
+      :width: 33%
+      :align: left
+
+   :reading-time: 12min
+
+   As embedded systems and technical software are becoming larger and larger, as well as more complex,
+   leading those massive projects and teams is more vital than ever—and increasingly challenging.
+   Engineers need substantial experience to lead these projects effectively. However, paradoxically,
+   people seem to have less and less experience in working in big teams.
+
+   Adding to this dilemma are the typical role names for senior leadership, which are inflating. For
+   example, every (little) team nowadays has a software 'architect', whereas that role was called
+   (senior) developer before. As a result, when one needs a 'real architect' one is flooded by
+   juniors. Similarly, a ScrumMaster —once the agile, facilitating project leader— is now often just a
+   side-activity for a programmer. But who then, is overseeing a scope bigger than a few sprints? Is
+   somebody in charge at the tactical level?
+
+   As a side effect, this blocks the desire to grow: many modern architects and ScrumMasters assume
+   they are on top of the world already. In this blog, I describe the need for those leaders and what
+   they need.
+
+Leading is hard
+===============
+
+Crafting modern embedded software is hard. Partly, because the profession is a juvenile; it exists
+only for a few decades. Also, it is dominated by people with relatively little experience as the
+number of software engineers is doubling every few years. Moreover, many important practices have
+been described only recently. This implies that many experienced people were being educated with
+now old-fashioned concepts.
+
+Therefore, leading those projects is hard too. Modern people are typically a bit inexperienced but
+demand modern technology. And elderly engineers can be seen as old-school, especially when they
+didn’t have time to adapt to modern habits.
+
+Notice, we are speaking about ‘leading’, not ‘managing’.
+|BR|
+To lead a team writing software for huge complex embedded systems, one needs to understand the
+domain, the many available technologies, and the prevailing processes, frameworks & tools that
+assist a modern team. And one should have insight into the relations between them. Also, somebody
+should be able to make a wise selection and lead the team: make sure they comprehend them and will
+follow the leader. Not because (s)he is the boss, but since people like to be led.
+
+This is hard, probably too hard for a single person.
+
+3 axes
+------
+
+Effective leadership in complex software development can be seen in three axes: WHAT, WHEN, and
+HOW. Each of these axes correlates with typical roles in traditional environments, as well as in
+Agile.
+
+- **WHAT**:
+  Roles like the (chief) Product Owner in Scrum or the Requirement Engineer/Manager in traditional
+  settings.
+  |BR|
+  This role focuses on defining what needs to be built safeguarding the product aligns with
+  customer needs and business objectives.
+
+- **WHEN**:
+  In SAFe, roles as the Scrum Master (SM) and the Release Train Engineer (RTE) focus on this axis.
+  |BR|
+  They are process-oriented establishing a development workflow & team that is smooth, efficient,
+  and adheres to timelines.
+
+- **HOW**:
+  This role is responsible for finding a path to (technically) realise the WHAT within the WHEN timeframe.
+  |BR|
+  This includes roles such as Tech Lead, Architect, and ultimately, the Chief Technology Officer (CTO).
+
+Every development team should pay attention to those axes. Although it is not essential to have 3
+persons; for example, the classic technical project leader often combines the What and When
+aspects. We can also have more than three. More than once a senior leader delegated some activities
+and responsibilities to an (informal) assistant. Due to this mentorship leadership skills were
+developed by 'natural growth’.
+
+Multi-Level
+-----------
+
+Aside from the 3 axes, we should also consider scale. After all, directing the build of a nuclear
+power plant demands abilities different from building the bikeshed that comes with it. This was
+described by Parkinson’s Law of triviality, in 1957 already. And became popular with the famous
+blog ‘Why Should I Care What Color the Bikeshed Is?’, by Poul-Henning Kamp in 1999. In short: big
+projects need big leaders, who spend no time on little details.
+
+Let’s give a few examples that come naturally when climbing the ladder. Every engineer starts
+really small:
+
+- Hello World
+  |BR|
+  Every software engineer starts with this 8-line program. For me, it was hard to do it right! I
+  didn’t understand the error message of the compiler, what happened to be a linker error (I had no
+  clue, then).
+  |BR|
+  But I was proud when it worked - after a day or so.
+- OnePerson program
+  |BR|
+  When you write your own code, you are everybody (for a few weeks). As there is only you, you
+  decide what to write, when to write, and how to write. Anyone can be a product owner, a project
+  leader, an architect, and a coder at the same time.
+  |BR|
+  But after all, it is just a big “hello world project”.
+
+- **OneTeam** application: *A start (or a bikeshed?)*
+  |BR|
+  Only in a team one can divide roles &   responsibilities and have a (part-time) specialist for
+  each axis. It is also the first step where leadership is needed. A perfect solution isn't great
+  when the rest of the team does not agree.
+  |BR|
+  You can not lead when nobody follows.
+
+  I call this **L1**, level-1.
+
+- **MultiTeams** systems: *Now it really starts*.
+  |BR|
+  Depending on the ‘What’ to develop, a single team will not do. Either because many disciplines
+  are needed, and/or because it would otherwise take forever to realise it. Therefore, multiple teams
+  are needed.
+
+  This is somewhere between a bikeshed and the power plant.
+
+- **A Huge Systems**: the Linux kernel.
+  |BR|
+  The Linux kernel is, line-by-line, not that complicated; it was originally mostly developed by
+  students. But has a huge code-base: about 30,000,000 lines of code. This makes it challenging to
+  govern. For example, for a project of that size we need a schedule for 30 teams, and 25 years, to
+  spend the estimated 6000 man-years of work.
+
+  On the other hand, by (deliberately) designing it such that “small teams” can work independently,
+  it doesn't feel big.
+  |BR|
+  Isn’t that the signature of true leadership?
+
+- *Even bigger*: fill-in your favourite.
+  |BR|
+  There is always a bigger, more challenging project. And future ones will become bigger, more demanding.
+
+Bigger is not always better, but often: bigger is more demanding. Likewise, there are other aspects
+to make leading huge, complicated projects more troublesome. This scales two ways. One needs more
+experience and other skills to lead a multi-level project, but a small project needs other kinds of
+leaders too: more pragmatic. That power-plant architect is probably not the best fit to design a
+bikeshed.
+
+Example: 70k Extra Engineers in the BrainPort
+=============================================
+
+The media reports that about 70,000 extra engineers are needed in the Eindhoven metro area up to
+2030. A significant portion of them will be working by or for ASML, and it is expected that 33-50%
+will be software engineers. With this, we can do a bit of estimating, on how many leaders are
+needed, and at which level.
+
+Given those numbers, and that ASML has only a few products, we can expect that up to 1000 extra
+scrum teams will be formed, mostly working on one, huge, system. Each team will have a Product
+Owner, a Scrum Master, and a Tech Lead—though these roles might be shared. Most of these teams work
+on the same product and thus higher level “inter-team” leadership is needed too. After all, it
+would be stupid when those 1000 teams each had different objectives, resulting in 1000 small
+products, instead of one huge one.
+
+Scaling-up
+----------
+
+Using the scrum "scale by 8" rule, these 1000 teams are combined into 125 "Scrum-of-Scrum teams”.
+Or up to 100 Trains, in SAFe terminology - which used a bit more aggressive scaling. Each needs a
+CPO (Chief Product Owner), an RTE (a kind of Chief-SM), and a Train Architect.
+|BR|
+One step up again:
+We can expect around 10 solutions, or “subsystems” — the latter term is more common in Engineering.
+Once more, we need three kinds of leaders, in roles as Epic Owners, Solution Train Engineers (STE),
+and Holistic Architectural Leaders (HAL).
+
+This example does show that we need 3 kinds of leaders, at multiple levels, and it also shows the
+immense scale we are talking about in complex embedded systems. Even when those new teams share a
+Level-1 (‘OneTeam’) leader, we need a thousand of them.
+|BR|
+But that’s not the hard part!
+
+Lot of Leaders
+--------------
+
+The real challenge is breeding a few hundred Level-2 leaders, while
+some of the current ones must grow into Level-3 and Level-4 roles. And, we have to realise those
+70-thousand engineers are extra! When we double the number of engineers, the pyramid becomes higher
+too. So, we need more leaders, and we need more experience at higher levels.
+
+Summary
+=======
+
+Leadership in technical software development is needed more than ever, but finding good leaders is
+becoming increasingly difficult. We will need many new leaders in the coming decade, more and
+better. At the same time, we see inflation in leadership roles, and that natural growth has become
+harder. Why?
+
+What has changed in the last decade or so that has led to this situation? That is the question. We
+will explore the answers in the next blog: ‘Did Scrum kill the leadership route?’
+
+Have fun, and study hard! ---:sysBMnl-email:`albert`
+
+.. seealso::
+
+   This article on LinkedIn: XXX
+
