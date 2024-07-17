@@ -26,8 +26,9 @@ Leading Technical Software Development is Hard! We Must Improve
    example, every (little) team nowadays has a software 'architect', whereas that role was called
    (senior) developer before. As a result, when one needs a 'real architect' one is flooded by
    juniors. Similarly, a ScrumMaster —once the agile, facilitating project leader— is now often just a
-   side-activity for a programmer. But who then, is overseeing a scope bigger than a few sprints? Is
-   somebody in charge at the tactical level?
+   side-activity for a programmer.
+   |BR|
+   But then who is overseeing a scope bigger than a few sprints? Is somebody in charge at the tactical level?
 
    As a side effect, this blocks the desire to grow: many modern architects and ScrumMasters assume
    they are on top of the world already. In this blog, I describe the need for those leaders and what
