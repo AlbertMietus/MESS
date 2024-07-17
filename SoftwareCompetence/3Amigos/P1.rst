@@ -211,5 +211,4 @@ Have fun, and study hard! ---:sysBMnl-email:`albert`
 
 .. seealso::
 
-   This article on LinkedIn: XXX
-
+   This article on LinkedIn: https://www.linkedin.com/pulse/leading-technical-software-development-hard-we-must-improve-mietus-c2sue
