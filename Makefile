@@ -63,12 +63,19 @@ Hogsmeade: Hogsmeade_check
 Hogsmeade-clean: Hogsmeade_check
 	${MAKE} OUTd=${HOGSMEADEd} cleanest
 
-include RTD-settings.mk
-RTD  RTfD-build RTfD RTFD RTfD-webhook:
+#include RTD-settings.mk
+#RTD  RTfD-build RTfD RTFD RTfD-webhook:
+#	-hg push
+#	@BRANCH=$${BRANCH:-`hg branch`} ;\
+#	curl -X POST -d "branches=$${BRANCH}" -d "token=${TOKEN}"  ${HOOK}
+#	@echo
+
+RTD:
 	-hg push
-	@BRANCH=$${BRANCH:-`hg branch`} ;\
-	curl -X POST -d "branches=$${BRANCH}" -d "token=${TOKEN}"  ${HOOK}
-	@echo
+	-hg bookmarks default
+	-hg push github
+	@echo "push to github will trigger RTD"
+
 
 wc:
 	@echo "lines	words	file"
