@@ -15,7 +15,7 @@ Leading Technical Software Development is Hard! We Must Improve
       :width: 33%
       :align: left
 
-   :reading-time: 12min
+   :reading-time: 8min
 
    As embedded systems and technical software are becoming larger and larger, as well as more complex,
    leading those massive projects and teams is more vital than ever—and increasingly challenging.
@@ -205,7 +205,7 @@ better. At the same time, we see inflation in leadership roles, and that natural
 harder. Why?
 
 What has changed in the last decade or so that has led to this situation? That is the question. We
-will explore the answers in the next blog: ‘Did Scrum kill the leadership route?’
+will explore the answers in the next blog: ‘:ref:`3Amigos_P2`’
 
 Have fun, and study hard! ---:sysBMnl-email:`albert`
 

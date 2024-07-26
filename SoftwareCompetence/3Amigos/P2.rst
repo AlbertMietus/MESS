@@ -1,0 +1,187 @@
+.. Copyright (C) ALbert Mietus; 2024
+
+.. _3Amigos_P2:
+
+====================================
+Did Scrum Kill the Leadership Route?
+====================================
+
+.. post:: 2024/07/26
+   :tags: 3Amigos
+   :category: opinion
+   :language: en
+
+
+   :reading-time: 6min
+
+   Scrum and other Agile methodologies have revolutionised software development, bringing many
+   benefits like improved flexibility and faster delivery. However, they are not without drawbacks.
+   Scrum, with  a focus on short-term goals, has the drawback that long-term objectives may seem
+   less important. This may become a significant issue for complex embedded systems. For big
+   projects, with huge  codebases  and many developers, the importance of (short-term) sprint goals
+   and (long-term) architecture will conflict. Other long-term objectives may have similar issues.
+
+   As we have seen in ‘:ref:`3Amigos_P1`’ leadership is becoming more important, and that the natural growth
+   path for future leaders —in three axes (What, When & How)— has partly vanished. Maybe for the same
+   reason.
+   |BR|
+   In this article, we study whether Scrum did have this undocumented, unintentional negative
+   effect.  Later, we will show how to compensate for this.
+
+The Route to Leadership
+=======================
+
+Once, the route to leadership was straightforward with a natural growth path. Everybody worked in a
+big team. And so, there were many ‘on the job’ coaches available. A high potential, starting at the
+lowest step of the ladder could raise many steps before running out of mentors. We didn’t use words
+like product-owner or scrum master back then, and the term architect had another signification,
+still, it works along all three axes.
+
+And it worked at multiple levels. A genuine, “high level” leader typically delegated a part of his
+responsibilities, to an “assistant” in the team, giving her/him the opportunity the learn and grow.
+|BR|
+By further delegating a part of the work, there were many natural, informal ways to breed future
+leaders. And, at the same time, it inspired youngsters about the long-term options.
+
+The Impact of Scrum
+-------------------
+
+Scrum focuses on short-term goals, making the team lean and agile. Every two, three weeks, a team
+delivers a product-increment, that is fully implemented and tested.
+
+Scrum teams are small, usually 5-10 people. As the software profession grows rapidly a significant
+part of each team is often young. Resulting is teams that can be relatively immature.
+|BR|
+When the (sw) population doubles every few years, 50% of the team is ‘new’ — as (e.g.) showed by
+UncleBob. With a team of 8, there are only 3 steps to reach the top. In some industries, that is 10
+years!
+
+Food for thought: *Can we cultivate 3 leaders in 10 years in a single 8-person team?*
+
+Long term goals
+---------------
+
+When the focus is on ‘the sprint’, we need to find ways to balance immediate needs with future
+aspirations, such as maintaining a robust architectural direction.
+
+Most large-scale Agile/Scrum models, like Spotify’s, SAFe, and LESS, have mechanisms to compensate
+for the pitfalls of the short-term focus. These include Agile Release Trains (ARTs) and Release
+Train Engineers (RTE/STE) in SAFe, culture coaches in the Spotify Model, and so-called ‘huge’
+products and sprints in LESS. Conceptually, all models build super-sprints (PIs, in SAFe) out of
+sprints, super-teams (Tribes in Spotify) out of teams, like we build a team out of professionals, a
+sprint out of working days, etc.
+|BR|
+This works well for operational purposes.
+
+However, do they enable coaching on the job for future leaders?
+
+Leadership
+----------
+
+All these models demand leaders across the three axes and at each level, but there is often a quiet
+silence on how to cultivate them. Another pitfall is that higher-level and supporting teams are
+implemented last, or not at all, and are often invisible.
+
+This invisibility also means young, ambitious people are not motivated to rise beyond the L1
+‘OneTeam’ level.
+
+Natural Growth to Leadership is Broken
+======================================
+
+The traditional path to becoming a great leader, which relied heavily on natural growth through
+mentorship and a gradual increase of responsibility, has been disrupted. Moreover, due to role-name
+inflation, and because genuine leaders are often invisible, the path has become unclear.
+|BR|
+So, we can conclude the natural growth path is broken!
+
+The question is still: is this due to Scrum? And more important, can we fix it again?
+|BR|
+For that, we have two sub-questions.
+
+#. How can we elect future leaders?
+#. How can we inspire potential leaders to step up to this ‘new’ path?
+
+The alternative is not an option!
+|BR|
+As we have seen, people can reach a local top in about 10 years, and then often stop growing. Do we
+accept they are standing still for the remaining 30 years of a career? Remember, the current growth
+predictions imply the need for thousands of L1 leaders and hundreds on L2 level and higher.
+|BR|
+The industries need those (future) leaders. We need to prepare the path and make it appealing again.
+
+Don’t blame Agile
+-----------------
+
+One thing we shouldn't do is blame Agile or Scrum. Most large-scale frameworks have instruments to
+compensate. As we have described, they exist, but many companies only pick the low-hanging fruit…
+|BR|
+More importantly, they have many advantages too. Fighting to go back is useless.
+
+Restore the path
+----------------
+
+The mere fact that people do not work in big teams anymore doesn’t imply we can’t use the old,
+proven pattern to grow individuals anymore. We only have to organise the former informal ways
+explicitly.
+
+We can take inspiration from the big-scale agile models: create virtual teams of potential and
+proven leaders. In those expertise teams, we learn from each other and grow.
+
+Make it precious
+----------------
+
+The key to developing hundreds and thousands of future leaders is to inspire many individuals to
+explore their options.
+|BR|
+Not everyone will become a great leader, and that's okay. We will always need a large number of
+excellent programmers! Without them, there is no need for leaders.
+
+In SAFe terms, we require numerous product owners to define the product, as well as many SM, RTE,
+and STE to guide the process. Additionally, we need many architectural leaders.
+|BR|
+They are needed to guide those foreseen ten thousand new engineers, which are needed because the
+world demands ever bigger, more complex embedded systems.
+
+However, if none of the current engineers are willing to step up, if no L1 leader is motivated to
+grow, and the current leaders will retire, who will guide the development of those fantastic
+machines?
+
+As we need future leaders, we need to begin today. This involves not only providing training but
+also ensuring that the classes are well attended.
+|BR|
+In short: Software engineers should become motivated to  grow again.
+
+Summary
+-------
+
+Lean, Agile approaches, like Scrum, do not conflict with long-term goals. All major big-scale
+approaches, like SAFe, LESS, Spotify, and Scrum-of-Scrum, have processes and tools to counter the
+disadvantages of a strong focus on the short term. However, they are not always implemented.
+|BR|
+Even though they endorse having leaders in all 3 axes — what (product), when (process) & how
+(architecture), they take for granted that those authorities are accessible.
+|BR|
+Little is written on how to breed those leaders.
+
+At the same time, we have seen that those efficient, flexible, small teams are too small to grow
+future leaders. The time when those people naturally “bubbled up” is gone!
+|BR|
+A kind of counter-movement has occurred, where the top performers in a small team got the
+roles-names that once belonged to authorities in the full organisation. Nowadays, there is sometimes
+an architect in every 5-8 software engineers. This title inflation in itself isn’t bad (but maybe
+sad), it happens everywhere.
+
+Unfortunately, the combination of limited coaching through small teams and title inflation has
+blurred the path to leadership. How can a youngster ever become a future, genuine authority without
+visible role models? Especially as the number of software engineers grows strongly. As does the
+number of architects, scrummasters, and even product-owners.
+
+In an upcoming article, “Can I Breed Natural (SW) Leaders?”, we will present some ideas on how to
+cultivate future software leaders effectively.
+
+Have fun, and grow! ---:sysBMnl-email:`albert`
+
+.. seealso::
+
+   This article on LinkedIn: ToBeDone
+
