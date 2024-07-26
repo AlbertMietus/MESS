@@ -8,7 +8,8 @@ Most will be published both here, as on my `LinkedIn page <https://www.linkedin.
 You are invited to add feedback!
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   ./P1
+   P1
+   P2
 
