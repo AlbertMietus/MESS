@@ -186,5 +186,6 @@ Have fun, and grow! ---:sysBMnl-email:`albert`
 
 .. seealso::
 
-   This article on LinkedIn: ToBeDone
+   This article on LinkedIn:
+   https://www.linkedin.com/pulse/did-scrum-kill-leadership-route-albert-mietus-yeece 
 
