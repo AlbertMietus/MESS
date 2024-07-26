@@ -155,7 +155,7 @@ also ensuring that the classes are well attended.
 In short: Software engineers should become motivated to  grow again.
 
 Summary
--------
+=======
 
 Lean, Agile approaches, like Scrum, do not conflict with long-term goals. All major big-scale
 approaches, like SAFe, LESS, Spotify, and Scrum-of-Scrum, have processes and tools to counter the
