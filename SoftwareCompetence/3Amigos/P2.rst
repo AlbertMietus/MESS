@@ -11,6 +11,9 @@ Did Scrum Kill the Leadership Route?
    :category: opinion
    :language: en
 
+   .. image:: images/P2.WhatWhenHow.jpeg
+      :width: 33%
+      :align: left
 
    :reading-time: 6min
 
