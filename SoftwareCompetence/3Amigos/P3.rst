@@ -1,0 +1,312 @@
+.. Copyright (C) ALbert Mietus; 2024
+
+.. _3Amigos_P3:
+
+=======================
+No leaders, no appeal!
+=======================
+
+.. post:: 2024/09/06
+   :tags: 3Amigos
+   :category: opinion
+   :language: en
+
+   .. image:: images/P3.WorkOnComputer.jpeg
+      :width: 33%
+      :align: left
+
+   :reading-time: 11min
+
+
+
+   After some theoretical reflections in ‘:ref:`3Amigos_P1`’ and ‘:ref:`3Amigos_P2`’ it is time for some real-world
+   examples.
+   |BR|
+   What can go wrong without mature  leadership?
+
+While the cases are based on real events, they have been abstracted and dramatised --as always, the narrative is more
+attractive when it goes horribly wrong. My goal is to show the mistakes and to give you clues on how to improve --not to
+criticise anyone. Still, you may  recognise the anecdote, even if it's not about your team. It happens everywhere!
+
+As mentioned earlier, leadership can be viewed through :ref:`3Amigos_3axes`: What, When, and How. These axes are used to
+organise the cases, and common terms  such as (Team) Product Owner, Scrum Master, and Tech Lead (or Team Architect) will
+be used to enhance readability. There are many other role names in use as well, but don’t let that confuse you.
+
+Finally, I will present additional cases highlighting the importance of visible role models. Given that some of today's
+youngsters will become tomorrow's leaders, leadership development must appeal to them.
+
+
+The WHAT (Product Owner)
+=========================
+
+A Product Owner (PO) represents the client or end user. They define the requirements (stories) and set their priorities.
+Without clear direction from the PO, teams may deliver a high-quality product, but it won’t meet the customer's
+expectations.
+
+Case 1: What to Keep?
+---------------------
+
+A medium-sized project, roughly 100 man-years, needed a retention service to store and aggregate data, with the ability
+to delete details to save disk space. The team started with an :ref:`Agile SIA <AgileSIA>`, describing 3 alternatives.
+One of them: the existing tools had a standard option that seemed to meet the needs—a simple solution requiring only a
+few configuration lines. This was far out the easiest, quickest and cheapest solution, and advised by the team. They had
+only one question: what data needed to be saved, and for how long?
+
+However, the PO-board couldn’t decide on that. They didn’t know what they required. Instead, they insisted on a
+sequential V-model approach, despite calling every step agile and lean. They demanded extensive documentation before
+selecting the cheapest option. 
+|BR|
+To make a short story long, the team ended up spending more time and money on finding and describing options than the
+initial estimate for the most expensive option! Yet, the product owners still couldn’t make a decision.
+
+Lesson Learned
+~~~~~~~~~~~~~~
+Dare to decide on **what** you need. If you’re unsure and there’s an easy implementation option, select it—at least as a
+starting point. The ‘config version’ is risk-free, has been tested by the supplier and is likely suitable for the
+Minimum Viable Product (MVP). And otherwise, it will help to quickly discover the real needs.
+
+Case 2: Document & Trace
+------------------------
+
+A small innovation project was unexpectedly promoted to deliver a commercial product. While this was a recognition of
+excellent work, it also introduced unexpected challenges. The transition from a free-form, research-focused setup to a
+professional, lean, and agile environment was difficult. 
+|BR|
+One of the biggest issues was figuring out what exactly had been sold by the sales team.
+
+During the research phase, the goal was to *"discover a better way"*, with insights evolving frequently. Communication was
+mostly oral, which worked fine in the small team. 
+|BR|
+However, this informal approach continued even after the project scaled up. Most documentation was on an informal wiki,
+where anyone could edit any page at any time.
+
+The result?
+|BR|
+Nobody knew what to build or when an important feature was truly needed. Instead of documenting stories/requirements and
+setting priorities, the domain experts  started frequent meetings with all of the teams to answer their questions.
+Without documenting them --for reuse. Nor did they track which features were given to what team, so every team needed to
+chat with all other teams about what was needed and when.
+
+Lesson Learned
+~~~~~~~~~~~~~~
+
+Document early and clearly. While oral communication can work for small teams, writing down stories, requirements, and
+priorities is essential as you scale up. Traceability avoids confusion, facilitates proper scaling, and frees experts
+from constantly re-explaining. When you don’t know something, avoid vague demands.  
+|BR|
+Requirements may change, but ensure changes are documented and communicated.
+
+
+The WHEN (Scrum Master)
+=======================
+
+A Scrum Master is the team’s servant leader, coaching them to be lean and agile. Their job is to enable teams to perform
+at their best. If the team isn’t delivering, the Scrum Master should identify bottlenecks and fix the process.
+
+Case 3: Reporting
+-----------------
+
+A small team, 4FTE, was led by a part-time Scrum Master who was very diligent about reporting. He produced daily,
+weekly, and sprintly progress reports, but didn't realise that nobody had time to read them. Worse, he wasn't listening
+to the stakeholders, who only had one question: When can the MVP replace the current product that breaks down daily?
+
+His standard answers --‘after some sprints’ and ‘the sprint is done as it’s Friday’-- failed to build trust, not by the PO,
+not with the end-users, and not with the team. Eventually, he was replaced.
+
+Lesson Learned
+~~~~~~~~~~~~~~
+
+A focus on the current sprint has various benefits, and reporting holds significance. However, it's crucial to keep an
+eye on the bigger picture. Many stakeholders and managers prioritise overall costs and delivery dates, even when they
+are only estimated. 
+
+Besides, Scrum comes with tools such as the product burndown and graphs as the BAV (Business Added Value) -- why are
+they hardly used?
+
+Case 4: No Waste
+----------------
+
+Sometimes, things go right because a Scrum Master takes her responsibility seriously. In a scaled-up project mentioned
+earlier, stories came and went without cause because the PO role wasn’t strong enough.
+
+One day, just before the team was about to start working on a feature, the overarching epic was gone, but not cancelled.
+Nobody had updated the backlog, nobody realised the feature may have become useless. 
+|BR|
+But one Scrum Master.
+
+She, knowing the situation, always double-checked. Here, she asked the team to delay the start for a day and work on a
+lower-priority task. On that day she chased the details and avoided wasting time on a feature that wasn’t needed
+anymore.
+
+Lesson Learned
+~~~~~~~~~~~~~~
+
+
+A Scrum Master’s vigilance can prevent wasted work. In an organisation that isn't fully mature, a strong Scrum Master
+can (partly) isolate her teams from distractions. Even though the rule is ‘don’t change the features during a sprint’,
+keeping your team happy and effective is more important.  
+
+She knew that starting a day later would not jeopardise the sprint deliveries If that feature would be needed, it could
+still be implemented and delivered on time! 
+|BR|
+In this case, the organisation was happy with the avoided waste and the developers appreciated doing something valuable
+--possibly even more important.
+
+
+The HOW (TechLeader up to Architect)
+====================================
+
+This role is responsible for mapping out the technical path from requirements to solution and ensuring that the team can
+meet all deadlines while also addressing non-technical needs such as quality. Additionally, (s)he is guiding the team.
+|BR|
+There are many alternative names for this role, like senior designer, or even (software) architect. The best name
+doesn’t exist and should maybe depend on the scale. However, all teams and products, from small to huge, need such a
+leader. Without him, even the hardest-working team will struggle to deliver a viable system.
+
+Case 5: Too Slow
+----------------
+
+Once, embedded software was monolithic. Nowadays, software containers and microservices are popular. But what should one
+use for a new, huge, complex technical application with potentially thousands of users? And who should make the
+selection? 
+|BR|
+Let us hope that an experienced architect is involved ...
+
+As you already expected: No! Not in this case. 
+|BR|
+Here the selection was based on good relations with a vendor, which had just provided a free training session for
+*‘the architects’*. Everything worked perfectly. They even got the demo running on their laptop.
+
+The software teams worked hard and got the application running. Until an external, senior Holistic Architectural Leader
+(HAL) was brought in, and demanded a performance test. The QA team set up a basic test with simple "sunny-day"
+scenarios, like logging in and viewing some data. It worked --for the first few users. But as more users joined, the
+system slowed down until it couldn’t handle any more.  
+|BR|
+The architecture was fundamentally flawed. It would never work, not for the expected number of users.
+
+Lesson Learned
+~~~~~~~~~~~~~~
+
+Choosing an architecture requires more than just enthusiasm. As any experienced architect will tell you, functionality
+hardly influences the architecture. Typically, the non-functionals will dictate it. In this application, the limitation
+on the number of users was due to the number of services, processes, and messages, rather than the messages themselves.
+
+The HAL proposed transforming the architecture from a push to a pull model to reduce communication overhead. It wasn't
+perfect, but it did work and we could reuse most of the code.  
+|BR|
+This teaches us another lesson: development costs do matter! Sometimes, one has to choose (or update) an architecture to
+get it working quickly.
+
+Case 6: Tie-wraps?
+------------------
+
+In embedded systems, software isn’t the only component. Often, mechanical and electrical teams are also involved, as in
+this case. Those experts were used to work in independent silos, but now they were part of a lean, agile,
+multidisciplinary project. The devil was in the details—or rather, in the PCB corners.
+
+One day, a software engineer asked a simple question: How are the PCBs mounted? The electrical team didn’t care --it was a
+mechanical issue. The mechanical team assumed the PCB had holes for the bolts they had designed. The software team, in a
+typical pragmatic fashion, suggested tie-wraps to fix it.
+
+This simple remark solved the dispute. Both teams found any solution proposed by any programmer unseemly. Finally, they
+sat together for just 30 minutes and found four places where a hole could be added to the PCB and bolts and nuts could
+fit in the housing.  
+|BR|
+Problem solved!
+
+Lesson Learned
+~~~~~~~~~~~~~~
+
+Many architects have a focus on technology technical solutions. But that is too limited. Often, the questions are more
+important than the answers! 
+|BR|
+As is demonstrated in this case. One simple question! The right question can trigger the involved experts to find a
+solution.
+
+
+
+
+
++++++
+
+Role Models
+===========
+
+
+As discussed earlier, great leaders are essential for inspiring young people to become future leaders. However, today’s
+leaders often seem invisible. This is partly due to the small size of (scrum) teams, the lack of regulated role names,
+and the premature use of certain attractive roles.
+|BR|
+This may confuse new, young developers.
+
+Labelling young people as software architects too early can stagnate their development by reducing their focus on
+continued learning and growth. It may also prevent organisations from investing in (more) knowledge and treasure
+experience. Similarly, if we consider a Scrum Master a senior (leadership) role, it shouldn't be surprising that one
+day, nobody is prepared to lead a huge project. Moreover, if Product Owners only focus on one team, who will address the
+needs of the entire product in a few years? 
+|BR|
+Without understanding the various levels and roles, nurturing future leaders becomes challenging.
+
+
+
+
+Case 7: Magnificent Superficial
+-------------------------------
+
+A fantastic, but young software engineer showed me the product he had been working on. It was marvellous, he was right
+to be proud of it. I was impressed. Notwithstanding, I had a hidden smile when he claimed to be ‘the architect’. 
+|BR|
+He had led a team of 2 or 3 pals, for a couple of months. It was a great result, but not a big project.
+
+There are no regulated role names, nor a de-facto common understanding of the responsibilities of the various roles. And
+for technical leaders is even worse than average. So, he was right. Whenever there was an architect involved, it would
+be him. 
+|BR|
+But what should we call the ‘How-Leader’ for a big project?
+
+Most of all, what role model is available to appeal to this young engineer to continue learning, and widen his horizon?
+For say, a project of 2 or 3 teams, or a product of 23 man-years? Or, become a future superb leader?
+
+
+Case 8: Promoted or Demotivated?
+--------------------------------
+
+Not all line managers have a technical background. In this case, a manager tried to encourage an employee to take Scrum
+Master training. In his opinion that is a very senior position. The professional refused. He had been a Senior System
+Architect (SSA), acted as an interim Release Train Engineer (RTE) for a four-team project, and led over 255 people as an
+architect. Why would he want to lead just eight people?
+
+The manager, with an HR background, didn’t understand he was promoting a step-down. He didn’t know that an RTE is kind
+of the boss of several Scrum Masters and that an SSA is usually considered superior to a Solution Train Engineer (STE).
+He did apprehend that an SM is like a project manager and presumed that any manager role is *‘higher’* than an
+engineering role. 
+|BR|
+So, how could he know?
+
+Some organisations --tired of having too many, unclear, and constantly changing roles; especially in software
+engineering-- use one generic role nowadays: ‘Engineer. Which comes in two variants *Junior* and *Senior*. It’s
+convenient and made it harder for the manager above.
+|BR|
+Besides, with only a few steps on a career staircase, it is hard to reach the top. Even more importantly: how can we
+motivate young people to aim for the stars, when they are hidden?
+
+What should we learn?
+=====================
+
+I hope that by presenting these real cases of what went wrong or right across the three axes of genuine leadership, I’ve
+illustrated how easy it is to make mistakes -- again, not to blame, but to flourish. As most software engineers know,
+finding a bug is often tougher than fixing it. Similarly, my goal in this article is to help you to identify these
+missteps --that is the hard work.
+
+In an upcoming article, we will explore this further and provide improvement tips. Not just for today, but mostly to
+ensure that future leaders are ready when needed.
+|BR|
+Remember, we need many of them, and some of them should do even better than their predecessors — as embedded systems
+grow larger and more complex, Let’s make sure they can stand on our shoulders!
+
+Have fun maturing  ---:sysBMnl-email:`albert`
+
+
+.. seealso::
+
+   This article on LinkedIn: XXXX	

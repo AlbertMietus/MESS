@@ -179,8 +179,8 @@ blurred the path to leadership. How can a youngster ever become a future, genuin
 visible role models? Especially as the number of software engineers grows strongly. As does the
 number of architects, scrummasters, and even product-owners.
 
-In an upcoming article, “Can I Breed Natural (SW) Leaders?”, we will present some ideas on how to
-cultivate future software leaders effectively.
+In an upcoming article, “Can I Breed Natural (SW) Leaders?”, we will present some ideas on how to cultivate future
+software leaders effectively. But first, we study some case in ‘:ref:`3Amigos_P3`’.
 
 Have fun, and grow! ---:sysBMnl-email:`albert`
 

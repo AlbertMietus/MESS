@@ -57,6 +57,8 @@ follow the leader. Not because (s)he is the boss, but since people like to be le
 
 This is hard, probably too hard for a single person.
 
+.. _3Amigos_3axes:
+
 3 axes
 ------
 
