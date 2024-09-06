@@ -291,7 +291,7 @@ Besides, with only a few steps on a career staircase, it is hard to reach the to
 motivate young people to aim for the stars, when they are hidden?
 
 What should we learn?
-=====================
+---------------------
 
 I hope that by presenting these real cases of what went wrong or right across the three axes of genuine leadership, I’ve
 illustrated how easy it is to make mistakes -- again, not to blame, but to flourish. As most software engineers know,
@@ -309,4 +309,4 @@ Have fun maturing  ---:sysBMnl-email:`albert`
 
 .. seealso::
 
-   This article on LinkedIn: XXXX	
+   This article on LinkedIn: https://www.linkedin.com/pulse/leaders-appeal-albert-mietus-tbbof
