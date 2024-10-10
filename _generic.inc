@@ -1,9 +1,5 @@
 .. -*-rst-*-
 
-.. |br| raw:: html
-
-   <br/>
-
 .. |BR| raw:: html
 
    <BR />
