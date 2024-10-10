@@ -161,7 +161,7 @@ Once, embedded software was monolithic. Nowadays, software containers and micros
 use for a new, huge, complex technical application with potentially thousands of users? And who should make the
 selection?
 |BR|
-Let us hope that an experienced architect is involved ...
+Let us hope that an experienced architect is involved ....
 
 As you already expected: No! Not in this case.
 |BR|
