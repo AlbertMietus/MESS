@@ -54,8 +54,8 @@ only one question: what data needed to be saved, and for how long?
 
 However, the PO-board couldn’t decide on that. They didn’t know what they required. Instead, they insisted on a
 sequential V-model approach, despite calling every step agile and lean. They demanded extensive documentation before
-selecting the cheapest option.  |BR|
-To make a short story long, the team ended up spending more time and money on finding and describing options than the
+selecting the cheapest option.  <BR with space?>
+  To make a short story long, the team ended up spending more time and money on finding and describing options than the
 initial estimate for the most expensive option! Yet, the product owners still couldn’t make a decision.
 
 Lesson Learned
