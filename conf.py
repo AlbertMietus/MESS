@@ -79,3 +79,4 @@ if os.environ.get("READTHEDOCS", "") == "True":
         html_context = {}
     html_context["READTHEDOCS"] = True
 
+extensions.append("sphinx_build_compatibility.extension")
