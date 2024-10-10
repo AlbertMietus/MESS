@@ -80,7 +80,7 @@ mostly oral, which worked fine in the small team. 
 However, this informal approach continued even after the project scaled up. Most documentation was on an informal wiki,
 where anyone could edit any page at any time.
 
-The result?|BR|
+The result? |BR|
 Nobody knew what to build or when an important feature was truly needed. Instead of documenting stories/requirements and
 setting priorities, the domain experts  started frequent meetings with all of the teams to answer their questions.
 Without documenting them --for reuse. Nor did they track which features were given to what team, so every team needed to
