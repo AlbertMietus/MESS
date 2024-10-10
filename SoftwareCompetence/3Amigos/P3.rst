@@ -55,8 +55,9 @@ only one question: what data needed to be saved, and for how long?
 However, the PO-board couldn’t decide on that. They didn’t know what they required. Instead, they insisted on a
 sequential V-model approach, despite calling every step agile and lean. They demanded extensive documentation before
 selecting the cheapest option.
-To make a short story long, the team ended up spending more time and money on finding and describing options than the initial
-estimate for the most expensive option! Yet, the product owners still couldn’t make a decision.
+|BR|
+To make a short story long, the team ended up spending more time and money on finding and describing options than the
+initial estimate for the most expensive option! Yet, the product owners still couldn’t make a decision.
 
 Lesson Learned
 ~~~~~~~~~~~~~~
@@ -69,15 +70,16 @@ Case 2: Document & Trace
 
 A small innovation project was unexpectedly promoted to deliver a commercial product. While this was a recognition of
 excellent work, it also introduced unexpected challenges. The transition from a free-form, research-focused setup to a
-professional, lean, and agile environment was difficult. 
+professional, lean, and agile environment was difficult.
+|BR|
 One of the biggest issues was figuring out what exactly had been sold by the sales team.
 
-During the research phase, the goal was to *"discover a better way"*, with insights evolving frequently. Communication was
-mostly oral, which worked fine in the small team. 
-However, this informal approach continued even after the project scaled up. Most documentation was on an informal wiki,
-where anyone could edit any page at any time.
+During the research phase, the goal was to *"discover a better way"*, with insights evolving frequently. Communication
+was mostly oral, which worked fine in the small team. However, this informal approach continued even after the project
+scaled up. Most documentation was on an informal wiki, where anyone could edit any page at any time.
 
-The result? |BR|
+The result?
+|BR|
 Nobody knew what to build or when an important feature was truly needed. Instead of documenting stories/requirements and
 setting priorities, the domain experts  started frequent meetings with all of the teams to answer their questions.
 Without documenting them --for reuse. Nor did they track which features were given to what team, so every team needed to
@@ -85,11 +87,11 @@ chat with all other teams about what was needed and when.
 
 Lesson Learned
 ~~~~~~~~~~~~~~
-
 Document early and clearly. While oral communication can work for small teams, writing down stories, requirements, and
 priorities is essential as you scale up. Traceability avoids confusion, facilitates proper scaling, and frees experts
-from constantly re-explaining. When you don’t know something, avoid vague demands.  
-|BR| Requirements may change, but ensure changes are documented and communicated.
+from constantly re-explaining. When you don’t know something, avoid vague demands.
+|BR|
+Requirements may change, but ensure changes are documented and communicated.
 
 
 The WHEN (Scrum Master)
@@ -110,7 +112,6 @@ not with the end-users, and not with the team. Eventually, he was replaced.
 
 Lesson Learned
 ~~~~~~~~~~~~~~
-
 A focus on the current sprint has various benefits, and reporting holds significance. However, it's crucial to keep an
 eye on the bigger picture. Many stakeholders and managers prioritise overall costs and delivery dates, even when they
 are only estimated. 
@@ -135,8 +136,6 @@ anymore.
 
 Lesson Learned
 ~~~~~~~~~~~~~~
-
-
 A Scrum Master’s vigilance can prevent wasted work. In an organisation that isn't fully mature, a strong Scrum Master
 can (partly) isolate her teams from distractions. Even though the rule is ‘don’t change the features during a sprint’,
 keeping your team happy and effective is more important.  
@@ -160,28 +159,31 @@ Case 5: Too Slow
 
 Once, embedded software was monolithic. Nowadays, software containers and microservices are popular. But what should one
 use for a new, huge, complex technical application with potentially thousands of users? And who should make the
-selection? 
+selection?
+|BR|
 Let us hope that an experienced architect is involved ...
 
-As you already expected: No! Not in this case. 
+As you already expected: No! Not in this case.
+|BR|
 Here the selection was based on good relations with a vendor, which had just provided a free training session for
 *‘the architects’*. Everything worked perfectly. They even got the demo running on their laptop.
 
 The software teams worked hard and got the application running. Until an external, senior Holistic Architectural Leader
 (HAL) was brought in, and demanded a performance test. The QA team set up a basic test with simple "sunny-day"
 scenarios, like logging in and viewing some data. It worked --for the first few users. But as more users joined, the
-system slowed down until it couldn’t handle any more.  |BR|
+system slowed down until it couldn’t handle any more.
+|BR|
 The architecture was fundamentally flawed. It would never work, not for the expected number of users.
 
 Lesson Learned
 ~~~~~~~~~~~~~~
-
 Choosing an architecture requires more than just enthusiasm. As any experienced architect will tell you, functionality
 hardly influences the architecture. Typically, the non-functionals will dictate it. In this application, the limitation
 on the number of users was due to the number of services, processes, and messages, rather than the messages themselves.
 
 The HAL proposed transforming the architecture from a push to a pull model to reduce communication overhead. It wasn't
-perfect, but it did work and we could reuse most of the code.  |BR|
+perfect, but it did work and we could reuse most of the code.
+|BR|
 This teaches us another lesson: development costs do matter! Sometimes, one has to choose (or update) an architecture to
 get it working quickly.
 
@@ -198,7 +200,8 @@ typical pragmatic fashion, suggested tie-wraps to fix it.
 
 This simple remark solved the dispute. Both teams found any solution proposed by any programmer unseemly. Finally, they
 sat together for just 30 minutes and found four places where a hole could be added to the PCB and bolts and nuts could
-fit in the housing.  |BR|
+fit in the housing.
+|BR|
 Problem solved!
 
 Lesson Learned
@@ -210,19 +213,14 @@ As is demonstrated in this case. One simple question! The right question can tri
 solution.
 
 
-
-
-
-+++++
-
 Role Models
 ===========
-
 
 As discussed earlier, great leaders are essential for inspiring young people to become future leaders. However, today’s
 leaders often seem invisible. This is partly due to the small size of (scrum) teams, the lack of regulated role names,
 and the premature use of certain attractive roles.
-|BR| This may confuse new, young developers.
+|BR|
+This may confuse new, young developers.
 
 Labelling young people as software architects too early can stagnate their development by reducing their focus on
 continued learning and growth. It may also prevent organisations from investing in (more) knowledge and treasure
@@ -230,9 +228,6 @@ experience. Similarly, if we consider a Scrum Master a senior (leadership) role,
 day, nobody is prepared to lead a huge project. Moreover, if Product Owners only focus on one team, who will address the
 needs of the entire product in a few years? 
 Without understanding the various levels and roles, nurturing future leaders becomes challenging.
-
-
-
 
 Case 7: Magnificent Superficial
 -------------------------------
@@ -243,7 +238,8 @@ He had led a team of 2 or 3 pals, for a couple of months. It was a great result,
 
 There are no regulated role names, nor a de-facto common understanding of the responsibilities of the various roles. And
 for technical leaders is even worse than average. So, he was right. Whenever there was an architect involved, it would
-be him. 
+be him.
+|BR|
 But what should we call the ‘How-Leader’ for a big project?
 
 Most of all, what role model is available to appeal to this young engineer to continue learning, and widen his horizon?
@@ -261,7 +257,7 @@ architect. Why would he want to lead just eight people?
 The manager, with an HR background, didn’t understand he was promoting a step-down. He didn’t know that an RTE is kind
 of the boss of several Scrum Masters and that an SSA is usually considered superior to a Solution Train Engineer (STE).
 He did apprehend that an SM is like a project manager and presumed that any manager role is *‘higher’* than an
-engineering role. 
+engineering role.
 So, how could he know?
 
 Some organisations --tired of having too many, unclear, and constantly changing roles; especially in software
