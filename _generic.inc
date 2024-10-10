@@ -1,7 +1,6 @@
 .. -*-rst-*-
 
 .. |br| raw:: html
-
    <br />
 
 .. role:: line-remark
