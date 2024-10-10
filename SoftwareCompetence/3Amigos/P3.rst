@@ -54,7 +54,7 @@ only one question: what data needed to be saved, and for how long?
 
 However, the PO-board couldn’t decide on that. They didn’t know what they required. Instead, they insisted on a
 sequential V-model approach, despite calling every step agile and lean. They demanded extensive documentation before
-selecting the cheapest option.  
+selecting the cheapest option.
 To make a short story long, the team ended up spending more time and money on finding and describing options than the initial
 estimate for the most expensive option! Yet, the product owners still couldn’t make a decision.
 
@@ -70,8 +70,7 @@ Case 2: Document & Trace
 A small innovation project was unexpectedly promoted to deliver a commercial product. While this was a recognition of
 excellent work, it also introduced unexpected challenges. The transition from a free-form, research-focused setup to a
 professional, lean, and agile environment was difficult. 
-One of the biggest issues was figuring out what exactly 
-had been sold by the sales team.
+One of the biggest issues was figuring out what exactly had been sold by the sales team.
 
 During the research phase, the goal was to *"discover a better way"*, with insights evolving frequently. Communication was
 mostly oral, which worked fine in the small team. 
@@ -89,8 +88,8 @@ Lesson Learned
 
 Document early and clearly. While oral communication can work for small teams, writing down stories, requirements, and
 priorities is essential as you scale up. Traceability avoids confusion, facilitates proper scaling, and frees experts
-from constantly re-explaining. When you don’t know something, avoid vague demands.  |BR|
-Requirements may change, but ensure changes are documented and communicated.
+from constantly re-explaining. When you don’t know something, avoid vague demands.  
+|BR| Requirements may change, but ensure changes are documented and communicated.
 
 
 The WHEN (Scrum Master)
@@ -126,9 +125,10 @@ Sometimes, things go right because a Scrum Master takes her responsibility serio
 earlier, stories came and went without cause because the PO role wasn’t strong enough.
 
 One day, just before the team was about to start working on a feature, the overarching epic was gone, but not cancelled.
-Nobody had updated the backlog, nobody realised the feature may have become useless. 
+Nobody had updated the backlog, nobody realised the feature may have become useless.
+|BR|
 But one Scrum Master...
-
+|BR|
 She, knowing the situation, always double-checked. Here, she asked the team to delay the start for a day and work on a
 lower-priority task. On that day she chased the details and avoided wasting time on a feature that wasn’t needed
 anymore.
@@ -142,9 +142,8 @@ can (partly) isolate her teams from distractions. Even though the rule is ‘don
 keeping your team happy and effective is more important.  
 
 She knew that starting a day later would not jeopardise the sprint deliveries If that feature would be needed, it could
-still be implemented and delivered on time! 
-In this case, the organisation was happy with the avoided waste and the developers appreciated doing something valuable
---possibly even more important.
+still be implemented and delivered on time! In this case, the organisation was happy with the avoided waste and the
+developers appreciated doing something valuable --possibly even more important.
 
 
 The HOW (TechLeader up to Architect)
