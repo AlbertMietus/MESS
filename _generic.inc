@@ -4,6 +4,10 @@
 
    <br/>
 
+.. |BR| raw:: html
+
+   <BR />
+
 .. role:: line-remark
    :class: line-remark
 
