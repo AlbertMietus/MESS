@@ -54,9 +54,9 @@ only one question: what data needed to be saved, and for how long?
 
 However, the PO-board couldn’t decide on that. They didn’t know what they required. Instead, they insisted on a
 sequential V-model approach, despite calling every step agile and lean. They demanded extensive documentation before
-selecting the cheapest option. 
-  To make a short story long, the team ended up spending more time and money on finding and describing options than the
-initial estimate for the most expensive option! Yet, the product owners still couldn’t make a decision.
+selecting the cheapest option.  
+|BR| To make a short story long, the team ended up spending more time and money on finding and describing options than the initial
+estimate for the most expensive option! Yet, the product owners still couldn’t make a decision.
 
 Lesson Learned
 ~~~~~~~~~~~~~~
@@ -69,12 +69,12 @@ Case 2: Document & Trace
 
 A small innovation project was unexpectedly promoted to deliver a commercial product. While this was a recognition of
 excellent work, it also introduced unexpected challenges. The transition from a free-form, research-focused setup to a
-professional, lean, and agile environment was difficult.  |BR|
-One of the biggest issues was figuring out what exactly had been sold by the sales team.
+professional, lean, and agile environment was difficult.  |BR| One of the biggest issues was figuring out what exactly 
+had been sold by the sales team.
 
 During the research phase, the goal was to *"discover a better way"*, with insights evolving frequently. Communication was
-mostly oral, which worked fine in the small team.  |BR|
-However, this informal approach continued even after the project scaled up. Most documentation was on an informal wiki,
+mostly oral, which worked fine in the small team. 
+|BR| However, this informal approach continued even after the project scaled up. Most documentation was on an informal wiki,
 where anyone could edit any page at any time.
 
 The result? |BR|
