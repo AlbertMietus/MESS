@@ -83,7 +83,7 @@ Buddy for Life
 
 Once, new, upcoming or unknown developers could not add code in FreeBSD. Not without following the (FreeBSD) 'buddy
 system’ development program. Any  ‘volunteer’ could send additions (code,  documentation, …)  to a ‘committer’ to enter
-it for him. After building experience and trust, he could become a buddy (as an ‘apprentice’). Later, he got the right
+it for him. After building experience and trust, he could become a buddy (as in ‘apprentice’). Later, he got the right
 to enter the source with approval from his buddy. Until he got a ‘comment bit’ himself - and could directly make
 changes. Although both ‘buddies’ are still answerable. Note: FreeBSD uses ‘buddy’ in a symmetrical way, the other terms
 are by me to clarify the relation.
@@ -249,4 +249,4 @@ Good luck with Growing, others  ---:sysBMnl-email:`albert`
 
 .. seealso::
 
-   This article on LinkedIn: XXX		
+   This article on LinkedIn: https://www.linkedin.com/pulse/can-we-breed-software-leaders-faster-albert-mietus-l27te

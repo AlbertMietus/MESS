@@ -1,5 +1,5 @@
-Leading Software/Enginering Teams
-=================================
+Leading Software Engineering Teams
+==================================
 
 As a preparation to my ``#3Amigos`` training, I will write some blog/articles on (the difficulty in) leading (big)
 teams that develop (Modern) Embedded System Software.
