@@ -274,7 +274,7 @@ illustrated how easy it is to make mistakes -- again, not to blame, but to flour
 finding a bug is often tougher than fixing it. Similarly, my goal in this article is to help you to identify these
 missteps --that is the hard work.
 
-In an upcoming article, we will explore this further and provide improvement tips. Not just for today, but mostly to
+In  ‘:ref:`3Amigos_P4`’, we will explore this further and provide improvement tips. Not just for today, but mostly to
 ensure that future leaders are ready when needed.
 Remember, we need many of them, and some of them should do even better than their predecessors — as embedded systems
 grow larger and more complex, Let’s make sure they can stand on our shoulders!

@@ -1,0 +1,252 @@
+.. Copyright (C) ALbert Mietus; 2024
+
+.. _3Amigos_P4:
+
+======================================
+Can We Breed Software Leaders, Faster?
+======================================
+
+.. post:: 2024/10/17
+   :tags: 3Amigos
+   :category: opinion
+   :language: en
+
+   .. image:: images/P4.SportyManyStars.jpeg
+      :width: 33%
+      :align: left
+
+   :reading-time: 15min
+
+
+   As the software industry continues to flourish, so does the need for mature leaders. In this evolving landscape, two
+   primary goals emerge: motivating and supporting current (entry-level) leaders to grow and breeding a new generation
+   of leaders. As seen in ‘:ref:`3Amigos_P1`’, the software engineering landscape is evolving rapidly, increasing the
+   demand for more engineers, and consequently, more leaders are needed. At the same time, Scrum (particularly Scrum)
+   has led to smaller teams, making natural leadership progression harder; see ‘:ref:`3Amigos_P2`’. We also have studied
+   some cases in ‘:ref:`3Amigos_P3`’, showing what might happen when no experienced leaders are available.
+
+   In this blog, we will explore several well-known leadership development approaches, examine how to apply them in
+   software development and determine if we can expedite the process.
+
+
+Goals
+=====
+
+We have two goals: restore the leadership route and speed it up.
+
+The Short-Term: Growing Current Leaders
+---------------------------------------
+
+Many experienced software engineers find themselves transitioning into (entry-level) leadership roles as Product Owner
+(PO), Scrum Master (SM), or TechLead (or team architect). While these roles are essential at the team level, they often
+have become a ‘local end goal’ and stunt leadership growth. In the typical small teams of many Agile frameworks, the
+natural leadership progression — f.e. as assistant of a senior, mature leader— is blocked. Many of those  *‘L1’* leaders
+effectively lack the environment to keep learning and growing.
+
+Still, there is a need for many higher-level leaders, like the Chief PO, the RTE, and the Train-Architect — the same
+roles for the same three-axis, but one level up (in SAFe terminology). Some should even grow into roles such as
+System-Requirement-Engineer/Manager,  STE and System(s) Architect, or HAL (Holistic Architectural Leader)  — although
+those names are not standardised.
+
+The Long-Term: Breed Future Leaders
+-----------------------------------
+
+While supporting current leaders is crucial, we can’t overlook the long-term goal: fostering the next generation of
+software leaders. The demand for software engineers is skyrocketing, and with that comes the need for more people to
+step into leadership roles. One key challenge is changing the mindset that leadership roles, such as PO, SM or
+TechLead, are top positions. These are junior leadership roles and stepping stones to more strategic and impactful
+leadership roles.
+
+When we fail to clarify this to potential leaders or step into the pitfall of using senior role names for very young
+professionals (like ‘Architect’ for somebody leading a small team), we are effectively blocking their growth. That is
+bad for those people and sad for organisations that soon need those leaders.
+
+Learning from the Others
+========================
+
+The idea of fostering leadership isn't new— (other) industries have been doing this for centuries. While the software
+industry has changed, there are plenty of tried-and-true practices that we can adapt or reuse.
+|BR|
+For instance, in many industries, mentorship and other structured leadership development programs have proven highly
+effective. We don’t need ‘big teams’ to coach upcoming leaders, we can facilitate this mentor-apprentice model when it
+doesn’t come naturally.  Whereas, in the large teams of the past,  juniors have had many role models, nowadays, we have
+to spend a bit more effort to make the career stairways obvious.
+
+Numerous examples can inspire us to accelerate leadership development from both the software industry and other fields.
+One such example is the FreeBSD buddy system, which was highly successful in the open-source software community. Another
+example comes from the military, a completely different arena, yet both can provide valuable guidance. These and more
+examples can help us develop leaders and make career paths more visible, and sometimes both.
+
+
+Buddy for Life
+--------------
+
+Once, new, upcoming or unknown developers could not add code in FreeBSD. Not without following the (FreeBSD) 'buddy
+system’ development program. Any  ‘volunteer’ could send additions (code,  documentation, …)  to a ‘committer’ to enter
+it for him. After building experience and trust, he could become a buddy (as an ‘apprentice’). Later, he got the right
+to enter the source with approval from his buddy. Until he got a ‘comment bit’ himself - and could directly make
+changes. Although both ‘buddies’ are still answerable. Note: FreeBSD uses ‘buddy’ in a symmetrical way, the other terms
+are by me to clarify the relation.
+|BR|
+The system worked remarkably well, especially in the early days of open-source development, where contributors were
+often hobbyists or students working alone and remotely with limited resources.
+
+The system wasn’t just about teaching technical skills—it was also about growing leadership qualities. After a buddy
+gets his/her ‘commit bit’, the buddy relationship doesn’t stop!  One day, a committer can mentor another apprentice, but
+only when his (mentoring) buddy thinks (s)he is ready for it. Then, the former apprentice isn’t only skilled at coding,
+then the coaching skills count.
+
+Its emphasis on accountability and honour made the buddy system particularly effective. Even after an apprentice became
+a leader, their mentor was still held accountable for their actions, ensuring that leadership wasn’t taken lightly. This
+created a long-lasting bond and deep sense of responsibility, where leaders had to carefully consider their decisions,
+knowing they would reflect on their mentors. In theory, you become buddies for life.
+|BR|
+One day, one could become a FreeBSD leader, thanks only to the buddy.
+
+Despite that FreeBSD is not operating the buddy system anymore —nowadays, many contributors are employed by big brands,
+development infrastructure has gone on steroids, and “Google Summer of Code” is used to train junior developers— this
+buddy system is “famous” and inspired many other (open source) projects. Because it works at many levels.
+
+Regardless of those changes, the buddy system thrived, and its principles can still be adapted to today’s leadership challenges.
+
+
+Knowledge Circles
+-----------------
+
+Mentoring systems, like the FreeBSD buddy system, are just one way to breed software leaders. Another approach is
+creating knowledge circles where individuals learn from each other rather than from a formal tutor. These can take many
+forms. From quite formal Special Interest Groups (SIGs) —that focus on specific technical domains— via Expertise Groups
+— where experts share experience—to more informal communities like ‘User Groups’ — where users share their knowledge.
+Also, all kinds of ‘conferences’ —typically big, infrequent events— fit into this category.
+|BR|
+And, we can’t be complete without mentioning modern variants, like hackathons —knowledge sharing by actively developing-
+and ‘unconferences’ — an informal variant of the (more formal) conference.
+|BR|
+The formality only differs in how it is organised. In all knowledge circles, experts (often roughly at the same level)
+share a bit of know-how and get more experience in return.
+
+All forms demand some level of prior knowledge, as there is no ‘teacher’ who can share his wisdom —even though this is
+less limiting than many people assume.  Even a dozen aspiring leaders, each having a different skillset and background,
+can learn from each other — as they probably have limited overlap.  This is generally valid: a knowledge circle where
+everybody knows the same does not work — although they are often ‘cosy’ (which can be misguiding).
+
+Without the need for instructors and given that knowledge circles can handle big numbers, they can easily scale. This
+can be a big advantage. For example, conferences — google shows there are several almost every day, just in the
+Netherlands— can easily bring hundreds to thousands of people together. Admit most are passive visitors - there is a lot
+of knowledge sharing during the informal breaks.
+
+Modern variants like hackathons scale even more and even encourage people to participate. They often have the shape of a
+competition, where people in hundreds of competing teams — creating themselves during the day— work in conjunction to
+build an MVP (Minimum Viable Product). Many people will primally ‘code’, but it also demands leadership. Somebody has to
+inform a bunch of people ‘what’ is needed, somebody watches the ‘when’ — the end of the day is the end of the hackathon,
+which is a hard deadline— and somebody needs to invent a plan for ‘how’ to realise the result. Probably, the team with
+the best inspiring leaders will win the prize.
+|BR|
+Leading in a hackathon is even more important than in daily life --without it, contenders will spontaneously elect
+another project team.
+
+A typical hackathon can be used to (massively) practice leaders and inspire new ones. Alternatively, we can reshape the
+formula to focus more on ‘leading’ (and less coding) by battling for the finest plan, asking for a model-based
+model/prototype, or the perfect architectural description. Anything that motivates current, upcoming and aspiring
+leaders to experiment and learn.
+
+It is also possible to combine meetups with f.e. a keynote to inspire leaders.
+|BR|
+Remember, the goal of any Knowledge Circle, including hackathons, is to provide a setting where engineers can gain
+insight into leadership by collaborating with others, sharing experiences, and solving problems together. This type of
+peer-driven learning fosters leadership qualities like communication, conflict resolution, and team management, which
+are essential for software leaders. The ‘MVP’ is only a vehicle, not an objective!
+
+Stars & Stripes
+---------------
+
+Another key factor in accelerating leadership growth is making leadership roles more visible and creating a clear path
+for engineers to climb the ranks. In the military, for example, ranks and insignia denote someone’s progress and
+capabilities. The well-known rank of  ‘sergeant’ (the backbone of the U.S. Army) has three chevrons, which is five ranks
+above a private. Still, four more promotions are needed to add the ‘diamond’ that belongs to the ‘First Sergeant’ rank.
+And then, only four more promotions are needed to become an officer. Then again, ten promotions to become a ‘5-star
+general’.
+|BR|
+While not everyone in the military will become a general, the progression system shows that with motivation and hard
+work, significant growth is possible. As shown by Tommy Franks, 35 years after starting as a private, he became a 4-star
+general.
+
+With 26 steps on the career ladder, ne can be promoted every few year. And with clear ranks, everybody becomes motivated
+to take an extra step.
+|BR|
+In software engineering, leadership progression isn’t that clear. Often, role titles like "junior" or "senior" engineer
+are the only indicators of career growth, which can make the path forward seem limited. Especially as those grades are
+often ‘forever’ —not depending on the role. Once a junior coder is promoted to senior, he will stay ‘senor’. Even when
+he makes the transition to, e.g. ScrumMaster, he is seen as a ‘senior SM’. Which answers my astonishment: Why are there
+no junior ScrumMasters?
+
+I’m not promoting a hierarchical, military-grade chain of command for software engineering; our industry prefers lean
+and agile. On the other hand, it shows possibilities to introduce a more clear, “many small steps” career path —optional
+with stars and stripes.  Would it assist our engineers in visualising their future? And help them grow quicker?
+
+For instance, I use *‘Lx’* levels on all three defined axes to denote the rank of leadership. — *L1* (‘OneTeam’) is the
+lowest one.  Some even add ‘Maturity’ sub-levels for each raise. This enables (many) more levels (*L2*, *L3*, ...) and a
+structured leadership path. Even without explicitly defining every detail, these levels make it clear that there’s room
+to grow, and each step requires its own set of skills and responsibilities. Engineers need to know that there are more
+than two steps, more than just “junior” and “senior”. There are leadership roles above ScrumMaster, and one isn't a
+genuine architect when leading a few coders.
+|BR|
+Whether we need 26 Levels, or less, or even more, is unknown and unimportant. We can always add levels when we need more
+mature, stronger leaders.
+
+Leagues in Sports
+-----------------
+In sports, it is unfair to have battles between teams of different abilities. Therefore, most competitions have multiple
+leagues. In soccer, f.e. we typically differentiate between ‘amateur’ and ‘professional’ teams. Both have many national
+& international ranks. In the Nederlands, we distinguish ‘Eredivisie’ (highest national professional Division) from
+‘Eerste Divisie’ (second-highest tier) for the professionals, and have eight other competitions-level for amateurs -
+although there are also cross-level and four European competitions.
+
+Those capacity levels have a direct demand on the qualification for people organising and leading a match. Where a ‘dad
+arbiter’ is common in the lowest ranks, that is unthinkable in the UEFA European Championship. That referee has to be
+outstanding, used to the (financial) pressure of that competition, the advanced level of play and has experience with
+the (dirty) tricks of the players at that level. For example, there are ten refereeing levels in the UK, not counting
+the FIFA levels.
+
+Without going into the details of all those team rankings, for most fans, it is easy to see how mature a team is. I'm
+not a soccer expert, but even I can tell an F-level team — 11 individuals, all running towards the ball— from a team
+with clear roles and a game plan apart.
+
+Also, in engineering, one can tell teams apart. Their technical and domain skills, but also experience related to
+leadership, do differ, And usually, that is easy to spot.
+|BR|
+A classic example is the adoption of Scrum. When a large team has extensive experience with traditional methods, it can
+be challenging to persuade them to embrace the new way of working, although they may require less technical guidance.
+Conversely, a small, newly-formed team of modern engineers will likely adapt to Scrum easily but may benefit from having
+an experienced technical leader.
+
+It might be uncomfortable to rank teams, but there are many maturity levels defined in software engineering. The
+best-known one is CMM(i), which did help to improve software quality. That has inspired many to similar (5-steps)
+Team-Maturity-Models. Some are very formal, some focus on assessments (and some people post they exist only to make
+money).
+|BR|
+Still, the concept sounds useful.
+
+Like in sports, having a (possibly incomplete & informal) concept of the maturities of the team also gives us insight
+into the leadership demands for each team. Or the other way around. We shouldn’t match an aspiring leader (in each of
+the three axes) to a team that needs a very mature leader — that leads to frustration, a team that doesn’t function and
+probably one less leader.
+|BR|
+To foster leaders, it is wise to let them build experience in a (mature) team that is forgiving.
+
+Fostering Leaders: Mature & Show
+================================
+
+As illustrated, there are many options to breed leadership for current and future leaders. We even have had several ones
+in our software world. Although sometimes forgotten, informal mentoring —common in the old, big teams of the past— did
+motivate and educate new leaders. We have also seen that the ‘stars & stripes’ in the military can inspire us. Most
+developers don’t prefer that hierarchy, but it shows that a visual career path can motivate growth. We have also seen
+that, by ranking both leaders and teams, matching them is simple and helps to foster leaders.
+
+All of this will help in cultivating current and future leaders. Our demanding software engineering industry needs that.
+
+Good luck with Growing, others  ---:sysBMnl-email:`albert`
+
+.. seealso::
+
+   This article on LinkedIn: XXX		
